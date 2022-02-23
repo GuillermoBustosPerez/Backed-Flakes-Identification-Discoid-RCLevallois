@@ -38,7 +38,7 @@ Morphometrics; Machine Learning; Deep Learning
 
 The Middle Paleolithic in Western Europe is characterized by the
 diversification and increase of knapping methods resulting in
-flake-dominated assemblages (Kuhn, 2013)
+flake-dominated assemblages ([Kuhn, 2013](#ref-kuhn_roots_2013))
 
 ## References
 
