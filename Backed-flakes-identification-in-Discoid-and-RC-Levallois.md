@@ -43,6 +43,8 @@ flake-dominated assemblages (Kuhn [2013](#ref-%5B@kuhn_roots_2013%5D))
 ([Kuhn, 2013](#ref-kuhn_roots_2013))(#ref-([Kuhn,
 2013](#ref-kuhn_roots_2013)))
 
+(([Kuhn, 2013](#ref-kuhn_roots_2013)))
+
 ## References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
