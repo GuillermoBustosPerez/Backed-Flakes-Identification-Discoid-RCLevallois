@@ -33,3 +33,9 @@ the knapping method.
 
 **Key words**: lithic analysis; Levallois; Discoid; Geometric
 Morphometrics; Machine Learning; Deep Learning
+
+## Introduction
+
+The Middle Paleolithic in Western Europe is characterized by the
+diversification and increase of knapping methods resulting in
+flake-dominated assemblages
