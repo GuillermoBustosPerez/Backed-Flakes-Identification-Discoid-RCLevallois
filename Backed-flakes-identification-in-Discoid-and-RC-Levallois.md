@@ -38,11 +38,22 @@ Morphometrics; Machine Learning; Deep Learning
 
 The Middle Paleolithic in Western Europe is characterized by the
 diversification and increase of knapping methods resulting in
-flake-dominated assemblages ([Kuhn, 2013](#ref-kuhn_roots_2013))
+flake-dominated assemblages ([Delagnes and Meignen,
+2006](#ref-hovers_diversity_2006); [Kuhn, 2013](#ref-kuhn_roots_2013))
 
 ## References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-hovers_diversity_2006" class="csl-entry">
+
+Delagnes, A., Meignen, L., 2006. Diversity of Lithic Production Systems
+During the Middle Paleolithic in France. Are There Any Chronological
+Trends?, in: Hovers, E., Kuhn, S.L., Jochim, M. (Eds.), Transitions
+Before the Transition Evolution and Stability in the Middle Paleolithic
+and Middle Stone Age. Springer, pp. 85–107.
+
+</div>
 
 <div id="ref-kuhn_roots_2013" class="csl-entry">
 
