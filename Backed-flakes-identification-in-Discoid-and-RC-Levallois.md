@@ -1,4 +1,10 @@
-# 
+# The identification of core edge flakes and pseudo-Levallois points in Levallois and Discoid knapping strategies
+
+Guillermo Bustos-Pérez<sup>1</sup>  
+Francesca Romagnoli<sup>1</sup>
+
+<sup>1</sup>Universidad Autónoma de Madrid. Departamento de Prehistoria
+y Arqueología, Campus de Cantoblanco, 28049 Madrid, Spain
 
 ## Abstract
 
