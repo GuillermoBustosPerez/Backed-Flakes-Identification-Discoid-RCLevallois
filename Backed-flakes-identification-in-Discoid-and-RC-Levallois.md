@@ -38,4 +38,15 @@ Morphometrics; Machine Learning; Deep Learning
 
 The Middle Paleolithic in Western Europe is characterized by the
 diversification and increase of knapping methods resulting in
-flake-dominated assemblages
+flake-dominated assemblages (Kuhn (2013))
+
+<div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-kuhn_roots_2013" class="csl-entry">
+
+Kuhn, S.L., 2013. Roots of the Middle Paleolithic in Eurasia. Current
+Anthropology 54, S255–S268. <https://doi.org/10.1086/673529>
+
+</div>
+
+</div>
