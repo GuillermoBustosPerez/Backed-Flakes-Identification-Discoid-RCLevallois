@@ -40,6 +40,8 @@ The Middle Paleolithic in Western Europe is characterized by the
 diversification and increase of knapping methods resulting in
 flake-dominated assemblages (Kuhn, 2013)
 
+## References
+
 <div id="refs" class="references csl-bib-body hanging-indent">
 
 <div id="ref-kuhn_roots_2013" class="csl-entry">
