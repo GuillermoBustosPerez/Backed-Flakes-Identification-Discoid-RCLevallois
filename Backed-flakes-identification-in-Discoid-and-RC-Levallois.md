@@ -30,3 +30,6 @@ Under the Curve of 0.8. This indicates that Geometric Morphometrics,
 Principal Component Analysis and Machine Learning models succeed in
 capturing the morphological differences of backed products according to
 the knapping method.
+
+**Key words**: lithic analysis; Levallois; Discoid; Geometric
+Morphometrics; Machine Learning; Deep Learning
