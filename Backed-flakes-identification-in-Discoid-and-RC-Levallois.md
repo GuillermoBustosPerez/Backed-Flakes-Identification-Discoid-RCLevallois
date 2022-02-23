@@ -1,0 +1,26 @@
+# 
+
+## Abstract
+
+Backed flakes (core edge flakes and pseudo-Levallois points) represent a
+special product of Middle Paleolithic flaking strategies. This especial
+character results from their role as a technological objective and as
+the management of core convexity aiming to retain the geometric
+properties of the core in a knapping strategy. On Middle Paleolithic
+contexts these backed implements are commonly the result of Levallois
+and Discoid knapping strategies. Both backed implements are common to
+both knapping methods and in many occasions they share common geometric
+and morphological features which hinders their adscription to one of the
+methods. This study examines the identification of two knapping
+strategies (Discoid and Levallois recurrent centripetal) on an
+experimental assemblage of backed products (including all stages of
+reduction) based on their morphological features. 3D Geometric
+Morphometrics are employed to quantify morphological variability among
+the experimental sample. Dimensionality reduction though Principal
+Component Analysis is combined with eleven Machine Learning models for
+the identification of knapping methods. The best model (SVM with
+polynomial kernel) presented a general accuracy of 0.76 and an Area
+Under the Curve of 0.8. This indicates that Geometric Morphometrics,
+Principal Component Analysis and Machine Learning models succeed in
+capturing the morphological differences of backed products according to
+the knapping method.
