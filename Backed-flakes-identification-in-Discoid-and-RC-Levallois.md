@@ -45,16 +45,19 @@ Levallois recurrent centripetal.
 Following Boëda ([1995](#ref-dibble_levallois:_1995),
 [1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993)),
 there are six technological defining criteria defining the Discoid
-method: (1) the volume of the core is conceived as two oblique
-asymmetric convex surfaces delimited by an intersection plane; (2) these
-two surfaces are not hierarchical being possible to alternate the roles
-of percussion and exploitation surfaces; (3) the peripheral convexity of
-the debitage surface is managed to control lateral and distal
-extractions thus allowing for a degree of predetermination; (4) surfaces
-of the striking planes are oriented in a way that the core edge is
-perpendicular to the predetermined products; (5) the planes of
-extraction of the products are secant; (6) the technique employed is the
-direct percussion with hard hammer.
+method:
+
+1.  The volume of the core is conceived as two oblique asymmetric convex
+    surfaces delimited by an intersection plane;  
+2.  These two surfaces are not hierarchical being possible to alternate
+    the roles of percussion and exploitation surfaces;  
+3.  the peripheral convexity of the debitage surface is managed to
+    control lateral and distal extractions thus allowing for a degree of
+    predetermination;  
+4.  Surfaces of the striking planes are oriented in a way that the core
+    edge is perpendicular to the predetermined products;  
+5.  the planes of extraction of the products are secant;  
+6.  the technique employed is the direct percussion with hard hammer.
 
 ## References
 
