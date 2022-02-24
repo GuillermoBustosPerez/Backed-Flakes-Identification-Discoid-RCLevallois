@@ -204,7 +204,7 @@ LM.DF <- data.frame(matrix(Proc.Rot, nrow = length(filenames), byrow = TRUE))
 ```
 
 ``` r
-# 
+# PCA on coordinates
 pca <- prcomp(LM.DF, scale. = TRUE)
 summary(pca)$importance[1:3, 1:25]
 ```
@@ -229,6 +229,31 @@ summary(pca)$importance[1:3, 1:25]
     ## Standard deviation     2.327281
     ## Proportion of Variance 0.003550
     ## Cumulative Proportion  0.951660
+
+performance metrics for each of the models. On general all models
+performed with accuracy values higher than 0.7 with the exception of
+KNN, Naïve Bayes and decision tree with C5.0 algorithm. When considering
+the two measures of overall model performance (F1 and Accuracy)
+Supported Vector Machine with polynomial kernel presents the highest
+performance values (F1 = 0.75 and Accuracy = 0.757). Additionally, SVM
+with polynomial kernel also provides the highest values of precision.
+
+The following code stores the PCA values along with each black ID.
+Knapping method is documented for each of the experimental cores and can
+be added using a `case_when()` function.
+
+``` r
+# store PCA values in a dataframe and add ID's
+PCA_Coord <- as.data.frame(pca$x)
+PCA_Coord$ID <- filenames
+PCA_Coord$Core <- str_sub(PCA_Coord$ID, end = 2)
+
+# Set the core to which they belong and strategy
+PCA_Coord <- PCA_Coord %>% mutate(
+  Strategy = case_when(Core == "B2" | Core == "B3" |
+              Core == "B4" | Core == "B5" |Core == "B6" ~ "Discoid",
+            Core == "B7" | Core == "B8" |Core == "B9" | Core == "Le" ~ "Levallois" ))
+```
 
 ## References
 
