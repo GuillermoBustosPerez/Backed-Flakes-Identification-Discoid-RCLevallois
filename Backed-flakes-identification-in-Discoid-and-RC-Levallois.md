@@ -103,7 +103,7 @@ cortical. Core edge flakes are also divided into two categories:
 ### 1.1 Loading the data and packages
 
 ``` r
-list.of.packages <- c("tidyverse", "caret",  "ranger", "knitr")
+list.of.packages <- c("tidyverse", "caret",  "ranger")
 
 lapply(list.of.packages, library, character.only = TRUE)
 ```
@@ -122,13 +122,7 @@ lapply(list.of.packages, library, character.only = TRUE)
     ##  [1] "ranger"    "caret"     "lattice"   "forcats"   "stringr"   "dplyr"    
     ##  [7] "purrr"     "readr"     "tidyr"     "tibble"    "ggplot2"   "tidyverse"
     ## [13] "stats"     "graphics"  "grDevices" "utils"     "datasets"  "methods"  
-    ## [19] "base"     
-    ## 
-    ## [[4]]
-    ##  [1] "knitr"     "ranger"    "caret"     "lattice"   "forcats"   "stringr"  
-    ##  [7] "dplyr"     "purrr"     "readr"     "tidyr"     "tibble"    "ggplot2"  
-    ## [13] "tidyverse" "stats"     "graphics"  "grDevices" "utils"     "datasets" 
-    ## [19] "methods"   "base"
+    ## [19] "base"
 
 ``` r
 rm(list.of.packages)
@@ -187,6 +181,54 @@ Att %>% group_by(Strategy) %>%
 ```
 
 ![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/Cortex%20per%20Method-1.png)
+
+## 3.1 Results
+
+### 3.2 PCA and model performance
+
+PCA results show that the 25 first principal components account for 95%
+of the variance of the dataset with PC1 accounting for 21.39% of
+variance and PC25 accounting for 0.36% of variance. This is an important
+reduction from the original number of variables (1524) and substantially
+lower than the sample (139).
+
+``` r
+# Procrustes alignment
+proc <- ProcGPA(Flakes_LM, 
+                CSinit = TRUE, 
+                silent = FALSE)
+
+# Extract coordinates
+Proc.Rot <- proc$rotated
+LM.DF <- data.frame(matrix(Proc.Rot, nrow = length(filenames), byrow = TRUE))
+```
+
+``` r
+# 
+pca <- prcomp(LM.DF, scale. = TRUE)
+summary(pca)$importance[1:3, 1:25]
+```
+
+    ##                             PC1      PC2      PC3      PC4      PC5      PC6
+    ## Standard deviation     18.05288 16.62783 12.83087 10.83128 10.42072 8.299316
+    ## Proportion of Variance  0.21385  0.18142  0.10803  0.07698  0.07125 0.045200
+    ## Cumulative Proportion   0.21385  0.39527  0.50330  0.58028  0.65153 0.696730
+    ##                            PC7      PC8      PC9     PC10     PC11     PC12
+    ## Standard deviation     7.73039 7.439897 6.710911 6.173021 5.368746 4.773021
+    ## Proportion of Variance 0.03921 0.036320 0.029550 0.025000 0.018910 0.014950
+    ## Cumulative Proportion  0.73594 0.772260 0.801810 0.826810 0.845730 0.860670
+    ##                            PC13    PC14     PC15     PC16    PC17    PC18
+    ## Standard deviation     4.562145 4.44228 3.803028 3.750857 3.54599 3.23142
+    ## Proportion of Variance 0.013660 0.01295 0.009490 0.009230 0.00825 0.00685
+    ## Cumulative Proportion  0.874330 0.88728 0.896770 0.906000 0.91425 0.92110
+    ##                            PC19    PC20     PC21     PC22     PC23    PC24
+    ## Standard deviation     2.956198 2.70170 2.649925 2.516422 2.466077 2.38239
+    ## Proportion of Variance 0.005730 0.00479 0.004610 0.004160 0.003990 0.00372
+    ## Cumulative Proportion  0.926840 0.93163 0.936240 0.940390 0.944380 0.94811
+    ##                            PC25
+    ## Standard deviation     2.327281
+    ## Proportion of Variance 0.003550
+    ## Cumulative Proportion  0.951660
 
 ## References
 
