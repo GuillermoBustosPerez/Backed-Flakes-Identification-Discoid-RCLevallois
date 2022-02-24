@@ -263,7 +263,7 @@ PCA_Coord$Strategy <- factor(PCA_Coord$Strategy)
 frmla <- as.formula(
   paste("Strategy", paste(colnames(PCA_Coord[,1:25]), collapse = " + "), sep = " ~ "))
 
-#### Set cross validation
+# Set cross validation
 trControl <- trainControl(method  = "repeatedcv",
                           verboseIter = TRUE,
                           number  = 10,
@@ -273,7 +273,7 @@ trControl <- trainControl(method  = "repeatedcv",
 ```
 
 ``` r
-#### LDA model ####
+# LDA model 
 set.seed(123)
 fit.LDA <- caret::train(frmla, 
                          PCA_Coord, 
@@ -281,7 +281,7 @@ fit.LDA <- caret::train(frmla,
                          preProc = c("center", "scale"), 
                          trControl = trControl)
 
-#### KNN model ####
+# KNN model
 set.seed(123)
 KNN.model <- caret::train(
   frmla,
@@ -292,7 +292,7 @@ KNN.model <- caret::train(
   tuneGrid = expand.grid(k = seq(1, 15, 1))
 )
 
-#### Logistic regression model ####
+# Logistic regression model
 set.seed(123)
 logmod <- caret::train(frmla, 
                        PCA_Coord, 
@@ -301,7 +301,7 @@ logmod <- caret::train(frmla,
                        preProc = c("center", "scale"),
                        trControl = trControl)
 
-#### SVM linear ####
+# SVM linear 
 set.seed(123)
 SVM_Linear <- train(frmla, 
                     PCA_Coord, 
@@ -312,7 +312,7 @@ SVM_Linear <- train(frmla,
                     metric = "Accuracy",
                     importance = 'impurity')
 
-#### SVM Radial ####
+# SVM Radial 
 set.seed(123)
 SVM_Radial <- train(frmla, 
                     PCA_Coord, 
@@ -325,7 +325,7 @@ SVM_Radial <- train(frmla,
                     metric = "Accuracy",
                     importance = 'impurity')
 
-#### SVM Poly ####
+# SVM Poly 
 set.seed(123)
 SVM_Poly <- train(frmla, 
                   PCA_Coord, 
@@ -339,8 +339,7 @@ SVM_Poly <- train(frmla,
                                 degree = as.integer(seq(1, 3, 1))),
                   importance = 'impurity')
 
-#### Random Forest ####
-
+# Random Forest 
 best_tune <- data.frame(
   mtry = numeric(0),
   Num_Trees = numeric(0),
@@ -391,7 +390,7 @@ RF_Model <- train(
   metric = "Accuracy",
   importance = 'impurity')
 
-### Boosted tree ####
+# Boosted tree 
 set.seed(123)
 Boost_Tree <- train(frmla, 
                   PCA_Coord,
@@ -405,7 +404,7 @@ Boost_Tree <- train(frmla,
                       shrinkage = 0.1,
                       n.minobsinnode = as.integer(seq(1, 10, length = 5))))
 
-#### Multi layer ANN  ####
+# Multilayer ANN
 set.seed(123)
 mlp_Mod = train(frmla, 
                 PCA_Coord, 
@@ -418,7 +417,7 @@ mlp_Mod = train(frmla,
                     layer2 = c(0:8),
                     layer3 = c(0:8)))
 
-#### Naive Bayes ####
+# Naive Bayes
 set.seed(123)
 NaiB_Model <- train(frmla, 
                     PCA_Coord,
@@ -430,7 +429,7 @@ NaiB_Model <- train(frmla,
 
 confusionMatrix(NaiB_Model)
 
-#### C5.0 Tree ###
+# C5.0 Tree 
 grid <- expand.grid(
   winnow = c(TRUE), 
   trials = seq(10, 40, by = 5), 
