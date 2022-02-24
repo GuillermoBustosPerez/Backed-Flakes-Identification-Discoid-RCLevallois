@@ -148,15 +148,45 @@ Att <- read.csv("Data/Attributes data.csv")
 
 The experimental assemblage of the present study is the result of nine
 discrete knapping sequences. Seven cores were knapped on Bergerac flint
-([Fernandes et al.](#ref-fernandes_silex_2012)
-([2012](#ref-fernandes_silex_2012))) and two cores were knapped on
-Miocene flint from South of Madrid ([Bustillo et al.,
+([Fernandes et al., 2012](#ref-fernandes_silex_2012)) and two cores were
+knapped on Miocene flint from South of Madrid ([Bustillo et al.,
 2012](#ref-bustillo_caracterizacion_2012); [Bustillo and Pérez-Jiménez,
 2005](#ref-bustillo_caracteristicas_2005)). Five cores were knapped
-following the Discoid “sensu stricto” which highly corresponds to
+following the Discoid *“sensu stricto”* which highly corresponds to
 Boëda’s original technological definition of the knapping system
 ([Boëda, 1995](#ref-dibble_levallois:_1995),
-[1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993))
+[1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993)) and
+five experimental cores were knapped following the Levallois recurrent
+centripetal system ([Boëda, 1995](#ref-dibble_levallois:_1995),
+[1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993);
+[Lenoir and Turq, 1995](#ref-dibble_recurrent_1995)). A total of 139
+unretouched backed flakes (independent of the type of termination) were
+obtained (70 belonging to Discoid reduction sequences and 69 belonging
+to Levallois reduction sequences) from the experimental knapping
+sequences. In the case of Levallois recurrent centripetal cores backed
+products from both surface (debitage and striking) are included.
+
+``` r
+Att %>% group_by(Strategy) %>% 
+  count(CORTEX) %>% 
+  mutate(Percentage = round(n/sum(n)*100, 2)) %>%
+  ggplot(aes(CORTEX, Percentage, fill = Strategy)) +
+  geom_col(position = "dodge") +
+  ggsci::scale_fill_aaas() +
+  xlab(NULL) +
+  geom_text(aes(label = paste0(Percentage, "%")), 
+            vjust= -0.2, size = 2.5,
+            position = position_dodge(.9)) +
+  geom_text(aes(label = paste("n =", n)), 
+            vjust = "top", size = 2.5,
+            position = position_dodge(.9)) +
+  theme_classic() +
+  theme(
+    legend.position = "bottom",
+    axis.text = element_text(color = "black", size = 8))
+```
+
+![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/Cortex%20per%20Method-1.png)
 
 ## References
 
@@ -251,6 +281,16 @@ Continental d’Aquitaine, excursion AFEQ, ASF 2012 2012, 22–33.
 
 Kuhn, S.L., 2013. Roots of the Middle Paleolithic in Eurasia. Current
 Anthropology 54, S255–S268. <https://doi.org/10.1086/673529>
+
+</div>
+
+<div id="ref-dibble_recurrent_1995" class="csl-entry">
+
+Lenoir, M., Turq, A., 1995. Recurrent Centripetal Debitage (Levallois
+and Discoidal): Continuity or Discontinuity?, in: Dibble, H.L.,
+Bar-Yosef, O. (Eds.), The Definition and Interpretation of Levallois
+Technology, Monographs in World Archaeology. Prehistory Press, Madison,
+Wisconsin, pp. 249–256.
 
 </div>
 
