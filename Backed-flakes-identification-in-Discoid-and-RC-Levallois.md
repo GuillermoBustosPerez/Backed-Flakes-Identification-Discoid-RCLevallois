@@ -42,7 +42,7 @@ flake-dominated assemblages ([Delagnes and Meignen,
 2006](#ref-hovers_diversity_2006); [Kuhn, 2013](#ref-kuhn_roots_2013)).
 Two of the most common flake production methods are the Discoid and the
 Levallois recurrent centripetal.  
-Following Boëda -([Boëda, 1995](#ref-dibble_levallois:_1995),
+Following Boëda ([1995](#ref-dibble_levallois:_1995),
 [1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993))
 
 ## References
