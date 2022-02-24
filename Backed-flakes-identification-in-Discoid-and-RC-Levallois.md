@@ -51,13 +51,41 @@ method:
     surfaces delimited by an intersection plane;  
 2.  These two surfaces are not hierarchical being possible to alternate
     the roles of percussion and exploitation surfaces;  
-3.  the peripheral convexity of the debitage surface is managed to
+3.  The peripheral convexity of the debitage surface is managed to
     control lateral and distal extractions thus allowing for a degree of
     predetermination;  
 4.  Surfaces of the striking planes are oriented in a way that the core
     edge is perpendicular to the predetermined products;  
-5.  the planes of extraction of the products are secant;  
-6.  the technique employed is the direct percussion with hard hammer.
+5.  The planes of extraction of the products are secant;  
+6.  The technique employed is the direct percussion with hard hammer.
+
+Also, according to Boëda ([1994](#ref-boeda_concept_1994),
+[1993](#ref-boeda_debitage_1993)) six characteristics define the
+Levallois knapping strategy from a technological point of view:
+
+1.  The volume of the core is conceived in two convex asymmetric
+    surfaces;  
+2.  These two surfaces are hierarchical and are not interchangeable.
+    They maintain their role of striking and debitage (or exploitation)
+    surface respectively along the whole reduction process;  
+3.  The distal and lateral convexities of the debitage surface are
+    maintained to obtain predetermined flakes;  
+4.  The plane of fracture of the predetermined products is parallel to
+    the intersection between both surfaces;  
+5.  The striking platform is perpendicular to the overhang (the core
+    edge, at the intersection between the two core surfaces);  
+6.  The technique employed during the knapping process is the direct
+    percussion with hard hammer.
+
+Depending on the organization of the debitage surface Levallois cores
+are usually classified into preferential method (were a single
+predetermined Levallois flake is obtained from the debitage surface) or
+recurrent methods (were several predetermined flakes are produced from
+the debitage surface) with removals being either unidirectional,
+bidirectional or centripetal ([Boëda,
+1995](#ref-dibble_levallois:_1995); [Delagnes,
+1995](#ref-dibble_variability_1995); [Delagnes and Meignen,
+2006](#ref-hovers_diversity_2006)).
 
 ## References
 
@@ -84,6 +112,16 @@ Boëda, E., 1994. Le concept Levallois: Variabilité des méthodes, CNRS
 Boëda, E., 1993. Le débitage discoïde et le débitage Levallois récurrent
 centripède. Bulletin de la Société Préhistorique Française 90, 392–404.
 <https://doi.org/10.3406/bspf.1993.9669>
+
+</div>
+
+<div id="ref-dibble_variability_1995" class="csl-entry">
+
+Delagnes, A., 1995. Variability within Uniformity: Three Levels of
+Variability within the Levallois System, in: Dibble, H.L., Bar-Yosef, O.
+(Eds.), The Definition and Interpretation of Levallois Technology,
+Monographs in World Archaeology. Prehistory Press, Madison, Wisconsin,
+pp. 201–211.
 
 </div>
 
