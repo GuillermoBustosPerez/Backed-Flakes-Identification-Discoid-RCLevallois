@@ -146,6 +146,18 @@ Att <- read.csv("Data/Attributes data.csv")
 
 ### 2.1 Experimental assemblage
 
+The experimental assemblage of the present study is the result of nine
+discrete knapping sequences. Seven cores were knapped on Bergerac flint
+([Fernandes et al.](#ref-fernandes_silex_2012)
+([2012](#ref-fernandes_silex_2012))) and two cores were knapped on
+Miocene flint from South of Madrid ([Bustillo et al.,
+2012](#ref-bustillo_caracterizacion_2012); [Bustillo and Pérez-Jiménez,
+2005](#ref-bustillo_caracteristicas_2005)). Five cores were knapped
+following the Discoid “sensu stricto” which highly corresponds to
+Boëda’s original technological definition of the knapping system
+([Boëda, 1995](#ref-dibble_levallois:_1995),
+[1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993))
+
 ## References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
@@ -190,6 +202,23 @@ opératoires lithiques du Paléolithique ancien et moyen. Paléo 2, 43–80.
 
 </div>
 
+<div id="ref-bustillo_caracteristicas_2005" class="csl-entry">
+
+Bustillo, M.A., Pérez-Jiménez, J.L., 2005. Características diferenciales
+y génesis de los niveles silíceos explotados en el yacimiento
+arqueológico de Casa Montero (Vicálvaro, Madrid). Geogaceta 38, 243–246.
+
+</div>
+
+<div id="ref-bustillo_caracterizacion_2012" class="csl-entry">
+
+Bustillo, M.Á., Pérez-Jiménez, J.L., Bustillo, M., 2012. Caracterización
+geoquímica de rocas sedimentarias formadas por silicificación como
+fuentes de suministro de utensilios líticos (Mioceno, cuenca de Madrid).
+Revista Mexicana de Ciencias Geológicas 29, 233–247.
+
+</div>
+
 <div id="ref-dibble_variability_1995" class="csl-entry">
 
 Delagnes, A., 1995. Variability within Uniformity: Three Levels of
@@ -207,6 +236,14 @@ During the Middle Paleolithic in France. Are There Any Chronological
 Trends?, in: Hovers, E., Kuhn, S.L., Jochim, M. (Eds.), Transitions
 Before the Transition Evolution and Stability in the Middle Paleolithic
 and Middle Stone Age. Springer, pp. 85–107.
+
+</div>
+
+<div id="ref-fernandes_silex_2012" class="csl-entry">
+
+Fernandes, P., Morala, A., Schmidt, P., Séronie-Vivien, M.-R., Turq, A.,
+2012. Le silex du Bergeracois: État de la question. Quaternaire
+Continental d’Aquitaine, excursion AFEQ, ASF 2012 2012, 22–33.
 
 </div>
 
