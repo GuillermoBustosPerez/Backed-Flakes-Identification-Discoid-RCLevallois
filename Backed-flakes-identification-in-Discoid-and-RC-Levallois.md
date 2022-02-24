@@ -182,9 +182,9 @@ Att %>% group_by(Strategy) %>%
 
 ![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/Cortex%20per%20Method-1.png)
 
-## 3.1 Results
+## 3 Results
 
-### 3.2 PCA and model performance
+### 3.1 PCA and model performance
 
 PCA results show that the 25 first principal components account for 95%
 of the variance of the dataset with PC1 accounting for 21.39% of
@@ -253,6 +253,196 @@ PCA_Coord <- PCA_Coord %>% mutate(
   Strategy = case_when(Core == "B2" | Core == "B3" |
               Core == "B4" | Core == "B5" |Core == "B6" ~ "Discoid",
             Core == "B7" | Core == "B8" |Core == "B9" | Core == "Le" ~ "Levallois" ))
+
+# Set strategy as factor or varImp will not work
+PCA_Coord$Strategy <- factor(PCA_Coord$Strategy)
+```
+
+``` r
+# Set formula
+frmla <- as.formula(
+  paste("Strategy", paste(colnames(PCA_Coord[,1:25]), collapse = " + "), sep = " ~ "))
+
+#### Set cross validation
+trControl <- trainControl(method  = "repeatedcv",
+                          verboseIter = TRUE,
+                          number  = 10,
+                          repeats = 50,
+                          savePredictions = "final",
+                          classProbs = TRUE)
+```
+
+``` r
+#### LDA model ####
+set.seed(123)
+fit.LDA <- caret::train(frmla, 
+                         PCA_Coord, 
+                         method = "lda",
+                         preProc = c("center", "scale"), 
+                         trControl = trControl)
+
+#### KNN model ####
+set.seed(123)
+KNN.model <- caret::train(
+  frmla,
+  PCA_Coord,
+  method = "knn",
+  preProc = c("center", "scale"), 
+  trControl = trControl,
+  tuneGrid = expand.grid(k = seq(1, 15, 1))
+)
+
+#### Logistic regression model ####
+set.seed(123)
+logmod <- caret::train(frmla, 
+                       PCA_Coord, 
+                       method = "glm",
+                       family = "binomial",
+                       preProc = c("center", "scale"),
+                       trControl = trControl)
+
+#### SVM linear ####
+set.seed(123)
+SVM_Linear <- train(frmla, 
+                    PCA_Coord, 
+                    method = "svmLinear",
+                    preProcess = c("center","scale"),
+                    trControl = trControl,
+                    tuneGrid = expand.grid(C = seq(0.01, 3, length = 20)),
+                    metric = "Accuracy",
+                    importance = 'impurity')
+
+#### SVM Radial ####
+set.seed(123)
+SVM_Radial <- train(frmla, 
+                    PCA_Coord, 
+                    method = "svmRadial",
+                    preProcess = c("center","scale"),
+                    trControl = trControl,
+                    tuneGrid = 
+                      expand.grid(C = seq(0.01, 3, length = 20),
+                                  sigma = seq(0.0001, 1, length = 20)),
+                    metric = "Accuracy",
+                    importance = 'impurity')
+
+#### SVM Poly ####
+set.seed(123)
+SVM_Poly <- train(frmla, 
+                  PCA_Coord, 
+                  method = "svmPoly",
+                  preProcess = c("center","scale"),
+                  trControl = trControl,
+                  metric = "Accuracy",
+                  tuneGrid = 
+                    expand.grid(C = seq(0.01, 3, length = 15),
+                                scale = seq(0.001, 1, length = 15),
+                                degree = as.integer(seq(1, 3, 1))),
+                  importance = 'impurity')
+
+#### Random Forest ####
+
+best_tune <- data.frame(
+  mtry = numeric(0),
+  Num_Trees = numeric(0),
+  Split_Rule = character(0),
+  Precision = numeric(0),
+  Node.Size = numeric(0))
+
+my_seq <- seq(350, 700, 25)
+set.seed(123)
+for (x in my_seq){
+  RF_Model <- train(frmla, 
+                    PCA_Coord,
+                    method = "ranger",
+                    trControl = trControl,
+                    tuneGrid =
+                      expand.grid(.mtry = seq(1, 10, 1),
+                                  .min.node.size = seq(1, 6, 1),
+                                  .splitrule = c("gini", "extratrees")),
+                    metric = "Accuracy",
+                    importance = 'impurity')
+
+  Bst_R <- data.frame(
+    mtry = RF_Model$bestTune[[1]],
+    Num_Trees = x,
+    Split_Rule = RF_Model$bestTune[[2]],
+    Precision = max(RF_Model$results[[4]]),
+    Node.Size = RF_Model$bestTune[[3]]
+  )
+  
+  best_tune <- rbind(best_tune, Bst_R)
+  
+  Bst_R <- c()
+}
+
+# Best tune 
+# mtry = 7; 550 trees split_Rule = extratrees; min.nod.size = 6
+set.seed(123)
+RF_Model <- train(
+  frmla,
+  PCA_Coord,
+  method = "ranger",
+  trControl = trControl,
+  tuneGrid = expand.grid(
+    .mtry = 7,
+    .min.node.size = 6,
+    .splitrule = "extratrees"),
+  num.trees = 550,
+  metric = "Accuracy",
+  importance = 'impurity')
+
+### Boosted tree ####
+set.seed(123)
+Boost_Tree <- train(frmla, 
+                  PCA_Coord,
+                  method = "gbm",
+                  trControl = trControl,
+                  metric = "Accuracy",
+                  tuneGrid = 
+                    expand.grid(
+                      n.trees = seq(from = 300, to = 700, by = 50),
+                      interaction.depth = seq(from = 1, to = 10, length.out = 5),
+                      shrinkage = 0.1,
+                      n.minobsinnode = as.integer(seq(1, 10, length = 5))))
+
+#### Multi layer ANN  ####
+set.seed(123)
+mlp_Mod = train(frmla, 
+                PCA_Coord, 
+                method = "mlpML", 
+                preProc =  c('center', 'scale'),
+                trControl = trControl,
+                tuneGrid = 
+                  expand.grid(
+                    layer1 = c(1:8),
+                    layer2 = c(0:8),
+                    layer3 = c(0:8)))
+
+#### Naive Bayes ####
+set.seed(123)
+NaiB_Model <- train(frmla, 
+                    PCA_Coord,
+                    method = "nb",
+                    preProcess = c("scale","center"),
+                    trControl = trControl,
+                    metric = "Accuracy",
+                    lineout = FALSE)
+
+confusionMatrix(NaiB_Model)
+
+#### C5.0 Tree ###
+grid <- expand.grid(
+  winnow = c(TRUE), 
+  trials = seq(10, 40, by = 5), 
+  model = "tree" )
+
+set.seed(123)
+C50_Mod <- train(frmla, 
+                 PCA_Coord,
+                 method = "C5.0",
+                 trControl = trControl,
+                 metric = "Accuracy",
+                 importance = 'impurity')
 ```
 
 ## References
