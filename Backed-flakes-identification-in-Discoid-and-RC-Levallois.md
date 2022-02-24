@@ -272,6 +272,9 @@ trControl <- trainControl(method  = "repeatedcv",
                           classProbs = TRUE)
 ```
 
+The following code trains the selected models using the established
+k-fold cross validation.
+
 ``` r
 # LDA model 
 set.seed(123)
