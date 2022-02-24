@@ -85,11 +85,33 @@ the debitage surface) with removals being either unidirectional,
 bidirectional or centripetal ([Boëda,
 1995](#ref-dibble_levallois:_1995); [Delagnes,
 1995](#ref-dibble_variability_1995); [Delagnes and Meignen,
-2006](#ref-hovers_diversity_2006)).
+2006](#ref-hovers_diversity_2006)).  
+Both knapping methods share the production of backed products which
+usually includes two wide categories: core edge flakes (*eclat
+débordant*) and pseudo-Levallois points.  
+Core edge flakes / *eclat débordant* ([Beyries and Boëda,
+1983](#ref-beyries_etude_1983); [Boëda, 1993](#ref-boeda_debitage_1993);
+[Boëda et al., 1990](#ref-boeda_identification_1990)) are technical
+backed knives which have a cutting edge opposite and parallel to a blunt
+margin (which usually haves an angle close to the 90º). This blunt
+margin commonly results from the removal of one of the laterals of the
+core and can be plain, keep the scars from previous removals or be
+cortical. Core edge flakes are also divided into two categories:
+“classical core edge flakes” and “core edge flakes with a limited back.”
+“Classical core edge flakes”
 
 ## References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-beyries_etude_1983" class="csl-entry">
+
+Beyries, S., Boëda, E., 1983. Étude technoloogique et traces
+d’utilisation des éclats débordants de Corbehem (Pas-de-Calais).
+Bulletin de la Société préhistorique française 80, 275–279.
+https://doi.org/<https://doi.org/10.3406/bspf.1983.5455>
+
+</div>
 
 <div id="ref-dibble_levallois:_1995" class="csl-entry">
 
@@ -112,6 +134,13 @@ Boëda, E., 1994. Le concept Levallois: Variabilité des méthodes, CNRS
 Boëda, E., 1993. Le débitage discoïde et le débitage Levallois récurrent
 centripède. Bulletin de la Société Préhistorique Française 90, 392–404.
 <https://doi.org/10.3406/bspf.1993.9669>
+
+</div>
+
+<div id="ref-boeda_identification_1990" class="csl-entry">
+
+Boëda, E., Geneste, J.-M., Meignen, L., 1990. Identification de chaînes
+opératoires lithiques du Paléolithique ancien et moyen. Paléo 2, 43–80.
 
 </div>
 
