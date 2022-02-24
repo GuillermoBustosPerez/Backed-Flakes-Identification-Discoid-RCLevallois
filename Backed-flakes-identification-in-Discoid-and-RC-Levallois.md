@@ -34,7 +34,7 @@ the knapping method.
 **Key words**: lithic analysis; Levallois; Discoid; Geometric
 Morphometrics; Machine Learning; Deep Learning
 
-## Introduction
+## 1. Introduction
 
 The Middle Paleolithic in Western Europe is characterized by the
 diversification and increase of knapping methods resulting in
@@ -85,10 +85,10 @@ the debitage surface) with removals being either unidirectional,
 bidirectional or centripetal ([Boëda,
 1995](#ref-dibble_levallois:_1995); [Delagnes,
 1995](#ref-dibble_variability_1995); [Delagnes and Meignen,
-2006](#ref-hovers_diversity_2006)).  
-Both knapping methods share the production of backed products which
-usually includes two wide categories: core edge flakes (*eclat
-débordant*) and pseudo-Levallois points.  
+2006](#ref-hovers_diversity_2006)). Both knapping methods share the
+production of backed products which usually includes two wide
+categories: core edge flakes (*eclat débordant*) and pseudo-Levallois
+points.  
 Core edge flakes / *eclat débordant* ([Beyries and Boëda,
 1983](#ref-beyries_etude_1983); [Boëda, 1993](#ref-boeda_debitage_1993);
 [Boëda et al., 1990](#ref-boeda_identification_1990)) are technical
@@ -99,6 +99,72 @@ core and can be plain, keep the scars from previous removals or be
 cortical. Core edge flakes are also divided into two categories:
 “classical core edge flakes” and “core edge flakes with a limited back.”
 “Classical core edge flakes”
+
+### 1.1 Loading the data and packages
+
+``` r
+list.of.packages <- c("tidyverse", "caret",  "ranger", "knitr")
+
+lapply(list.of.packages, library, character.only = TRUE)
+```
+
+    ## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --
+
+    ## v ggplot2 3.3.5     v purrr   0.3.4
+    ## v tibble  3.1.6     v dplyr   1.0.7
+    ## v tidyr   1.1.4     v stringr 1.4.0
+    ## v readr   2.1.1     v forcats 0.5.1
+
+    ## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+    ## x dplyr::filter() masks stats::filter()
+    ## x dplyr::lag()    masks stats::lag()
+
+    ## Loading required package: lattice
+
+    ## 
+    ## Attaching package: 'caret'
+
+    ## The following object is masked from 'package:purrr':
+    ## 
+    ##     lift
+
+    ## [[1]]
+    ##  [1] "forcats"   "stringr"   "dplyr"     "purrr"     "readr"     "tidyr"    
+    ##  [7] "tibble"    "ggplot2"   "tidyverse" "stats"     "graphics"  "grDevices"
+    ## [13] "utils"     "datasets"  "methods"   "base"     
+    ## 
+    ## [[2]]
+    ##  [1] "caret"     "lattice"   "forcats"   "stringr"   "dplyr"     "purrr"    
+    ##  [7] "readr"     "tidyr"     "tibble"    "ggplot2"   "tidyverse" "stats"    
+    ## [13] "graphics"  "grDevices" "utils"     "datasets"  "methods"   "base"     
+    ## 
+    ## [[3]]
+    ##  [1] "ranger"    "caret"     "lattice"   "forcats"   "stringr"   "dplyr"    
+    ##  [7] "purrr"     "readr"     "tidyr"     "tibble"    "ggplot2"   "tidyverse"
+    ## [13] "stats"     "graphics"  "grDevices" "utils"     "datasets"  "methods"  
+    ## [19] "base"     
+    ## 
+    ## [[4]]
+    ##  [1] "knitr"     "ranger"    "caret"     "lattice"   "forcats"   "stringr"  
+    ##  [7] "dplyr"     "purrr"     "readr"     "tidyr"     "tibble"    "ggplot2"  
+    ## [13] "tidyverse" "stats"     "graphics"  "grDevices" "utils"     "datasets" 
+    ## [19] "methods"   "base"
+
+``` r
+rm(list.of.packages)
+```
+
+``` r
+# Loading landmarks coordinates
+load("Data/Flakes LM rotated.RData")
+
+# Loading manual attributes
+Att <- read.csv("Data/Attributes data.csv")
+```
+
+## 2. Methods
+
+### 2.1 Experimental assemblage
 
 ## References
 
