@@ -243,7 +243,7 @@ Knapping method is documented for each of the experimental cores and can
 be added using a `case_when()` function.
 
 ``` r
-# store PCA values in a dataframe and add ID's
+# Store PCA values in a dataframe and add ID's
 PCA_Coord <- as.data.frame(pca$x)
 PCA_Coord$ID <- filenames
 PCA_Coord$Core <- str_sub(PCA_Coord$ID, end = 2)
@@ -446,6 +446,65 @@ C50_Mod <- train(frmla,
                  metric = "Accuracy",
                  importance = 'impurity')
 ```
+
+``` r
+data.frame(
+  Model = c("LDA", "KNN", "Log. Reg.", "SVML", "SVMP", "SVMR",
+            "C5.0", "Rand. Forest", "Boost Tree", "Baïve Bayes",
+            "ANN") %>% 
+    cbind(
+  data.frame(
+ rbind(
+   confusionMatrix(fit.LDA$pred$pred, fit.LDA$pred$obs)[[4]],
+   confusionMatrix(KNN.model$pred$pred, KNN.model$pred$obs)[[4]],
+   confusionMatrix(logmod$pred$pred, logmod$pred$obs)[[4]],
+   confusionMatrix(SVM_Linear$pred$pred, SVM_Linear$pred$obs)[[4]],
+   confusionMatrix(SVM_Poly$pred$pred, SVM_Poly$pred$obs)[[4]],
+   confusionMatrix(SVM_Radial$pred$pred, SVM_Radial$pred$obs)[[4]],
+   confusionMatrix(C50_Mod$pred$pred, C50_Mod$pred$obs)[[4]],
+   confusionMatrix(RF_Model$pred$pred, RF_Model$pred$obs)[[4]],
+   confusionMatrix(Boost_Tree$pred$pred, Boost_Tree$pred$obs)[[4]],
+   confusionMatrix(NaiB_Model$pred$pred, NaiB_Model$pred$obs)[[4]],
+   confusionMatrix(mlp_Mod$pred$pred, mlp_Mod$pred$obs)[[4]]))
+  ))
+```
+
+    ##         Model.. Model.Sensitivity Model.Specificity Model.Pos.Pred.Value
+    ## 1           LDA         0.6817143         0.7666667            0.7477280
+    ## 2           KNN         0.3328571         0.8881159            0.7511283
+    ## 3     Log. Reg.         0.6991429         0.7339130            0.7271917
+    ## 4          SVML         0.6840000         0.7976812            0.7742561
+    ## 5          SVMP         0.7234286         0.7904348            0.7778802
+    ## 6          SVMR         0.7325714         0.7159420            0.7234763
+    ## 7          C5.0         0.6602857         0.6571014            0.6614196
+    ## 8  Rand. Forest         0.7071429         0.7417391            0.7352941
+    ## 9    Boost Tree         0.7254286         0.7388406            0.7380814
+    ## 10  Baïve Bayes         0.6702857         0.7246377            0.7117718
+    ## 11          ANN         0.6945714         0.7176812            0.7139501
+    ##    Model.Neg.Pred.Value Model.Precision Model.Recall  Model.F1 Model.Prevalence
+    ## 1             0.7036446       0.7477280    0.6817143 0.7131968        0.5035971
+    ## 2             0.5675125       0.7511283    0.3328571 0.4612948        0.5035971
+    ## 3             0.7062762       0.7271917    0.6991429 0.7128915        0.5035971
+    ## 4             0.7133230       0.7742561    0.6840000 0.7263350        0.5035971
+    ## 5             0.7380244       0.7778802    0.7234286 0.7496669        0.5035971
+    ## 6             0.7251908       0.7234763    0.7325714 0.7279955        0.5035971
+    ## 7             0.6559606       0.6614196    0.6602857 0.6608522        0.5035971
+    ## 8             0.7140067       0.7352941    0.7071429 0.7209438        0.5035971
+    ## 9             0.7262108       0.7380814    0.7254286 0.7317003        0.5035971
+    ## 10            0.6841817       0.7117718    0.6702857 0.6904061        0.5035971
+    ## 11            0.6984485       0.7139501    0.6945714 0.7041274        0.5035971
+    ##    Model.Detection.Rate Model.Detection.Prevalence Model.Balanced.Accuracy
+    ## 1             0.3433094                  0.4591367               0.7241905
+    ## 2             0.1676259                  0.2231655               0.6104865
+    ## 3             0.3520863                  0.4841727               0.7165280
+    ## 4             0.3444604                  0.4448921               0.7408406
+    ## 5             0.3643165                  0.4683453               0.7569317
+    ## 6             0.3689209                  0.5099281               0.7242567
+    ## 7             0.3325180                  0.5027338               0.6586936
+    ## 8             0.3561151                  0.4843165               0.7244410
+    ## 9             0.3653237                  0.4949640               0.7321346
+    ## 10            0.3375540                  0.4742446               0.6974617
+    ## 11            0.3497842                  0.4899281               0.7061263
 
 ## References
 
