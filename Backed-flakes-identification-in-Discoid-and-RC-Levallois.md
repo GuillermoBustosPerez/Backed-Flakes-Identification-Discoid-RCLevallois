@@ -39,11 +39,39 @@ Morphometrics; Machine Learning; Deep Learning
 The Middle Paleolithic in Western Europe is characterized by the
 diversification and increase of knapping methods resulting in
 flake-dominated assemblages ([Delagnes and Meignen,
-2006](#ref-hovers_diversity_2006); [Kuhn, 2013](#ref-kuhn_roots_2013))
+2006](#ref-hovers_diversity_2006); [Kuhn, 2013](#ref-kuhn_roots_2013)).
+Two of the most common flake production methods are the Discoid and the
+Levallois recurrent centripetal.  
+Following Boëda -([Boëda, 1995](#ref-dibble_levallois:_1995),
+[1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993))
 
 ## References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-dibble_levallois:_1995" class="csl-entry">
+
+Boëda, E., 1995. Levallois: A Volumetric Construction, Methods, A
+Technique, in: Dibble, H.L., Bar-Yosef, O. (Eds.), The Definition and
+Interpretation of Levallois Technology, Monographs in World Archaeology.
+Prehistory Press, Madison, Wisconsin, pp. 41–68.
+
+</div>
+
+<div id="ref-boeda_concept_1994" class="csl-entry">
+
+Boëda, E., 1994. Le concept Levallois: Variabilité des méthodes, CNRS
+éditions. CNRS.
+
+</div>
+
+<div id="ref-boeda_debitage_1993" class="csl-entry">
+
+Boëda, E., 1993. Le débitage discoïde et le débitage Levallois récurrent
+centripède. Bulletin de la Société Préhistorique Française 90, 392–404.
+<https://doi.org/10.3406/bspf.1993.9669>
+
+</div>
 
 <div id="ref-hovers_diversity_2006" class="csl-entry">
 
