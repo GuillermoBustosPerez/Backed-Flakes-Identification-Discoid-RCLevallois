@@ -450,7 +450,7 @@ C50_Mod <- train(frmla,
 
 ``` r
 # Data frame of models performance
-data.frame(
+knitr::kable(data.frame(
   Model = c("LDA", "KNN", "Log. Reg.", "SVML", "SVMP", "SVMR",
             "C5.0", "Rand. Forest", "Boost Tree", "Baïve Bayes",
             "ANN") %>% 
@@ -468,33 +468,22 @@ data.frame(
    round(confusionMatrix(Boost_Tree$pred$pred, Boost_Tree$pred$obs)[[4]][c(1,2,5,7,11)],2),
    round(confusionMatrix(NaiB_Model$pred$pred, NaiB_Model$pred$obs)[[4]][c(1,2,5,7,11)],2),
    round(confusionMatrix(mlp_Mod$pred$pred, mlp_Mod$pred$obs)[[4]][c(1,2,5,7,11)],2)))
-  )) 
+  )) )
 ```
 
-    ##         Model.. Model.Sensitivity Model.Specificity Model.Precision Model.F1
-    ## 1           LDA              0.68              0.77            0.75     0.71
-    ## 2           KNN              0.33              0.89            0.75     0.46
-    ## 3     Log. Reg.              0.70              0.73            0.73     0.71
-    ## 4          SVML              0.68              0.80            0.77     0.73
-    ## 5          SVMP              0.72              0.79            0.78     0.75
-    ## 6          SVMR              0.73              0.72            0.72     0.73
-    ## 7          C5.0              0.66              0.66            0.66     0.66
-    ## 8  Rand. Forest              0.71              0.74            0.74     0.72
-    ## 9    Boost Tree              0.73              0.74            0.74     0.73
-    ## 10  Baïve Bayes              0.67              0.72            0.71     0.69
-    ## 11          ANN              0.69              0.72            0.71     0.70
-    ##    Model.Balanced.Accuracy
-    ## 1                     0.72
-    ## 2                     0.61
-    ## 3                     0.72
-    ## 4                     0.74
-    ## 5                     0.76
-    ## 6                     0.72
-    ## 7                     0.66
-    ## 8                     0.72
-    ## 9                     0.73
-    ## 10                    0.70
-    ## 11                    0.71
+| Model..      | Model.Sensitivity | Model.Specificity | Model.Precision | Model.F1 | Model.Balanced.Accuracy |
+|:-------------|------------------:|------------------:|----------------:|---------:|------------------------:|
+| LDA          |              0.68 |              0.77 |            0.75 |     0.71 |                    0.72 |
+| KNN          |              0.33 |              0.89 |            0.75 |     0.46 |                    0.61 |
+| Log. Reg.    |              0.70 |              0.73 |            0.73 |     0.71 |                    0.72 |
+| SVML         |              0.68 |              0.80 |            0.77 |     0.73 |                    0.74 |
+| SVMP         |              0.72 |              0.79 |            0.78 |     0.75 |                    0.76 |
+| SVMR         |              0.73 |              0.72 |            0.72 |     0.73 |                    0.72 |
+| C5.0         |              0.66 |              0.66 |            0.66 |     0.66 |                    0.66 |
+| Rand. Forest |              0.71 |              0.74 |            0.74 |     0.72 |                    0.72 |
+| Boost Tree   |              0.73 |              0.74 |            0.74 |     0.73 |                    0.73 |
+| Baïve Bayes  |              0.67 |              0.72 |            0.71 |     0.69 |                    0.70 |
+| ANN          |              0.69 |              0.72 |            0.71 |     0.70 |                    0.71 |
 
 ## References
 
