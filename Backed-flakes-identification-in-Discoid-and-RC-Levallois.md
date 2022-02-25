@@ -618,6 +618,35 @@ Roc_Curve %>%
 
 ![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/Roc%20and%20AUC-1.png)
 
+``` r
+# Confusion matrix 
+SVM_Poly.Confx <- confusionMatrix(SVM_Poly)$table
+
+SVM_Poly.Confx <- reshape2::melt(SVM_Poly.Confx)
+
+SVM_Poly.Confx$Prediction <- factor(SVM_Poly.Confx$Prediction, 
+                                    levels = c(
+                                      "Discoid", "Levallois"))
+SVM_Poly.Confx$Reference <- factor(SVM_Poly.Confx$Reference, 
+                                   levels = c(
+                                     "Levallois", "Discoid"))
+
+SVM_Poly.Confx %>% 
+  ggplot(aes(Reference, Prediction, fill = value)) + 
+  geom_tile(alpha = 0.75) +
+  geom_text(aes(label = round(value, 2)), size = 3) +
+  scale_fill_gradient(low = "white", high = "blue")  +
+  scale_x_discrete(position = "top") +
+  theme_bw() +
+  coord_fixed() +
+  theme(legend.position = "none",
+        axis.title = element_text(size = 8, color = "black", face = "bold"),
+        axis.text = element_text(size = 7.5, color = "black"),
+        title = element_text(size = 8, color = "black", face = "bold"))
+```
+
+![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/Confusion%20matrix%20of%20SVMP-1.png)
+
 ## References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
