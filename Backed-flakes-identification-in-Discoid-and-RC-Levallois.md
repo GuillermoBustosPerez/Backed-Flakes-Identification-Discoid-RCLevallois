@@ -457,33 +457,33 @@ knitr::kable(data.frame(
     cbind(
   data.frame(
  rbind(
-   round(confusionMatrix(fit.LDA$pred$pred, fit.LDA$pred$obs)[[4]][c(1,2,5,7,11)],2),
-   round(confusionMatrix(KNN.model$pred$pred, KNN.model$pred$obs)[[4]][c(1,2,5,7,11)],2),
-   round(confusionMatrix(logmod$pred$pred, logmod$pred$obs)[[4]][c(1,2,5,7,11)],2),
-   round(confusionMatrix(SVM_Linear$pred$pred, SVM_Linear$pred$obs)[[4]][c(1,2,5,7,11)],2),
-   round(confusionMatrix(SVM_Poly$pred$pred, SVM_Poly$pred$obs)[[4]][c(1,2,5,7,11)],2),
-   round(confusionMatrix(SVM_Radial$pred$pred, SVM_Radial$pred$obs)[[4]][c(1,2,5,7,11)],2),
-   round(confusionMatrix(C50_Mod$pred$pred, C50_Mod$pred$obs)[[4]][c(1,2,5,7,11)],2),
-   round(confusionMatrix(RF_Model$pred$pred, RF_Model$pred$obs)[[4]][c(1,2,5,7,11)],2),
-   round(confusionMatrix(Boost_Tree$pred$pred, Boost_Tree$pred$obs)[[4]][c(1,2,5,7,11)],2),
-   round(confusionMatrix(NaiB_Model$pred$pred, NaiB_Model$pred$obs)[[4]][c(1,2,5,7,11)],2),
-   round(confusionMatrix(mlp_Mod$pred$pred, mlp_Mod$pred$obs)[[4]][c(1,2,5,7,11)],2)))
+   round(confusionMatrix(fit.LDA$pred$pred, fit.LDA$pred$obs)[[4]][c(1,2,5,7,11)],3),
+   round(confusionMatrix(KNN.model$pred$pred, KNN.model$pred$obs)[[4]][c(1,2,5,7,11)],3),
+   round(confusionMatrix(logmod$pred$pred, logmod$pred$obs)[[4]][c(1,2,5,7,11)],3),
+   round(confusionMatrix(SVM_Linear$pred$pred, SVM_Linear$pred$obs)[[4]][c(1,2,5,7,11)],3),
+   round(confusionMatrix(SVM_Poly$pred$pred, SVM_Poly$pred$obs)[[4]][c(1,2,5,7,11)],3),
+   round(confusionMatrix(SVM_Radial$pred$pred, SVM_Radial$pred$obs)[[4]][c(1,2,5,7,11)],3),
+   round(confusionMatrix(C50_Mod$pred$pred, C50_Mod$pred$obs)[[4]][c(1,2,5,7,11)],3),
+   round(confusionMatrix(RF_Model$pred$pred, RF_Model$pred$obs)[[4]][c(1,2,5,7,11)],3),
+   round(confusionMatrix(Boost_Tree$pred$pred, Boost_Tree$pred$obs)[[4]][c(1,2,5,7,11)],3),
+   round(confusionMatrix(NaiB_Model$pred$pred, NaiB_Model$pred$obs)[[4]][c(1,2,5,7,11)],3),
+   round(confusionMatrix(mlp_Mod$pred$pred, mlp_Mod$pred$obs)[[4]][c(1,2,5,7,11)],3)))
   )) )
 ```
 
 | Model..      | Model.Sensitivity | Model.Specificity | Model.Precision | Model.F1 | Model.Balanced.Accuracy |
 |:-------------|------------------:|------------------:|----------------:|---------:|------------------------:|
-| LDA          |              0.68 |              0.77 |            0.75 |     0.71 |                    0.72 |
-| KNN          |              0.33 |              0.89 |            0.75 |     0.46 |                    0.61 |
-| Log. Reg.    |              0.70 |              0.73 |            0.73 |     0.71 |                    0.72 |
-| SVML         |              0.68 |              0.80 |            0.77 |     0.73 |                    0.74 |
-| SVMP         |              0.72 |              0.79 |            0.78 |     0.75 |                    0.76 |
-| SVMR         |              0.73 |              0.72 |            0.72 |     0.73 |                    0.72 |
-| C5.0         |              0.66 |              0.66 |            0.66 |     0.66 |                    0.66 |
-| Rand. Forest |              0.71 |              0.74 |            0.74 |     0.72 |                    0.72 |
-| Boost Tree   |              0.73 |              0.74 |            0.74 |     0.73 |                    0.73 |
-| Baïve Bayes  |              0.67 |              0.72 |            0.71 |     0.69 |                    0.70 |
-| ANN          |              0.69 |              0.72 |            0.71 |     0.70 |                    0.71 |
+| LDA          |             0.682 |             0.767 |           0.748 |    0.713 |                   0.724 |
+| KNN          |             0.333 |             0.888 |           0.751 |    0.461 |                   0.610 |
+| Log. Reg.    |             0.699 |             0.734 |           0.727 |    0.713 |                   0.717 |
+| SVML         |             0.684 |             0.798 |           0.774 |    0.726 |                   0.741 |
+| SVMP         |             0.723 |             0.790 |           0.778 |    0.750 |                   0.757 |
+| SVMR         |             0.733 |             0.716 |           0.723 |    0.728 |                   0.724 |
+| C5.0         |             0.660 |             0.657 |           0.661 |    0.661 |                   0.659 |
+| Rand. Forest |             0.707 |             0.742 |           0.735 |    0.721 |                   0.724 |
+| Boost Tree   |             0.725 |             0.739 |           0.738 |    0.732 |                   0.732 |
+| Baïve Bayes  |             0.670 |             0.725 |           0.712 |    0.690 |                   0.697 |
+| ANN          |             0.695 |             0.718 |           0.714 |    0.704 |                   0.706 |
 
 ## References
 
