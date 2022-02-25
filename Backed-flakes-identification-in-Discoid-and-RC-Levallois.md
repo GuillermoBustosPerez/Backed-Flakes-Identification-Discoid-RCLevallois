@@ -718,7 +718,51 @@ legend = "bottom",
 align = "h")
 ```
 
-![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/PC%20biplots1-1.png)
+![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/First%20pairs%20of%20PC%20biplots-1.png)
+
+``` r
+ggpubr::ggarrange(
+(PCA_Coord %>% ggplot(aes(PC1, PC8, fill = Strategy)) +
+  geom_vline(xintercept = 0, alpha = 0.7, linetype = "dashed") +
+  geom_hline(yintercept = 0, alpha = 0.7, linetype = "dashed") +
+  stat_ellipse(geom = "polygon", alpha = 0.2, aes(fill = Strategy)) +
+  geom_point(aes(color = Strategy)) +
+  xlab(paste0("PC1 (", round((summary(pca)$importance[2,1])*100, 2), "%)")) +
+  ylab(paste0("PC8 (", round((summary(pca)$importance[2,8])*100, 2), "%)")) +
+  ggsci::scale_fill_aaas() +
+  ggsci::scale_color_aaas() +
+  theme_light() +
+  theme(
+    axis.text.y = element_text(color = "black", size = 7),
+    axis.text.x = element_text(color = "black", size = 7),
+    axis.title.x = element_text(color = "black", size = 9),
+    axis.title.y = element_text(color = "black", size = 9),
+    legend.position = "bottom")),
+
+
+(PCA_Coord %>% ggplot(aes(PC1, PC6, fill = Strategy)) +
+  geom_vline(xintercept = 0, alpha = 0.7, linetype = "dashed") +
+  geom_hline(yintercept = 0, alpha = 0.7, linetype = "dashed") +
+  stat_ellipse(geom = "polygon", alpha = 0.2, aes(fill = Strategy)) +
+  geom_point(aes(color = Strategy)) +
+  xlab(paste0("PC1 (", round((summary(pca)$importance[2,1])*100, 2), "%)")) +
+  ylab(paste0("PC6 (", round((summary(pca)$importance[2,6])*100, 2), "%)")) +
+  ggsci::scale_fill_aaas() +
+  ggsci::scale_color_aaas() +
+  theme_light() +
+  theme(
+    axis.text.y = element_text(color = "black", size = 7),
+    axis.text.x = element_text(color = "black", size = 7),
+    axis.title.x = element_text(color = "black", size = 9),
+    axis.title.y = element_text(color = "black", size = 9),
+    legend.position = "bottom")),
+ncol = 2,
+common.legend = TRUE,
+legend = "bottom",
+align = "h")
+```
+
+![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/Second%20pairs%20of%20PC%20biplots-1.png)
 
 ## References
 
