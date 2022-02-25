@@ -448,6 +448,18 @@ C50_Mod <- train(frmla,
                  importance = 'impurity')
 ```
 
+SVM with polynomial kernel is closely followed by SVM with linear kernel
+which presents the second highest value of accuracy (0.741), the fourth
+highest value of F1 (0.726) and the second highest value of precision
+(0.774). Outside SVM with different kernels, the Boosted trees also
+presents high values of accuracy (0.732), F1 (0.732) and precision
+(0.738). KNN presented the lowest values on the general performance
+metrics with an accuracy value of 0.61 and a very low F1 score (0.461).
+KNN does seem to present high values of precision (0.751) and the
+highest value of specificity (0.888) although these are clearly the
+result of a sensitivity (0.333) lower than the no-information ratio
+(0.504).
+
 ``` r
 # Data frame of models performance
 knitr::kable(data.frame(
@@ -468,7 +480,7 @@ knitr::kable(data.frame(
    round(confusionMatrix(Boost_Tree$pred$pred, Boost_Tree$pred$obs)[[4]][c(1,2,5,7,11)],3),
    round(confusionMatrix(NaiB_Model$pred$pred, NaiB_Model$pred$obs)[[4]][c(1,2,5,7,11)],3),
    round(confusionMatrix(mlp_Mod$pred$pred, mlp_Mod$pred$obs)[[4]][c(1,2,5,7,11)],3)))
-  )) )
+  )))
 ```
 
 | Model..      | Model.Sensitivity | Model.Specificity | Model.Precision | Model.F1 | Model.Balanced.Accuracy |
@@ -484,6 +496,239 @@ knitr::kable(data.frame(
 | Boost Tree   |             0.725 |             0.739 |           0.738 |    0.732 |                   0.732 |
 | Baïve Bayes  |             0.670 |             0.725 |           0.712 |    0.690 |                   0.697 |
 | ANN          |             0.695 |             0.718 |           0.714 |    0.704 |                   0.706 |
+
+Evaluation of models through ROC curve and AUC shows that most models
+present acceptable/fair (0.8 – 0.7) values. Again KNN presents the
+lowest AUC value (0.67) being a poor value. SVM with polynomial kernel
+presents the highest AUC (0.799) value being very close to be an
+excellent/good model (0.9 to 0.8). Optimal probability threshold values
+from the SVM with polynomial kernel are 0.501 for Discoid and 0.491 for
+Levallois. General performance metrics (F1 and accuracy) and AUC values
+indicate that SVM with polynomial kernel is the best model. Evaluation
+of SVM with polynomial kernel confusion matrix shows a very good
+distribution along the diagonal axis with the correct identification of
+Levallois products being slightly higher than the correct identification
+of Discoid products. Directionality of confusions shows that for the SVM
+with polynomial it is more common to confuse Discoid backed products as
+Levallois instead of confusing Levallois backed products as Discoid.
+
+``` r
+# LDA
+temp <- pROC::roc(fit.LDA$pred$obs, fit.LDA$pred$Levallois)
+```
+
+    ## Setting levels: control = Discoid, case = Levallois
+
+    ## Setting direction: controls < cases
+
+``` r
+Roc_Curve <- tibble(temp$specificities, temp$sensitivities)
+Roc_Curve$Model <- "LDA"
+
+# KNN
+temp <- pROC::roc(KNN.model$pred$obs, KNN.model$pred$Levallois)
+```
+
+    ## Setting levels: control = Discoid, case = Levallois
+    ## Setting direction: controls < cases
+
+``` r
+temp <- cbind(tibble(temp$specificities, temp$sensitivities),
+              Model = "KNN")
+Roc_Curve <- rbind(Roc_Curve, temp)
+
+# Log
+temp <- pROC::roc(logmod$pred$obs, logmod$pred$Levallois)
+```
+
+    ## Setting levels: control = Discoid, case = Levallois
+    ## Setting direction: controls < cases
+
+``` r
+temp <- cbind(tibble(temp$specificities, temp$sensitivities),
+              Model = "Log. Reg.")
+Roc_Curve <- rbind(Roc_Curve, temp)
+
+# SVML
+temp <- pROC::roc(SVM_Linear$pred$obs, SVM_Linear$pred$Levallois)
+```
+
+    ## Setting levels: control = Discoid, case = Levallois
+    ## Setting direction: controls < cases
+
+``` r
+temp <- cbind(tibble(temp$specificities, temp$sensitivities),
+              Model = "SVML")
+Roc_Curve <- rbind(Roc_Curve, temp)
+
+# SVMP
+temp <- pROC::roc(SVM_Poly$pred$obs, SVM_Poly$pred$Levallois)
+```
+
+    ## Setting levels: control = Discoid, case = Levallois
+    ## Setting direction: controls < cases
+
+``` r
+temp <- cbind(tibble(temp$specificities, temp$sensitivities),
+              Model = "SVMP")
+Roc_Curve <- rbind(Roc_Curve, temp)
+
+# SVMR
+temp <- pROC::roc(SVM_Radial$pred$obs, SVM_Radial$pred$Levallois)
+```
+
+    ## Setting levels: control = Discoid, case = Levallois
+    ## Setting direction: controls < cases
+
+``` r
+temp <- cbind(tibble(temp$specificities, temp$sensitivities),
+              Model = "SVMR")
+Roc_Curve <- rbind(Roc_Curve, temp)
+
+# C5.0
+temp <- pROC::roc(C50_Mod$pred$obs, C50_Mod$pred$Levallois)
+```
+
+    ## Setting levels: control = Discoid, case = Levallois
+    ## Setting direction: controls < cases
+
+``` r
+temp <- cbind(tibble(temp$specificities, temp$sensitivities),
+              Model = "C5.0")
+Roc_Curve <- rbind(Roc_Curve, temp)
+
+# rf
+temp <- pROC::roc(RF_Model$pred$obs, RF_Model$pred$Levallois)
+```
+
+    ## Setting levels: control = Discoid, case = Levallois
+    ## Setting direction: controls < cases
+
+``` r
+temp <- cbind(tibble(temp$specificities, temp$sensitivities),
+              Model = "Rand. Forest")
+Roc_Curve <- rbind(Roc_Curve, temp)
+
+# Boosted tree
+temp <- pROC::roc(Boost_Tree$pred$obs, Boost_Tree$pred$Levallois)
+```
+
+    ## Setting levels: control = Discoid, case = Levallois
+    ## Setting direction: controls < cases
+
+``` r
+temp <- cbind(tibble(temp$specificities, temp$sensitivities),
+              Model = "Boost Tree")
+Roc_Curve <- rbind(Roc_Curve, temp)
+
+# Boosted tree
+temp <- pROC::roc(NaiB_Model$pred$obs, NaiB_Model$pred$Levallois)
+```
+
+    ## Setting levels: control = Discoid, case = Levallois
+    ## Setting direction: controls < cases
+
+``` r
+temp <- cbind(tibble(temp$specificities, temp$sensitivities),
+              Model = "Naïve Bayes")
+Roc_Curve <- rbind(Roc_Curve, temp)
+
+# Boosted tree
+temp <- pROC::roc(mlp_Mod$pred$obs, mlp_Mod$pred$Levallois)
+```
+
+    ## Setting levels: control = Discoid, case = Levallois
+    ## Setting direction: controls < cases
+
+``` r
+temp <- cbind(tibble(temp$specificities, temp$sensitivities),
+              Model = "ANN")
+Roc_Curve <- rbind(Roc_Curve, temp)
+rm(temp)
+
+
+aucs <- c(
+  paste0("LDA (", round(pROC::auc(fit.LDA$pred$obs, fit.LDA$pred$Levallois),2) ,")"),
+  paste0("KNN (", round(pROC::auc(KNN.model$pred$obs, KNN.model$pred$Levallois),2) ,")"),
+  paste0("Logistic (", round(pROC::auc(logmod$pred$obs, logmod$pred$Levallois),2) ,")"),
+  paste0("SVM Linear (", round(pROC::auc(SVM_Linear$pred$obs, SVM_Linear$pred$Levallois),2) ,")"),
+  paste0("SVM Poly (", round(pROC::auc(SVM_Poly$pred$obs, SVM_Poly$pred$Levallois),2) ,")"),
+  paste0("SVM Radial (", round(pROC::auc(SVM_Radial$pred$obs, SVM_Radial$pred$Levallois),2) ,")"),
+  paste0("C5.0 (", round(pROC::auc(C50_Mod$pred$obs, C50_Mod$pred$Levallois),2) ,")"),
+  paste0("Rand. Forest (", round(pROC::auc(RF_Model$pred$obs, RF_Model$pred$Levallois),2) ,")"),
+  paste0("Boosted. Tree (", round(pROC::auc(Boost_Tree$pred$obs, Boost_Tree$pred$Levallois),2) ,")"),
+  paste0("Naïve Bayes (", round(pROC::auc(NaiB_Model$pred$obs, NaiB_Model$pred$Levallois),2) ,")"),
+  paste0("ANN (", round(pROC::auc(mlp_Mod$pred$obs, mlp_Mod$pred$Levallois),2) ,")"))
+```
+
+    ## Setting levels: control = Discoid, case = Levallois
+    ## Setting direction: controls < cases
+
+    ## Setting levels: control = Discoid, case = Levallois
+
+    ## Setting direction: controls < cases
+
+    ## Setting levels: control = Discoid, case = Levallois
+
+    ## Setting direction: controls < cases
+
+    ## Setting levels: control = Discoid, case = Levallois
+
+    ## Setting direction: controls < cases
+
+    ## Setting levels: control = Discoid, case = Levallois
+
+    ## Setting direction: controls < cases
+
+    ## Setting levels: control = Discoid, case = Levallois
+
+    ## Setting direction: controls < cases
+
+    ## Setting levels: control = Discoid, case = Levallois
+
+    ## Setting direction: controls < cases
+
+    ## Setting levels: control = Discoid, case = Levallois
+
+    ## Setting direction: controls < cases
+
+    ## Setting levels: control = Discoid, case = Levallois
+
+    ## Setting direction: controls < cases
+
+    ## Setting levels: control = Discoid, case = Levallois
+
+    ## Setting direction: controls < cases
+
+    ## Setting levels: control = Discoid, case = Levallois
+
+    ## Setting direction: controls < cases
+
+``` r
+Roc_Curve %>% 
+  ggplot(aes(`temp$specificities`, `temp$sensitivities`,
+             color = Model), alpha = 0.7) +
+  geom_line(size = 1.01) +
+  scale_x_continuous(trans = "reverse") +
+  coord_fixed() +
+  theme_light() +
+  xlab("Specificities") +
+  ylab("Sensitivities") +
+  geom_abline(intercept = 1, slope = 1)  +
+  scale_color_brewer(palette = "Paired",
+                     breaks = c("LDA", "KNN", "Log. Reg.",
+                                "SVML", "SVMP", "SVMR", "C5.0",
+                                "Rand. Forest", "Boost Tree",
+                                "Naïve Bayes", "ANN"),
+                     labels = aucs) +
+  labs(colour = "Model (AUC)") +
+  theme(
+    axis.title = element_text(size = 11, color = "black", face = "bold"),
+    axis.text = element_text(size = 10, color = "black"),
+    legend.title = element_text(face = "bold"))
+```
+
+![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/unnamed-chunk-3-1.png)
 
 ## References
 
