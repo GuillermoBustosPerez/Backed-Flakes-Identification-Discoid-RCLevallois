@@ -647,6 +647,34 @@ SVM_Poly.Confx %>%
 
 ![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/Confusion%20matrix%20of%20SVMP-1.png)
 
+### 3.2 PC Importance
+
+``` r
+# Data frame of PC importance
+tibble(
+  PC = rownames(varImp(SVM_Poly, sale = TRUE)$importance),
+  Importance = varImp(SVM_Poly, sale = TRUE)$importance[, 1]) %>% 
+  
+  top_n(15, Importance) %>% 
+# and plot  
+  ggplot(aes(Importance, reorder(PC, Importance), fill = Importance)) +
+  geom_bar(stat= "identity", position = "dodge") +
+  geom_text(aes(label = round(Importance, 2)), 
+            position = position_stack(vjust = 0.5), size = 2) +
+  scale_fill_gradient(low = "red", high = "blue") +
+  guides(fill = "none") +
+  coord_flip() +
+  ylab(NULL) +
+  theme_light() +
+  theme(
+    axis.text.y = element_text(color = "black", size = 7),
+    axis.text.x = element_text(color = "black", size = 7),
+    axis.title.x = element_text(color = "black", size = 9),
+    axis.title.y = element_text(color = "black", size = 9))
+```
+
+![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/PC%20Importance-1.png)
+
 ## References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
