@@ -515,132 +515,65 @@ Levallois instead of confusing Levallois backed products as Discoid.
 ``` r
 # LDA
 temp <- pROC::roc(fit.LDA$pred$obs, fit.LDA$pred$Levallois)
-```
-
-    ## Setting levels: control = Discoid, case = Levallois
-
-    ## Setting direction: controls < cases
-
-``` r
 Roc_Curve <- tibble(temp$specificities, temp$sensitivities)
 Roc_Curve$Model <- "LDA"
 
 # KNN
 temp <- pROC::roc(KNN.model$pred$obs, KNN.model$pred$Levallois)
-```
-
-    ## Setting levels: control = Discoid, case = Levallois
-    ## Setting direction: controls < cases
-
-``` r
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "KNN")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # Log
 temp <- pROC::roc(logmod$pred$obs, logmod$pred$Levallois)
-```
-
-    ## Setting levels: control = Discoid, case = Levallois
-    ## Setting direction: controls < cases
-
-``` r
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "Log. Reg.")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # SVML
 temp <- pROC::roc(SVM_Linear$pred$obs, SVM_Linear$pred$Levallois)
-```
-
-    ## Setting levels: control = Discoid, case = Levallois
-    ## Setting direction: controls < cases
-
-``` r
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "SVML")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # SVMP
 temp <- pROC::roc(SVM_Poly$pred$obs, SVM_Poly$pred$Levallois)
-```
-
-    ## Setting levels: control = Discoid, case = Levallois
-    ## Setting direction: controls < cases
-
-``` r
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "SVMP")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # SVMR
 temp <- pROC::roc(SVM_Radial$pred$obs, SVM_Radial$pred$Levallois)
-```
-
-    ## Setting levels: control = Discoid, case = Levallois
-    ## Setting direction: controls < cases
-
-``` r
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "SVMR")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # C5.0
 temp <- pROC::roc(C50_Mod$pred$obs, C50_Mod$pred$Levallois)
-```
-
-    ## Setting levels: control = Discoid, case = Levallois
-    ## Setting direction: controls < cases
-
-``` r
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "C5.0")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # rf
 temp <- pROC::roc(RF_Model$pred$obs, RF_Model$pred$Levallois)
-```
-
-    ## Setting levels: control = Discoid, case = Levallois
-    ## Setting direction: controls < cases
-
-``` r
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "Rand. Forest")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # Boosted tree
 temp <- pROC::roc(Boost_Tree$pred$obs, Boost_Tree$pred$Levallois)
-```
-
-    ## Setting levels: control = Discoid, case = Levallois
-    ## Setting direction: controls < cases
-
-``` r
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "Boost Tree")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # Boosted tree
 temp <- pROC::roc(NaiB_Model$pred$obs, NaiB_Model$pred$Levallois)
-```
-
-    ## Setting levels: control = Discoid, case = Levallois
-    ## Setting direction: controls < cases
-
-``` r
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "Naïve Bayes")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # Boosted tree
 temp <- pROC::roc(mlp_Mod$pred$obs, mlp_Mod$pred$Levallois)
-```
-
-    ## Setting levels: control = Discoid, case = Levallois
-    ## Setting direction: controls < cases
-
-``` r
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "ANN")
 Roc_Curve <- rbind(Roc_Curve, temp)
@@ -659,52 +592,7 @@ aucs <- c(
   paste0("Boosted. Tree (", round(pROC::auc(Boost_Tree$pred$obs, Boost_Tree$pred$Levallois),2) ,")"),
   paste0("Naïve Bayes (", round(pROC::auc(NaiB_Model$pred$obs, NaiB_Model$pred$Levallois),2) ,")"),
   paste0("ANN (", round(pROC::auc(mlp_Mod$pred$obs, mlp_Mod$pred$Levallois),2) ,")"))
-```
-
-    ## Setting levels: control = Discoid, case = Levallois
-    ## Setting direction: controls < cases
-
-    ## Setting levels: control = Discoid, case = Levallois
-
-    ## Setting direction: controls < cases
-
-    ## Setting levels: control = Discoid, case = Levallois
-
-    ## Setting direction: controls < cases
-
-    ## Setting levels: control = Discoid, case = Levallois
-
-    ## Setting direction: controls < cases
-
-    ## Setting levels: control = Discoid, case = Levallois
-
-    ## Setting direction: controls < cases
-
-    ## Setting levels: control = Discoid, case = Levallois
-
-    ## Setting direction: controls < cases
-
-    ## Setting levels: control = Discoid, case = Levallois
-
-    ## Setting direction: controls < cases
-
-    ## Setting levels: control = Discoid, case = Levallois
-
-    ## Setting direction: controls < cases
-
-    ## Setting levels: control = Discoid, case = Levallois
-
-    ## Setting direction: controls < cases
-
-    ## Setting levels: control = Discoid, case = Levallois
-
-    ## Setting direction: controls < cases
-
-    ## Setting levels: control = Discoid, case = Levallois
-
-    ## Setting direction: controls < cases
-
-``` r
+  
 Roc_Curve %>% 
   ggplot(aes(`temp$specificities`, `temp$sensitivities`,
              color = Model), alpha = 0.7) +
@@ -728,7 +616,7 @@ Roc_Curve %>%
     legend.title = element_text(face = "bold"))
 ```
 
-![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/Roc%20and%20AUC-1.png)
 
 ## References
 
