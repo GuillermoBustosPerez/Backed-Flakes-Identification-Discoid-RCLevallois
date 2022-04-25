@@ -1,10 +1,18 @@
 # The identification of core edge flakes and pseudo-Levallois points in Levallois and Discoid knapping strategies
 
 Guillermo Bustos-Pérez<sup>1</sup>  
+Brad Gravina<sup>2, 3</sup>  
+Michel Brenet<sup>3, 4</sup>  
 Francesca Romagnoli<sup>1</sup>
 
 <sup>1</sup>Universidad Autónoma de Madrid. Departamento de Prehistoria
-y Arqueología, Campus de Cantoblanco, 28049 Madrid, Spain
+y Arqueología, Campus de Cantoblanco, 28049 Madrid, Spain  
+<sup>2</sup>Musée national de Préhistoire, MCC, 1 rue du Musée, 24260
+Les Eyzies de Tayac, France  
+<sup>3</sup>UMR-5199 PACEA, Université de Bordeaux, Bâtiment B8, Allée
+Geoffroy Saint Hilaire, CS 50023, 33615 PESSAC CEDEX, France  
+<sup>4</sup>INRAP Grand Sud-Ouest, Centre mixte de recherches
+archéologiques, Domaine de Campagne, 242460 Campagne, France
 
 ## Abstract
 
@@ -739,7 +747,6 @@ ggpubr::ggarrange(
     axis.title.y = element_text(color = "black", size = 9),
     legend.position = "bottom")),
 
-
 (PCA_Coord %>% ggplot(aes(PC1, PC6, fill = Strategy)) +
   geom_vline(xintercept = 0, alpha = 0.7, linetype = "dashed") +
   geom_hline(yintercept = 0, alpha = 0.7, linetype = "dashed") +
@@ -771,7 +778,7 @@ align = "h")
 <div id="ref-beyries_etude_1983" class="csl-entry">
 
 Beyries, S., Boëda, E., 1983. Étude technoloogique et traces
-d’utilisation des éclats débordants de Corbehem (Pas-de-Calais).
+d’utilisation des éclats débordants de corbehem (pas-de-calais).
 Bulletin de la Société préhistorique française 80, 275–279.
 https://doi.org/<https://doi.org/10.3406/bspf.1983.5455>
 
@@ -779,8 +786,8 @@ https://doi.org/<https://doi.org/10.3406/bspf.1983.5455>
 
 <div id="ref-dibble_levallois:_1995" class="csl-entry">
 
-Boëda, E., 1995. Levallois: A Volumetric Construction, Methods, A
-Technique, in: Dibble, H.L., Bar-Yosef, O. (Eds.), The Definition and
+Boëda, E., 1995. Levallois: A volumetric construction, methods, a
+technique, in: Dibble, H.L., Bar-Yosef, O. (Eds.), The Definition and
 Interpretation of Levallois Technology, Monographs in World Archaeology.
 Prehistory Press, Madison, Wisconsin, pp. 41–68.
 
@@ -788,14 +795,14 @@ Prehistory Press, Madison, Wisconsin, pp. 41–68.
 
 <div id="ref-boeda_concept_1994" class="csl-entry">
 
-Boëda, E., 1994. Le concept Levallois: Variabilité des méthodes, CNRS
+Boëda, E., 1994. Le concept levallois: Variabilité des méthodes, CNRS
 éditions. CNRS.
 
 </div>
 
 <div id="ref-boeda_debitage_1993" class="csl-entry">
 
-Boëda, E., 1993. Le débitage discoïde et le débitage Levallois récurrent
+Boëda, E., 1993. Le débitage discoïde et le débitage levallois récurrent
 centripède. Bulletin de la Société Préhistorique Française 90, 392–404.
 <https://doi.org/10.3406/bspf.1993.9669>
 
@@ -804,7 +811,7 @@ centripède. Bulletin de la Société Préhistorique Française 90, 392–404.
 <div id="ref-boeda_identification_1990" class="csl-entry">
 
 Boëda, E., Geneste, J.-M., Meignen, L., 1990. Identification de chaînes
-opératoires lithiques du Paléolithique ancien et moyen. Paléo 2, 43–80.
+opératoires lithiques du paléolithique ancien et moyen. Paléo 2, 43–80.
 
 </div>
 
@@ -812,7 +819,7 @@ opératoires lithiques du Paléolithique ancien et moyen. Paléo 2, 43–80.
 
 Bustillo, M.A., Pérez-Jiménez, J.L., 2005. Características diferenciales
 y génesis de los niveles silíceos explotados en el yacimiento
-arqueológico de Casa Montero (Vicálvaro, Madrid). Geogaceta 38, 243–246.
+arqueológico de casa montero (vicálvaro, madrid). Geogaceta 38, 243–246.
 
 </div>
 
@@ -820,15 +827,15 @@ arqueológico de Casa Montero (Vicálvaro, Madrid). Geogaceta 38, 243–246.
 
 Bustillo, M.Á., Pérez-Jiménez, J.L., Bustillo, M., 2012. Caracterización
 geoquímica de rocas sedimentarias formadas por silicificación como
-fuentes de suministro de utensilios líticos (Mioceno, cuenca de Madrid).
+fuentes de suministro de utensilios líticos (mioceno, cuenca de madrid).
 Revista Mexicana de Ciencias Geológicas 29, 233–247.
 
 </div>
 
 <div id="ref-dibble_variability_1995" class="csl-entry">
 
-Delagnes, A., 1995. Variability within Uniformity: Three Levels of
-Variability within the Levallois System, in: Dibble, H.L., Bar-Yosef, O.
+Delagnes, A., 1995. Variability within uniformity: Three levels of
+variability within the levallois system, in: Dibble, H.L., Bar-Yosef, O.
 (Eds.), The Definition and Interpretation of Levallois Technology,
 Monographs in World Archaeology. Prehistory Press, Madison, Wisconsin,
 pp. 201–211.
@@ -837,33 +844,33 @@ pp. 201–211.
 
 <div id="ref-hovers_diversity_2006" class="csl-entry">
 
-Delagnes, A., Meignen, L., 2006. Diversity of Lithic Production Systems
-During the Middle Paleolithic in France. Are There Any Chronological
-Trends?, in: Hovers, E., Kuhn, S.L., Jochim, M. (Eds.), Transitions
-Before the Transition Evolution and Stability in the Middle Paleolithic
-and Middle Stone Age. Springer, pp. 85–107.
+Delagnes, A., Meignen, L., 2006. Diversity of lithic production systems
+during the middle paleolithic in france. Are there any chronological
+trends?, in: Hovers, E., Kuhn, S.L. (Eds.), Transitions Before the
+Transition Evolution and Stability in the Middle Paleolithic and Middle
+Stone Age. Springer, pp. 85–107.
 
 </div>
 
 <div id="ref-fernandes_silex_2012" class="csl-entry">
 
 Fernandes, P., Morala, A., Schmidt, P., Séronie-Vivien, M.-R., Turq, A.,
-2012. Le silex du Bergeracois: État de la question. Quaternaire
+2012. Le silex du bergeracois: État de la question. Quaternaire
 Continental d’Aquitaine, excursion AFEQ, ASF 2012 2012, 22–33.
 
 </div>
 
 <div id="ref-kuhn_roots_2013" class="csl-entry">
 
-Kuhn, S.L., 2013. Roots of the Middle Paleolithic in Eurasia. Current
+Kuhn, S.L., 2013. Roots of the middle paleolithic in eurasia. Current
 Anthropology 54, S255–S268. <https://doi.org/10.1086/673529>
 
 </div>
 
 <div id="ref-dibble_recurrent_1995" class="csl-entry">
 
-Lenoir, M., Turq, A., 1995. Recurrent Centripetal Debitage (Levallois
-and Discoidal): Continuity or Discontinuity?, in: Dibble, H.L.,
+Lenoir, M., Turq, A., 1995. Recurrent centripetal debitage (levallois
+and discoidal): Continuity or discontinuity?, in: Dibble, H.L.,
 Bar-Yosef, O. (Eds.), The Definition and Interpretation of Levallois
 Technology, Monographs in World Archaeology. Prehistory Press, Madison,
 Wisconsin, pp. 249–256.
