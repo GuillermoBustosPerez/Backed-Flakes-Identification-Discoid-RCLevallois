@@ -224,6 +224,13 @@ accuracy and variable importance.
 
 ### 2.1 Experimental assemblage
 
+The analyzed experimental assemblage derives from the replication of
+nine discrete knapping sequences. Seven cores were knapped in Bergerac
+chert ([Fernandes et al., 2012](#ref-fernandes_silex_2012)), and two
+cores were knapped in Miocene chert from South of Madrid ([Bustillo et
+al., 2012](#ref-bustillo_caracterizacion_2012); [Bustillo and
+Pérez-Jiménez, 2005](#ref-bustillo_caracteristicas_2005)).
+
 ### 2.3 Loading the data and packages
 
 ``` r
