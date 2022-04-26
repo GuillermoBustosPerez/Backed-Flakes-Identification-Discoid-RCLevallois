@@ -160,9 +160,71 @@ debitage, [Locht](#ref-peresani_industrie_2003)
 production of both products at the site of Beauvais. This indicates that
 at Beauvais, core edge flakes and pseudo-Levallois points were the main
 predetermining/predetermined products ([Locht,
-2003](#ref-peresani_industrie_2003))
+2003](#ref-peresani_industrie_2003)).  
+An additional added value of core edge flakes and pseudo-Levallois
+points is their frequent transport by Paleolithic groups. [Turq et
+al.](#ref-turq_fragmented_2013) ([2013](#ref-turq_fragmented_2013))
+described the widespread import and export of lithic artifacts during
+the Middle Paleolithic. Examples of the transport of pseudo-Levallois
+points from discoidal production sequences can be observed at
+Combemenue, La Mouline, Les Fieux ([Brenet,
+2013](#ref-brenet_variabilite_2013), [2012](#ref-brenet_silex_2012);
+[Brenet and Cretin, 2008](#ref-brenet_gisement_2008); [Folgado and
+Brenet, 2010](#ref-folgado_economie_2010); [Turq et al.,
+2013](#ref-turq_fragmented_2013)), and the open-air site of Bout des
+Vergnes ([Courbin et al., 2020](#ref-courbin_spatial_2020)), while the
+transport of core edge flakes (into and out of the site) is also clearly
+observed at la Grotte Vaufrey ([Geneste, 1988](#ref-rigaud_les_1988))
+and at Site N of Maastricht-Belvédère ([Roebroeks et al.,
+1992](#ref-roebroeks_veil_1992)). Transported backed pieces have also
+been clearly identified at Abric Romaní in Spain within both Levallois
+and discoidal production methods ([Martín-Viveros et al.,
+2020](#ref-martin-viveros_use-wear_2020); [Romagnoli et al.,
+2016](#ref-romagnoli_testing_2016)).
 
-### 1.1 Loading the data and packages
+![Backed products from the experimental sample: core edge flakes (1–2)
+and pseudo-Levallois points (3–4) from the Discoid knapping method. Core
+edge flakes (5–6) and pseudo-Levallois points (7–8) from the Levallois
+recurrent centripetal method.](Article%20Figures/01%20Materials.png)
+
+A problem exists in the attribution of backed pieces to either discoidal
+or recurrent centripetal Levallois reduction.
+[Mourre](#ref-peresani_discoiou_2003)
+([2003](#ref-peresani_discoiou_2003)) indicates that a key aspect for
+the identification of Levallois core edge flakes is the direction of the
+debitage axis, which is parallel to the intersection plane of the two
+core surfaces while the fracture plane is secant.
+[Slimak](#ref-slimak_variabilite_1998)
+([1998](#ref-slimak_variabilite_1998)) indicates that core edge flakes
+from the discoidal method might have fracture planes parallel to the
+intersection between the debitage and striking surfaces although not as
+parallel as in Levallois debitage. [Delpiano et
+al.](#ref-delpiano_techno-functional_2021)
+([2021](#ref-delpiano_techno-functional_2021)) indicate that Levallois
+artifacts tend to be more elongated with thinner and sub-parallel edges,
+whereas discoidal backed products show higher variation in the minimum
+and maximum thickness of the back.  
+This raises the question as to the extent to which Discoid and Levallois
+recurrent centripetal core edge flakes and pseudo-Levallois points can
+be differentiated based on their morphological features. This issue is
+relevant in lithic studies because it affects the technological analysis
+of a stone tool assemblage and the evolutionary interpretation of
+knapping concepts over time. In this paper, we address this issue
+through experimental archaeology and a multi-level statistical approach.
+We reproduced classic bifacial discoidal and recurrent centripetal
+Levallois reduction sequences to obtain a collection of backed products.
+3D scanning of lithic artifacts and geometric morphometrics was employed
+to quantify the morphological variability of the experimental sample and
+the cores were refit. On the set of coordinates, dimensionality
+reduction through principal component analysis (PCA) was carried out,
+and 11 machine learning models were tested to obtain classification
+accuracy and variable importance.
+
+## 2 Methods
+
+### 2.1 Experimental assemblage
+
+### 2.3 Loading the data and packages
 
 ``` r
 list.of.packages <- c("tidyverse", "caret",  "ranger")
@@ -885,6 +947,39 @@ Levalloisiennes et pointes pseudo-levalloisiennes. bspf 50, 311–313.
 
 </div>
 
+<div id="ref-brenet_variabilite_2013" class="csl-entry">
+
+Brenet, M., 2013. Variabilité et signification des productions lithiques
+au paléolithique moyen ancien. L’exemple de trois gisements de plein-air
+du bergeracois (dordogne, france), BAR international series.
+Archaeopress, Oxford.
+
+</div>
+
+<div id="ref-brenet_silex_2012" class="csl-entry">
+
+Brenet, M., 2012. Silex et roches métamorphiques au paléolithique moyen
+récent: Combemenue (corrèze) et chemin d’herbe (lot-et-garonne), in:
+Marchand, G., Querré, G. (Eds.), Roches Et Sociétés de La Préhistoire
+Entre Massifs Cristallins Et Bassins Sédimentaires : Le Nord-Ouest de La
+France Dans Son Contexte Européen. Presses universitaires de Rennes, pp.
+379–393.
+
+</div>
+
+<div id="ref-brenet_gisement_2008" class="csl-entry">
+
+Brenet, M., Cretin, C., 2008. Le gisement paléolithique moyen et
+supérieur de combemenue (brignac-la-plaine, corrèze). Du microvestige au
+territoire, réflections sur les perspectives d’une approche
+multiscalaire, in: Aubry, T., Almeida, F., Araújo, A.C., Tiffagom, M.
+(Eds.), Proceedings of the XV World Congress UISPP (Lisbon, 4-9
+September 2006). Space and Time: Which Diachronies, Which Synchronies,
+Which Scales? / Typology Vs Technology, Sessions C64 and C65, BAR
+International Series. Archaeopress, Oxford, pp. 35–44.
+
+</div>
+
 <div id="ref-bustillo_caracteristicas_2005" class="csl-entry">
 
 Bustillo, M.A., Pérez-Jiménez, J.L., 2005. Características diferenciales
@@ -899,6 +994,16 @@ Bustillo, M.Á., Pérez-Jiménez, J.L., Bustillo, M., 2012. Caracterización
 geoquímica de rocas sedimentarias formadas por silicificación como
 fuentes de suministro de utensilios líticos (mioceno, cuenca de madrid).
 Revista Mexicana de Ciencias Geológicas 29, 233–247.
+
+</div>
+
+<div id="ref-courbin_spatial_2020" class="csl-entry">
+
+Courbin, P., Brenet, M., Michel, A., Gravina, B., 2020. Spatial analysis
+of the late middle palaeolithic open-air site of bout-des-vergnes
+(bergerac, dordogne) based on lithic technology and refitting. Journal
+of Archaeological Science: Reports 32, 102373.
+https://doi.org/<https://doi.org/10.1016/j.jasrep.2020.102373>
 
 </div>
 
@@ -919,6 +1024,15 @@ during the middle paleolithic in france. Are there any chronological
 trends?, in: Hovers, E., Kuhn, S.L. (Eds.), Transitions Before the
 Transition Evolution and Stability in the Middle Paleolithic and Middle
 Stone Age. Springer, pp. 85–107.
+
+</div>
+
+<div id="ref-delpiano_techno-functional_2021" class="csl-entry">
+
+Delpiano, D., Gennai, J., Peresani, M., 2021. Techno-functional
+implication on the production of discoid and levallois backed
+implements. Lithic Technology 46, 171–191.
+<https://doi.org/10.1080/01977261.2021.1886487>
 
 </div>
 
@@ -943,6 +1057,28 @@ Préhistorique Française 103, 241–262.
 Fernandes, P., Morala, A., Schmidt, P., Séronie-Vivien, M.-R., Turq, A.,
 2012. Le silex du bergeracois: État de la question. Quaternaire
 Continental d’Aquitaine, excursion AFEQ, ASF 2012 2012, 22–33.
+
+</div>
+
+<div id="ref-folgado_economie_2010" class="csl-entry">
+
+Folgado, M., Brenet, M., 2010. Economie de débitage et organisation de
+l’espace technique sur le site du paléolithique moyen de plein-air de la
+mouline (dordogne, france), in: Conard, N., Delagnes, A. (Eds.),
+Settlement Dynamics of the Middle Paleolithic and Middle Stone Age.
+Kerns Verlag - (Tübingen Publications in Prehistory), Tübingen, pp.
+427–454.
+
+</div>
+
+<div id="ref-rigaud_les_1988" class="csl-entry">
+
+Geneste, J.-M., 1988. Les industries de la grotte vaufrey: Technologie
+du debitage, economie et circulation de la matiere premiere lithique,
+in: Rigaud, J.-P. (Ed.), La Grotte Vaufrey à Cenac Et Saint-Julien
+(Dordogne) : Paléoenvironnements, Chronologie Et Activités Humaines,
+Mémoires de La Société Préhistorique Française (Revue). Société
+préhistorique française, Paris, pp. 441–517.
 
 </div>
 
@@ -972,6 +1108,17 @@ International Series. Archaeopress, Oxford, pp. 193–209.
 
 </div>
 
+<div id="ref-martin-viveros_use-wear_2020" class="csl-entry">
+
+Martín-Viveros, J.I., Ollé, A., Chacón, M.G., Romagnoli, F., Gómez de
+Soler, B., Vaquero, M., Saladié, P., Vallverdú, J., Carbonell, E., 2020.
+Use-wear analysis of a specific mobile toolkit from the middle
+paleolithic site of abric romaní (barcelona, spain): A case study from
+level m. Archaeol Anthropol Sci 12, 16.
+<https://doi.org/10.1007/s12520-019-00951-z>
+
+</div>
+
 <div id="ref-meignen_persistance_1996" class="csl-entry">
 
 Meignen, L., 1996. Persistance des traditions techniques dans l’abri des
@@ -988,11 +1135,41 @@ CNRS Ed., Paris, pp. 238–328.
 
 </div>
 
+<div id="ref-peresani_discoiou_2003" class="csl-entry">
+
+Mourre, V., 2003. Discoïde ou pas discoïde? Réflexions sur la pertinence
+des critères techniques définissant le débitage discoïde, in: Peresani,
+M. (Ed.), Discoid Lithic Technology. Advances and Implications, BAR
+International Series. Archaeopress, Oxford, pp. 1–17.
+
+</div>
+
 <div id="ref-pasty_etude_2004" class="csl-entry">
 
 Pasty, J.-F., Liegard, S., Alix, P., 2004. Étude de l’industrie lithique
 du site paléolithique moyen des Fendeux (Coulanges, Allier). bspf 101,
 5–25. <https://doi.org/10.3406/bspf.2004.12945>
+
+</div>
+
+<div id="ref-roebroeks_veil_1992" class="csl-entry">
+
+Roebroeks, W., Loecker, D.D., Hennekens, P., Leperen, M.V., 1992. "A
+veil of stones”: On the interpretation of an early middle palaeolithic
+low density scatter at maastricht-belvédère (the netherlands). Analecta
+Praehistorica Leidensia 25 The end of our third decade: Papers written
+on the occasion of the 30th anniversary of the Institutte of prehistory,
+volume I 25, 1–16.
+
+</div>
+
+<div id="ref-romagnoli_testing_2016" class="csl-entry">
+
+Romagnoli, F., Bargalló, A., Chacón, M.G., Gómez de Soler, B., Vaquero,
+M., 2016. Testing a hypothesis about the importance of the quality of
+raw material on technological changes at abric romaní (capellades,
+spain): Some considerations using a high-resolution techno-economic
+perspective. JLS 3, 635–659. <https://doi.org/10.2218/jls.v3i2.1443>
 
 </div>
 
@@ -1002,6 +1179,25 @@ Slimak, L., 2003. Les debitages discoïdes mousteriens: Evaluation d’un
 concept technologique, in: Peresani, M. (Ed.), Discoid Lithic
 Technology. Advances and Implications, BAR International Series.
 Archaeopress, Oxford, pp. 33–65.
+
+</div>
+
+<div id="ref-slimak_variabilite_1998" class="csl-entry">
+
+Slimak, L., 1998. La variabilité des débitages discoïdes au
+paléolithique moyen: Diversité des méthodes et unité d’un concept.
+L’exemple des gisements de la baume néron (soyons, ardèche) et du champ
+grand (saint-maurice-sur-loire, loire). Préhistoire anthropologie
+méditerranéennes 7, 75–88.
+
+</div>
+
+<div id="ref-turq_fragmented_2013" class="csl-entry">
+
+Turq, A., Roebroeks, W., Bourguignon, L., Faivre, G.-P., 2013. The
+fragmented character of middle palaeolithic stone tool technology.
+Journal of Human Evolution 65, 641–655.
+<https://doi.org/10.1016/j.jhevol.2013.07.014>
 
 </div>
 
