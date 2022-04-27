@@ -516,6 +516,9 @@ LM.DF <- data.frame(matrix(Proc.Rot, nrow = length(filenames), byrow = TRUE))
 
 The following line of code performs Principal Components Analysis (PCA)
 on the set of aligned coordinates stored in the LM.DF data frame.
+Summary provides proportion and cumulative proportion of variance
+explained by the 25 first principal components which add up to 95% of
+variance.
 
 ``` r
 # PCA on coordinates
@@ -544,52 +547,11 @@ summary(pca)$importance[1:3, 1:25]
     ## Proportion of Variance 0.003550
     ## Cumulative Proportion  0.951660
 
-## 3 Results
-
-### 3.1 PCA and model performance
-
-PCA results show that the 25 first principal components account for 95%
-of the variance of the dataset with PC1 accounting for 21.39% of
-variance and PC25 accounting for 0.36% of variance. This is an important
-reduction from the original number of variables (1524) and substantially
-lower than the sample (139).  
-The protocol for the digitalization of landmarks on flakes was based on
-previous studies ([Archer et al., 2021](#ref-archer_quantifying_2021),
-[2018](#ref-archer_geometric_2018)). This included the positioning of a
-total of 3 fixed landmarks, 85 curve semi-landmarks, and 420 surface
-semi-landmarks ([Bookstein, 1997a](#ref-bookstein_morphometric_1997),
-[1997b](#ref-bookstein_landmark_1997); [Gunz et al.,
-2005](#ref-gunz_semilandmarks_2005); [Gunz and Mitteroecker,
-2013](#ref-gunz_semilandmarks_2013); [Mitteroecker and Gunz,
-2009](#ref-mitteroecker_advances_2009)). This makes for a total of 508
-landmarks and semi-landmarks. The three fixed landmarks correspond to
-both laterals of the platform width, and the percussion point. The 85
-curve semi-landmarks correspond to the internal and exterior curve
-outlines of the platform (15 semi-landmarks each) and the edge of the
-flake (55 semi-landmarks), and the 60 surface semi-landmarks correspond
-to the platform surface. The dorsal and ventral surfaces are defined by
-180 semi-landmarks each. The workflow for digitalizing the landmarks and
-semi-landmarks included the creation of a template/atlas on an arbitrary
-selected flake. After this, the landmarks and semi-landmarks were
-positioned in each specimen and were relaxed to minimize bending energy
-([Bookstein, 1997a](#ref-bookstein_morphometric_1997),
-[1997b](#ref-bookstein_landmark_1997)). The entire workflow of landmark
-and semi-landmarks digitalization and relaxation to minimize bending
-energy was done in Viewbox version 4.1.0.12
-(<http://www.dhal.com/viewbox.htm>), and resulting point coordinates
-were exported into .xlsx files.
-
-performance metrics for each of the models. On general all models
-performed with accuracy values higher than 0.7 with the exception of
-KNN, Naïve Bayes and decision tree with C5.0 algorithm. When considering
-the two measures of overall model performance (F1 and Accuracy)
-Supported Vector Machine with polynomial kernel presents the highest
-performance values (F1 = 0.75 and Accuracy = 0.757). Additionally, SVM
-with polynomial kernel also provides the highest values of precision.
-
-The following code stores the PCA values along with each black ID.
-Knapping method is documented for each of the experimental cores and can
-be added using a `case_when()` function.
+Once PCA is performed, values of each of the 25 first PC’s can be
+extracted for each backed flake. Additionally it is necessary to store
+the PC values along with each backed flake ID. Knapping method is
+documented for each of the experimental cores and can be added using the
+`case_when()` function.
 
 ``` r
 # Store PCA values in a dataframe and add ID's
@@ -607,6 +569,16 @@ PCA_Coord <- PCA_Coord %>% mutate(
 PCA_Coord$Strategy <- factor(PCA_Coord$Strategy)
 ```
 
+The resulting `PCA_Coord` data frame haves 25 numeric variables (values
+of the 25 first PC) along with artifact ID and associated core knapping
+strategy. This allows to train the models to predict knapping strategy
+`"Strategy"` based on the values of the 25 first PC. Here, the training
+of the models is done in three steps:
+
+1.  Set the formula.  
+2.  Set the training control and validation method.  
+3.  Train the models using the formula and validation method.
+
 ``` r
 # Set formula
 frmla <- as.formula(
@@ -620,9 +592,6 @@ trControl <- trainControl(method  = "repeatedcv",
                           savePredictions = "final",
                           classProbs = TRUE)
 ```
-
-The following code trains the selected models using the established
-k-fold cross validation.
 
 ``` r
 # LDA model 
@@ -795,6 +764,52 @@ C50_Mod <- train(frmla,
                  metric = "Accuracy",
                  importance = 'impurity')
 ```
+
+## 3 Results
+
+### 3.1 PCA and model performance
+
+PCA results show that the 25 first principal components account for 95%
+of the variance of the dataset with PC1 accounting for 21.39% of
+variance and PC25 accounting for 0.36% of variance. This is an important
+reduction from the original number of variables (1524) and substantially
+lower than the sample (139).  
+The protocol for the digitalization of landmarks on flakes was based on
+previous studies ([Archer et al., 2021](#ref-archer_quantifying_2021),
+[2018](#ref-archer_geometric_2018)). This included the positioning of a
+total of 3 fixed landmarks, 85 curve semi-landmarks, and 420 surface
+semi-landmarks ([Bookstein, 1997a](#ref-bookstein_morphometric_1997),
+[1997b](#ref-bookstein_landmark_1997); [Gunz et al.,
+2005](#ref-gunz_semilandmarks_2005); [Gunz and Mitteroecker,
+2013](#ref-gunz_semilandmarks_2013); [Mitteroecker and Gunz,
+2009](#ref-mitteroecker_advances_2009)). This makes for a total of 508
+landmarks and semi-landmarks. The three fixed landmarks correspond to
+both laterals of the platform width, and the percussion point. The 85
+curve semi-landmarks correspond to the internal and exterior curve
+outlines of the platform (15 semi-landmarks each) and the edge of the
+flake (55 semi-landmarks), and the 60 surface semi-landmarks correspond
+to the platform surface. The dorsal and ventral surfaces are defined by
+180 semi-landmarks each. The workflow for digitalizing the landmarks and
+semi-landmarks included the creation of a template/atlas on an arbitrary
+selected flake. After this, the landmarks and semi-landmarks were
+positioned in each specimen and were relaxed to minimize bending energy
+([Bookstein, 1997a](#ref-bookstein_morphometric_1997),
+[1997b](#ref-bookstein_landmark_1997)). The entire workflow of landmark
+and semi-landmarks digitalization and relaxation to minimize bending
+energy was done in Viewbox version 4.1.0.12
+(<http://www.dhal.com/viewbox.htm>), and resulting point coordinates
+were exported into .xlsx files.
+
+performance metrics for each of the models. On general all models
+performed with accuracy values higher than 0.7 with the exception of
+KNN, Naïve Bayes and decision tree with C5.0 algorithm. When considering
+the two measures of overall model performance (F1 and Accuracy)
+Supported Vector Machine with polynomial kernel presents the highest
+performance values (F1 = 0.75 and Accuracy = 0.757). Additionally, SVM
+with polynomial kernel also provides the highest values of precision.
+
+The following code trains the selected models using the established
+k-fold cross validation.
 
 SVM with polynomial kernel is closely followed by SVM with linear kernel
 which presents the second highest value of accuracy (0.741), the fourth
