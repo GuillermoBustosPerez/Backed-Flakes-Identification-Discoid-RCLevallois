@@ -54,7 +54,7 @@ flake-dominated assemblages ([Delagnes and Meignen,
 2006](#ref-hovers_diversity_2006); [Kuhn, 2013](#ref-kuhn_roots_2013)).
 Two of the most common flake production methods are the Discoid and the
 Levallois recurrent centripetal.  
-Following Boëda ([1995](#ref-dibble_levallois:_1995),
+Following Boëda ([1995a](#ref-dibble_levallois:_1995),
 [1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993)),
 there are six technological defining criteria defining the Discoid
 method:
@@ -95,7 +95,7 @@ predetermined Levallois flake is obtained from the debitage surface) or
 recurrent methods (were several predetermined flakes are produced from
 the debitage surface) with removals being either unidirectional,
 bidirectional or centripetal ([Boëda,
-1995](#ref-dibble_levallois:_1995); [Delagnes,
+1995a](#ref-dibble_levallois:_1995); [Delagnes,
 1995](#ref-dibble_variability_1995); [Delagnes and Meignen,
 2006](#ref-hovers_diversity_2006)). Both knapping methods share the
 production of backed products which usually includes two wide
@@ -229,13 +229,29 @@ nine discrete knapping sequences. Seven cores were knapped in Bergerac
 chert ([Fernandes et al., 2012](#ref-fernandes_silex_2012)), and two
 cores were knapped in Miocene chert from South of Madrid ([Bustillo et
 al., 2012](#ref-bustillo_caracterizacion_2012); [Bustillo and
-Pérez-Jiménez, 2005](#ref-bustillo_caracteristicas_2005)).
+Pérez-Jiménez, 2005](#ref-bustillo_caracteristicas_2005)). Five cores
+were knapped following the discoidal *“sensu stricto”* method, which
+corresponds highly to Boëda’s original technological definition of the
+knapping system ([Boëda, 1995b](#ref-boeda_caracteristiques_1995),
+[1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993)), and
+five experimental cores were knapped following the Levallois recurrent
+centripetal system ([Boëda, 1995a](#ref-dibble_levallois:_1995),
+[1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993);
+[Lenoir and Turq, 1995](#ref-dibble_recurrent_1995)). A total of 139
+unretouched backed flakes (independent of the type of termination) were
+obtained: 70 from the discoidal reduction sequences and 69 from the
+Levallois reduction sequences (Figure 1). In the case of the Levallois
+recurrent centripetal cores, backed products from both debitage and
+striking surfaces were included.
 
-### 2.3 Loading the data and packages
+The following code loads data and packages necessary for the development
+of the present research.
 
 ``` r
+# List of packages
 list.of.packages <- c("tidyverse", "caret",  "ranger")
 
+# Load packages
 lapply(list.of.packages, library, character.only = TRUE)
 ```
 
@@ -267,29 +283,28 @@ load("Data/Flakes LM rotated.RData")
 Att <- read.csv("Data/Attributes data.csv")
 ```
 
-## 2. Methods
-
-### 2.1 Experimental assemblage
-
-The experimental assemblage of the present study is the result of nine
-discrete knapping sequences. Seven cores were knapped on Bergerac flint
-([Fernandes et al., 2012](#ref-fernandes_silex_2012)) and two cores were
-knapped on Miocene flint from South of Madrid ([Bustillo et al.,
-2012](#ref-bustillo_caracterizacion_2012); [Bustillo and Pérez-Jiménez,
-2005](#ref-bustillo_caracteristicas_2005)). Five cores were knapped
-following the Discoid *“sensu stricto”* which highly corresponds to
-Boëda’s original technological definition of the knapping system
-([Boëda, 1995](#ref-dibble_levallois:_1995),
-[1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993)) and
-five experimental cores were knapped following the Levallois recurrent
-centripetal system ([Boëda, 1995](#ref-dibble_levallois:_1995),
-[1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993);
-[Lenoir and Turq, 1995](#ref-dibble_recurrent_1995)). A total of 139
-unretouched backed flakes (independent of the type of termination) were
-obtained (70 belonging to Discoid reduction sequences and 69 belonging
-to Levallois reduction sequences) from the experimental knapping
-sequences. In the case of Levallois recurrent centripetal cores backed
-products from both surface (debitage and striking) are included.
+The Levallois recurrent centripetal experimental assemblage is clearly
+dominated by non-cortical backed flakes (n = 42; 60.87%). This is
+expected since one of the roles of core edge flakes and pseudo-Levallois
+points in Levallois recurrent centripetal methods is the management of
+convexities on subsequent exploitation sequences ([Boëda,
+1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993); [Boëda
+et al., 1990](#ref-boeda_identification_1990)). Thus, although backed
+flakes can be present in the initial decortication phases (n = 9;
+13.04%), the subsequent exploitation of the core will result in
+non-cortical flakes. Non-cortical backed flakes are also the majority
+class of the experimental Discoid assemblage although this predominance
+is attenuated (n = 29; 41.43%). However, along with flakes with nearly
+25% of the dorsal surface covered with cortex, they make up the majority
+of the discoidal backed flakes of the assemblage (n = 51; 72.86%). This
+reduction in the predominance of non-cortical flakes is also expected in
+discoidal methods given the organization of both debitage surfaces, the
+nature of the surface convexities, and the fracture plane. In discoidal
+cores, both interchangeable surfaces usually have a higher apical
+convexity than Levallois cores. Additionally, the angle and removal of
+flakes cover a smaller portion of the respective surface than in a
+Levallois core. Thus, it is expected that further into the knapping
+sequence, some products will retain a certain amount of cortex.
 
 ``` r
 # Cortex per method in backed flakes
@@ -314,15 +329,179 @@ Att %>% group_by(Strategy) %>%
 
 ![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/Cortex%20per%20Method-1.png)
 
-## 3 Results
+### 2.2 Data acquisition
 
-### 3.1 PCA and model performance
+All flakes were scanned with an Academia 20 structured light surface
+scanner (Creaform 3D) at a 0.2 mm resolution. Flakes were scanned in two
+parts and automatically aligned (or manually aligned in case automatic
+alignment failed) and exported in STL formats. Cloudcompare 2.11.3
+(<https://www.danielgm.net/cc/>) free software was employed to perform
+additional cleaning, mesh sampling, surface reconstruction, and
+transformation into PLY files. Finally, all files were decimated to a
+quality of 50,000 faces using the Rvcg R package ([Schlager,
+2017](#ref-schlager_morpho_2017)).
 
-PCA results show that the 25 first principal components account for 95%
-of the variance of the dataset with PC1 accounting for 21.39% of
-variance and PC25 accounting for 0.36% of variance. This is an important
-reduction from the original number of variables (1524) and substantially
-lower than the sample (139).
+Procrustes superimposition ([Kendall, 1984](#ref-kendall_shape_1984);
+[Mitteroecker and Gunz, 2009](#ref-mitteroecker_advances_2009);
+[O’Higgins, 2000](#ref-ohiggins_study_2000)) was performed using the
+package “Morpho” ([Schlager, 2017](#ref-schlager_morpho_2017)) on
+RStudio IDE ([R. C. Team, 2019](#ref-r_core_team_r_2019); [Rs. Team,
+2019](#ref-rstudio_team_rstudio_2019)). After performing Procrustes
+superimposition and obtaining a new set of coordinates, PCA was
+performed to reduce the dimensionality of the data ([James et al.,
+2013](#ref-james_introduction_2013); [Pearson,
+1901](#ref-pearson_lines_1901)). There are multiple reasons to use
+dimensionality reduction when dealing with high dimensional data on
+classification, including to avoid having more predictors than
+observations (p \> n), to avoid the collinearity of predictors, to
+reduce the dimensions of the feature space, and to avoid overfitting due
+to an excessive number of degrees of freedom (simple structure with
+lower number of variables). PCA achieves dimensionality reduction by
+identifying the linear combinations that best represent the predictors
+in an unsupervised manner. The principal components (PCs) of a PCA are
+aimed to capture as high a variance as possible of the complete data
+([James et al., 2013](#ref-james_introduction_2013)), and PCs that
+capture a higher variance do not necessarily need to be the best for
+classification. For the present work, PCs that represent 95% of the
+variance were selected as predictors for training the machine learning
+models. The threshold of 95% of the variance was arbitrarily selected
+since it balances retaining most of the dataset variance on a reduced
+number of variables. The identification of best PCs for classification
+was automatically done by the machine learning models using the caret
+package ([Kuhn, 2008](#ref-kuhn_building_2008)).
+
+![Template/atlas on an arbitrary selected flake with the defined
+landmarks (in red), curves, and surfaces. Bottom: Landmark positioning
+after sliding to minimize bending energy on a pseudo-Levallois point
+from a discoidal reduction
+sequence.](Article%20Figures/03%20Template%20and%20BE.png)
+
+In addition to geometric morphometrics, the following attributes were
+recorded for each of the flakes using the E5 software ([McPherron,
+2019](#ref-mcpherron_e5_2019)).
+
+-   **Technological length:** measured in mm along the axis
+    perpendicular to the striking platform.  
+-   **Technological width:** measured in mm along the axis perpendicular
+    to the technological width.  
+-   **Maximum thickness** of the flake measured in mm.  
+-   **External platform angle (EPA):** measured in degrees with a manual
+    goniometer.  
+-   **Internal platform angle (EPA):** measured in degrees with a manual
+    goniometer.  
+-   **Relative amount of cortex on the dorsal face**: recorded according
+    to its extension on the dorsal surface of the flake, with categories
+    as follows: 0 (no cortex), 1 (nearly 25% covered by cortex), 2
+    (nearly 50% covered by cortex), 3 (nearly 75% covered by cortex),
+    and 4 (nearly the entire surface covered by cortex). This variable
+    was employed to evaluate the distribution of cortex proportions
+    among the experimental assemblage.  
+-   **Weight**: measured to a precision of 0.01 g.
+
+These measures served to generate the following indices:
+
+-   **Elongation index**: length divided by width.  
+-   **Carenation index**: result of dividing either width or length (the
+    one with the lowest value) between maximum thickness.  
+-   **Width to thickness ratio**: flake width divided by maximum
+    thickness.
+
+### 2.3 Machine learning models and evaluation
+
+The following 11 machine learning models have been tested for
+differentiating between backed flakes extracted from the two surfaces of
+the core within each knapping method:
+
+-   **Linear discriminant analysis (LDA):** reduces dimensionality
+    aiming to maximize the separation between classes while decision
+    boundaries divide the predictor range into regions ([Fisher,
+    1936](#ref-fisher_use_1936); [James et al.,
+    2013](#ref-james_introduction_2013)).  
+-   **K-nearest neighbor (KNN):** classifies cases by assigning the
+    class of similar known cases. The “k” in KNN references the number
+    of cases (neighbors) to consider when assigning a class, and it must
+    be found by testing different values. Given that KNN uses distance
+    metrics to compute nearest neighbors and that each variable is in
+    different scales, it is necessary to scale and center the data prior
+    to fitting the model ([Cover and Hart,
+    1967](#ref-cover_nearest_1967); [Lantz,
+    2019](#ref-lantz_machine_2019)).  
+-   **Logistic regression:** essentially adapts continuous regression
+    predictions to categorical outcomes ([Cramer,
+    2004](#ref-cramer_early_2004); [Walker and Duncan,
+    1967](#ref-walker_estimation_1967)).  
+-   **Decision tree with C5.0** algorithm: is an improvement on decision
+    trees for classification ([Quinlan, 2014](#ref-quinlan_c4_2014);
+    [Quinlan, 1996](#ref-quinlan_improved_1996)).  
+-   **Random fores**: is made of decision trees. Each tree is grown from
+    a random sample of the data and variables, allowing for each tree to
+    grow differently and to better reflect the complexity of the data
+    ([Breiman, 2001](#ref-breiman_random_2001)).  
+-   **Generalized Boosted Model:** ([Greenwell et al.,
+    2019](#ref-greenwell_package_2019); [Ridgeway,
+    2007](#ref-ridgeway_generalized_2007)) implements gradient boosted
+    ([Friedman, 2002](#ref-friedman_stochastic_2002),
+    [2001](#ref-friedman_greedy_2001)), allowing the detection of
+    learning deficiencies and increases model accuracy.  
+-   **Supported vector machine (SVM):** fits hyperplanes into a
+    multidimensional space with the objective of creating homogeneous
+    partitions ([Cortes and Vapnik,
+    1995](#ref-cortes_support-vector_1995); [Frey and Slate,
+    1991](#ref-frey_letter_1991)). The present study tests SVM with
+    linear, radial, and polynomial kernels.  
+-   **• Artificial neural network (ANN):** with multi-layer perception,
+    uses a series of hidden layers and error backpropagation for model
+    training ([Rumelhart et al., 1986](#ref-rumelhart_learning_1986)).  
+-   **Naïve Bayes:** computes class probabilities using Bayes’ rule
+    ([Weihs et al., 2005](#ref-weihs_klar_2005)).
+
+All models are evaluated using 10×50 k-fold cross validation (10 folds
+and 50 cycles), providing measures of accuracy. The receiver operating
+characteristic (ROC) curve is employed to evaluate the ratio of detected
+true positives while avoiding false positives ([Bradley,
+1997](#ref-bradley_use_1997); [Spackman,
+1989](#ref-spackman_signal_1989)). The ROC curve allows visually
+analyzing model performance and calculating the AUC, which ranges from 1
+(perfect classifier) to 0.5 (random classifier). AUC ranges of values
+are usually interpreted as follows: 1 to 0.9: outstanding; 0.9 to 0.8:
+excellent/good; 0.8 to 0.7: acceptable/fair; 0.7 to 0.6: poor; and 0.6
+to 0.5: no discrimination ([Lantz, 2019](#ref-lantz_machine_2019)). When
+analyzing lithic assemblages, the use of thresholds to guarantee true
+positives and avoid false positives is of special interest. The use of
+decision thresholds and derived measures of accuracy (ROC curve and AUC)
+can be especially useful in lithic analysis since it is expected that
+products from initial reduction stages are morphologically similar
+independent of the knapping method. It is expected that these products
+show a higher mixture between methods and have lower probability values.
+The use of thresholds better indicates the accuracy of a model taking
+into account these probability values.
+
+The development of the present study was done using R version 4.1.1 in
+IDE RStudio version 2021.09.0 ([R. C. Team,
+2019](#ref-r_core_team_r_2019); [Rs. Team,
+2019](#ref-rstudio_team_rstudio_2019)). The management of the data and
+graphs was done using the tidyverse package ([Wickham et al.,
+2019](#ref-wickham_welcome_2019)). The training of LDA and KNN was done
+with MASS ([Wright and Ziegler, 2017](#ref-wright_ranger_2017)). The
+training of SVM was done using the e1071 package ([Karatzoglou et al.,
+2006](#ref-karatzoglou_support_2006),
+[2004](#ref-karatzoglou_kernlab_2004)). The RSNNS ([Bergmeir and
+Benítez, 2012](#ref-bergmeir_neural_2012)) package was employed to train
+multi-layer ANN with backpropagation. The klaR package was employed to
+train the naïve Bayes classifier ([Weihs et al.,
+2005](#ref-weihs_klar_2005)). The k-fold cross validation of all models,
+precision metrics, and confusion matrix were obtained using the caret
+package ([Kuhn, 2008](#ref-kuhn_building_2008)). Machine learning models
+also provide insights into variable importance for classification. The
+caret package was employed to extract variable importance after each
+k-fold cross validation.
+
+### 2.4 Performance of procrustes, PCA and model training
+
+The following line of code performs procrustes alignment and
+superimposition using the **Morpho** package ([Schlager,
+2017](#ref-schlager_morpho_2017)). Aligned coordinates are extracted and
+stored as a data frame named **LM.DF**.
 
 ``` r
 # Procrustes alignment
@@ -334,6 +513,9 @@ proc <- Morpho::ProcGPA(Flakes_LM,
 Proc.Rot <- proc$rotated
 LM.DF <- data.frame(matrix(Proc.Rot, nrow = length(filenames), byrow = TRUE))
 ```
+
+The following line of code performs Principal Components Analysis (PCA)
+on the set of aligned coordinates stored in the LM.DF data frame.
 
 ``` r
 # PCA on coordinates
@@ -361,6 +543,41 @@ summary(pca)$importance[1:3, 1:25]
     ## Standard deviation     2.327281
     ## Proportion of Variance 0.003550
     ## Cumulative Proportion  0.951660
+
+## 3 Results
+
+### 3.1 PCA and model performance
+
+PCA results show that the 25 first principal components account for 95%
+of the variance of the dataset with PC1 accounting for 21.39% of
+variance and PC25 accounting for 0.36% of variance. This is an important
+reduction from the original number of variables (1524) and substantially
+lower than the sample (139).  
+The protocol for the digitalization of landmarks on flakes was based on
+previous studies ([Archer et al., 2021](#ref-archer_quantifying_2021),
+[2018](#ref-archer_geometric_2018)). This included the positioning of a
+total of 3 fixed landmarks, 85 curve semi-landmarks, and 420 surface
+semi-landmarks ([Bookstein, 1997a](#ref-bookstein_morphometric_1997),
+[1997b](#ref-bookstein_landmark_1997); [Gunz et al.,
+2005](#ref-gunz_semilandmarks_2005); [Gunz and Mitteroecker,
+2013](#ref-gunz_semilandmarks_2013); [Mitteroecker and Gunz,
+2009](#ref-mitteroecker_advances_2009)). This makes for a total of 508
+landmarks and semi-landmarks. The three fixed landmarks correspond to
+both laterals of the platform width, and the percussion point. The 85
+curve semi-landmarks correspond to the internal and exterior curve
+outlines of the platform (15 semi-landmarks each) and the edge of the
+flake (55 semi-landmarks), and the 60 surface semi-landmarks correspond
+to the platform surface. The dorsal and ventral surfaces are defined by
+180 semi-landmarks each. The workflow for digitalizing the landmarks and
+semi-landmarks included the creation of a template/atlas on an arbitrary
+selected flake. After this, the landmarks and semi-landmarks were
+positioned in each specimen and were relaxed to minimize bending energy
+([Bookstein, 1997a](#ref-bookstein_morphometric_1997),
+[1997b](#ref-bookstein_landmark_1997)). The entire workflow of landmark
+and semi-landmarks digitalization and relaxation to minimize bending
+energy was done in Viewbox version 4.1.0.12
+(<http://www.dhal.com/viewbox.htm>), and resulting point coordinates
+were exported into .xlsx files.
 
 performance metrics for each of the models. On general all models
 performed with accuracy values higher than 0.7 with the exception of
@@ -898,6 +1115,34 @@ align = "h")
 
 <div id="refs" class="references csl-bib-body hanging-indent">
 
+<div id="ref-archer_quantifying_2021" class="csl-entry">
+
+Archer, W., Djakovic, I., Brenet, M., Bourguignon, L., Presnyakova, D.,
+Schlager, S., Soressi, M., McPherron, S.P., 2021. Quantifying
+differences in hominin flaking technologies with 3D shape analysis.
+Journal of Human Evolution 150, 102912.
+<https://doi.org/10.1016/j.jhevol.2020.102912>
+
+</div>
+
+<div id="ref-archer_geometric_2018" class="csl-entry">
+
+Archer, W., Pop, C.M., Rezek, Z., Schlager, S., Lin, S.C., Weiss, M.,
+Dogandžić, T., Desta, D., McPherron, S.P., 2018. A geometric
+morphometric relationship predicts stone flake shape and size
+variability. Archaeological and Anthropological Sciences 10, 1991–2003.
+<https://doi.org/10.1007/s12520-017-0517-2>
+
+</div>
+
+<div id="ref-bergmeir_neural_2012" class="csl-entry">
+
+Bergmeir, C., Benítez, J.M., 2012. Neural Networks in R using the
+Stuttgart Neural Network Simulator: RSNNS. Journal of Statistical
+Software 46. <https://doi.org/10.18637/jss.v046.i07>
+
+</div>
+
 <div id="ref-beyries_etude_1983" class="csl-entry">
 
 Beyries, S., Boëda, E., 1983. Étude technoloogique et traces
@@ -909,10 +1154,18 @@ https://doi.org/<https://doi.org/10.3406/bspf.1983.5455>
 
 <div id="ref-dibble_levallois:_1995" class="csl-entry">
 
-Boëda, E., 1995. Levallois: A volumetric construction, methods, a
+Boëda, E., 1995a. Levallois: A volumetric construction, methods, a
 technique, in: Dibble, H.L., Bar-Yosef, O. (Eds.), The Definition and
 Interpretation of Levallois Technology, Monographs in World Archaeology.
 Prehistory Press, Madison, Wisconsin, pp. 41–68.
+
+</div>
+
+<div id="ref-boeda_caracteristiques_1995" class="csl-entry">
+
+Boëda, E., 1995b. Caractéristiques techniques des chaînes opératoires
+lithiques des niveaux micoquiens de Külna (Tchécoslovaquie). Paléo 1,
+57–72. <https://doi.org/10.3406/pal.1995.1380>
 
 </div>
 
@@ -938,6 +1191,21 @@ opératoires lithiques du paléolithique ancien et moyen. Paléo 2, 43–80.
 
 </div>
 
+<div id="ref-bookstein_landmark_1997" class="csl-entry">
+
+Bookstein, F.L., 1997b. Landmark methods for forms without landmarks:
+Morphometrics of group differences in outline shape. Medical Image
+Analysis 1, 225–243. <https://doi.org/10.1016/S1361-8415(97)85012-8>
+
+</div>
+
+<div id="ref-bookstein_morphometric_1997" class="csl-entry">
+
+Bookstein, F.L., 1997a. Morphometric tools for landmark data. Cambridge
+University Press.
+
+</div>
+
 <div id="ref-bordes_typologie_1961" class="csl-entry">
 
 Bordes, F., 1961. Typologie du paléolithique ancien et moyen,
@@ -951,6 +1219,21 @@ CNRS Editions, Bordeaux.
 Bordes, F., 1953. Notules de typologie paléolithique II : Pointes
 Levalloisiennes et pointes pseudo-levalloisiennes. bspf 50, 311–313.
 <https://doi.org/10.3406/bspf.1953.3057>
+
+</div>
+
+<div id="ref-bradley_use_1997" class="csl-entry">
+
+Bradley, A.P., 1997. The use of the area under the ROC curve in the
+evaluation of machine learning algorithms. Pattern recognition 30,
+1145–1159.
+
+</div>
+
+<div id="ref-breiman_random_2001" class="csl-entry">
+
+Breiman, L., 2001. Random forests. Machine Learning 45, 5–32.
+<https://doi.org/10.1023/A:1010933404324>
 
 </div>
 
@@ -1004,6 +1287,13 @@ Revista Mexicana de Ciencias Geológicas 29, 233–247.
 
 </div>
 
+<div id="ref-cortes_support-vector_1995" class="csl-entry">
+
+Cortes, C., Vapnik, V., 1995. Support-vector networks. Machine learning
+20, 273–297.
+
+</div>
+
 <div id="ref-courbin_spatial_2020" class="csl-entry">
 
 Courbin, P., Brenet, M., Michel, A., Gravina, B., 2020. Spatial analysis
@@ -1011,6 +1301,23 @@ of the late middle palaeolithic open-air site of bout-des-vergnes
 (bergerac, dordogne) based on lithic technology and refitting. Journal
 of Archaeological Science: Reports 32, 102373.
 https://doi.org/<https://doi.org/10.1016/j.jasrep.2020.102373>
+
+</div>
+
+<div id="ref-cover_nearest_1967" class="csl-entry">
+
+Cover, T., Hart, P., 1967. Nearest neighbor pattern classification. IEEE
+Trans. Inform. Theory 13, 21–27.
+<https://doi.org/10.1109/TIT.1967.1053964>
+
+</div>
+
+<div id="ref-cramer_early_2004" class="csl-entry">
+
+Cramer, J.S., 2004. The early origins of the logit model. Studies in
+History and Philosophy of Science Part C: Studies in History and
+Philosophy of Biological and Biomedical Sciences 35, 613–626.
+<https://doi.org/10.1016/j.shpsc.2004.09.003>
 
 </div>
 
@@ -1067,6 +1374,13 @@ Continental d’Aquitaine, excursion AFEQ, ASF 2012 2012, 22–33.
 
 </div>
 
+<div id="ref-fisher_use_1936" class="csl-entry">
+
+Fisher, R.A., 1936. The use of multiple measurements in taxonomic
+problems. Annals of Eugenics 7, 179–188.
+
+</div>
+
 <div id="ref-folgado_economie_2010" class="csl-entry">
 
 Folgado, M., Brenet, M., 2010. Economie de débitage et organisation de
@@ -1075,6 +1389,28 @@ mouline (dordogne, france), in: Conard, N., Delagnes, A. (Eds.),
 Settlement Dynamics of the Middle Paleolithic and Middle Stone Age.
 Kerns Verlag - (Tübingen Publications in Prehistory), Tübingen, pp.
 427–454.
+
+</div>
+
+<div id="ref-frey_letter_1991" class="csl-entry">
+
+Frey, P.W., Slate, D.J., 1991. Letter recognition using holland-style
+adaptive classifiers. Machine learning 6, 161–182.
+
+</div>
+
+<div id="ref-friedman_stochastic_2002" class="csl-entry">
+
+Friedman, J.H., 2002. Stochastic gradient boosting. Computational
+Statistics & Data Analysis 38, 367–378.
+<https://doi.org/10.1016/S0167-9473(01)00065-2>
+
+</div>
+
+<div id="ref-friedman_greedy_2001" class="csl-entry">
+
+Friedman, J.H., 2001. Greedy function approximation: A gradient boosting
+machine. Annals of statistics 29, 1189–1232.
 
 </div>
 
@@ -1089,10 +1425,80 @@ préhistorique française, Paris, pp. 441–517.
 
 </div>
 
+<div id="ref-greenwell_package_2019" class="csl-entry">
+
+Greenwell, B., Boehmke, B., Cunningham, J., Developers, G.B.M.,
+Greenwell, M.B., 2019. Package ‘gbm.’ R package version 2.
+
+</div>
+
+<div id="ref-gunz_semilandmarks_2013" class="csl-entry">
+
+Gunz, P., Mitteroecker, P., 2013. Semilandmarks: A method for
+quantifying curves and surfaces. Hystrix 24, 103–109.
+<https://doi.org/10.4404/hystrix-24.1-6292>
+
+</div>
+
+<div id="ref-gunz_semilandmarks_2005" class="csl-entry">
+
+Gunz, P., Mitteroecker, P., Bookstein, F.L., 2005. Semilandmarks in
+three dimensions, in: Modern Morphometrics in Physical Anthropology.
+Springer, New York, pp. 73–98.
+
+</div>
+
+<div id="ref-james_introduction_2013" class="csl-entry">
+
+James, G., Witten, D., Hastie, T., Tibshirani, R., 2013. An introduction
+to statistical learning with applications in r, Second Edition. ed.
+Springer.
+
+</div>
+
+<div id="ref-karatzoglou_support_2006" class="csl-entry">
+
+Karatzoglou, A., Meyer, D., Hornik, K., 2006. Support vector machines in
+r. Journal of Statistical Software 15, 1–28.
+<https://doi.org/10.18637/jss.v015.i09>
+
+</div>
+
+<div id="ref-karatzoglou_kernlab_2004" class="csl-entry">
+
+Karatzoglou, A., Smola, A., Hornik, K., Zeileis, A., 2004. Kernlab - an
+S4 package for kernel methods in r. Journal of Statistical Software 11,
+1–20. <https://doi.org/10.18637/jss.v011.i09>
+
+</div>
+
+<div id="ref-kendall_shape_1984" class="csl-entry">
+
+Kendall, D.G., 1984. Shape manifolds, procrustean metrics, and complex
+projective spaces. Bulletin of the London Mathematical Society 16,
+81–121. <https://doi.org/10.1112/blms/16.2.81>
+
+</div>
+
+<div id="ref-kuhn_building_2008" class="csl-entry">
+
+Kuhn, M., 2008. Building predictive models in r using the caret package.
+Journal of Statistical Software 28.
+<https://doi.org/10.18637/jss.v028.i05>
+
+</div>
+
 <div id="ref-kuhn_roots_2013" class="csl-entry">
 
 Kuhn, S.L., 2013. Roots of the middle paleolithic in eurasia. Current
 Anthropology 54, S255–S268. <https://doi.org/10.1086/673529>
+
+</div>
+
+<div id="ref-lantz_machine_2019" class="csl-entry">
+
+Lantz, B., 2019. Machine learning with r: Expert techniques for
+predictive modeling. Packt publishing ltd.
 
 </div>
 
@@ -1126,6 +1532,12 @@ level m. Archaeol Anthropol Sci 12, 16.
 
 </div>
 
+<div id="ref-mcpherron_e5_2019" class="csl-entry">
+
+McPherron, S., 2019. E5 (beta version).
+
+</div>
+
 <div id="ref-meignen_persistance_1996" class="csl-entry">
 
 Meignen, L., 1996. Persistance des traditions techniques dans l’abri des
@@ -1142,6 +1554,14 @@ CNRS Ed., Paris, pp. 238–328.
 
 </div>
 
+<div id="ref-mitteroecker_advances_2009" class="csl-entry">
+
+Mitteroecker, P., Gunz, P., 2009. Advances in geometric morphometrics.
+Evolutionary Biology 36, 235–247.
+<https://doi.org/10.1007/s11692-009-9055-x>
+
+</div>
+
 <div id="ref-peresani_discoiou_2003" class="csl-entry">
 
 Mourre, V., 2003. Discoïde ou pas discoïde? Réflexions sur la pertinence
@@ -1151,11 +1571,48 @@ International Series. Archaeopress, Oxford, pp. 1–17.
 
 </div>
 
+<div id="ref-ohiggins_study_2000" class="csl-entry">
+
+O’Higgins, P., 2000. The study of morphological variation in the hominid
+fossil record: Biology, landmarks and geometry. Journal of Anatomy 197,
+103–120. <https://doi.org/10.1046/j.1469-7580.2000.19710103.x>
+
+</div>
+
 <div id="ref-pasty_etude_2004" class="csl-entry">
 
 Pasty, J.-F., Liegard, S., Alix, P., 2004. Étude de l’industrie lithique
 du site paléolithique moyen des Fendeux (Coulanges, Allier). bspf 101,
 5–25. <https://doi.org/10.3406/bspf.2004.12945>
+
+</div>
+
+<div id="ref-pearson_lines_1901" class="csl-entry">
+
+Pearson, K., 1901. On lines and planes of closest fit to systems of
+points in space. The London, Edinburgh, and Dublin Philosophical
+Magazine and Journal of Science 2, 559–572.
+<https://doi.org/10.1080/14786440109462720>
+
+</div>
+
+<div id="ref-quinlan_c4_2014" class="csl-entry">
+
+Quinlan, J.R., 2014. C4. 5: Programs for machine learning. Elsevier.
+
+</div>
+
+<div id="ref-quinlan_improved_1996" class="csl-entry">
+
+Quinlan, J.R., 1996. Improved use of continuous attributes in C4.5. jair
+4, 77–90. <https://doi.org/10.1613/jair.279>
+
+</div>
+
+<div id="ref-ridgeway_generalized_2007" class="csl-entry">
+
+Ridgeway, G., 2007. Generalized Boosted Models: A guide to the gbm
+package. R package vignette 2007.
 
 </div>
 
@@ -1180,6 +1637,21 @@ perspective. JLS 3, 635–659. <https://doi.org/10.2218/jls.v3i2.1443>
 
 </div>
 
+<div id="ref-rumelhart_learning_1986" class="csl-entry">
+
+Rumelhart, D.E., Hinton, G.E., Williams, R.J., 1986. Learning
+representations by back-propagating errors. Nature 323, 533–536.
+
+</div>
+
+<div id="ref-schlager_morpho_2017" class="csl-entry">
+
+Schlager, S., 2017. Morpho and rvcg–shape analysis in r: R-packages for
+geometric morphometrics, shape analysis and surface manipulations, in:
+Statistical Shape and Deformation Analysis. Elsevier, pp. 217–256.
+
+</div>
+
 <div id="ref-peresani_les_2003" class="csl-entry">
 
 Slimak, L., 2003. Les debitages discoïdes mousteriens: Evaluation d’un
@@ -1199,12 +1671,69 @@ méditerranéennes 7, 75–88.
 
 </div>
 
+<div id="ref-spackman_signal_1989" class="csl-entry">
+
+Spackman, K.A., 1989. Signal detection theory: Valuable tools for
+evaluating inductive learning, in: Proceedings of the Sixth
+International Workshop on Machine Learning. Elsevier, pp. 160–163.
+
+</div>
+
+<div id="ref-r_core_team_r_2019" class="csl-entry">
+
+Team, R.C., 2019. R: A language and environment for statistical
+computing. R Foundation for Statistical Computing, Vienna, Austria.
+
+</div>
+
+<div id="ref-rstudio_team_rstudio_2019" class="csl-entry">
+
+Team, Rs., 2019. RStudio: Integrated development for r. RStudio, Inc.,
+Boston, MA.
+
+</div>
+
 <div id="ref-turq_fragmented_2013" class="csl-entry">
 
 Turq, A., Roebroeks, W., Bourguignon, L., Faivre, G.-P., 2013. The
 fragmented character of middle palaeolithic stone tool technology.
 Journal of Human Evolution 65, 641–655.
 <https://doi.org/10.1016/j.jhevol.2013.07.014>
+
+</div>
+
+<div id="ref-walker_estimation_1967" class="csl-entry">
+
+Walker, S.H., Duncan, D.B., 1967. Estimation of the probability of an
+event as a function of several independent variables. Biometrika 54,
+167–179. <https://doi.org/10.2307/2333860>
+
+</div>
+
+<div id="ref-weihs_klar_2005" class="csl-entry">
+
+Weihs, C., Ligges, U., Luebke, K., Raabe, N., 2005. <span
+class="nocase">klaR</span> analyzing german business cycles, in: Data
+Analysis and Decision Support. Springer, pp. 335–343.
+
+</div>
+
+<div id="ref-wickham_welcome_2019" class="csl-entry">
+
+Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L., François,
+R., Grolemund, G., Hayes, A., Henry, L., Hester, J., Kuhn, M., Pedersen,
+T., Miller, E., Bache, S., Müller, K., Ooms, J., Robinson, D., Seidel,
+D., Spinu, V., Takahashi, K., Vaughan, D., Wilke, C., Woo, K., Yutani,
+H., 2019. Welcome to the tidyverse. Journal of Open Source Software 4,
+1686. <https://doi.org/10.21105/joss.01686>
+
+</div>
+
+<div id="ref-wright_ranger_2017" class="csl-entry">
+
+Wright, M.N., Ziegler, A., 2017. Ranger: A fast implementation of random
+forests for high dimensional data in c++ and r. Journal of Statistical
+Software 77, 1–17. <https://doi.org/10.18637/jss.v077.i01>
 
 </div>
 
