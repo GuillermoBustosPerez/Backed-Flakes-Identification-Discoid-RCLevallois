@@ -185,7 +185,7 @@ and discoidal production methods ([Martín-Viveros et al.,
 ![Backed products from the experimental sample: core edge flakes (1–2)
 and pseudo-Levallois points (3–4) from the Discoid knapping method. Core
 edge flakes (5–6) and pseudo-Levallois points (7–8) from the Levallois
-recurrent centripetal method.](Article%20Figures/01%20Materials.png)
+recurrent centripetal method](Article%20Figures/01%20Materials.png)
 
 A problem exists in the attribution of backed pieces to either discoidal
 or recurrent centripetal Levallois reduction.
