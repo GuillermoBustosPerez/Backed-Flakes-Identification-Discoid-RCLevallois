@@ -1372,6 +1372,212 @@ methods in backed artifacts. Moreover, results support the notion that
 discoidal and recurrent centripetal Levallois are two separate core
 reduction methods/conceptions.
 
+The first 25 PCs captured 95% of the sample variance. Of these PCs, the
+highest importance value for the discrimination of knapping methods was
+obtained by PC3. Multiple linear regression shows that PC3 is moderately
+correlated with an interaction between IPA and the ratio of flake width
+to thickness. Thin and wide artifacts with IPA values close to 90º will
+have higher PC3 values. The examination of biplots and PC3 values shows
+that backed flakes detached from Levallois recurrent centripetal cores
+will tend to be thin in relation to the thickness, non-elongated, and
+have an IPA close to 90º. PC1, which captures elongation tendencies with
+higher resolution (along with product thickness) also supports this
+interpretation although higher overlapping exists. The discriminatory
+power of PC3 appears inherently related to differences in how the volume
+of cores in the two methods are conceived: non-hierarchized surfaces
+exploited with secant removals in discoidal reduction while recurrent
+centripetal Levallois is characterized by sub-parallel removals from a
+single debitage surface. Additional features for the discrimination of
+discoidal and Levallois backed products can be found in the edge angles
+and in the angles of the negatives of the dorsal face towards the
+detachment surface. In general, it is expected that products detached
+from Levallois reduction sequences will have more acute edge angles,
+along with dorsal surface negatives which will be in accordance with
+flatter surfaces. Again, these differences in the angles are also
+inherently related to the differences in how the volume of cores of the
+two methods are conceived.
+
+These results indicate that there are underlying morphological
+differences between backed artifacts detached from both methods. These
+underlying morphological differences can be captured and quantified by
+geometric morphometrics along with PCA and used by machine learning
+models for an accurate discrimination of methods. Several authors have
+pointed out underlying morphological characteristics that can
+differentiate backed products detached from Levallois recurrent
+centripetal and discoidal cores ([Boëda et al.,
+1990](#ref-boeda_identification_1990); [Delpiano et al.,
+2021](#ref-delpiano_techno-functional_2021); [Meignen,
+1996](#ref-meignen_persistance_1996); [Meignen,
+1993](#ref-meignen_les_1993); [Mourre,
+2003](#ref-peresani_discoiou_2003)). As previously pointed out, one of
+the features captured by PC3 is the IPA. Products that have an IPA close
+to 90º have increasing PC3 values, being the case for most Levallois
+backed flakes. Levallois products having an IPA close to 90º have been
+described previous to ([Kelly, 1954](#ref-kelly_contribution_1954)) and
+after ([Boëda, 1995b](#ref-boeda_caracteristiques_1995),
+[1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993))) the
+technological description of the Levallois flaking system. A recent
+study employing machine learning models ([González-Molina et al.,
+2020](#ref-gonzalez-molina_distinguishing_2020)) on attribute analysis
+have also pointed to the IPA as one of the features allowing
+differentiation between Levallois recurrent centripetal and Discoid
+products.  
+[Delpiano et al.](#ref-delpiano_techno-functional_2021)
+([2021](#ref-delpiano_techno-functional_2021)) focused on the general
+morphology of Discoid and Levallois backed products, stating that the
+latter tend to be thinner with subparallel and rectilinear edges and a
+higher elongation. The interpretation of PC3 in the present study also
+identifies backed products from Levallois recurrent centripetal as being
+thinner. However, the interpretation of PC1 (which better captures
+elongation) proves not to be a good criterion for discriminating between
+strategies, with both methods showing a very wide range. Concerning the
+elongation of Levallois products, [Boëda et
+al.](#ref-boeda_identification_1990)
+([1990](#ref-boeda_identification_1990)) also noticed the decrease of
+length/width ratio with each successive exploitation, resulting in short
+non-laminar flakes and core edge flakes.
+[Mourre](#ref-peresani_discoiou_2003)
+([2003](#ref-peresani_discoiou_2003)) calls attention to the direction
+of the flake debitage axis being parallel to the plane of intersection
+of both surfaces in the case of Levallois core edge flakes. In the
+present study, the effect of this feature can be linked to a higher
+carenation index, which is captured by PC3. The visual exploration of
+the 3D meshes according to PC values did not seem to capture the
+relation between the debitage axis and the symmetry of blanks as an
+important feature of Levallois centripetal backed flakes ([Meignen,
+1996](#ref-meignen_persistance_1996); [Meignen,
+1993](#ref-meignen_les_1993)). This is probably due to the inclusion of
+core edge flakes with a limited back in the experimental sample and its
+possible importance being overshadowed by other features better for
+discrimination captured by PC3 (IPA, carenation index and elongation
+index).  
+[González-Molina et al.](#ref-gonzalez-molina_distinguishing_2020)
+([2020](#ref-gonzalez-molina_distinguishing_2020)) achieve an 80%
+accuracy when differentiating between discoidal and Levallois
+centripetal flakes. Although their study focuses on only exploitation
+phase flakes (with the presence of cortex having very little importance
+as a variable for differentiating methods), and dimensional variables
+have high importance, it shows the potential of using machine learning
+models for the identification of knapping methods. In contrast, the
+present study focuses on a concrete set of technological products
+independent of the exploitation phase, and the use of geometric
+morphometrics excludes dimensional variables. However, despite these
+differences, similar degrees of accuracy are obtained. [Archer et
+al.](#ref-archer_quantifying_2021)
+([2021](#ref-archer_quantifying_2021)) also use geometric morphometrics
+and random forest to evaluate the differentiation between three
+strategies (Levallois, discoidal, and laminar). Although for the general
+performance of the models only accuracy is provided, their study does
+present a similar value to that of the present study. However, the
+classification of the two same classes as in the present study varies
+significantly, with an 87% accuracy for Levallois products and 40% in
+the differentiation of discoidal products. This contrasts heavily with
+the present study, where the classification is more balanced and the
+identification of backed products from the discoidal knapping strategy
+showed a slightly lower accuracy than the identification of products
+from the Levallois recurrent centripetal method (0.72 and 0.79,
+respectively).  
+[Archer et al.](#ref-archer_quantifying_2021)
+([2021](#ref-archer_quantifying_2021)) also reported human analyst
+identification ratios on flakes for different archaeological sites with
+the “undiagnostic” class being the largest and usually above 60% (thus,
+only 35% of flakes were attributed to a knapping method). In both
+above-mentioned studies ([Archer et al.,
+2021](#ref-archer_quantifying_2021); [González-Molina et al.,
+2020](#ref-gonzalez-molina_distinguishing_2020)) and in the present
+study, the application of machine learning models notably increases the
+accuracy and predictions regarding the identification of knapping
+methods. However, extreme caution is strongly advisable when evaluating
+the findings since a controlled experimental assemblage does not mimic
+the complexity of the archaeological record.  
+The present study has employed multiple linear regression with common
+metrics of lithic analysis as predictors to determine what features were
+captured by the PCs. The multiple linear regressions of both PC3 and PC1
+presented moderate values of correlation, with more than 0.6 of the
+variance explained. However, this also implies that a good portion of
+the variance remains unexplained for both PCs. The remaining unexplained
+variance can be the result of several factors. Metric variables used as
+predictors were taken manually, and this results in some degree of
+error. Geometric morphometrics capture with higher resolution the same
+metric variables, thus resulting in a source of error when establishing
+correlations. Another source of the unexplained PC variance might come
+from additional metric features (and their interactions), which are
+recorded when exhaustive attribute analysis is undertaken for lithic
+analysis (such as the number, organization and flaking angle of previous
+removals). This suggests that the improvement of this research should
+take into account increasing sample size along with the incorporation of
+these analytical features.  
+Backed flakes detached from discoidal and Levallois recurrent
+centripetal methods have been the focus of this study. However, it is
+important to note that backed products are common to other flaking
+strategies such as Quina and SSDA ([Bourguignon,
+1996](#ref-bourguignon_conception_1996); [Forestier,
+1993](#ref-forestier_clactonien:_1993)) not included in the present
+study. Although in Western Europe the coexistence of Levallois and
+discoidal knapping methods with other knapping methods in the same
+archaeological levels is a subject of debate ([Faivre et al.,
+2017](#ref-faivre_late_2017); [Grimaldi and Santaniello,
+2014](#ref-grimaldi_new_2014); [Marciani et al.,
+2020](#ref-marciani_lithic_2020); [Ríos-Garaizar,
+2017](#ref-rios-garaizar_new_2017)), the present model can be applied to
+assemblages where Levallois and Discoid knapping strategies coexist. For
+this, the study and evaluation of the operative chain and assemblage
+context and integrity are fundamental for the study of lithic technology
+([Soressi and Geneste, 2011](#ref-soressi_history_2011)). Thus, the
+operative chain and assemblage context should be considered prior to the
+application of geometric morphometrics and machine learning models for
+the identification of knapping methods.
+
+## 5. Conclusions
+
+Backed flakes are technological products that play special roles in the
+Discoid and Levallois recurrent centripetal methods ([Boëda,
+1993](#ref-boeda_debitage_1993); [Boëda et al.,
+1990](#ref-boeda_identification_1990); [Slimak,
+2003](#ref-peresani_les_2003)). These roles are the result of managing
+the lateral and distal convexities ([Boëda et al.,
+1990](#ref-boeda_identification_1990)), but also their systematic
+production can indicate their role as production objectives ([Locht,
+2003](#ref-peresani_industrie_2003); [Slimak,
+2003](#ref-peresani_les_2003)). Additionally, the results from several
+sites show that they were commonly imported and exported ([Geneste,
+1988](#ref-rigaud_les_1988); [Roebroeks et al.,
+1992](#ref-roebroeks_veil_1992); [Turq et al.,
+2013](#ref-turq_fragmented_2013)), forming parts of toolkits. This
+frequent transport is possibly a result of their specific
+morpho-functional features ([Delpiano et al.,
+2021](#ref-delpiano_techno-functional_2021)), which resulted from their
+role in core management and debitage direction. Being detached from two
+technologically different knapping methods, it is expected that their
+morphological features differ and allow for the identification of the
+knapping method. With the use of geometric morphometrics, these
+morphological features can be quantified, and PCA for dimensionality
+reduction allows them to be employed in machine learning models.  
+PCA and machine learning models indeed capture the different
+morphological features derived from both knapping methods, resulting in
+an accuracy of 0.76 and an AUC of 0.8 in the case of the best model for
+differentiating between knapping strategies. Most of the importance for
+differentiating between the knapping methods was captured by only one
+variable (PC3), which multiple linear regressions showed to be
+correlated with the elongation index and mostly an interaction between
+IPA and the carenation index.  
+Geometric morphometrics in combination with dimensionality reduction
+methods (PCA) and machine learning models can offer high-resolution
+methods for the identification of knapping methods in lithic analysis
+although their application should not be independent from the study of
+the operative chain and assemblage technological context.  
+## Acknowledgments  
+This research has been supported by the project SI1/PJI/2019-00488
+funded by Comunidad Autónoma de Madrid and Universidad Autónoma de
+Madrid.
+
+## Author Contributions
+
+FR and GBP conceived and designed the research and the experiments. GBP,
+BG, MB performed the experiments. GBP analyzed and curated the data.
+Original draft was written by GBP and FR. MB, FR, and BG reviewed and
+edited the manuscript. FR was responsible for funding acquisition. All
+the authors agreed on the final version of the paper.  
 ## References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
@@ -1480,6 +1686,13 @@ CNRS Editions, Bordeaux.
 Bordes, F., 1953. Notules de typologie paléolithique II : Pointes
 Levalloisiennes et pointes pseudo-levalloisiennes. bspf 50, 311–313.
 <https://doi.org/10.3406/bspf.1953.3057>
+
+</div>
+
+<div id="ref-bourguignon_conception_1996" class="csl-entry">
+
+Bourguignon, L., 1996. La conception du debitage quina. Quaternaria Nova
+6, 149–166.
 
 </div>
 
@@ -1627,6 +1840,16 @@ Préhistorique Française 103, 241–262.
 
 </div>
 
+<div id="ref-faivre_late_2017" class="csl-entry">
+
+Faivre, J.-Ph., Gravina, B., Bourguignon, L., Discamps, E., Turq, A.,
+2017. Late middle palaeolithic lithic technocomplexes (MIS 5–3) in the
+northeastern aquitaine basin: Advances and challenges. Quaternary
+International 433, 116–131.
+<https://doi.org/10.1016/j.quaint.2016.02.060>
+
+</div>
+
 <div id="ref-fernandes_silex_2012" class="csl-entry">
 
 Fernandes, P., Morala, A., Schmidt, P., Séronie-Vivien, M.-R., Turq, A.,
@@ -1650,6 +1873,15 @@ mouline (dordogne, france), in: Conard, N., Delagnes, A. (Eds.),
 Settlement Dynamics of the Middle Paleolithic and Middle Stone Age.
 Kerns Verlag - (Tübingen Publications in Prehistory), Tübingen, pp.
 427–454.
+
+</div>
+
+<div id="ref-forestier_clactonien:_1993" class="csl-entry">
+
+Forestier, H., 1993. Le Clactonien: mise en application d’une nouvelle
+méthode de débitage s’inscrivant dans la variabilité des systèmes de
+production lithique du Paléolithique ancien. pal 5, 53–82.
+<https://doi.org/10.3406/pal.1993.1104>
 
 </div>
 
@@ -1686,10 +1918,27 @@ préhistorique française, Paris, pp. 441–517.
 
 </div>
 
+<div id="ref-gonzalez-molina_distinguishing_2020" class="csl-entry">
+
+González-Molina, I., Jiménez-García, B., Maíllo-Fernández, J.-M.,
+Baquedano, E., Domínguez-Rodrigo, M., 2020. Distinguishing discoid and
+centripetal levallois methods through machine learning. PLoS ONE 15,
+e0244288. <https://doi.org/10.1371/journal.pone.0244288>
+
+</div>
+
 <div id="ref-greenwell_package_2019" class="csl-entry">
 
 Greenwell, B., Boehmke, B., Cunningham, J., Developers, G.B.M.,
 Greenwell, M.B., 2019. Package ‘gbm.’ R package version 2.
+
+</div>
+
+<div id="ref-grimaldi_new_2014" class="csl-entry">
+
+Grimaldi, S., Santaniello, F., 2014. New insights into final mousterian
+lithic production in western italy. Quaternary International 350,
+116–129. <https://doi.org/10.1016/j.quaint.2014.03.057>
 
 </div>
 
@@ -1730,6 +1979,14 @@ r. Journal of Statistical Software 15, 1–28.
 Karatzoglou, A., Smola, A., Hornik, K., Zeileis, A., 2004. Kernlab - an
 S4 package for kernel methods in r. Journal of Statistical Software 11,
 1–20. <https://doi.org/10.18637/jss.v011.i09>
+
+</div>
+
+<div id="ref-kelly_contribution_1954" class="csl-entry">
+
+Kelly, H., 1954. Contribution à l’étude de la technique de la taille
+levalloisienne. Bulletin de la Société Préhistorique Française 51,
+149–169. <https://doi.org/10.3406/bspf.1954.3077>
 
 </div>
 
@@ -1779,6 +2036,19 @@ Locht, J.-L., 2003. L’industrie lithique du gisement de beauvais (oise,
 france): Objectifs et variabilité du débitage discoïde, in: Peresani, M.
 (Ed.), Discoid Lithic Technology: Advances and Implications, BAR
 International Series. Archaeopress, Oxford, pp. 193–209.
+
+</div>
+
+<div id="ref-marciani_lithic_2020" class="csl-entry">
+
+Marciani, G., Ronchitelli, A., Arrighi, S., Badino, F., Bortolini, E.,
+Boscato, P., Boschin, F., Crezzini, J., Delpiano, D., Falcucci, A.,
+Figus, C., Lugli, F., Oxilia, G., Romandini, M., Riel-Salvatore, J.,
+Negrino, F., Peresani, M., Spinapolice, E.E., Moroni, A., Benazzi, S.,
+2020. Lithic techno-complexes in italy from 50 to 39 thousand years BP:
+An overview of lithic technological changes across the middle-upper
+palaeolithic boundary. Quaternary International 551, 123–149.
+<https://doi.org/10.1016/j.quaint.2019.11.005>
 
 </div>
 
@@ -1877,6 +2147,14 @@ package. R package vignette 2007.
 
 </div>
 
+<div id="ref-rios-garaizar_new_2017" class="csl-entry">
+
+Ríos-Garaizar, J., 2017. A new chronological and technological synthesis
+for late middle paleolithic of the eastern cantabrian region. Quaternary
+International 433, 50–63. <https://doi.org/10.1016/j.quaint.2016.02.020>
+
+</div>
+
 <div id="ref-roebroeks_veil_1992" class="csl-entry">
 
 Roebroeks, W., Loecker, D.D., Hennekens, P., Leperen, M.V., 1992. "A
@@ -1938,6 +2216,15 @@ paléolithique moyen: Diversité des méthodes et unité d’un concept.
 L’exemple des gisements de la baume néron (soyons, ardèche) et du champ
 grand (saint-maurice-sur-loire, loire). Préhistoire anthropologie
 méditerranéennes 7, 75–88.
+
+</div>
+
+<div id="ref-soressi_history_2011" class="csl-entry">
+
+Soressi, M., Geneste, J.-M., 2011. The history and efficacy of the
+chaîne opératoire approach to lithic analysis: Studying techniques to
+reveal past societies in an evolutionary perspective. PaleoAnthropology
+2011, 334–350. <https://doi.org/10.4207/PA.2011.ART63>
 
 </div>
 
