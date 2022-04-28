@@ -1401,10 +1401,10 @@ These results indicate that there are underlying morphological
 differences between backed artifacts detached from both methods. These
 underlying morphological differences can be captured and quantified by
 geometric morphometrics along with PCA and used by machine learning
-models for an accurate discrimination of methods. Several authors have
-pointed out underlying morphological characteristics that can
-differentiate backed products detached from Levallois recurrent
-centripetal and discoidal cores ([Boëda et al.,
+models for an accurate discrimination of methods.  
+Several authors have pointed out underlying morphological
+characteristics that can differentiate backed products detached from
+Levallois recurrent centripetal and discoidal cores ([Boëda et al.,
 1990](#ref-boeda_identification_1990); [Delpiano et al.,
 2021](#ref-delpiano_techno-functional_2021); [Meignen,
 1996](#ref-meignen_persistance_1996); [Meignen,
@@ -1415,7 +1415,7 @@ to 90º have increasing PC3 values, being the case for most Levallois
 backed flakes. Levallois products having an IPA close to 90º have been
 described previous to ([Kelly, 1954](#ref-kelly_contribution_1954)) and
 after ([Boëda, 1995b](#ref-boeda_caracteristiques_1995),
-[1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993))) the
+[1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993)) the
 technological description of the Levallois flaking system. A recent
 study employing machine learning models ([González-Molina et al.,
 2020](#ref-gonzalez-molina_distinguishing_2020)) on attribute analysis
