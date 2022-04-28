@@ -934,7 +934,6 @@ temp <- cbind(tibble(temp$specificities, temp$sensitivities),
 Roc_Curve <- rbind(Roc_Curve, temp)
 rm(temp)
 
-
 aucs <- c(
   paste0("LDA (", round(pROC::auc(fit.LDA$pred$obs, fit.LDA$pred$Levallois),2) ,")"),
   paste0("KNN (", round(pROC::auc(KNN.model$pred$obs, KNN.model$pred$Levallois),2) ,")"),
@@ -1161,6 +1160,217 @@ align = "h")
 ```
 
 ![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/Second%20pairs%20of%20PC%20biplots-1.png)
+
+Prior to perform multiple linear regression to predict PC values based
+on flake metric features it is necessary to join both data sets (the one
+containing PC values and the one containing attribute analysis values).
+The following code load the data from recorded attributes and performs a
+`left_join()` to match PC and attribute values according to flake ID.
+
+``` r
+# Read in attribute dataset
+Att <- read.csv("Data/Attributes data.csv")
+
+# Left joined with the attribute database
+PCA_Coord <- left_join(PCA_Coord, Att, by = "ID")
+
+# Compute ratios
+PCA_Coord <- PCA_Coord %>% 
+  mutate(Lam.Ind = LENGHT/WIDTH,
+         Caren.Ind = case_when(
+           LENGHT < WIDTH ~ LENGHT/MAXTHICK,
+           LENGHT > WIDTH ~ WIDTH/MAXTHICK,
+           LENGHT == WIDTH ~ WIDTH/MAXTHICK),
+         Flat_Ind = (WIDTH*LENGHT)/MAXTHICK,
+         Flak.Surface = WIDTH*LENGHT,
+         W.to.Thic = WIDTH/MAXTHICK)
+```
+
+Multiple linear regression for the prediction of PC3 indicates that the
+best correlation is obtained when the interaction of IPA and the ratio
+of flake width to thickness is employed (p \< 0.001, adjusted
+*r*<sup>2</sup> = 0.65). The coefficient of the interaction between the
+ratio of width to thickness and IPA is 0.17, whereas the coefficient of
+IPA is -0.77. This indicates that as the IPA becomes more open as the
+values of PC3 decrease. The ratio of flake width to thickness offers a
+counterintuitive coefficient of -12.79. The signal of this coefficient
+is opposite to that obtained from a linear regression where the values
+of the ratio of flake width to thickness are employed to predict PC3
+values (p \< 0.001; *r*<sup>2</sup> = 0.6; coefficient = 6.46). The
+reversed signal obtained from the interaction can be considered the
+result of Simpson’s paradox ([Simpson,
+1951](#ref-simpson_interpretation_1951)). The high correlation between
+the carenated index and the ratio of flake width to thickness (p \<
+0.001; *r*<sup>2</sup> = 0.9) indicates that PC3 captures relative flake
+thinness to thickness although it regresses better with the ratio of
+width to thickness. In general, thin flakes with an IPA close to 90º
+will have high positive PC3 values, whereas thick flakes with open IPA
+will have negative values.
+
+``` r
+# Best predictors fort PC3
+summary(lm(PC3 ~ W.to.Thic*IPA, PCA_Coord))
+```
+
+    ## 
+    ## Call:
+    ## lm(formula = PC3 ~ W.to.Thic * IPA, data = PCA_Coord)
+    ## 
+    ## Residuals:
+    ##      Min       1Q   Median       3Q      Max 
+    ## -22.4659  -4.6226  -0.2159   4.8543  21.1260 
+    ## 
+    ## Coefficients:
+    ##                Estimate Std. Error t value Pr(>|t|)    
+    ## (Intercept)    62.02025   17.75208   3.494 0.000645 ***
+    ## W.to.Thic     -12.79366    4.22008  -3.032 0.002917 ** 
+    ## IPA            -0.77034    0.15657  -4.920 2.48e-06 ***
+    ## W.to.Thic:IPA   0.17362    0.03855   4.503 1.43e-05 ***
+    ## ---
+    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    ## 
+    ## Residual standard error: 7.597 on 135 degrees of freedom
+    ## Multiple R-squared:  0.657,  Adjusted R-squared:  0.6494 
+    ## F-statistic: 86.21 on 3 and 135 DF,  p-value: < 2.2e-16
+
+``` r
+# Correlation between Carenated index and ratio of width to thickness
+summary(lm(Caren.Ind ~ W.to.Thic, PCA_Coord))
+```
+
+    ## 
+    ## Call:
+    ## lm(formula = Caren.Ind ~ W.to.Thic, data = PCA_Coord)
+    ## 
+    ## Residuals:
+    ##      Min       1Q   Median       3Q      Max 
+    ## -1.74506 -0.15789  0.09566  0.26291  0.86470 
+    ## 
+    ## Coefficients:
+    ##             Estimate Std. Error t value Pr(>|t|)    
+    ## (Intercept)  0.21885    0.10253   2.134   0.0346 *  
+    ## W.to.Thic    0.86108    0.02486  34.632   <2e-16 ***
+    ## ---
+    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    ## 
+    ## Residual standard error: 0.4477 on 137 degrees of freedom
+    ## Multiple R-squared:  0.8975, Adjusted R-squared:  0.8967 
+    ## F-statistic:  1199 on 1 and 137 DF,  p-value: < 2.2e-16
+
+An analysis of PC3 values according to group shows that backed products
+from Levallois recurrent centripetal methods tend to have higher values
+(mean = 5.47) with a slightly lower standard deviation. Backed products
+detached from discoidal cores, alternatively, tend to have lower values
+(mean = -5.20) and a slightly higher standard deviation (12.74).
+
+``` r
+ # Descriptive statistics of PC3
+data.frame(
+  PCA_Coord %>% 
+    group_by(Strategy.y) %>% 
+    summarise(
+      Min = min(PC3),
+      `5th Perc` = quantile(PC3, 0.05),
+      `1st quantile` = quantile(PC3, 0.25),
+      Mean = mean(PC3),
+      Meadian = quantile(PC3, 0.5),
+      `3rd quantile` = quantile(PC3, 0.75),
+      `95 Perc` = quantile(PC3, 0.95),
+      Max = max(PC3),
+      SD = sd(PC3)))
+```
+
+    ##   Strategy.y       Min X5th.Perc X1st.quantile      Mean   Meadian
+    ## 1    Discoid -38.00047 -26.50603    -14.741836 -5.388529 -5.200406
+    ## 2  Levallois -23.82052 -16.16213      0.385224  5.466624  8.588994
+    ##   X3rd.quantile X95.Perc      Max       SD
+    ## 1      4.984441  13.3835 16.49057 12.74186
+    ## 2     12.411823  18.2428 24.29432 10.44742
+
+Multiple linear regression for the prediction of PC1 values shows a
+moderate correlation when the elongation index and carenated index are
+employed as predictors (p \< 0.001; adjusted *r*<sup>2</sup> = 0.63).
+The elongation index presents the highest significance and the highest
+estimate value (-39.27), whereas the carenated index presents an
+estimate value of -4.26. The negative and high value of the estimate for
+the elongation index indicates that as the elongation tendency of a
+product increases (becoming longer relative to its width), the values of
+PC1 will decrease while all other variables remain constant. The
+negative estimate of the carenated index also indicates that as a
+product becomes thinner, the values of PC1 will decrease. Thus, the
+positive values of PC1 represent thick products with a low elongation.
+
+``` r
+# Prediction of PC1 values
+summary(lm(PC1 ~ Caren.Ind + Lam.Ind, PCA_Coord))
+```
+
+    ## 
+    ## Call:
+    ## lm(formula = PC1 ~ Caren.Ind + Lam.Ind, data = PCA_Coord)
+    ## 
+    ## Residuals:
+    ##     Min      1Q  Median      3Q     Max 
+    ## -34.306  -5.736   0.297   8.171  22.534 
+    ## 
+    ## Coefficients:
+    ##             Estimate Std. Error t value Pr(>|t|)    
+    ## (Intercept)  59.0190     4.3058  13.707  < 2e-16 ***
+    ## Caren.Ind    -4.2556     0.6908  -6.161 7.69e-09 ***
+    ## Lam.Ind     -39.2654     2.6099 -15.045  < 2e-16 ***
+    ## ---
+    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    ## 
+    ## Residual standard error: 11.02 on 136 degrees of freedom
+    ## Multiple R-squared:  0.633,  Adjusted R-squared:  0.6276 
+    ## F-statistic: 117.3 on 2 and 136 DF,  p-value: < 2.2e-16
+
+The analysis of PC1 values shows differences between the backed products
+of the discoidal and Levallois recurrent centripetal methods. On
+average, backed products from the Levallois recurrent centripetal method
+will have higher values (mean = 3.75) compared to discoidal products
+(mean = -3.80). However, an important overlapping of values is evident
+for products from both reduction methods, with high values of standard
+deviation in both cases.
+
+``` r
+# Descriptive statistics of PC1
+data.frame(
+  PCA_Coord %>% 
+    group_by(Strategy.y) %>% 
+    summarise(
+      Min = min(PC1),
+      `5th Perc` = quantile(PC1, 0.05),
+      `1st quantile` = quantile(PC1, 0.25),
+      Mean = mean(PC1),
+      Meadian = quantile(PC1, 0.5),
+      `3rd quantile` = quantile(PC1, 0.75),
+      `95 Perc` = quantile(PC1, 0.95),
+      Max = max(PC1),
+      SD = sd(PC1)))
+```
+
+    ##   Strategy.y       Min X5th.Perc X1st.quantile      Mean   Meadian
+    ## 1    Discoid -36.23377 -26.25343     -7.711467  3.747729  2.372406
+    ## 2  Levallois -44.75778 -31.17264    -16.301620 -3.802044 -2.736412
+    ##   X3rd.quantile X95.Perc      Max      SD
+    ## 1     16.789563 32.95855 35.95467 17.3134
+    ## 2      7.584384 25.18118 41.46336 18.1138
+
+## 4. Discussion
+
+Our results have shown an accuracy of 0.76 for the differentiation of
+discoidal and Levallois recurrent centripetal methods on backed
+products. Additionally, the use of decision thresholds provided an AUC
+close to 0.8. This degree of accuracy indicates that the quantification
+of morphological features through geometric morphometrics, along with
+dimensionality reduction using PCA and machine learning models, can
+accurately differentiate between the two methods tested. Of the 11
+models tested, SVM with polynomial kernel provided the best performance
+for the discrimination of discoidal and Levallois recurrent centripetal
+methods in backed artifacts. Moreover, results support the notion that
+discoidal and recurrent centripetal Levallois are two separate core
+reduction methods/conceptions.
 
 ## References
 
@@ -1700,6 +1910,15 @@ representations by back-propagating errors. Nature 323, 533–536.
 Schlager, S., 2017. Morpho and rvcg–shape analysis in r: R-packages for
 geometric morphometrics, shape analysis and surface manipulations, in:
 Statistical Shape and Deformation Analysis. Elsevier, pp. 217–256.
+
+</div>
+
+<div id="ref-simpson_interpretation_1951" class="csl-entry">
+
+Simpson, E.H., 1951. The interpretation of interaction in contingency
+tables. Journal of the Royal Statistical Society: Series B
+(Methodological) 13, 238–241.
+<https://doi.org/10.1111/j.2517-6161.1951.tb00088.x>
 
 </div>
 
