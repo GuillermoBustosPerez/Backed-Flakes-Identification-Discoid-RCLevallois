@@ -1,4 +1,4 @@
-# The identification of core edge flakes and pseudo-Levallois points in Levallois and Discoid knapping strategies
+# Combining quantitative approaches to differentiate between backed products from discoidal and Levallois reduction sequences
 
 Guillermo Bustos-Pérez<sup>1</sup>  
 Brad Gravina<sup>2, 3</sup>  
