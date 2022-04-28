@@ -341,6 +341,32 @@ transformation into PLY files. Finally, all files were decimated to a
 quality of 50,000 faces using the Rvcg R package ([Schlager,
 2017](#ref-schlager_morpho_2017)).
 
+The protocol for the digitalization of landmarks on flakes was based on
+previous studies ([Archer et al., 2021](#ref-archer_quantifying_2021),
+[2018](#ref-archer_geometric_2018)). This included the positioning of a
+total of 3 fixed landmarks, 85 curve semi-landmarks, and 420 surface
+semi-landmarks ([Bookstein, 1997a](#ref-bookstein_morphometric_1997),
+[1997b](#ref-bookstein_landmark_1997); [Gunz et al.,
+2005](#ref-gunz_semilandmarks_2005); [Gunz and Mitteroecker,
+2013](#ref-gunz_semilandmarks_2013); [Mitteroecker and Gunz,
+2009](#ref-mitteroecker_advances_2009)). This makes for a total of 508
+landmarks and semi-landmarks. The three fixed landmarks correspond to
+both laterals of the platform width, and the percussion point. The 85
+curve semi-landmarks correspond to the internal and exterior curve
+outlines of the platform (15 semi-landmarks each) and the edge of the
+flake (55 semi-landmarks), and the 60 surface semi-landmarks correspond
+to the platform surface. The dorsal and ventral surfaces are defined by
+180 semi-landmarks each. The workflow for digitalizing the landmarks and
+semi-landmarks included the creation of a template/atlas on an arbitrary
+selected flake. After this, the landmarks and semi-landmarks were
+positioned in each specimen and were relaxed to minimize bending energy
+([Bookstein, 1997a](#ref-bookstein_morphometric_1997),
+[1997b](#ref-bookstein_landmark_1997)). The entire workflow of landmark
+and semi-landmarks digitalization and relaxation to minimize bending
+energy was done in Viewbox version 4.1.0.12
+(<http://www.dhal.com/viewbox.htm>), and resulting point coordinates
+were exported into .xlsx files.
+
 Procrustes superimposition ([Kendall, 1984](#ref-kendall_shape_1984);
 [Mitteroecker and Gunz, 2009](#ref-mitteroecker_advances_2009);
 [O’Higgins, 2000](#ref-ohiggins_study_2000)) was performed using the
@@ -773,59 +799,18 @@ PCA results show that the 25 first principal components account for 95%
 of the variance of the dataset with PC1 accounting for 21.39% of
 variance and PC25 accounting for 0.36% of variance. This is an important
 reduction from the original number of variables (1524) and substantially
-lower than the sample (139).  
-The protocol for the digitalization of landmarks on flakes was based on
-previous studies ([Archer et al., 2021](#ref-archer_quantifying_2021),
-[2018](#ref-archer_geometric_2018)). This included the positioning of a
-total of 3 fixed landmarks, 85 curve semi-landmarks, and 420 surface
-semi-landmarks ([Bookstein, 1997a](#ref-bookstein_morphometric_1997),
-[1997b](#ref-bookstein_landmark_1997); [Gunz et al.,
-2005](#ref-gunz_semilandmarks_2005); [Gunz and Mitteroecker,
-2013](#ref-gunz_semilandmarks_2013); [Mitteroecker and Gunz,
-2009](#ref-mitteroecker_advances_2009)). This makes for a total of 508
-landmarks and semi-landmarks. The three fixed landmarks correspond to
-both laterals of the platform width, and the percussion point. The 85
-curve semi-landmarks correspond to the internal and exterior curve
-outlines of the platform (15 semi-landmarks each) and the edge of the
-flake (55 semi-landmarks), and the 60 surface semi-landmarks correspond
-to the platform surface. The dorsal and ventral surfaces are defined by
-180 semi-landmarks each. The workflow for digitalizing the landmarks and
-semi-landmarks included the creation of a template/atlas on an arbitrary
-selected flake. After this, the landmarks and semi-landmarks were
-positioned in each specimen and were relaxed to minimize bending energy
-([Bookstein, 1997a](#ref-bookstein_morphometric_1997),
-[1997b](#ref-bookstein_landmark_1997)). The entire workflow of landmark
-and semi-landmarks digitalization and relaxation to minimize bending
-energy was done in Viewbox version 4.1.0.12
-(<http://www.dhal.com/viewbox.htm>), and resulting point coordinates
-were exported into .xlsx files.
-
-performance metrics for each of the models. On general all models
+lower than the sample (139). The following table presents the
+performance metrics for each of the models. In general, all models
 performed with accuracy values higher than 0.7 with the exception of
-KNN, Naïve Bayes and decision tree with C5.0 algorithm. When considering
-the two measures of overall model performance (F1 and Accuracy)
-Supported Vector Machine with polynomial kernel presents the highest
-performance values (F1 = 0.75 and Accuracy = 0.757). Additionally, SVM
-with polynomial kernel also provides the highest values of precision.
-
-The following code trains the selected models using the established
-k-fold cross validation.
-
-SVM with polynomial kernel is closely followed by SVM with linear kernel
-which presents the second highest value of accuracy (0.741), the fourth
-highest value of F1 (0.726) and the second highest value of precision
-(0.774). Outside SVM with different kernels, the Boosted trees also
-presents high values of accuracy (0.732), F1 (0.732) and precision
-(0.738). KNN presented the lowest values on the general performance
-metrics with an accuracy value of 0.61 and a very low F1 score (0.461).
-KNN does seem to present high values of precision (0.751) and the
-highest value of specificity (0.888) although these are clearly the
-result of a sensitivity (0.333) lower than the no-information ratio
-(0.504).
+KNN, Naïve Bayes, and the decision tree with C5.0 algorithm. When
+considering the two measures of overall model performance (F1 and
+accuracy), SVM with polynomial kernel presents the highest performance
+values (F1 = 0.75 and accuracy = 0.757). Additionally, SVM with
+polynomial kernel also provides the highest values of precision.
 
 ``` r
 # Data frame of models performance
-knitr::kable(data.frame(
+data.frame(
   Model = c("LDA", "KNN", "Log. Reg.", "SVML", "SVMP", "SVMR",
             "C5.0", "Rand. Forest", "Boost Tree", "Baïve Bayes",
             "ANN") %>% 
@@ -843,37 +828,44 @@ knitr::kable(data.frame(
    round(confusionMatrix(Boost_Tree$pred$pred, Boost_Tree$pred$obs)[[4]][c(1,2,5,7,11)],3),
    round(confusionMatrix(NaiB_Model$pred$pred, NaiB_Model$pred$obs)[[4]][c(1,2,5,7,11)],3),
    round(confusionMatrix(mlp_Mod$pred$pred, mlp_Mod$pred$obs)[[4]][c(1,2,5,7,11)],3)))
-  )))
+  ))
 ```
 
-| Model..      | Model.Sensitivity | Model.Specificity | Model.Precision | Model.F1 | Model.Balanced.Accuracy |
-|:-------------|------------------:|------------------:|----------------:|---------:|------------------------:|
-| LDA          |             0.682 |             0.767 |           0.748 |    0.713 |                   0.724 |
-| KNN          |             0.333 |             0.888 |           0.751 |    0.461 |                   0.610 |
-| Log. Reg.    |             0.699 |             0.734 |           0.727 |    0.713 |                   0.717 |
-| SVML         |             0.684 |             0.798 |           0.774 |    0.726 |                   0.741 |
-| SVMP         |             0.723 |             0.790 |           0.778 |    0.750 |                   0.757 |
-| SVMR         |             0.733 |             0.716 |           0.723 |    0.728 |                   0.724 |
-| C5.0         |             0.660 |             0.657 |           0.661 |    0.661 |                   0.659 |
-| Rand. Forest |             0.707 |             0.742 |           0.735 |    0.721 |                   0.724 |
-| Boost Tree   |             0.725 |             0.739 |           0.738 |    0.732 |                   0.732 |
-| Baïve Bayes  |             0.670 |             0.725 |           0.712 |    0.690 |                   0.697 |
-| ANN          |             0.695 |             0.718 |           0.714 |    0.704 |                   0.706 |
+    ##         Model.. Model.Sensitivity Model.Specificity Model.Precision Model.F1
+    ## 1           LDA             0.682             0.767           0.748    0.713
+    ## 2           KNN             0.333             0.888           0.751    0.461
+    ## 3     Log. Reg.             0.699             0.734           0.727    0.713
+    ## 4          SVML             0.684             0.798           0.774    0.726
+    ## 5          SVMP             0.723             0.790           0.778    0.750
+    ## 6          SVMR             0.733             0.716           0.723    0.728
+    ## 7          C5.0             0.660             0.657           0.661    0.661
+    ## 8  Rand. Forest             0.707             0.742           0.735    0.721
+    ## 9    Boost Tree             0.725             0.739           0.738    0.732
+    ## 10  Baïve Bayes             0.670             0.725           0.712    0.690
+    ## 11          ANN             0.695             0.718           0.714    0.704
+    ##    Model.Balanced.Accuracy
+    ## 1                    0.724
+    ## 2                    0.610
+    ## 3                    0.717
+    ## 4                    0.741
+    ## 5                    0.757
+    ## 6                    0.724
+    ## 7                    0.659
+    ## 8                    0.724
+    ## 9                    0.732
+    ## 10                   0.697
+    ## 11                   0.706
 
-Evaluation of models through ROC curve and AUC shows that most models
-present acceptable/fair (0.8 – 0.7) values. Again KNN presents the
-lowest AUC value (0.67) being a poor value. SVM with polynomial kernel
-presents the highest AUC (0.799) value being very close to be an
-excellent/good model (0.9 to 0.8). Optimal probability threshold values
-from the SVM with polynomial kernel are 0.501 for Discoid and 0.491 for
-Levallois. General performance metrics (F1 and accuracy) and AUC values
-indicate that SVM with polynomial kernel is the best model. Evaluation
-of SVM with polynomial kernel confusion matrix shows a very good
-distribution along the diagonal axis with the correct identification of
-Levallois products being slightly higher than the correct identification
-of Discoid products. Directionality of confusions shows that for the SVM
-with polynomial it is more common to confuse Discoid backed products as
-Levallois instead of confusing Levallois backed products as Discoid.
+SVM with polynomial kernel is closely followed by SVM with a linear
+kernel, which presents the second highest value of accuracy (0.741), the
+fourth highest value of F1 (0.726), and the second-highest value of
+precision (0.774). Outside SVM with different kernels, the boosted trees
+also presents high values of accuracy (0.732), F1 (0.732), and precision
+(0.738). KNN presented the lowest values on the general performance
+metrics, with an accuracy value of 0.61 and a very low F1 score (0.461).
+KNN does seem to present high values of precision (0.751) and
+specificity (0.888) although these are clearly the result of a
+sensitivity (0.333) lower than the no-information ratio (0.504).
 
 ``` r
 # LDA
@@ -981,6 +973,23 @@ Roc_Curve %>%
 
 ![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/Roc%20and%20AUC-1.png)
 
+The evaluation of the models through the ROC curve and AUC shows that
+most models present acceptable/fair (0.8–0.7) values. Again, KNN
+presents the lowest AUC (0.67), a poor value. SVM with polynomial kernel
+presents the highest AUC value (0.799) and is thus very close to being
+an excellent/good model (0.9 to 0.8). The optimal probability threshold
+values from the SVM with polynomial kernel are 0.501 for discoidal and
+0.491 for Levallois. The general performance metrics (F1 and accuracy)
+and AUC values indicate that SVM with polynomial kernel is the best
+model. The evaluation of SVM with the polynomial kernel confusion matrix
+shows a very good distribution along the diagonal axis, with the correct
+identification of Levallois products being slightly higher than the
+correct identification of discoidal products. The directionality of
+confusions shows that for the SVM with polynomial kernel, it is more
+common to mistake discoidal backed products for Levallois rather than
+mistaking Levallois backed products for those from discoidal reduction
+sequences.
+
 ``` r
 # Confusion matrix 
 SVM_Poly.Confx <- confusionMatrix(SVM_Poly)$table
@@ -1011,6 +1020,16 @@ SVM_Poly.Confx %>%
 ![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/Confusion%20matrix%20of%20SVMP-1.png)
 
 ### 3.2 PC Importance
+
+The following figure presents the PC importance for the discrimination
+of knapping method according to SVM with polynomial kernel model. The PC
+importance shows that PC3 clearly stands out in importance for the
+discrimination of discoidal and Levallois backed products. PC3 only
+accounts for 10.8% of the variance but presents the maximum scaled
+importance. PC1, which represents 21.39% of the variance, is the second
+most important variable, with a score of 46.64, although far from PC3.
+PC8, which represents only 3.63% of the variance, is the third most
+important variable for the SVM with polynomial kernel model.
 
 ``` r
 # Data frame of PC importance
@@ -1082,6 +1101,23 @@ align = "h")
 ```
 
 ![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/First%20pairs%20of%20PC%20biplots-1.png)
+
+The effect of PC3 on identifying backed products from the two knapping
+methods is especially notable in the a biplot distribution. The above
+figure presents a biplot distribution of the data between PC3 and the
+following two most important variables. In both cases, backed flakes
+detached from Levallois recurrent centripetal cores tend to be clustered
+in the positive values of PC3, whereas they show a wider distribution,
+usually centered on the 0 value, for PCs 1 and 8. Backed flakes from
+discoidal reduction sequences show a wider distribution although the
+center is in the negative and 0 values of PC3. Although the combination
+of PC3 with PC1 and PC8 shows an overlapping of the confidence ellipsis,
+differentiation between both groups can be observed.  
+The following figure presents a biplot distribution of the data when the
+second (PC1), third (PC8), and fourth (PC6) most important variables are
+employed. The biplot from the combination of these variables shows much
+more consistent overlapping for the different combinations of PC1, PC8,
+and PC6.
 
 ``` r
 ggpubr::ggarrange(
