@@ -1,17 +1,22 @@
 # Combining quantitative approaches to differentiate between backed products from discoidal and Levallois reduction sequences
 
-Guillermo Bustos-Pérez<sup>1</sup>  
-Brad Gravina<sup>2, 3</sup>  
-Michel Brenet<sup>3, 4</sup>  
+Guillermo Bustos-Pérez<sup>1, 2, 3</sup>  
+Brad Gravina<sup>4, 5</sup>  
+Michel Brenet<sup>5, 6</sup>  
 Francesca Romagnoli<sup>1</sup>
 
 <sup>1</sup>Universidad Autónoma de Madrid. Departamento de Prehistoria
 y Arqueología, Campus de Cantoblanco, 28049 Madrid, Spain  
-<sup>2</sup>Musée national de Préhistoire, MCC, 1 rue du Musée, 24260
+<sup>2</sup>Institut Català de Paleoecologia Humana i Evolució Social
+(IPHES), Zona Educacional 4, Campus Sescelades URV (Edifici W3), 43007
+Tarragona, Spain  
+<sup>3</sup>Àrea de Prehistoria, Universitat Rovira i Virgili (URV),
+Avinguda de Catalunya 35, 43002 Tarragona, Spain  
+<sup>4</sup>Musée national de Préhistoire, MCC, 1 rue du Musée, 24260
 Les Eyzies de Tayac, France  
-<sup>3</sup>UMR-5199 PACEA, Université de Bordeaux, Bâtiment B8, Allée
+<sup>5</sup>UMR-5199 PACEA, Université de Bordeaux, Bâtiment B8, Allée
 Geoffroy Saint Hilaire, CS 50023, 33615 PESSAC CEDEX, France  
-<sup>4</sup>INRAP Grand Sud-Ouest, Centre mixte de recherches
+<sup>6</sup>INRAP Grand Sud-Ouest, Centre mixte de recherches
 archéologiques, Domaine de Campagne, 242460 Campagne, France
 
 Corresponding authors:  
@@ -25,23 +30,23 @@ special products of Middle Paleolithic centripetal flaking strategies.
 Their peculiarities are due to their roles as both a technological
 objective and in the management of core convexities to retain its
 geometric properties during reduction. In Middle Paleolithic contexts,
-these backed implements are commonly produced within Levallois and
-discoidal reduction sequences. Often, Levallois and discoidal backed
-implements show common geometric and morphological features that
-complicate their attribution to one of these methods. This study
-examines the identification of experimentally produced discoidal and
-recurrent centripetal Levallois backed products (including all stages of
-reduction) based on their morphological features. 3D geometric
-morphometrics are employed to quantify morphological variability among
-the experimental sample. Dimensionality reduction though principal
-component analysis is combined with 11 machine learning models for the
-identification of knapping methods. A supported vector machine with
-polynomial kernel has been identified as the best model (with a general
-accuracy of 0.76 and an area under the curve \[AUC\] of 0.8). This
-indicates that combining geometric morphometrics, principal component
-analysis, and machine learning models succeeds in capturing the
-morphological differences of backed products according to the knapping
-method.
+these backed implements are commonly produced during Levallois and
+discoidal reduction sequences. Backed products from Levallois and
+discoidal reduction sequences often show common geometric and
+morphological features that complicate their attribution to one of these
+methods. This study examines the identification of experimentally
+produced discoidal and recurrent centripetal Levallois backed products
+(including all stages of reduction) based on their morphological
+features. 3D geometric morphometrics are employed to quantify
+morphological variability among the experimental sample. Dimensionality
+reduction though principal component analysis is combined with 11
+machine learning models for the identification of knapping methods. A
+supported vector machine with polynomial kernel has been identified as
+the best model (with a general accuracy of 0.76 and an area under the
+curve \[AUC\] of 0.8). This indicates that combining geometric
+morphometrics, principal component analysis, and machine learning models
+succeeds in capturing the morphological differences of backed products
+according to the knapping method.
 
 **Key words**: lithic analysis; Levallois; Discoid; Geometric
 Morphometrics; Machine Learning; Deep Learning
@@ -52,12 +57,11 @@ The Middle Paleolithic in Western Europe is characterized by the
 diversification and increase of knapping methods resulting in
 flake-dominated assemblages ([Delagnes and Meignen,
 2006](#ref-hovers_diversity_2006); [Kuhn, 2013](#ref-kuhn_roots_2013)).
-Two of the most common flake production methods are the Discoid and the
-Levallois recurrent centripetal.  
-Following Boëda ([1995a](#ref-dibble_levallois:_1995),
-[1994](#ref-boeda_concept_1994), [1993](#ref-boeda_debitage_1993)),
-there are six technological defining criteria defining the Discoid
-method:
+Discoidal and the recurrent centripetal Levallois are two of the most
+common flake production systems during this period. Following Boëda
+([1995a](#ref-dibble_levallois:_1995), [1994](#ref-boeda_concept_1994),
+[1993](#ref-boeda_debitage_1993)), there are six technological criteria
+that define discoidal debitage:
 
 1.  The volume of the core is conceived as two oblique asymmetric convex
     surfaces delimited by an intersection plane;  
@@ -68,12 +72,12 @@ method:
     predetermination;  
 4.  Surfaces of the striking planes are oriented in a way that the core
     edge is perpendicular to the predetermined products;  
-5.  The planes of extraction of the products are secant;  
+5.  The fracture planes are secant;  
 6.  The technique employed is the direct percussion with hard hammer.
 
-Also, according to Boëda ([1994](#ref-boeda_concept_1994),
+In addition, according to Boëda ([1994](#ref-boeda_concept_1994),
 [1993](#ref-boeda_debitage_1993)) six characteristics define the
-Levallois knapping strategy from a technological point of view:
+Levallois knapping strategy:
 
 1.  The volume of the core is conceived in two convex asymmetric
     surfaces;  
@@ -82,8 +86,8 @@ Levallois knapping strategy from a technological point of view:
     surface respectively along the whole reduction process;  
 3.  The distal and lateral convexities of the debitage surface are
     maintained to obtain predetermined flakes;  
-4.  The plane of fracture of the predetermined products is parallel to
-    the intersection between both surfaces;  
+4.  The fracture plane of the predetermined products is parallel to the
+    intersection between both surfaces;  
 5.  The striking platform is perpendicular to the overhang (the core
     edge, at the intersection between the two core surfaces);  
 6.  The technique employed during the knapping process is the direct
@@ -97,34 +101,36 @@ the debitage surface) with removals being either unidirectional,
 bidirectional or centripetal ([Boëda,
 1995a](#ref-dibble_levallois:_1995); [Delagnes,
 1995](#ref-dibble_variability_1995); [Delagnes and Meignen,
-2006](#ref-hovers_diversity_2006)). Both knapping methods share the
-production of backed products which usually includes two wide
-categories: core edge flakes (*eclat débordant*) and pseudo-Levallois
-points.  
+2006](#ref-hovers_diversity_2006)).
+
+Both knapping methods involve the removal of backed products that
+usually comprise two categories: core edge flakes (*eclat débordant*)
+and pseudo-Levallois points.  
 Core edge flakes / *eclat débordant* ([Beyries and Boëda,
 1983](#ref-beyries_etude_1983); [Boëda, 1993](#ref-boeda_debitage_1993);
 [Boëda et al., 1990](#ref-boeda_identification_1990)) are technical
-backed knives which have a cutting edge opposite and parallel to a blunt
-margin (which usually haves an angle close to the 90º). This blunt
-margin commonly results from the removal of one of the laterals of the
-core and can be plain, keep the scars from previous removals or be
-cortical. Core edge flakes are also divided into two categories:
-“classical core edge flakes” and “core edge flakes with a limited back.”
-“Classical core edge flakes” ([Beyries and Boëda,
-1983](#ref-beyries_etude_1983); [Boëda, 1993](#ref-boeda_debitage_1993);
-[Boëda et al., 1990](#ref-boeda_identification_1990)), which are
-sometimes referred to as “core edge flakes with a non-limited
-back”/*“éclat débordant à dos non limité”* ([Duran,
-2005](#ref-duran_lindustrie_2005); [Duran and Soler,
-2006](#ref-duran_variabilite_2006)), have a morphological axis more or
-less similar to the axis of percussion. “Core edge flakes with a limited
-back”/*“éclat débordant à dos limité”* have a deviated axis of symmetry
-regarding the axis of percussion ([Meignen,
+backed knives that have a cutting edge opposite and parallel (or
+sub-parallel) to an abrupt margin (a back that usually has an angle
+close to 90º). This back commonly results from the removal of one of the
+lateral edges of the core and can be plain, retain the scars from
+previous removals, be cortical, or a combination of these attributes.
+Core edge flakes are also divided into two categories: “classic core
+edge flakes” and “core edge flakes with a limited back.” “Classic core
+edge flakes” ([Beyries and Boëda, 1983](#ref-beyries_etude_1983);
+[Boëda, 1993](#ref-boeda_debitage_1993); [Boëda et al.,
+1990](#ref-boeda_identification_1990)), which are sometimes referred to
+as “core edge flakes with a non-limited back”/*“éclat débordant à dos
+non limité”* ([Duran, 2005](#ref-duran_lindustrie_2005); [Duran and
+Soler, 2006](#ref-duran_variabilite_2006)), have a morphological axis
+more or less similar to the axis of percussion. “Core edge flakes with a
+limited back”/*“éclat débordant à dos limité”* a offset axis of symmetry
+in relation to the axis of percussion ([Meignen,
 1996](#ref-meignen_persistance_1996); [Meignen,
 1993](#ref-meignen_les_1993); [Pasty et al.,
-2004](#ref-pasty_etude_2004)). Usually, because of this deviation, the
-back is not parallel and does not span the entire length of the sharp
-edge or the percussion axis (Slimak, 2003).  
+2004](#ref-pasty_etude_2004)). This orientation often leads to the back
+not being parallel to nor spanning the entire length of the sharp edge
+or the percussion axis (Slimak, 2003).
+
 Pseudo-Levallois points ([Boëda, 1993](#ref-boeda_debitage_1993); [Boëda
 et al., 1990](#ref-boeda_identification_1990); [Bordes,
 1961](#ref-bordes_typologie_1961), [1953](#ref-bordes_notules_1953);
@@ -133,11 +139,13 @@ edge opposite to the back has a triangular morphology. This triangular
 morphology is usually the result of the convergence of two or more
 scars. As with core edge flakes, the back usually results from the
 removal of one of the lateral edges of the core and can be plain, retain
-the scars from previous removals, or more rarely be cortical. Both
-pseudo-Levallois points and core edge flakes with a limited back share
-the deviation of symmetry from the axis of percussion but are clearly
-differentiable due to their morphology. The present study includes the
-three categories defined above as backed products.  
+the scars from previous removals, or more rarely be cortical or a
+combination of these traits. Both pseudo-Levallois points and core edge
+flakes with a limited back share a symmetry offset from the axis of
+percussion but are clearly differentiable due to their morphology. The
+present study includes the three categories defined above as backed
+products.
+
 Depending on the knapping method, different roles in Levallois recurrent
 centripetal and discoidal debitage are attributed to core edge flakes
 and pseudo-Levallois points. [Boëda et
@@ -148,19 +156,25 @@ convexities throughout Levallois recurrent centripetal reduction.
 Similarly, pseudo-Levallois points contribute to maintaining the lateral
 and distal convexities between different series of removals ([Boëda et
 al., 1990](#ref-boeda_identification_1990)).  
-Focusing on the variability of discoidal, debitage
-[Slimak](#ref-peresani_les_2003) ([2003](#ref-peresani_les_2003)) points
-out that pseudo-Levallois points are short products that induce a
-limited lowering of the core overhang (the intersection between the
-striking and debitage surfaces). In contrast, core edge flakes can
-result from several distinct production objectives. Expanding on the
-roles of pseudo-Levallois points and core edge flakes within discoidal
-debitage, [Locht](#ref-peresani_industrie_2003)
+Focusing on the variability of discoidal debitage,
+[Slimak](#ref-peresani_les_2003) ([2003](#ref-peresani_les_2003)) noted
+that pseudo-Levallois points are short products that induce a limited
+lowering of the core overhang (the intersection between the striking and
+debitage surfaces). In contrast, core edge flakes can result from
+several distinct production objectives. Expanding on the roles of
+pseudo-Levallois points and core edge flakes within discoidal debitage,
+[Locht](#ref-peresani_industrie_2003)
 ([2003](#ref-peresani_industrie_2003)) demonstrated the systematic
 production of both products at the site of Beauvais. This indicates that
 at Beauvais, core edge flakes and pseudo-Levallois points were the main
 predetermining/predetermined products ([Locht,
-2003](#ref-peresani_industrie_2003)).  
+2003](#ref-peresani_industrie_2003)).
+
+![Middle Paleolithic sites cited in the text showing examples of
+transport of backed products from discoidal or Levallois recurrent
+centripetal sequences (base map obtained from
+<https://maps-for-free.com/>)](Article%20Figures/01%20Sites%20transported%20backed%20products.png)
+
 An additional added value of core edge flakes and pseudo-Levallois
 points is their frequent transport by Paleolithic groups. [Turq et
 al.](#ref-turq_fragmented_2013) ([2013](#ref-turq_fragmented_2013))
@@ -174,51 +188,80 @@ Brenet, 2010](#ref-folgado_economie_2010); [Turq et al.,
 2013](#ref-turq_fragmented_2013)), and the open-air site of Bout des
 Vergnes ([Courbin et al., 2020](#ref-courbin_spatial_2020)), while the
 transport of core edge flakes (into and out of the site) is also clearly
-observed at la Grotte Vaufrey ([Geneste, 1988](#ref-rigaud_les_1988))
-and at Site N of Maastricht-Belvédère ([Roebroeks et al.,
+observed at la Grotte Vaufrey ([Geneste, 1988](#ref-rigaud_les_1988)),
+Teixoneres cave ([Bustos-Pérez et al.,
+2017](#ref-bustos-perez_quantitative_2017); [Picin et al.,
+2020](#ref-picin_neanderthal_2020)), Amalda Cave ([Rios-Garaizar,
+2010](#ref-rios-garaizar_organizacion_2010)), Grotta del Cavallo ([F.
+Romagnoli et al., 2016](#ref-romagnoli_raw_2016)), l’Arbreda ([Duran and
+Soler, 2006](#ref-duran_variabilite_2006)) and at Site N of
+Maastricht-Belvédère ([Roebroeks et al.,
 1992](#ref-roebroeks_veil_1992)). Transported backed pieces have also
 been clearly identified at Abric Romaní in Spain within both Levallois
 and discoidal production methods ([Martín-Viveros et al.,
-2020](#ref-martin-viveros_use-wear_2020); [Romagnoli et al.,
-2016](#ref-romagnoli_testing_2016)).
+2020](#ref-martin-viveros_use-wear_2020); [Francesca Romagnoli et al.,
+2016](#ref-romagnoli_testing_2016)). The identification of knapping
+methods among these specific products can help to indentify diachronic
+and synchronic changes in lithic production, selection, and transport as
+a reflection of hominin technological organization and adaptive
+strategies ([Binford, 1979](#ref-binford_organization_1979); [Shott,
+2018](#ref-robinson_costs_2018))
 
 ![Backed products from the experimental sample: core edge flakes (1–2)
 and pseudo-Levallois points (3–4) from the Discoid knapping method. Core
 edge flakes (5–6) and pseudo-Levallois points (7–8) from the Levallois
 recurrent centripetal method](Article%20Figures/01%20Materials.png)
 
-A problem exists in the attribution of backed pieces to either discoidal
-or recurrent centripetal Levallois reduction.
-[Mourre](#ref-peresani_discoiou_2003)
+The attribution of backed pieces to either discoidal or recurrent
+centripetal Levallois reduction can, however, be problematic. For
+example, [Mourre](#ref-peresani_discoiou_2003)
 ([2003](#ref-peresani_discoiou_2003)) indicates that a key aspect for
 the identification of Levallois core edge flakes is the direction of the
 debitage axis, which is parallel to the intersection plane of the two
 core surfaces while the fracture plane is secant.
 [Slimak](#ref-slimak_variabilite_1998)
-([1998](#ref-slimak_variabilite_1998)) indicates that core edge flakes
-from the discoidal method might have fracture planes parallel to the
-intersection between the debitage and striking surfaces although not as
-parallel as in Levallois debitage. [Delpiano et
+([1998](#ref-slimak_variabilite_1998)) showed core edge flakes from
+discoidal reduction to equally have fracture planes parallel to the
+intersection between the debitage surface and striking platforms
+although not as parallel as in Levallois debitage. [Delpiano et
 al.](#ref-delpiano_techno-functional_2021)
-([2021](#ref-delpiano_techno-functional_2021)) indicate that Levallois
-artifacts tend to be more elongated with thinner and sub-parallel edges,
-whereas discoidal backed products show higher variation in the minimum
-and maximum thickness of the back.  
-This raises the question as to the extent to which Discoid and Levallois
+([2021](#ref-delpiano_techno-functional_2021)) demonstrated a tendency
+of Levallois products to be more elongated with thinner and sub-parallel
+edges, whereas discoidal backed products show a higher variation in the
+minimum and maximum thickness of the back. Previous studies ([Archer et
+al., 2021](#ref-archer_quantifying_2021); [González-Molina et al.,
+2020](#ref-gonzalez-molina_distinguishing_2020)) addressed the
+differentiation between discoidal and recurrent centripetal Levallois
+products in general terms were all products are considered. While this
+approach is highly effective, the differentiation between backed
+products of discoidal and recurrent centripetal Levallois sequences is
+not sufficiently addressed. Given the special technological role of
+backed products in core management and production, their specific
+techno-functional properties (@ [Delpiano et al.,
+2021](#ref-delpiano_techno-functional_2021)) ), the frequency in which
+they appear in the archaeological record, and their common transport as
+part of hominin toolkits, a more systematic approach to their accurate
+differentiation represents an important advancement in describing Middle
+Palaeolithic lithic assemblages.
+
+This raises the issue as to the extent to which discoidal and Levallois
 recurrent centripetal core edge flakes and pseudo-Levallois points can
 be differentiated based on their morphological features. This issue is
-relevant in lithic studies because it affects the technological analysis
+relevant to lithic studies because it affects the technological analysis
 of a stone tool assemblage and the evolutionary interpretation of
-knapping concepts over time. In this paper, we address this issue
-through experimental archaeology and a multi-level statistical approach.
-We reproduced classic bifacial discoidal and recurrent centripetal
+knapping concepts over time. Here we address this issue through
+experimental archaeology and a multi-level statistical approach. We
+reproduced classic bifacial discoidal and recurrent centripetal
 Levallois reduction sequences to obtain a collection of backed products.
-3D scanning of lithic artifacts and geometric morphometrics was employed
-to quantify the morphological variability of the experimental sample and
-the cores were refit. On the set of coordinates, dimensionality
-reduction through principal component analysis (PCA) was carried out,
-and 11 machine learning models were tested to obtain classification
-accuracy and variable importance.
+We produced 3D scans of lithic artifacts and employed geometric
+morphometrics to quantify the morphological variability of the
+experimental sample and the cores were refit. Dimensionality reduction
+through principal component analysis (PCA) was carried out on a set of
+coordinates, and 11 machine learning models were tested to obtain
+classification accuracy and variable importance. Geometric morphometrics
+and Machine Learning models make it possible to directly test
+technological classifications of lithic and features usually employed to
+discriminate between both methods.
 
 ## 2 Methods
 
@@ -1577,7 +1620,8 @@ FR and GBP conceived and designed the research and the experiments. GBP,
 BG, MB performed the experiments. GBP analyzed and curated the data.
 Original draft was written by GBP and FR. MB, FR, and BG reviewed and
 edited the manuscript. FR was responsible for funding acquisition. All
-the authors agreed on the final version of the paper.  
+the authors agreed on the final version of the paper.
+
 ## References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
@@ -1616,6 +1660,13 @@ Beyries, S., Boëda, E., 1983. Étude technoloogique et traces
 d’utilisation des éclats débordants de corbehem (pas-de-calais).
 Bulletin de la Société préhistorique française 80, 275–279.
 https://doi.org/<https://doi.org/10.3406/bspf.1983.5455>
+
+</div>
+
+<div id="ref-binford_organization_1979" class="csl-entry">
+
+Binford, L.R., 1979. Organization and formation processes: Looking at
+curated technologies. Journal of Anthropological Research 35, 255–273.
 
 </div>
 
@@ -1758,6 +1809,16 @@ Bustillo, M.Á., Pérez-Jiménez, J.L., Bustillo, M., 2012. Caracterización
 geoquímica de rocas sedimentarias formadas por silicificación como
 fuentes de suministro de utensilios líticos (mioceno, cuenca de madrid).
 Revista Mexicana de Ciencias Geológicas 29, 233–247.
+
+</div>
+
+<div id="ref-bustos-perez_quantitative_2017" class="csl-entry">
+
+Bustos-Pérez, G., Chacón, M.G., Rivals, F., Blasco, R., Rosell, J.,
+2017. Quantitative and qualitative analysis for the study of middle
+paleolithic retouched artifacts: Unit III of teixoneres cave (barcelona,
+spain). Journal of Archaeological Science: Reports 12, 658–672.
+<https://doi.org/10.1016/j.jasrep.2017.02.021>
 
 </div>
 
@@ -2127,6 +2188,15 @@ Magazine and Journal of Science 2, 559–572.
 
 </div>
 
+<div id="ref-picin_neanderthal_2020" class="csl-entry">
+
+Picin, A., Chacón, M.G., Gómez de Soler, B., Blasco, R., Rivals, F.,
+Rosell, J., 2020. Neanderthal mobile toolkit in short-term occupations
+at teixoneres cave (moia, spain). Journal of Archaeological Science:
+Reports 29, 102165. <https://doi.org/10.1016/j.jasrep.2019.102165>
+
+</div>
+
 <div id="ref-quinlan_c4_2014" class="csl-entry">
 
 Quinlan, J.R., 2014. C4. 5: Programs for machine learning. Elsevier.
@@ -2144,6 +2214,14 @@ Quinlan, J.R., 1996. Improved use of continuous attributes in C4.5. jair
 
 Ridgeway, G., 2007. Generalized Boosted Models: A guide to the gbm
 package. R package vignette 2007.
+
+</div>
+
+<div id="ref-rios-garaizar_organizacion_2010" class="csl-entry">
+
+Rios-Garaizar, J., 2010. Organización económica de las sociedades
+neandertales: El caso del nivel VIII de amalda (guipuzkoa). Zephyrus
+LXV, 15–37.
 
 </div>
 
@@ -2168,11 +2246,22 @@ volume I 25, 1–16.
 
 <div id="ref-romagnoli_testing_2016" class="csl-entry">
 
-Romagnoli, F., Bargalló, A., Chacón, M.G., Gómez de Soler, B., Vaquero,
-M., 2016. Testing a hypothesis about the importance of the quality of
-raw material on technological changes at abric romaní (capellades,
-spain): Some considerations using a high-resolution techno-economic
-perspective. JLS 3, 635–659. <https://doi.org/10.2218/jls.v3i2.1443>
+Romagnoli, Francesca, Bargalló, A., Chacón, M.G., Gómez de Soler, B.,
+Vaquero, M., 2016. Testing a hypothesis about the importance of the
+quality of raw material on technological changes at abric romaní
+(capellades, spain): Some considerations using a high-resolution
+techno-economic perspective. JLS 3, 635–659.
+<https://doi.org/10.2218/jls.v3i2.1443>
+
+</div>
+
+<div id="ref-romagnoli_raw_2016" class="csl-entry">
+
+Romagnoli, F., Trenti, F., Nannini, L., Carmignani, L., Ricci, G., Lo
+Vetro, D., Martini, F., Sarti, L., 2016. Raw material procurement and
+productive sequences in the palaeolithic of southern italy: The
+tyrrhenian and the ionian areas. Ressources lithiques, productions et
+transferts entre Alpes et Méditerranée 185–205.
 
 </div>
 
@@ -2188,6 +2277,16 @@ representations by back-propagating errors. Nature 323, 533–536.
 Schlager, S., 2017. Morpho and rvcg–shape analysis in r: R-packages for
 geometric morphometrics, shape analysis and surface manipulations, in:
 Statistical Shape and Deformation Analysis. Elsevier, pp. 217–256.
+
+</div>
+
+<div id="ref-robinson_costs_2018" class="csl-entry">
+
+Shott, M.J., 2018. The costs and benefits of technological organization:
+Hunter-gatherer lithic industries and beyond, in: Robinson, E., Sellet,
+F. (Eds.), Lithic Technological Organization and Paleoenvironmental
+Change. Springer International Publishing, Cham, pp. 321–333.
+<https://doi.org/10.1007/978-3-319-64407-3_15>
 
 </div>
 
