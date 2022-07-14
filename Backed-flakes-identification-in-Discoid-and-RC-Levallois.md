@@ -210,7 +210,7 @@ strategies ([Binford, 1979](#ref-binford_organization_1979); [Shott,
 ![Backed products from the experimental sample: core edge flakes (1–2)
 and pseudo-Levallois points (3–4) from the Discoid knapping method. Core
 edge flakes (5–6) and pseudo-Levallois points (7–8) from the Levallois
-recurrent centripetal method](Article%20Figures/01%20Materials.png)
+recurrent centripetal method](Article%20Figures/02%20Materials.png)
 
 The attribution of backed pieces to either discoidal or recurrent
 centripetal Levallois reduction can, however, be problematic. For
@@ -343,11 +343,11 @@ of the discoidal backed flakes of the assemblage (n = 51; 72.86%). This
 reduction in the predominance of non-cortical flakes is also expected in
 discoidal methods given the organization of both debitage surfaces, the
 nature of the surface convexities, and the fracture plane. In discoidal
-cores, both interchangeable surfaces usually have a higher apical
+cores, the interchangeable surfaces usually have a higher apical
 convexity than Levallois cores. Additionally, the angle and removal of
 flakes cover a smaller portion of the respective surface than in a
-Levallois core. Thus, it is expected that further into the knapping
-sequence, some products will retain a certain amount of cortex.
+Levallois core. Thus, it is expected that as reduction continues, some
+products will retain a certain amount of cortex.
 
 ``` r
 # Cortex per method in backed flakes
@@ -452,7 +452,7 @@ recorded for each of the flakes using the E5 software ([McPherron,
 -   **Technological length:** measured in mm along the axis
     perpendicular to the striking platform.  
 -   **Technological width:** measured in mm along the axis perpendicular
-    to the technological width.  
+    to the technological length.  
 -   **Maximum thickness** of the flake measured in mm.  
 -   **External platform angle (EPA):** measured in degrees with a manual
     goniometer.  
@@ -506,7 +506,7 @@ the core within each knapping method:
     a random sample of the data and variables, allowing for each tree to
     grow differently and to better reflect the complexity of the data
     ([Breiman, 2001](#ref-breiman_random_2001)).  
--   **Generalized Boosted Model:** ([Greenwell et al.,
+-   **Gradiant Boosting Machine:** ([Greenwell et al.,
     2019](#ref-greenwell_package_2019); [Ridgeway,
     2007](#ref-ridgeway_generalized_2007)) implements gradient boosted
     ([Friedman, 2002](#ref-friedman_stochastic_2002),
@@ -518,16 +518,30 @@ the core within each knapping method:
     1995](#ref-cortes_support-vector_1995); [Frey and Slate,
     1991](#ref-frey_letter_1991)). The present study tests SVM with
     linear, radial, and polynomial kernels.  
--   **• Artificial neural network (ANN):** with multi-layer perception,
+-   **Artificial neural network (ANN):** with multi-layer perception,
     uses a series of hidden layers and error backpropagation for model
     training ([Rumelhart et al., 1986](#ref-rumelhart_learning_1986)).  
 -   **Naïve Bayes:** computes class probabilities using Bayes’ rule
     ([Weihs et al., 2005](#ref-weihs_klar_2005)).
 
 All models are evaluated using 10×50 k-fold cross validation (10 folds
-and 50 cycles), providing measures of accuracy. The receiver operating
-characteristic (ROC) curve is employed to evaluate the ratio of detected
-true positives while avoiding false positives ([Bradley,
+and 50 cycles), providing measures of accuracy. Using a 10-fold
+division, each fold will have 14 data points (with the exception of the
+last fold, which will have 13 data points). Each fold serves
+subsequently as test set for a trained model. Although computationally
+more expensive, this guarantees that all data points will serve as test
+sets. The 50 cycles provide a random shuffling of the dataset prior to
+fold division, thus ensuring that the composition of the folds varies in
+each cycle and it does not play a significant role in the evaluation of
+the models.
+
+Machine Learning models commonly use a 0.5 classification threshold to
+assign categories. However, classification thresholds can be modified to
+balance the ability of model to detect true positives and avoid false
+positives which are respectively referred as sensitivity and specificity
+(this problem is exemplified in the following figure). The receiver
+operating characteristic (ROC) curve is employed to evaluate the ratio
+of detected true positives while avoiding false positives ([Bradley,
 1997](#ref-bradley_use_1997); [Spackman,
 1989](#ref-spackman_signal_1989)). The ROC curve allows visually
 analyzing model performance and calculating the AUC, which ranges from 1
@@ -543,9 +557,17 @@ products from initial reduction stages are morphologically similar
 independent of the knapping method. It is expected that these products
 show a higher mixture between methods and have lower probability values.
 The use of thresholds better indicates the accuracy of a model taking
-into account these probability values.
+into account these probability values. The use of thresholds better
+indicates the accuracy of a model since it takes into account these
+probability values.
 
-The development of the present study was done using R version 4.1.1 in
+![Examples of the use of different thresholds for classification. The
+upper example uses a default threshold of 0.5 for classification. The
+lower example uses a 0.7 threshold avoiding three false positives at the
+expense of one true
+positive](Article%20Figures/05%20ML%20explaining%20thresholds.png)
+
+Statistical analysis was carried out using R version R version 4.1.1 in
 IDE RStudio version 2021.09.0 ([R. C. Team,
 2019](#ref-r_core_team_r_2019); [Rs. Team,
 2019](#ref-rstudio_team_rstudio_2019)). The management of the data and
@@ -838,12 +860,12 @@ C50_Mod <- train(frmla,
 
 ### 3.1 PCA and model performance
 
-PCA results show that the 25 first principal components account for 95%
-of the variance of the dataset with PC1 accounting for 21.39% of
-variance and PC25 accounting for 0.36% of variance. This is an important
-reduction from the original number of variables (1524) and substantially
-lower than the sample (139). The following table presents the
-performance metrics for each of the models. In general, all models
+The PCA results show that the first 25 PCs account for 95% of the
+variance of the dataset, with PC1 accounting for 21.39% of the variance
+and PC25 accounting for 0.36% of the variance. This is an important
+reduction from the original number of variables (1,524) and is
+substantially lower than the sample (139). The following table presents
+the performance metrics for each of the models. In general, all models
 performed with accuracy values higher than 0.7 with the exception of
 KNN, Naïve Bayes, and the decision tree with C5.0 algorithm. When
 considering the two measures of overall model performance (F1 and
@@ -1403,8 +1425,8 @@ data.frame(
 ## 4. Discussion
 
 Our results have shown an accuracy of 0.76 for the differentiation of
-discoidal and Levallois recurrent centripetal methods on backed
-products. Additionally, the use of decision thresholds provided an AUC
+backed pieces from discoidal and Levallois recurrent centripetal
+methods. Additionally, the use of decision thresholds provided an AUC
 close to 0.8. This degree of accuracy indicates that the quantification
 of morphological features through geometric morphometrics, along with
 dimensionality reduction using PCA and machine learning models, can
@@ -1422,32 +1444,31 @@ correlated with an interaction between IPA and the ratio of flake width
 to thickness. Thin and wide artifacts with IPA values close to 90º will
 have higher PC3 values. The examination of biplots and PC3 values shows
 that backed flakes detached from Levallois recurrent centripetal cores
-will tend to be thin in relation to the thickness, non-elongated, and
-have an IPA close to 90º. PC1, which captures elongation tendencies with
-higher resolution (along with product thickness) also supports this
+tend to be thin in relation to the thickness, non-elongated, and have an
+IPA close to 90º. PC1, which captures elongation tendencies with higher
+resolution (along with product thickness) also supports this
 interpretation although higher overlapping exists. The discriminatory
 power of PC3 appears inherently related to differences in how the volume
 of cores in the two methods are conceived: non-hierarchized surfaces
 exploited with secant removals in discoidal reduction while recurrent
 centripetal Levallois is characterized by sub-parallel removals from a
 single debitage surface. Additional features for the discrimination of
-discoidal and Levallois backed products can be found in the edge angles
-and in the angles of the negatives of the dorsal face towards the
-detachment surface. In general, it is expected that products detached
-from Levallois reduction sequences will have more acute edge angles,
-along with dorsal surface negatives which will be in accordance with
-flatter surfaces. Again, these differences in the angles are also
-inherently related to the differences in how the volume of cores of the
-two methods are conceived.
+discoidal and Levallois backed products can be found in edge angles and
+the angles of negatives of the dorsal face towards the detachment
+surface. In general, it is expected that products detached from
+Levallois reduction sequences will have more acute edge angles, along
+with flatter dorsal surface negatives. Again, these differences in the
+angles are also inherently related to differences in how the volume of
+cores in the two methods are conceived.
 
 These results indicate that there are underlying morphological
 differences between backed artifacts detached from both methods. These
 underlying morphological differences can be captured and quantified by
 geometric morphometrics along with PCA and used by machine learning
 models for an accurate discrimination of methods.  
-Several authors have pointed out underlying morphological
-characteristics that can differentiate backed products detached from
-Levallois recurrent centripetal and discoidal cores ([Boëda et al.,
+Several authors have identified underlying morphological characteristics
+that can differentiate backed products detached from Levallois recurrent
+centripetal and discoidal cores ([Boëda et al.,
 1990](#ref-boeda_identification_1990); [Delpiano et al.,
 2021](#ref-delpiano_techno-functional_2021); [Meignen,
 1996](#ref-meignen_persistance_1996); [Meignen,
@@ -1467,27 +1488,28 @@ differentiation between Levallois recurrent centripetal and Discoid
 products.  
 [Delpiano et al.](#ref-delpiano_techno-functional_2021)
 ([2021](#ref-delpiano_techno-functional_2021)) focused on the general
-morphology of Discoid and Levallois backed products, stating that the
-latter tend to be thinner with subparallel and rectilinear edges and a
-higher elongation. The interpretation of PC3 in the present study also
-identifies backed products from Levallois recurrent centripetal as being
-thinner. However, the interpretation of PC1 (which better captures
-elongation) proves not to be a good criterion for discriminating between
-strategies, with both methods showing a very wide range. Concerning the
+morphology of backed products from discoidal and Levallois reduction
+sequences, stating that the latter tend to be thinner with subparallel
+and rectilinear edges and a higher elongation index. The interpretation
+of PC3 in the present study also identifies backed products from
+Levallois recurrent centripetal as being thinner. However, the
+interpretation of PC1 (which better captures elongation) proved not to
+be a sound criterion for discriminating between strategies, with both
+methods showing a very wide range of elongation values. Concerning the
 elongation of Levallois products, [Boëda et
 al.](#ref-boeda_identification_1990)
 ([1990](#ref-boeda_identification_1990)) also noticed the decrease of
 length/width ratio with each successive exploitation, resulting in short
 non-laminar flakes and core edge flakes.
 [Mourre](#ref-peresani_discoiou_2003)
-([2003](#ref-peresani_discoiou_2003)) calls attention to the direction
-of the flake debitage axis being parallel to the plane of intersection
-of both surfaces in the case of Levallois core edge flakes. In the
-present study, the effect of this feature can be linked to a higher
-carenation index, which is captured by PC3. The visual exploration of
-the 3D meshes according to PC values did not seem to capture the
-relation between the debitage axis and the symmetry of blanks as an
-important feature of Levallois centripetal backed flakes ([Meignen,
+([2003](#ref-peresani_discoiou_2003)) equally called attention to the
+direction of removal axis being parallel to the plane of intersection of
+both surfaces in the case of Levallois core edge flakes. In our study,
+the effect of this feature can be linked to a higher carenation index,
+which is captured by PC3. The visual exploration of the 3D meshes
+according to PC values did not seem to capture the relation between the
+debitage axis and the symmetry of blanks as an important feature of
+Levallois centripetal backed flakes ([Meignen,
 1996](#ref-meignen_persistance_1996); [Meignen,
 1993](#ref-meignen_les_1993)). This is probably due to the inclusion of
 core edge flakes with a limited back in the experimental sample and its
@@ -1495,107 +1517,108 @@ possible importance being overshadowed by other features better for
 discrimination captured by PC3 (IPA, carenation index and elongation
 index).  
 [González-Molina et al.](#ref-gonzalez-molina_distinguishing_2020)
-([2020](#ref-gonzalez-molina_distinguishing_2020)) achieve an 80%
+([2020](#ref-gonzalez-molina_distinguishing_2020)) achieved an 80%
 accuracy when differentiating between discoidal and Levallois
-centripetal flakes. Although their study focuses on only exploitation
-phase flakes (with the presence of cortex having very little importance
-as a variable for differentiating methods), and dimensional variables
-have high importance, it shows the potential of using machine learning
-models for the identification of knapping methods. In contrast, the
-present study focuses on a concrete set of technological products
-independent of the exploitation phase, and the use of geometric
-morphometrics excludes dimensional variables. However, despite these
-differences, similar degrees of accuracy are obtained. [Archer et
-al.](#ref-archer_quantifying_2021)
-([2021](#ref-archer_quantifying_2021)) also use geometric morphometrics
+centripetal flakes. Although their study focused uniquely on flakes from
+the exploitation phase (with the presence of cortex having very little
+importance as a variable for differentiating methods), it did not
+specifically addressed the issue of backed flakes, and dimensional
+variables (width at different points and maximum thickness) have high
+importance, it shows the potential of using machine learning models for
+the identification of knapping methods. In contrast, our study focused
+on a concrete set of technological products independent of the reduction
+phase, and the use of geometric morphometrics excludes dimensional
+variables. However, despite these differences, similar degrees of
+accuracy were obtained. [Archer et al.](#ref-archer_quantifying_2021)
+([2021](#ref-archer_quantifying_2021)) also used geometric morphometrics
 and random forest to evaluate the differentiation between three
-strategies (Levallois, discoidal, and laminar). Although for the general
-performance of the models only accuracy is provided, their study does
-present a similar value to that of the present study. However, the
+strategies (Levallois, discoidal, and laminar). Although overall
+performance of the models is based on accuracy, their study nevertheless
+reached a similar value to that of the present study. However, the
 classification of the two same classes as in the present study varies
 significantly, with an 87% accuracy for Levallois products and 40% in
 the differentiation of discoidal products. This contrasts heavily with
-the present study, where the classification is more balanced and the
-identification of backed products from the discoidal knapping strategy
-showed a slightly lower accuracy than the identification of products
-from the Levallois recurrent centripetal method (0.72 and 0.79,
-respectively).  
+our results, where the classification is more balanced and the
+identification of backed products from discoidal reduction showed a
+slightly lower accuracy than the identification of products from the
+Levallois recurrent centripetal method (0.72 and 0.79, respectively).
+
 [Archer et al.](#ref-archer_quantifying_2021)
 ([2021](#ref-archer_quantifying_2021)) also reported human analyst
-identification ratios on flakes for different archaeological sites with
-the “undiagnostic” class being the largest and usually above 60% (thus,
-only 35% of flakes were attributed to a knapping method). In both
-above-mentioned studies ([Archer et al.,
+identification ratios for flakes from different archaeological sites
+with the “undiagnostic” class being the largest, usually tallying above
+60% (thus, only 35% of flakes were attributed to a knapping method). In
+both the above-mentioned studies ([Archer et al.,
 2021](#ref-archer_quantifying_2021); [González-Molina et al.,
 2020](#ref-gonzalez-molina_distinguishing_2020)) and in the present
 study, the application of machine learning models notably increases the
 accuracy and predictions regarding the identification of knapping
-methods. However, extreme caution is strongly advisable when evaluating
-the findings since a controlled experimental assemblage does not mimic
-the complexity of the archaeological record.  
+methods. Caution is always advisable when evaluating such findings, as
+controlled experimental assemblages do not mimic the complexity of the
+archaeological record.  
 The present study has employed multiple linear regression with common
 metrics of lithic analysis as predictors to determine what features were
 captured by the PCs. The multiple linear regressions of both PC3 and PC1
-presented moderate values of correlation, with more than 0.6 of the
+presented moderate correlation values, with more than 0.6 of the
 variance explained. However, this also implies that a good portion of
 the variance remains unexplained for both PCs. The remaining unexplained
 variance can be the result of several factors. Metric variables used as
-predictors were taken manually, and this results in some degree of
-error. Geometric morphometrics capture with higher resolution the same
-metric variables, thus resulting in a source of error when establishing
-correlations. Another source of the unexplained PC variance might come
-from additional metric features (and their interactions), which are
-recorded when exhaustive attribute analysis is undertaken for lithic
-analysis (such as the number, organization and flaking angle of previous
-removals). This suggests that the improvement of this research should
-take into account increasing sample size along with the incorporation of
-these analytical features.  
-Backed flakes detached from discoidal and Levallois recurrent
-centripetal methods have been the focus of this study. However, it is
-important to note that backed products are common to other flaking
-strategies such as Quina and SSDA ([Bourguignon,
-1996](#ref-bourguignon_conception_1996); [Forestier,
-1993](#ref-forestier_clactonien:_1993)) not included in the present
-study. Although in Western Europe the coexistence of Levallois and
-discoidal knapping methods with other knapping methods in the same
+predictors were taken manually, likely resulting in some degree of
+error. Geometric morphometrics capture the same metric variables with
+higher resolution, thus representing another potential source of error
+when establishing correlations. An additional source of the unexplained
+PC variance might come from metric features (and their interactions)
+recorded as part of exhaustive attribute analyses (e.g. the number,
+organization and flaking angle of previous removals). This suggests
+future research should take into account large sample sizes along with
+the incorporation of these analytical features.  
+While backed flakes detached from discoidal and Levallois recurrent
+centripetal methods were the focus of our analysis, it is important to
+note that backed products are common to other flaking strategies such as
+Quina and SSDA ([Bourguignon, 1996](#ref-bourguignon_conception_1996);
+[Forestier, 1993](#ref-forestier_clactonien:_1993)) not included in the
+present study. Although in Western Europe the coexistence of Levallois
+and discoidal knapping methods with other knapping methods in the same
 archaeological levels is a subject of debate ([Faivre et al.,
 2017](#ref-faivre_late_2017); [Grimaldi and Santaniello,
 2014](#ref-grimaldi_new_2014); [Marciani et al.,
 2020](#ref-marciani_lithic_2020); [Ríos-Garaizar,
 2017](#ref-rios-garaizar_new_2017)), the present model can be applied to
-assemblages where Levallois and Discoid knapping strategies coexist. For
-this, the study and evaluation of the operative chain and assemblage
-context and integrity are fundamental for the study of lithic technology
-([Soressi and Geneste, 2011](#ref-soressi_history_2011)). Thus, the
-operative chain and assemblage context should be considered prior to the
-application of geometric morphometrics and machine learning models for
-the identification of knapping methods.
+assemblages where Levallois and Discoid knapping strategies have been
+shown to coexist. For this, the study and evaluation of the chaîne
+opèratoire and assemblage context and integrity are fundamental for the
+study of lithic technology ([Soressi and Geneste,
+2011](#ref-soressi_history_2011)). Thus, the chaîne opèratoire and
+assemblage integrity should be considered prior to the application of
+geometric morphometrics and machine learning models for the
+identification of knapping methods.
 
 ## 5. Conclusions
 
 Backed flakes are technological products that play special roles in the
-Discoid and Levallois recurrent centripetal methods ([Boëda,
+discoidal and Levallois recurrent centripetal methods ([Boëda,
 1993](#ref-boeda_debitage_1993); [Boëda et al.,
 1990](#ref-boeda_identification_1990); [Slimak,
-2003](#ref-peresani_les_2003)). These roles are the result of managing
-the lateral and distal convexities ([Boëda et al.,
-1990](#ref-boeda_identification_1990)), but also their systematic
-production can indicate their role as production objectives ([Locht,
-2003](#ref-peresani_industrie_2003); [Slimak,
-2003](#ref-peresani_les_2003)). Additionally, the results from several
+2003](#ref-peresani_les_2003)). In Levallois reductions, these removals
+serve to manage lateral and distal core convexities ([Boëda et al.,
+1990](#ref-boeda_identification_1990)), while their systematic
+production in discoidal reductions demonstrates their properties to be
+intentionally sought-after ([Locht, 2003](#ref-peresani_industrie_2003);
+[Slimak, 2003](#ref-peresani_les_2003)). Additionally, data from several
 sites show that they were commonly imported and exported ([Geneste,
 1988](#ref-rigaud_les_1988); [Roebroeks et al.,
 1992](#ref-roebroeks_veil_1992); [Turq et al.,
-2013](#ref-turq_fragmented_2013)), forming parts of toolkits. This
-frequent transport is possibly a result of their specific
-morpho-functional features ([Delpiano et al.,
-2021](#ref-delpiano_techno-functional_2021)), which resulted from their
-role in core management and debitage direction. Being detached from two
-technologically different knapping methods, it is expected that their
-morphological features differ and allow for the identification of the
-knapping method. With the use of geometric morphometrics, these
-morphological features can be quantified, and PCA for dimensionality
-reduction allows them to be employed in machine learning models.  
+2013](#ref-turq_fragmented_2013)). This frequent transport is possibly
+connected to their specific morpho-functional features ([Delpiano et
+al., 2021](#ref-delpiano_techno-functional_2021)), a “prehensile” core
+edge opposite a convergent cutting edge. Associated with two
+technologically distinct core reduction methods, it should be expected
+that their morphological features differ and therefore allow for the
+identification of the knapping method. With the use of geometric
+morphometrics, these morphological features can be quantified, and PCA
+for dimensionality reduction allows them to be employed in machine
+learning models.
+
 PCA and machine learning models indeed capture the different
 morphological features derived from both knapping methods, resulting in
 an accuracy of 0.76 and an AUC of 0.8 in the case of the best model for
@@ -1603,13 +1626,16 @@ differentiating between knapping strategies. Most of the importance for
 differentiating between the knapping methods was captured by only one
 variable (PC3), which multiple linear regressions showed to be
 correlated with the elongation index and mostly an interaction between
-IPA and the carenation index.  
+IPA and the carenation index.
+
 Geometric morphometrics in combination with dimensionality reduction
 methods (PCA) and machine learning models can offer high-resolution
 methods for the identification of knapping methods in lithic analysis
 although their application should not be independent from the study of
-the operative chain and assemblage technological context.  
-## Acknowledgments  
+the operative chain and assemblage technological context.
+
+## Acknowledgments
+
 This research has been supported by the project SI1/PJI/2019-00488
 funded by Comunidad Autónoma de Madrid and Universidad Autónoma de
 Madrid.
