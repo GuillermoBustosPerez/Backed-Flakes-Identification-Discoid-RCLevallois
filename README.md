@@ -23,18 +23,23 @@ Other examples of published data:
 
 **Authors**:
 
--   Guillermo Bustos-Pérez<sup>1</sup>  
--   Brad Gravina<sup>2, 3</sup>  
--   Michel Brenet<sup>3, 4</sup>  
+-   Guillermo Bustos-Pérez<sup>1, 2, 3</sup>  
+-   Brad Gravina<sup>4, 5</sup>  
+-   Michel Brenet<sup>5, 6</sup>  
 -   Francesca Romagnoli<sup>1</sup>
 
 <sup>1</sup>Universidad Autónoma de Madrid. Departamento de Prehistoria
 y Arqueología, Campus de Cantoblanco, 28049 Madrid, Spain  
-<sup>2</sup>Musée national de Préhistoire, MCC, 1 rue du Musée, 24260
+<sup>2</sup>Institut Català de Paleoecologia Humana i Evolució Social
+(IPHES), Zona Educacional 4, Campus Sescelades URV (Edifici W3), 43007
+Tarragona, Spain  
+<sup>3</sup>Àrea de Prehistoria, Universitat Rovira i Virgili (URV),
+Avinguda de Catalunya 35, 43002 Tarragona, Spain  
+<sup>4</sup>Musée national de Préhistoire, MCC, 1 rue du Musée, 24260
 Les Eyzies de Tayac, France  
-<sup>3</sup>UMR-5199 PACEA, Université de Bordeaux, Bâtiment B8, Allée
+<sup>5</sup>UMR-5199 PACEA, Université de Bordeaux, Bâtiment B8, Allée
 Geoffroy Saint Hilaire, CS 50023, 33615 PESSAC CEDEX, France  
-<sup>4</sup>INRAP Grand Sud-Ouest, Centre mixte de recherches
+<sup>6</sup>INRAP Grand Sud-Ouest, Centre mixte de recherches
 archéologiques, Domaine de Campagne, 242460 Campagne, France
 
 Corresponding authors:  
