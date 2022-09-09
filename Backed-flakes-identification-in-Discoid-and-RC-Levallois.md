@@ -1123,9 +1123,17 @@ sequences.
 ``` r
 # Confusion matrix 
 SVM_Poly.Confx <- confusionMatrix(SVM_Poly)$table
-
 SVM_Poly.Confx <- reshape2::melt(SVM_Poly.Confx)
 
+# Normalize the confusion matrix
+SVM_Poly.Confx <- SVM_Poly.Confx %>% mutate(
+  value = case_when(
+    Reference == "Discoid" ~ (value/sum(confusionMatrix(SVM_Poly)$table[1:2]))*100,
+    Reference == "Levallois" ~ (value/sum(confusionMatrix(SVM_Poly)$table[3:4])*100)
+  )
+)
+
+# Set factors
 SVM_Poly.Confx$Prediction <- factor(SVM_Poly.Confx$Prediction, 
                                     levels = c(
                                       "Discoid", "Levallois"))
@@ -1133,6 +1141,7 @@ SVM_Poly.Confx$Reference <- factor(SVM_Poly.Confx$Reference,
                                    levels = c(
                                      "Levallois", "Discoid"))
 
+# Plot Confusion matrix
 SVM_Poly.Confx %>% 
   ggplot(aes(Reference, Prediction, fill = value)) + 
   geom_tile(alpha = 0.75) +
