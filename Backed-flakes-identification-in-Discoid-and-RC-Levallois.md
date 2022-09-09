@@ -929,7 +929,7 @@ values of precision.
 # Data frame of models performance
 Model.Performance <- data.frame(
   Model = c("LDA", "KNN", "Log. Reg.", "SVML", "SVMP", "SVMR",
-            "C5.0", "Rand. Forest", "GBM", "Baïve Bayes",
+            "C5.0", "Rand. Forest", "GBM", "Naïve Bayes",
             "ANN") %>% 
     cbind(
   data.frame(
@@ -984,10 +984,6 @@ Model.Performance %>%
     legend.position = "none"
   )
 ```
-
-    ## Warning: Removed 5 rows containing missing values (position_stack).
-
-    ## Warning: Removed 5 rows containing missing values (geom_text).
 
 ![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/Model%20performance%20metrics-1.png)
 
