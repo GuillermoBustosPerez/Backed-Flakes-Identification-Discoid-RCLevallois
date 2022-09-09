@@ -1049,7 +1049,7 @@ Roc_Curve <- rbind(Roc_Curve, temp)
 # Boosted tree
 temp <- pROC::roc(Boost_Tree$pred$obs, Boost_Tree$pred$Levallois)
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
-              Model = "Boost Tree")
+              Model = "GBM")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # Boosted tree
@@ -1074,7 +1074,7 @@ aucs <- c(
   paste0("SVM Radial (", round(pROC::auc(SVM_Radial$pred$obs, SVM_Radial$pred$Levallois),2) ,")"),
   paste0("C5.0 (", round(pROC::auc(C50_Mod$pred$obs, C50_Mod$pred$Levallois),2) ,")"),
   paste0("Rand. Forest (", round(pROC::auc(RF_Model$pred$obs, RF_Model$pred$Levallois),2) ,")"),
-  paste0("Boosted. Tree (", round(pROC::auc(Boost_Tree$pred$obs, Boost_Tree$pred$Levallois),2) ,")"),
+  paste0("GBM (", round(pROC::auc(Boost_Tree$pred$obs, Boost_Tree$pred$Levallois),2) ,")"),
   paste0("Naïve Bayes (", round(pROC::auc(NaiB_Model$pred$obs, NaiB_Model$pred$Levallois),2) ,")"),
   paste0("ANN (", round(pROC::auc(mlp_Mod$pred$obs, mlp_Mod$pred$Levallois),2) ,")"))
   
@@ -1091,7 +1091,7 @@ Roc_Curve %>%
   scale_color_brewer(palette = "Paired",
                      breaks = c("LDA", "KNN", "Log. Reg.",
                                 "SVML", "SVMP", "SVMR", "C5.0",
-                                "Rand. Forest", "Boost Tree",
+                                "Rand. Forest", "GBM",
                                 "Naïve Bayes", "ANN"),
                      labels = aucs) +
   labs(colour = "Model (AUC)") +
