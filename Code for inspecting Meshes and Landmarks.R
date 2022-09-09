@@ -1,4 +1,5 @@
-test <- Morpho::read.csv.folder(
+# Read in csv's containing coordinates from folder
+Landmarks <- Morpho::read.csv.folder(
   folder = "Data/GM csvs",
   x = 1:508,
   y = 1:3,
@@ -9,8 +10,8 @@ test <- Morpho::read.csv.folder(
 filenames <- list.files(path = "Data/GM csvs", pattern = ".csv") 
 filenames <- gsub('.{4}$', '', filenames)
 
-#### Set array with names and ####
-Flakes_LM <- test$arr
+# Set array with names
+Flakes_LM <- Landmarks$arr
 dimnames(Flakes_LM)[[3]] <- filenames
 
 #### Check landmarks #####
@@ -19,4 +20,5 @@ Morpho::checkLM(
   path = "Meshes/", 
   Rdata = FALSE,
   render = "s",
-  suffix = ".ply")
+  suffix = ".ply"
+  )
