@@ -475,6 +475,10 @@ These measures served to generate the following indices:
 -   **Width to thickness ratio**: flake width divided by maximum
     thickness.
 
+These measures are not intended as inputs for the Machine Learning
+models, but to explore the meaning of the Principal Components through
+multiple linear regressions.
+
 ### 2.3 Machine learning models and evaluation
 
 The following 11 machine learning models have been tested for
@@ -864,20 +868,68 @@ The PCA results show that the first 25 PCs account for 95% of the
 variance of the dataset, with PC1 accounting for 21.39% of the variance
 and PC25 accounting for 0.36% of the variance. This is an important
 reduction from the original number of variables (1,524) and is
-substantially lower than the sample (139). The following table presents
-the performance metrics for each of the models. In general, all models
-performed with accuracy values higher than 0.7 with the exception of
-KNN, Naïve Bayes, and the decision tree with C5.0 algorithm. When
-considering the two measures of overall model performance (F1 and
-accuracy), SVM with polynomial kernel presents the highest performance
-values (F1 = 0.75 and accuracy = 0.757). Additionally, SVM with
-polynomial kernel also provides the highest values of precision.
+substantially lower than the sample (139).
+
+``` r
+# PCA plot 
+
+# Place into data frmae 
+PC.Plot <- summary(pca)$importance[2:3, 1:25] %>% 
+  as.data.frame() %>% t() %>% 
+  as.data.frame() 
+
+# Bar plot of variance and cumulative variance
+ggpubr::ggarrange(
+  
+  (PC.Plot %>% 
+     mutate(PC = rownames(PC.Plot),
+            `Proportion of Variance` = `Proportion of Variance`*100) %>% 
+     
+     ggplot(aes(`Proportion of Variance`, reorder(PC, `Proportion of Variance`))) +
+     geom_col(fill = "blue", alpha = 0.65) +
+     geom_text(aes(label = round(`Proportion of Variance`, 2)), hjust = "bottom",  size = 2.25) +
+     theme_bw() +
+     scale_x_continuous(breaks = seq(0, 25, 5), lim = c(0, 25)) +
+     ylab(NULL) +
+     theme(
+       axis.title = element_text(size = 7, color = "black", face = "bold"),
+       axis.text = element_text(size = 7, color = "black"))
+  ),
+  
+  (PC.Plot %>% 
+     mutate(PC = rownames(PC.Plot),
+            `Cumulative Proportion` = `Cumulative Proportion`*100) %>% 
+     
+     ggplot(aes(`Cumulative Proportion`, reorder(PC, -`Cumulative Proportion`))) +
+     geom_col(fill = "blue", alpha = 0.65) +
+     geom_text(aes(label = round(`Cumulative Proportion`, 2)), hjust = "top",  size = 2.25) +
+     theme_bw() +
+     scale_x_continuous(breaks = seq(0, 100, 10), lim = c(0, 100)) +
+     ylab(NULL) +
+     theme(
+       axis.title = element_text(size = 7, color = "black", face = "bold"),
+       axis.text.x = element_text(size = 7, color = "black"),
+       axis.text.y = element_blank())
+  ),
+  ncol = 2)
+```
+
+![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/unnamed-chunk-3-1.png)
+
+The following figure presents the performance metrics for each of the
+models. In general, all models performed with accuracy values higher
+than 0.7 with the exception of KNN, Naïve Bayes, and the decision tree
+with C5.0 algorithm. When considering the two measures of overall model
+performance (F1 and accuracy), SVM with polynomial kernel presents the
+highest performance values (F1 = 0.75 and accuracy = 0.757).
+Additionally, SVM with polynomial kernel also provides the highest
+values of precision.
 
 ``` r
 # Data frame of models performance
-data.frame(
+Model.Performance <- data.frame(
   Model = c("LDA", "KNN", "Log. Reg.", "SVML", "SVMP", "SVMR",
-            "C5.0", "Rand. Forest", "Boost Tree", "Baïve Bayes",
+            "C5.0", "Rand. Forest", "GBM", "Baïve Bayes",
             "ANN") %>% 
     cbind(
   data.frame(
@@ -894,32 +946,50 @@ data.frame(
    round(confusionMatrix(NaiB_Model$pred$pred, NaiB_Model$pred$obs)[[4]][c(1,2,5,7,11)],3),
    round(confusionMatrix(mlp_Mod$pred$pred, mlp_Mod$pred$obs)[[4]][c(1,2,5,7,11)],3)))
   ))
+
+# Plot model performance per metric
+Model.Performance %>% 
+  pivot_longer(cols = Model.Sensitivity:Model.Balanced.Accuracy, 
+               names_to = "Metric",
+               values_to = "Values") %>% 
+  
+  ggplot(aes(Values, Model.., fill = Model..)) +
+  geom_col() +
+  facet_wrap(~ factor(Metric, 
+                      levels = c("Model.Sensitivity", 
+                                 "Model.Specificity", 
+                                 "Model.Precision",
+                                 "Model.F1",
+                                 "Model.Balanced.Accuracy"),
+                      labels = c(
+                        "Sensitivity",
+                        "Specificity",
+                        "Precision",
+                        "F1",
+                        "Balanced Accuracy")),
+             scales = "free", ncol = 2) +
+  geom_text(aes(label = (Values)), hjust= "top", size = 2.5) +
+  theme_light() +
+  scale_y_discrete(
+    limits = c("LDA", "KNN", "Log. Reg.", "SVML", "SVMP", "SVMR",
+               "C5.0", "Rand. Forest", "GBM", "Naïve Bayes",
+               "ANN")) +
+  scale_fill_brewer(palette = "Paired") +
+  ylab(NULL) +
+  xlab(NULL) +
+  theme(
+    strip.text = element_text(color = "black", face = "bold", size = 9),
+    strip.background = element_rect(fill = "white", colour = "black", size = 1),
+    axis.text = element_text(size = 8, color = "black"),
+    legend.position = "none"
+  )
 ```
 
-    ##         Model.. Model.Sensitivity Model.Specificity Model.Precision Model.F1
-    ## 1           LDA             0.682             0.767           0.748    0.713
-    ## 2           KNN             0.333             0.888           0.751    0.461
-    ## 3     Log. Reg.             0.699             0.734           0.727    0.713
-    ## 4          SVML             0.684             0.798           0.774    0.726
-    ## 5          SVMP             0.723             0.790           0.778    0.750
-    ## 6          SVMR             0.733             0.716           0.723    0.728
-    ## 7          C5.0             0.660             0.657           0.661    0.661
-    ## 8  Rand. Forest             0.707             0.742           0.735    0.721
-    ## 9    Boost Tree             0.725             0.739           0.738    0.732
-    ## 10  Baïve Bayes             0.670             0.725           0.712    0.690
-    ## 11          ANN             0.695             0.718           0.714    0.704
-    ##    Model.Balanced.Accuracy
-    ## 1                    0.724
-    ## 2                    0.610
-    ## 3                    0.717
-    ## 4                    0.741
-    ## 5                    0.757
-    ## 6                    0.724
-    ## 7                    0.659
-    ## 8                    0.724
-    ## 9                    0.732
-    ## 10                   0.697
-    ## 11                   0.706
+    ## Warning: Removed 5 rows containing missing values (position_stack).
+
+    ## Warning: Removed 5 rows containing missing values (geom_text).
+
+![](Backed-flakes-identification-in-Discoid-and-RC-Levallois_files/figure-markdown_github/Model%20performance%20metrics-1.png)
 
 SVM with polynomial kernel is closely followed by SVM with a linear
 kernel, which presents the second highest value of accuracy (0.741), the
