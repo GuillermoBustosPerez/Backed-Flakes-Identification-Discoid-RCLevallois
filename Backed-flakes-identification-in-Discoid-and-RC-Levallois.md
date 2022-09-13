@@ -299,20 +299,19 @@ lapply(list.of.packages, library, character.only = TRUE)
 ```
 
     ## [[1]]
-    ##  [1] "forcats"   "stringr"   "dplyr"     "purrr"     "readr"     "tidyr"    
-    ##  [7] "tibble"    "ggplot2"   "tidyverse" "stats"     "graphics"  "grDevices"
-    ## [13] "utils"     "datasets"  "methods"   "base"     
+    ##  [1] "ranger"    "caret"     "lattice"   "forcats"   "stringr"   "dplyr"     "purrr"    
+    ##  [8] "readr"     "tidyr"     "tibble"    "ggplot2"   "tidyverse" "stats"     "graphics" 
+    ## [15] "grDevices" "utils"     "datasets"  "methods"   "base"     
     ## 
     ## [[2]]
-    ##  [1] "caret"     "lattice"   "forcats"   "stringr"   "dplyr"     "purrr"    
-    ##  [7] "readr"     "tidyr"     "tibble"    "ggplot2"   "tidyverse" "stats"    
-    ## [13] "graphics"  "grDevices" "utils"     "datasets"  "methods"   "base"     
+    ##  [1] "ranger"    "caret"     "lattice"   "forcats"   "stringr"   "dplyr"     "purrr"    
+    ##  [8] "readr"     "tidyr"     "tibble"    "ggplot2"   "tidyverse" "stats"     "graphics" 
+    ## [15] "grDevices" "utils"     "datasets"  "methods"   "base"     
     ## 
     ## [[3]]
-    ##  [1] "ranger"    "caret"     "lattice"   "forcats"   "stringr"   "dplyr"    
-    ##  [7] "purrr"     "readr"     "tidyr"     "tibble"    "ggplot2"   "tidyverse"
-    ## [13] "stats"     "graphics"  "grDevices" "utils"     "datasets"  "methods"  
-    ## [19] "base"
+    ##  [1] "ranger"    "caret"     "lattice"   "forcats"   "stringr"   "dplyr"     "purrr"    
+    ##  [8] "readr"     "tidyr"     "tibble"    "ggplot2"   "tidyverse" "stats"     "graphics" 
+    ## [15] "grDevices" "utils"     "datasets"  "methods"   "base"
 
 ``` r
 rm(list.of.packages)
@@ -621,26 +620,22 @@ pca <- prcomp(LM.DF, scale. = TRUE)
 summary(pca)$importance[1:3, 1:25]
 ```
 
-    ##                             PC1      PC2      PC3      PC4      PC5      PC6
-    ## Standard deviation     18.05288 16.62783 12.83087 10.83128 10.42072 8.299316
-    ## Proportion of Variance  0.21385  0.18142  0.10803  0.07698  0.07125 0.045200
-    ## Cumulative Proportion   0.21385  0.39527  0.50330  0.58028  0.65153 0.696730
-    ##                            PC7      PC8      PC9     PC10     PC11     PC12
-    ## Standard deviation     7.73039 7.439897 6.710911 6.173021 5.368746 4.773021
-    ## Proportion of Variance 0.03921 0.036320 0.029550 0.025000 0.018910 0.014950
-    ## Cumulative Proportion  0.73594 0.772260 0.801810 0.826810 0.845730 0.860670
-    ##                            PC13    PC14     PC15     PC16    PC17    PC18
-    ## Standard deviation     4.562145 4.44228 3.803028 3.750857 3.54599 3.23142
-    ## Proportion of Variance 0.013660 0.01295 0.009490 0.009230 0.00825 0.00685
-    ## Cumulative Proportion  0.874330 0.88728 0.896770 0.906000 0.91425 0.92110
-    ##                            PC19    PC20     PC21     PC22     PC23    PC24
-    ## Standard deviation     2.956198 2.70170 2.649925 2.516422 2.466077 2.38239
-    ## Proportion of Variance 0.005730 0.00479 0.004610 0.004160 0.003990 0.00372
-    ## Cumulative Proportion  0.926840 0.93163 0.936240 0.940390 0.944380 0.94811
-    ##                            PC25
-    ## Standard deviation     2.327281
-    ## Proportion of Variance 0.003550
-    ## Cumulative Proportion  0.951660
+    ##                             PC1      PC2      PC3      PC4      PC5      PC6     PC7
+    ## Standard deviation     18.05288 16.62783 12.83087 10.83128 10.42072 8.299316 7.73039
+    ## Proportion of Variance  0.21385  0.18142  0.10803  0.07698  0.07125 0.045200 0.03921
+    ## Cumulative Proportion   0.21385  0.39527  0.50330  0.58028  0.65153 0.696730 0.73594
+    ##                             PC8      PC9     PC10     PC11     PC12     PC13    PC14
+    ## Standard deviation     7.439897 6.710911 6.173021 5.368746 4.773021 4.562145 4.44228
+    ## Proportion of Variance 0.036320 0.029550 0.025000 0.018910 0.014950 0.013660 0.01295
+    ## Cumulative Proportion  0.772260 0.801810 0.826810 0.845730 0.860670 0.874330 0.88728
+    ##                            PC15     PC16    PC17    PC18     PC19    PC20     PC21     PC22
+    ## Standard deviation     3.803028 3.750857 3.54599 3.23142 2.956198 2.70170 2.649925 2.516422
+    ## Proportion of Variance 0.009490 0.009230 0.00825 0.00685 0.005730 0.00479 0.004610 0.004160
+    ## Cumulative Proportion  0.896770 0.906000 0.91425 0.92110 0.926840 0.93163 0.936240 0.940390
+    ##                            PC23    PC24     PC25
+    ## Standard deviation     2.466077 2.38239 2.327281
+    ## Proportion of Variance 0.003990 0.00372 0.003550
+    ## Cumulative Proportion  0.944380 0.94811 0.951660
 
 Once PCA is performed, values of each of the 25 first PC’s can be
 extracted for each backed flake. Additionally it is necessary to store
@@ -1420,12 +1415,12 @@ data.frame(
       SD = sd(PC3)))
 ```
 
-    ##   Strategy.y       Min X5th.Perc X1st.quantile      Mean   Meadian
-    ## 1    Discoid -38.00047 -26.50603    -14.741836 -5.388529 -5.200406
-    ## 2  Levallois -23.82052 -16.16213      0.385224  5.466624  8.588994
-    ##   X3rd.quantile X95.Perc      Max       SD
-    ## 1      4.984441  13.3835 16.49057 12.74186
-    ## 2     12.411823  18.2428 24.29432 10.44742
+    ##   Strategy.y       Min X5th.Perc X1st.quantile      Mean   Meadian X3rd.quantile X95.Perc
+    ## 1    Discoid -38.00047 -26.50603    -14.741836 -5.388529 -5.200406      4.984441  13.3835
+    ## 2  Levallois -23.82052 -16.16213      0.385224  5.466624  8.588994     12.411823  18.2428
+    ##        Max       SD
+    ## 1 16.49057 12.74186
+    ## 2 24.29432 10.44742
 
 Multiple linear regression for the prediction of PC1 values shows a
 moderate correlation when the elongation index and carenated index are
@@ -1490,12 +1485,12 @@ data.frame(
       SD = sd(PC1)))
 ```
 
-    ##   Strategy.y       Min X5th.Perc X1st.quantile      Mean   Meadian
-    ## 1    Discoid -36.23377 -26.25343     -7.711467  3.747729  2.372406
-    ## 2  Levallois -44.75778 -31.17264    -16.301620 -3.802044 -2.736412
-    ##   X3rd.quantile X95.Perc      Max      SD
-    ## 1     16.789563 32.95855 35.95467 17.3134
-    ## 2      7.584384 25.18118 41.46336 18.1138
+    ##   Strategy.y       Min X5th.Perc X1st.quantile      Mean   Meadian X3rd.quantile X95.Perc
+    ## 1    Discoid -36.23377 -26.25343     -7.711467  3.747729  2.372406     16.789563 32.95855
+    ## 2  Levallois -44.75778 -31.17264    -16.301620 -3.802044 -2.736412      7.584384 25.18118
+    ##        Max      SD
+    ## 1 35.95467 17.3134
+    ## 2 41.46336 18.1138
 
 ## 4. Discussion
 
@@ -1751,14 +1746,14 @@ variability. Archaeological and Anthropological Sciences 10, 1991–2003.
 
 Bergmeir, C., Benítez, J.M., 2012. Neural Networks in R using the
 Stuttgart Neural Network Simulator: RSNNS. Journal of Statistical
-Software 46. <https://doi.org/10.18637/jss.v046.i07>
+Software 46, 1–26. <https://doi.org/10.18637/jss.v046.i07>
 
 </div>
 
 <div id="ref-beyries_etude_1983" class="csl-entry">
 
 Beyries, S., Boëda, E., 1983. Étude technoloogique et traces
-d’utilisation des éclats débordants de corbehem (pas-de-calais).
+d’utilisation des éclats débordants de Corbehem (Pas-de-Calais).
 Bulletin de la Société préhistorique française 80, 275–279.
 https://doi.org/<https://doi.org/10.3406/bspf.1983.5455>
 
@@ -1766,15 +1761,15 @@ https://doi.org/<https://doi.org/10.3406/bspf.1983.5455>
 
 <div id="ref-binford_organization_1979" class="csl-entry">
 
-Binford, L.R., 1979. Organization and formation processes: Looking at
-curated technologies. Journal of Anthropological Research 35, 255–273.
+Binford, L.R., 1979. Organization and Formation Processes: Looking at
+Curated Technologies. Journal of Anthropological Research 35, 255–273.
 
 </div>
 
 <div id="ref-dibble_levallois:_1995" class="csl-entry">
 
-Boëda, E., 1995a. Levallois: A volumetric construction, methods, a
-technique, in: Dibble, H.L., Bar-Yosef, O. (Eds.), The Definition and
+Boëda, E., 1995a. Levallois: A Volumetric Construction, Methods, A
+Technique, in: Dibble, H.L., Bar-Yosef, O. (Eds.), The Definition and
 Interpretation of Levallois Technology, Monographs in World Archaeology.
 Prehistory Press, Madison, Wisconsin, pp. 41–68.
 
@@ -1790,14 +1785,14 @@ lithiques des niveaux micoquiens de Külna (Tchécoslovaquie). Paléo 1,
 
 <div id="ref-boeda_concept_1994" class="csl-entry">
 
-Boëda, E., 1994. Le concept levallois: Variabilité des méthodes, CNRS
+Boëda, E., 1994. Le concept Levallois: Variabilité des méthodes, CNRS
 éditions. CNRS.
 
 </div>
 
 <div id="ref-boeda_debitage_1993" class="csl-entry">
 
-Boëda, E., 1993. Le débitage discoïde et le débitage levallois récurrent
+Boëda, E., 1993. Le débitage discoïde et le débitage Levallois récurrent
 centripède. Bulletin de la Société Préhistorique Française 90, 392–404.
 <https://doi.org/10.3406/bspf.1993.9669>
 
@@ -1806,7 +1801,7 @@ centripède. Bulletin de la Société Préhistorique Française 90, 392–404.
 <div id="ref-boeda_identification_1990" class="csl-entry">
 
 Boëda, E., Geneste, J.-M., Meignen, L., 1990. Identification de chaînes
-opératoires lithiques du paléolithique ancien et moyen. Paléo 2, 43–80.
+opératoires lithiques du Paléolithique ancien et moyen. Paléo 2, 43–80.
 
 </div>
 
@@ -1827,8 +1822,8 @@ University Press.
 
 <div id="ref-bordes_typologie_1961" class="csl-entry">
 
-Bordes, F., 1961. Typologie du paléolithique ancien et moyen,
-Publications de l’institut de préhistoire de l’université de bordeaux.
+Bordes, F., 1961. Typologie du Paléolithique ancien et moyen,
+Publications de l’institut de préhistoire de l’université de Bordeaux.
 CNRS Editions, Bordeaux.
 
 </div>
@@ -1836,14 +1831,15 @@ CNRS Editions, Bordeaux.
 <div id="ref-bordes_notules_1953" class="csl-entry">
 
 Bordes, F., 1953. Notules de typologie paléolithique II : Pointes
-Levalloisiennes et pointes pseudo-levalloisiennes. bspf 50, 311–313.
+Levalloisiennes et pointes pseudo-levalloisiennes. Bulletin de la
+Société préhistorique de France 50, 311–313.
 <https://doi.org/10.3406/bspf.1953.3057>
 
 </div>
 
 <div id="ref-bourguignon_conception_1996" class="csl-entry">
 
-Bourguignon, L., 1996. La conception du debitage quina. Quaternaria Nova
+Bourguignon, L., 1996. La conception du debitage Quina. Quaternaria Nova
 6, 149–166.
 
 </div>
@@ -1858,7 +1854,7 @@ evaluation of machine learning algorithms. Pattern recognition 30,
 
 <div id="ref-breiman_random_2001" class="csl-entry">
 
-Breiman, L., 2001. Random forests. Machine Learning 45, 5–32.
+Breiman, L., 2001. Random Forests. Machine Learning 45, 5–32.
 <https://doi.org/10.1023/A:1010933404324>
 
 </div>
@@ -1866,16 +1862,16 @@ Breiman, L., 2001. Random forests. Machine Learning 45, 5–32.
 <div id="ref-brenet_variabilite_2013" class="csl-entry">
 
 Brenet, M., 2013. Variabilité et signification des productions lithiques
-au paléolithique moyen ancien. L’exemple de trois gisements de plein-air
-du bergeracois (dordogne, france), BAR international series.
+au Paléolithique moyen ancien. L’exemple de trois gisements de plein-air
+du Bergeracois (Dordogne, France), BAR International Series.
 Archaeopress, Oxford.
 
 </div>
 
 <div id="ref-brenet_silex_2012" class="csl-entry">
 
-Brenet, M., 2012. Silex et roches métamorphiques au paléolithique moyen
-récent: Combemenue (corrèze) et chemin d’herbe (lot-et-garonne), in:
+Brenet, M., 2012. Silex et roches métamorphiques au Paléolithique moyen
+récent: Combemenue (Corrèze) et Chemin d’Herbe (Lot-et-Garonne), in:
 Marchand, G., Querré, G. (Eds.), Roches Et Sociétés de La Préhistoire
 Entre Massifs Cristallins Et Bassins Sédimentaires : Le Nord-Ouest de La
 France Dans Son Contexte Européen. Presses universitaires de Rennes, pp.
@@ -1886,7 +1882,7 @@ France Dans Son Contexte Européen. Presses universitaires de Rennes, pp.
 <div id="ref-brenet_gisement_2008" class="csl-entry">
 
 Brenet, M., Cretin, C., 2008. Le gisement paléolithique moyen et
-supérieur de combemenue (brignac-la-plaine, corrèze). Du microvestige au
+supérieur de Combemenue (Brignac-la-plaine, Corrèze). Du microvestige au
 territoire, réflections sur les perspectives d’une approche
 multiscalaire, in: Aubry, T., Almeida, F., Araújo, A.C., Tiffagom, M.
 (Eds.), Proceedings of the XV World Congress UISPP (Lisbon, 4-9
@@ -1900,7 +1896,7 @@ International Series. Archaeopress, Oxford, pp. 35–44.
 
 Bustillo, M.A., Pérez-Jiménez, J.L., 2005. Características diferenciales
 y génesis de los niveles silíceos explotados en el yacimiento
-arqueológico de casa montero (vicálvaro, madrid). Geogaceta 38, 243–246.
+arqueológico de Casa Montero (Vicálvaro, Madrid). Geogaceta 38, 243–246.
 
 </div>
 
@@ -1908,7 +1904,7 @@ arqueológico de casa montero (vicálvaro, madrid). Geogaceta 38, 243–246.
 
 Bustillo, M.Á., Pérez-Jiménez, J.L., Bustillo, M., 2012. Caracterización
 geoquímica de rocas sedimentarias formadas por silicificación como
-fuentes de suministro de utensilios líticos (mioceno, cuenca de madrid).
+fuentes de suministro de utensilios líticos (Mioceno, cuenca de Madrid).
 Revista Mexicana de Ciencias Geológicas 29, 233–247.
 
 </div>
@@ -1916,9 +1912,9 @@ Revista Mexicana de Ciencias Geológicas 29, 233–247.
 <div id="ref-bustos-perez_quantitative_2017" class="csl-entry">
 
 Bustos-Pérez, G., Chacón, M.G., Rivals, F., Blasco, R., Rosell, J.,
-2017. Quantitative and qualitative analysis for the study of middle
-paleolithic retouched artifacts: Unit III of teixoneres cave (barcelona,
-spain). Journal of Archaeological Science: Reports 12, 658–672.
+2017. Quantitative and qualitative analysis for the study of Middle
+Paleolithic retouched artifacts: Unit III of Teixoneres cave (Barcelona,
+Spain). Journal of Archaeological Science: Reports 12, 658–672.
 <https://doi.org/10.1016/j.jasrep.2017.02.021>
 
 </div>
@@ -1933,8 +1929,8 @@ Cortes, C., Vapnik, V., 1995. Support-vector networks. Machine learning
 <div id="ref-courbin_spatial_2020" class="csl-entry">
 
 Courbin, P., Brenet, M., Michel, A., Gravina, B., 2020. Spatial analysis
-of the late middle palaeolithic open-air site of bout-des-vergnes
-(bergerac, dordogne) based on lithic technology and refitting. Journal
+of the late Middle Palaeolithic open-air site of Bout-des-Vergnes
+(Bergerac, Dordogne) based on lithic technology and refitting. Journal
 of Archaeological Science: Reports 32, 102373.
 https://doi.org/<https://doi.org/10.1016/j.jasrep.2020.102373>
 
@@ -1943,7 +1939,7 @@ https://doi.org/<https://doi.org/10.1016/j.jasrep.2020.102373>
 <div id="ref-cover_nearest_1967" class="csl-entry">
 
 Cover, T., Hart, P., 1967. Nearest neighbor pattern classification. IEEE
-Trans. Inform. Theory 13, 21–27.
+Transactions on Information Theory 13, 21–27.
 <https://doi.org/10.1109/TIT.1967.1053964>
 
 </div>
@@ -1959,8 +1955,8 @@ Philosophy of Biological and Biomedical Sciences 35, 613–626.
 
 <div id="ref-dibble_variability_1995" class="csl-entry">
 
-Delagnes, A., 1995. Variability within uniformity: Three levels of
-variability within the levallois system, in: Dibble, H.L., Bar-Yosef, O.
+Delagnes, A., 1995. Variability within Uniformity: Three Levels of
+Variability within the Levallois System, in: Dibble, H.L., Bar-Yosef, O.
 (Eds.), The Definition and Interpretation of Levallois Technology,
 Monographs in World Archaeology. Prehistory Press, Madison, Wisconsin,
 pp. 201–211.
@@ -1969,26 +1965,26 @@ pp. 201–211.
 
 <div id="ref-hovers_diversity_2006" class="csl-entry">
 
-Delagnes, A., Meignen, L., 2006. Diversity of lithic production systems
-during the middle paleolithic in france. Are there any chronological
-trends?, in: Hovers, E., Kuhn, S.L. (Eds.), Transitions Before the
-Transition Evolution and Stability in the Middle Paleolithic and Middle
-Stone Age. Springer, pp. 85–107.
+Delagnes, A., Meignen, L., 2006. Diversity of Lithic Production Systems
+During the Middle Paleolithic in France. Are There Any Chronological
+Trends?, in: Hovers, E., Kuhn, S.L., Jochim, M. (Eds.), Transitions
+Before the Transition Evolution and Stability in the Middle Paleolithic
+and Middle Stone Age. Springer, pp. 85–107.
 
 </div>
 
 <div id="ref-delpiano_techno-functional_2021" class="csl-entry">
 
-Delpiano, D., Gennai, J., Peresani, M., 2021. Techno-functional
-implication on the production of discoid and levallois backed
-implements. Lithic Technology 46, 171–191.
+Delpiano, D., Gennai, J., Peresani, M., 2021. Techno-Functional
+Implication on the Production of Discoid and Levallois Backed
+Implements. Lithic Technology 46, 171–191.
 <https://doi.org/10.1080/01977261.2021.1886487>
 
 </div>
 
 <div id="ref-duran_lindustrie_2005" class="csl-entry">
 
-Duran, J.-P., 2005. L’industrie moustérienne des Ànecs (Rodès,
+Duran, J.-P., 2005. L’industrie moustérienne des ànecs (Rodès,
 Pyrénées-orientales, France). PYRENAE 36, 11–39.
 
 </div>
@@ -1997,7 +1993,7 @@ Pyrénées-orientales, France). PYRENAE 36, 11–39.
 
 Duran, J.-P., Soler, N., 2006. Variabilité des modalités de débitage et
 des productions lithiques dans les industries moustériennes de la grotte
-de l’arbreda, secteur alpha (serinyà, espagne). Bulletin de la Société
+de l’Arbreda, secteur alpha (Serinyà, Espagne). Bulletin de la Société
 Préhistorique Française 103, 241–262.
 
 </div>
@@ -2005,8 +2001,8 @@ Préhistorique Française 103, 241–262.
 <div id="ref-faivre_late_2017" class="csl-entry">
 
 Faivre, J.-Ph., Gravina, B., Bourguignon, L., Discamps, E., Turq, A.,
-2017. Late middle palaeolithic lithic technocomplexes (MIS 5–3) in the
-northeastern aquitaine basin: Advances and challenges. Quaternary
+2017. Late Middle Palaeolithic lithic technocomplexes (MIS 5–3) in the
+northeastern Aquitaine Basin: Advances and challenges. Quaternary
 International 433, 116–131.
 <https://doi.org/10.1016/j.quaint.2016.02.060>
 
@@ -2015,7 +2011,7 @@ International 433, 116–131.
 <div id="ref-fernandes_silex_2012" class="csl-entry">
 
 Fernandes, P., Morala, A., Schmidt, P., Séronie-Vivien, M.-R., Turq, A.,
-2012. Le silex du bergeracois: État de la question. Quaternaire
+2012. Le silex du Bergeracois: État de la question. Quaternaire
 Continental d’Aquitaine, excursion AFEQ, ASF 2012 2012, 22–33.
 
 </div>
@@ -2030,8 +2026,8 @@ problems. Annals of Eugenics 7, 179–188.
 <div id="ref-folgado_economie_2010" class="csl-entry">
 
 Folgado, M., Brenet, M., 2010. Economie de débitage et organisation de
-l’espace technique sur le site du paléolithique moyen de plein-air de la
-mouline (dordogne, france), in: Conard, N., Delagnes, A. (Eds.),
+l’espace technique sur le site du Paléolithique moyen de plein-air de La
+Mouline (Dordogne, France), in: Conard, N., Delagnes, A. (Eds.),
 Settlement Dynamics of the Middle Paleolithic and Middle Stone Age.
 Kerns Verlag - (Tübingen Publications in Prehistory), Tübingen, pp.
 427–454.
@@ -2040,16 +2036,16 @@ Kerns Verlag - (Tübingen Publications in Prehistory), Tübingen, pp.
 
 <div id="ref-forestier_clactonien:_1993" class="csl-entry">
 
-Forestier, H., 1993. Le Clactonien: mise en application d’une nouvelle
+Forestier, H., 1993. Le Clactonien: Mise en application d’une nouvelle
 méthode de débitage s’inscrivant dans la variabilité des systèmes de
-production lithique du Paléolithique ancien. pal 5, 53–82.
+production lithique du Paléolithique ancien. Paléo 5, 53–82.
 <https://doi.org/10.3406/pal.1993.1104>
 
 </div>
 
 <div id="ref-frey_letter_1991" class="csl-entry">
 
-Frey, P.W., Slate, D.J., 1991. Letter recognition using holland-style
+Frey, P.W., Slate, D.J., 1991. Letter recognition using Holland-style
 adaptive classifiers. Machine learning 6, 161–182.
 
 </div>
@@ -2071,7 +2067,7 @@ machine. Annals of statistics 29, 1189–1232.
 
 <div id="ref-rigaud_les_1988" class="csl-entry">
 
-Geneste, J.-M., 1988. Les industries de la grotte vaufrey: Technologie
+Geneste, J.-M., 1988. Les Industries De La Grotte Vaufrey: Technologie
 du debitage, economie et circulation de la matiere premiere lithique,
 in: Rigaud, J.-P. (Ed.), La Grotte Vaufrey à Cenac Et Saint-Julien
 (Dordogne) : Paléoenvironnements, Chronologie Et Activités Humaines,
@@ -2083,8 +2079,8 @@ préhistorique française, Paris, pp. 441–517.
 <div id="ref-gonzalez-molina_distinguishing_2020" class="csl-entry">
 
 González-Molina, I., Jiménez-García, B., Maíllo-Fernández, J.-M.,
-Baquedano, E., Domínguez-Rodrigo, M., 2020. Distinguishing discoid and
-centripetal levallois methods through machine learning. PLoS ONE 15,
+Baquedano, E., Domínguez-Rodrigo, M., 2020. Distinguishing Discoid and
+Centripetal Levallois methods through machine learning. PLOS ONE 15,
 e0244288. <https://doi.org/10.1371/journal.pone.0244288>
 
 </div>
@@ -2098,8 +2094,8 @@ Greenwell, M.B., 2019. Package ‘gbm.’ R package version 2.
 
 <div id="ref-grimaldi_new_2014" class="csl-entry">
 
-Grimaldi, S., Santaniello, F., 2014. New insights into final mousterian
-lithic production in western italy. Quaternary International 350,
+Grimaldi, S., Santaniello, F., 2014. New insights into Final Mousterian
+lithic production in western Italy. Quaternary International 350,
 116–129. <https://doi.org/10.1016/j.quaint.2014.03.057>
 
 </div>
@@ -2122,24 +2118,24 @@ Springer, New York, pp. 73–98.
 
 <div id="ref-james_introduction_2013" class="csl-entry">
 
-James, G., Witten, D., Hastie, T., Tibshirani, R., 2013. An introduction
-to statistical learning with applications in r, Second Edition. ed.
+James, G., Witten, D., Hastie, T., Tibshirani, R., 2013. An Introduction
+to Statistical Learning with Applications in R, Second Edition. ed.
 Springer.
 
 </div>
 
 <div id="ref-karatzoglou_support_2006" class="csl-entry">
 
-Karatzoglou, A., Meyer, D., Hornik, K., 2006. Support vector machines in
-r. Journal of Statistical Software 15, 1–28.
+Karatzoglou, A., Meyer, D., Hornik, K., 2006. Support Vector Machines in
+R. Journal of Statistical Software 15, 1–28.
 <https://doi.org/10.18637/jss.v015.i09>
 
 </div>
 
 <div id="ref-karatzoglou_kernlab_2004" class="csl-entry">
 
-Karatzoglou, A., Smola, A., Hornik, K., Zeileis, A., 2004. Kernlab - an
-S4 package for kernel methods in r. Journal of Statistical Software 11,
+Karatzoglou, A., Smola, A., Hornik, K., Zeileis, A., 2004. Kernlab - An
+S4 Package for Kernel Methods in R. Journal of Statistical Software 11,
 1–20. <https://doi.org/10.18637/jss.v011.i09>
 
 </div>
@@ -2154,15 +2150,15 @@ levalloisienne. Bulletin de la Société Préhistorique Française 51,
 
 <div id="ref-kendall_shape_1984" class="csl-entry">
 
-Kendall, D.G., 1984. Shape manifolds, procrustean metrics, and complex
-projective spaces. Bulletin of the London Mathematical Society 16,
+Kendall, D.G., 1984. Shape Manifolds, Procrustean Metrics, and Complex
+Projective Spaces. Bulletin of the London Mathematical Society 16,
 81–121. <https://doi.org/10.1112/blms/16.2.81>
 
 </div>
 
 <div id="ref-kuhn_building_2008" class="csl-entry">
 
-Kuhn, M., 2008. Building predictive models in r using the caret package.
+Kuhn, M., 2008. Building Predictive Models in R using the caret Package.
 Journal of Statistical Software 28.
 <https://doi.org/10.18637/jss.v028.i05>
 
@@ -2170,22 +2166,22 @@ Journal of Statistical Software 28.
 
 <div id="ref-kuhn_roots_2013" class="csl-entry">
 
-Kuhn, S.L., 2013. Roots of the middle paleolithic in eurasia. Current
+Kuhn, S.L., 2013. Roots of the Middle Paleolithic in Eurasia. Current
 Anthropology 54, S255–S268. <https://doi.org/10.1086/673529>
 
 </div>
 
 <div id="ref-lantz_machine_2019" class="csl-entry">
 
-Lantz, B., 2019. Machine learning with r: Expert techniques for
+Lantz, B., 2019. Machine learning with R: Expert techniques for
 predictive modeling. Packt publishing ltd.
 
 </div>
 
 <div id="ref-dibble_recurrent_1995" class="csl-entry">
 
-Lenoir, M., Turq, A., 1995. Recurrent centripetal debitage (levallois
-and discoidal): Continuity or discontinuity?, in: Dibble, H.L.,
+Lenoir, M., Turq, A., 1995. Recurrent Centripetal Debitage (Levallois
+and Discoidal): Continuity or Discontinuity?, in: Dibble, H.L.,
 Bar-Yosef, O. (Eds.), The Definition and Interpretation of Levallois
 Technology, Monographs in World Archaeology. Prehistory Press, Madison,
 Wisconsin, pp. 249–256.
@@ -2194,8 +2190,8 @@ Wisconsin, pp. 249–256.
 
 <div id="ref-peresani_industrie_2003" class="csl-entry">
 
-Locht, J.-L., 2003. L’industrie lithique du gisement de beauvais (oise,
-france): Objectifs et variabilité du débitage discoïde, in: Peresani, M.
+Locht, J.-L., 2003. L’industrie lithique du gisement de Beauvais (Oise,
+France): Objectifs et variabilité du débitage discoïde, in: Peresani, M.
 (Ed.), Discoid Lithic Technology: Advances and Implications, BAR
 International Series. Archaeopress, Oxford, pp. 193–209.
 
@@ -2207,9 +2203,9 @@ Marciani, G., Ronchitelli, A., Arrighi, S., Badino, F., Bortolini, E.,
 Boscato, P., Boschin, F., Crezzini, J., Delpiano, D., Falcucci, A.,
 Figus, C., Lugli, F., Oxilia, G., Romandini, M., Riel-Salvatore, J.,
 Negrino, F., Peresani, M., Spinapolice, E.E., Moroni, A., Benazzi, S.,
-2020. Lithic techno-complexes in italy from 50 to 39 thousand years BP:
-An overview of lithic technological changes across the middle-upper
-palaeolithic boundary. Quaternary International 551, 123–149.
+2020. Lithic techno-complexes in Italy from 50 to 39 thousand years BP:
+An overview of lithic technological changes across the Middle-Upper
+Palaeolithic boundary. Quaternary International 551, 123–149.
 <https://doi.org/10.1016/j.quaint.2019.11.005>
 
 </div>
@@ -2218,38 +2214,38 @@ palaeolithic boundary. Quaternary International 551, 123–149.
 
 Martín-Viveros, J.I., Ollé, A., Chacón, M.G., Romagnoli, F., Gómez de
 Soler, B., Vaquero, M., Saladié, P., Vallverdú, J., Carbonell, E., 2020.
-Use-wear analysis of a specific mobile toolkit from the middle
-paleolithic site of abric romaní (barcelona, spain): A case study from
-level m. Archaeol Anthropol Sci 12, 16.
+Use-wear analysis of a specific mobile toolkit from the Middle
+Paleolithic site of Abric Romaní (Barcelona, Spain): A case study from
+level M. Archaeological and Anthropological Sciences 12, 16.
 <https://doi.org/10.1007/s12520-019-00951-z>
 
 </div>
 
 <div id="ref-mcpherron_e5_2019" class="csl-entry">
 
-McPherron, S., 2019. E5 (beta version).
+McPherron, S., 2019. E5 (Beta Version).
 
 </div>
 
 <div id="ref-meignen_persistance_1996" class="csl-entry">
 
 Meignen, L., 1996. Persistance des traditions techniques dans l’abri des
-canalettes (nant-aveyron). Quaternaria Nova 6, 449–64.
+Canalettes (Nant-Aveyron). Quaternaria Nova 6, 449–64.
 
 </div>
 
 <div id="ref-meignen_les_1993" class="csl-entry">
 
 Meignen, L., 1993. Les industries lithiques de l’abri des Canalettes:
-cuche 2, in: Meignen, L. (Ed.), L’abri des Canalettes. Un habitat
-moustérien sur les grands Causses (Nant-Aveyron), Monographie du CRA.
+Cuche 2, in: Meignen, L. (Ed.), L’abri Des Canalettes. Un Habitat
+Moustérien Sur Les Grands Causses (Nant-Aveyron), Monographie Du CRA.
 CNRS Ed., Paris, pp. 238–328.
 
 </div>
 
 <div id="ref-mitteroecker_advances_2009" class="csl-entry">
 
-Mitteroecker, P., Gunz, P., 2009. Advances in geometric morphometrics.
+Mitteroecker, P., Gunz, P., 2009. Advances in Geometric Morphometrics.
 Evolutionary Biology 36, 235–247.
 <https://doi.org/10.1007/s11692-009-9055-x>
 
@@ -2257,7 +2253,7 @@ Evolutionary Biology 36, 235–247.
 
 <div id="ref-peresani_discoiou_2003" class="csl-entry">
 
-Mourre, V., 2003. Discoïde ou pas discoïde? Réflexions sur la pertinence
+Mourre, V., 2003. Discoïde ou pas Discoïde? Réflexions sur la pertinence
 des critères techniques définissant le débitage discoïde, in: Peresani,
 M. (Ed.), Discoid Lithic Technology. Advances and Implications, BAR
 International Series. Archaeopress, Oxford, pp. 1–17.
@@ -2275,8 +2271,9 @@ fossil record: Biology, landmarks and geometry. Journal of Anatomy 197,
 <div id="ref-pasty_etude_2004" class="csl-entry">
 
 Pasty, J.-F., Liegard, S., Alix, P., 2004. Étude de l’industrie lithique
-du site paléolithique moyen des Fendeux (Coulanges, Allier). bspf 101,
-5–25. <https://doi.org/10.3406/bspf.2004.12945>
+du site paléolithique moyen des Fendeux (Coulanges, Allier). Bulletin de
+la Société préhistorique française 101, 5–25.
+<https://doi.org/10.3406/bspf.2004.12945>
 
 </div>
 
@@ -2293,7 +2290,7 @@ Magazine and Journal of Science 2, 559–572.
 
 Picin, A., Chacón, M.G., Gómez de Soler, B., Blasco, R., Rivals, F.,
 Rosell, J., 2020. Neanderthal mobile toolkit in short-term occupations
-at teixoneres cave (moia, spain). Journal of Archaeological Science:
+at Teixoneres Cave (Moia, Spain). Journal of Archaeological Science:
 Reports 29, 102165. <https://doi.org/10.1016/j.jasrep.2019.102165>
 
 </div>
@@ -2306,8 +2303,9 @@ Quinlan, J.R., 2014. C4. 5: Programs for machine learning. Elsevier.
 
 <div id="ref-quinlan_improved_1996" class="csl-entry">
 
-Quinlan, J.R., 1996. Improved use of continuous attributes in C4.5. jair
-4, 77–90. <https://doi.org/10.1613/jair.279>
+Quinlan, J.R., 1996. Improved Use of Continuous Attributes in C4.5.
+Journal of Artificial Intelligence Research 4, 77–90.
+<https://doi.org/10.1613/jair.279>
 
 </div>
 
@@ -2321,7 +2319,7 @@ package. R package vignette 2007.
 <div id="ref-rios-garaizar_organizacion_2010" class="csl-entry">
 
 Rios-Garaizar, J., 2010. Organización económica de las sociedades
-neandertales: El caso del nivel VIII de amalda (guipuzkoa). Zephyrus
+neandertales: El caso del Nivel VIII de Amalda (Guipuzkoa). Zephyrus
 LXV, 15–37.
 
 </div>
@@ -2329,7 +2327,7 @@ LXV, 15–37.
 <div id="ref-rios-garaizar_new_2017" class="csl-entry">
 
 Ríos-Garaizar, J., 2017. A new chronological and technological synthesis
-for late middle paleolithic of the eastern cantabrian region. Quaternary
+for Late Middle Paleolithic of the Eastern Cantabrian Region. Quaternary
 International 433, 50–63. <https://doi.org/10.1016/j.quaint.2016.02.020>
 
 </div>
@@ -2337,8 +2335,8 @@ International 433, 50–63. <https://doi.org/10.1016/j.quaint.2016.02.020>
 <div id="ref-roebroeks_veil_1992" class="csl-entry">
 
 Roebroeks, W., Loecker, D.D., Hennekens, P., Leperen, M.V., 1992. "A
-veil of stones”: On the interpretation of an early middle palaeolithic
-low density scatter at maastricht-belvédère (the netherlands). Analecta
+veil of stones”: On the interpretation of an early Middle Palaeolithic
+low density scatter at Maastricht-Belvédère (The Netherlands). Analecta
 Praehistorica Leidensia 25 The end of our third decade: Papers written
 on the occasion of the 30th anniversary of the Institutte of prehistory,
 volume I 25, 1–16.
@@ -2349,9 +2347,9 @@ volume I 25, 1–16.
 
 Romagnoli, Francesca, Bargalló, A., Chacón, M.G., Gómez de Soler, B.,
 Vaquero, M., 2016. Testing a hypothesis about the importance of the
-quality of raw material on technological changes at abric romaní
-(capellades, spain): Some considerations using a high-resolution
-techno-economic perspective. JLS 3, 635–659.
+quality of raw material on technological changes at Abric Romaní
+(Capellades, Spain): Some considerations using a high-resolution
+techno-economic perspective. Journal of Lithic Studies 3, 635–659.
 <https://doi.org/10.2218/jls.v3i2.1443>
 
 </div>
@@ -2360,8 +2358,8 @@ techno-economic perspective. JLS 3, 635–659.
 
 Romagnoli, F., Trenti, F., Nannini, L., Carmignani, L., Ricci, G., Lo
 Vetro, D., Martini, F., Sarti, L., 2016. Raw material procurement and
-productive sequences in the palaeolithic of southern italy: The
-tyrrhenian and the ionian areas. Ressources lithiques, productions et
+productive sequences in the Palaeolithic of southern Italy: The
+Tyrrhenian and the Ionian areas. Ressources lithiques, productions et
 transferts entre Alpes et Méditerranée 185–205.
 
 </div>
@@ -2375,7 +2373,7 @@ representations by back-propagating errors. Nature 323, 533–536.
 
 <div id="ref-schlager_morpho_2017" class="csl-entry">
 
-Schlager, S., 2017. Morpho and rvcg–shape analysis in r: R-packages for
+Schlager, S., 2017. Morpho and Rvcg–Shape Analysis in R: R-Packages for
 geometric morphometrics, shape analysis and surface manipulations, in:
 Statistical Shape and Deformation Analysis. Elsevier, pp. 217–256.
 
@@ -2383,8 +2381,8 @@ Statistical Shape and Deformation Analysis. Elsevier, pp. 217–256.
 
 <div id="ref-robinson_costs_2018" class="csl-entry">
 
-Shott, M.J., 2018. The costs and benefits of technological organization:
-Hunter-gatherer lithic industries and beyond, in: Robinson, E., Sellet,
+Shott, M.J., 2018. The Costs and Benefits of Technological Organization:
+Hunter-Gatherer Lithic Industries and Beyond, in: Robinson, E., Sellet,
 F. (Eds.), Lithic Technological Organization and Paleoenvironmental
 Change. Springer International Publishing, Cham, pp. 321–333.
 <https://doi.org/10.1007/978-3-319-64407-3_15>
@@ -2393,8 +2391,8 @@ Change. Springer International Publishing, Cham, pp. 321–333.
 
 <div id="ref-simpson_interpretation_1951" class="csl-entry">
 
-Simpson, E.H., 1951. The interpretation of interaction in contingency
-tables. Journal of the Royal Statistical Society: Series B
+Simpson, E.H., 1951. The Interpretation of Interaction in Contingency
+Tables. Journal of the Royal Statistical Society: Series B
 (Methodological) 13, 238–241.
 <https://doi.org/10.1111/j.2517-6161.1951.tb00088.x>
 
@@ -2402,7 +2400,7 @@ tables. Journal of the Royal Statistical Society: Series B
 
 <div id="ref-peresani_les_2003" class="csl-entry">
 
-Slimak, L., 2003. Les debitages discoïdes mousteriens: Evaluation d’un
+Slimak, L., 2003. Les Debitages discoïdes mousteriens: Evaluation d’un
 concept technologique, in: Peresani, M. (Ed.), Discoid Lithic
 Technology. Advances and Implications, BAR International Series.
 Archaeopress, Oxford, pp. 33–65.
@@ -2412,18 +2410,18 @@ Archaeopress, Oxford, pp. 33–65.
 <div id="ref-slimak_variabilite_1998" class="csl-entry">
 
 Slimak, L., 1998. La variabilité des débitages discoïdes au
-paléolithique moyen: Diversité des méthodes et unité d’un concept.
-L’exemple des gisements de la baume néron (soyons, ardèche) et du champ
-grand (saint-maurice-sur-loire, loire). Préhistoire anthropologie
+Paléolithique moyen: Diversité des méthodes et unité d’un concept.
+L’exemple des gisements de la Baume Néron (Soyons, Ardèche) et du Champ
+Grand (Saint-Maurice-sur-Loire, Loire). Préhistoire anthropologie
 méditerranéennes 7, 75–88.
 
 </div>
 
 <div id="ref-soressi_history_2011" class="csl-entry">
 
-Soressi, M., Geneste, J.-M., 2011. The history and efficacy of the
-chaîne opératoire approach to lithic analysis: Studying techniques to
-reveal past societies in an evolutionary perspective. PaleoAnthropology
+Soressi, M., Geneste, J.-M., 2011. The History and Efficacy of the
+Chaîne Opératoire Approach to Lithic Analysis: Studying Techniques to
+Reveal Past Societies in an Evolutionary Perspective. PaleoAnthropology
 2011, 334–350. <https://doi.org/10.4207/PA.2011.ART63>
 
 </div>
@@ -2439,21 +2437,20 @@ International Workshop on Machine Learning. Elsevier, pp. 160–163.
 <div id="ref-r_core_team_r_2019" class="csl-entry">
 
 Team, R.C., 2019. R: A language and environment for statistical
-computing. R Foundation for Statistical Computing, Vienna, Austria.
+computing.
 
 </div>
 
 <div id="ref-rstudio_team_rstudio_2019" class="csl-entry">
 
-Team, Rs., 2019. RStudio: Integrated development for r. RStudio, Inc.,
-Boston, MA.
+Team, Rs., 2019. RStudio: Integrated Development for R.
 
 </div>
 
 <div id="ref-turq_fragmented_2013" class="csl-entry">
 
 Turq, A., Roebroeks, W., Bourguignon, L., Faivre, G.-P., 2013. The
-fragmented character of middle palaeolithic stone tool technology.
+fragmented character of Middle Palaeolithic stone tool technology.
 Journal of Human Evolution 65, 641–655.
 <https://doi.org/10.1016/j.jhevol.2013.07.014>
 
@@ -2461,8 +2458,8 @@ Journal of Human Evolution 65, 641–655.
 
 <div id="ref-walker_estimation_1967" class="csl-entry">
 
-Walker, S.H., Duncan, D.B., 1967. Estimation of the probability of an
-event as a function of several independent variables. Biometrika 54,
+Walker, S.H., Duncan, D.B., 1967. Estimation of the Probability of an
+Event as a Function of Several Independent Variables. Biometrika 54,
 167–179. <https://doi.org/10.2307/2333860>
 
 </div>
@@ -2470,7 +2467,7 @@ event as a function of several independent variables. Biometrika 54,
 <div id="ref-weihs_klar_2005" class="csl-entry">
 
 Weihs, C., Ligges, U., Luebke, K., Raabe, N., 2005. <span
-class="nocase">klaR</span> analyzing german business cycles, in: Data
+class="nocase">klaR</span> analyzing German business cycles, in: Data
 Analysis and Decision Support. Springer, pp. 335–343.
 
 </div>
@@ -2481,15 +2478,15 @@ Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L., François,
 R., Grolemund, G., Hayes, A., Henry, L., Hester, J., Kuhn, M., Pedersen,
 T., Miller, E., Bache, S., Müller, K., Ooms, J., Robinson, D., Seidel,
 D., Spinu, V., Takahashi, K., Vaughan, D., Wilke, C., Woo, K., Yutani,
-H., 2019. Welcome to the tidyverse. Journal of Open Source Software 4,
+H., 2019. Welcome to the Tidyverse. Journal of Open Source Software 4,
 1686. <https://doi.org/10.21105/joss.01686>
 
 </div>
 
 <div id="ref-wright_ranger_2017" class="csl-entry">
 
-Wright, M.N., Ziegler, A., 2017. Ranger: A fast implementation of random
-forests for high dimensional data in c++ and r. Journal of Statistical
+Wright, M.N., Ziegler, A., 2017. Ranger: A Fast Implementation of Random
+Forests for High Dimensional Data in C++ and R. Journal of Statistical
 Software 77, 1–17. <https://doi.org/10.18637/jss.v077.i01>
 
 </div>
