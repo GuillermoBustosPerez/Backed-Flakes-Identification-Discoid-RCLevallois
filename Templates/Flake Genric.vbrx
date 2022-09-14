@@ -1,0 +1,3918 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<patientTemplate name="Flake Genric">
+	<version>4.1.0.10</version>
+	<sex>female</sex>
+	<birthDate>2021-09-01</birthDate>
+	<objectsFolder>Flake Genric_e99af34eebf74d46af5d3f0be09cdd3d</objectsFolder>
+	<linkedObject type="Mesh">
+		<link>J:\10  PostDocs\2021_06 Re-definiendo forma, uso y expresión cultural en el Paleolítico medio\Photogrametrias\11 Decimated Meshes\NR_02.ply</link>
+		<name>Mesh 1</name>
+		<visible>1</visible>
+		<date>2021-09-01</date>
+		<opacity>1</opacity>
+		<color>13434879</color>
+		<gloss>0.70</gloss>
+		<faceted>0</faceted>
+		<fill>1</fill>
+		<vertexColors>0</vertexColors>
+		<textureOn>0</textureOn>
+		<textureShade>1</textureShade>
+		<grouping>0</grouping>
+		<transformMatrix>82.5 0 0 0 0 82.5 0 0 0 0 82.5 0 -60.8760223388672 -3.5212094783783 -2259.9501953125 1</transformMatrix>
+		<clip>0 0 0 0 0 0</clip>
+	</linkedObject>
+	<template name="Flake Genric">
+		<image type="icon">
+			<imageData>
+			AAABAAEAICAgAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA
+			AAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+			//8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+			//8A////AP///wD///8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAJOv8AMFH/AEVY/wA/
+			Vv9LfZP/r9Hr/5PJ4f92nrH/mrvS/7nc9/8tkcH/Ypuw/zxvif8ALUz/ABM1/wAAAP8AAAD/AAAA/wAA
+			AP8AAAD/AAAA/wAAAP8A////AP///wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAf
+			Pf8APFD/ADBG/0p1jP+NxNr/Y5qw/3Skuf+BxuT/b8Ly/16gyf8/gpv/AEZj/wA4Uf8AFEH/AAAA/wAA
+			AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wD///8A////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
+			AP8AAAD/ABEw/wBYa/8ARVf/AFBm/3640P+FrcL/X5at/1STq/+Tr7//y9/m/5Ojr/8YM0v/AAMm/w0a
+			Tv8HBSb/AAAO/wAAAP8AAAD/AAAA/wAAAP8AAAD/AP///wD///8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
+			AP8AAAD/AAAA/wAAAP8AAyX/AFJu/wBNYf8EZXr/lcPZ/0V6kf9Mdoj/j7jG/zx6pP8MMV3/WWaB/5KU
+			rv/Az+X/5vv//9Xn/P9wiaP/AAAO/wAAAP8AAAD/AAAA/wAAAP8A////AP///wAAAP8AAAD/AAAA/wAA
+			AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wARNv8ARmH/AE9p/wBRbf9elav/YYOZ/1+Xpv9chJz/jpe0/8zU
+			5//a6///3Pv//8v4///l+P//6PX//1p0h/8AHT3/AAAA/wAAAP8AAAD/AAAA/wD///8A////AAAA/wAA
+			AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/ACNI/wBNav8AQ1//EV94/0eHmv9tjp//gZuz/6+4
+			zv/n+P//1fb//9X0///H6/r/2fD//9nl9P+lyNr/Rm1+/wAdO/8AAAD/AAAA/wAAAP8AAAD/AP///wD/
+			//8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAFP8AIEb/AE5q/wA5U/8DV2n/nrbG/5K6
+			zf+Ywtf/vNzv/6bY6P+Vxdf/qsfb/6/N4f+ktc3/prPJ/4+luf97m6v/AChG/wAAAP8AAAD/AAAA/wAA
+			AP8A////AP///wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/ERg9/ydZeP8Qan7/AG+G/zt9
+			kf+quMz/rrPN/4GHqf+PjJ//XHyO/2iCm/9/hJn/mI2h/6Wfsv+RkK3/rLDO/6WzyP9GZoT/ExQz/wAA
+			AP8AAAD/AAAA/wD///8A////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAS/8OMnr/O2yK/wZv
+			g/8AdI3/V4Sf/5aovf+aobj/a4es/z1khP9hcYn/i4Sb/6Kdsf9wgp3/UlJl/zJHbf9XXoj/ioGf/1pn
+			hv8xMVz/AAAA/wAAAP8AAAD/AP///wD///8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8ADlL/AEOT/zxy
+			kv+Tr7z/fqa4/z+Lof95mKv/jqG2/6arvv+HnLn/V3ua/1dwiP9vdoz/fo2h/2+Do/+Wl6z/xMHU/9zd
+			6v/U1Ob/w7/J/1BQhf8AAAD/AAAA/wAAAP8A////AP///wAAAP8AAAD/AAAA/wAAAP8AAAD/AAA8/wAn
+			fP9GaZb/iJu6/7bJ4f+81+L/Z5Ki/8He7/+cxNr/rMvg/36vvP8lrL3/KneX/2iLs/+jxs//gJep/8jW
+			7f/BzeL/uszf/6m7zP+Jl6n/GiRH/wAAAP8AAAD/AAAA/wD///8A////AAAA/wAAAP8AAAD/AAAA/wAA
+			Gf8IJoL/YHOJ/4qQnf+jqd7/g6jn/3KYs/+mvcn/m7nJ/12etf9ikaP/apms/0KRov9FcJH/g5mu/4qz
+			1P9qlrH/zdXm/7/N4/+/0N//aHiE/wAySv8AASX/AAAX/wAAAP8AAAD/AP///wD///8AAAD/AAAA/wAA
+			AP8AAAD/AAhY/ztdmP93hpz/foGm/5e51v9pjan/Q2J//5CYqv9ac4L/WIme/4irwP+pus7/09fr/9jj
+			9P+Lp7X/ADaS/1SMqf/5////fIer/4iEoP8+ZYD/QF6R/1d3hf8AARz/AAAA/wAAAP8A////AP///wAA
+			AP8AAAD/AAAA/wAADv8rPXv/SW2I/1xskf+Jm8n/s8zW/8DI1v92lKT/b4Wb/32Ln//Dx9n/6O7//8/b
+			8f/k6///4fD//7vN1v8wVY3/S3qw/9bz8P8UOo3/MDOT/y5Bkv8vXqj/fZCl/wANI/8AAAD/AAAA/wD/
+			//8A////AAAA/wAAAP8AAAD/CQ48/0tlkv9Kaoz/gZvI/7bL3v+3xtr/wtPh/8LV5f+70uP/ocjc/4Ow
+			wf+ercP/09ju/+Tt///J3u7/mrTM/7G8w//j8Pf//P///3WRwP88Xab/PWWg/y5Ujv9faIb/AAgX/wAA
+			AP8AAAD/AP///wD///8AAAD/AAAA/wAACP8zSVr/SFaE/1Ncjf+LpLz/qrjK/7TB1v+9ytn/uMrd/73c
+			7v/e7///p8/e/3OhtP/X5v3/rLzR/wdHYP8kXKH/J2ON/3KNqP/v6///2djl/y9Pn/8vYpH/TGWG/21p
+			hP8AAAD/AAAA/wAAAP8A////AP///wAAAP8AAAD/AAAV/0tid/9oeYj/io+j/6SzwP+fsMn/uM3o/7/Q
+			5//G1uX/yt7w/9zp+f+20+L/ka6///v8//9rf5L/H3KK/0OIyP9BcbL/ADyF/5yZsv/UzdH/cG2h/09g
+			nv+kwtT/XVpr/wAAAP8AAAD/AAAA/wD///8A////AAAA/wAAAP8AABj/T2l//3mLmv+Mm6z/o7DD/7PH
+			1f+2zOX/t8nj/8HS5f/P2+z/u9Dj/87h9f+UrsP/18vg/4CTo/9Xl6n/f66+/yxikf9shZz/+O74/9jS
+			3v+XmLH/qsPc/7LC1/8tKTX/AAAA/wAAAP8AAAD/AP///wD///8AAAD/AAAA/wMEHf9gdYn/gIyg/5Wh
+			sv+aqb7/vcra/7LF4P+ywtv/wdDg/7PD1v+qv9P/yNTo/6K3y/+Wobj/++3//3SHnf9vq7v/LHeO/32N
+			n///////yMXb/y1VeP+77vn/nqzA/05JWv8AAAD/AAAA/wAAAP8A////AP///wAAAP8AAAD/AAAT/2Jy
+			hv+Fk6P/n6/C/6Kuwf+uuM//tMDX/7G/1/+vv9f/qbvQ/7jG2P/I0eT/3Oz9/5qkvP/IzOj/4+P6/7G9
+			zf+fuMj/0Nzr/+X0//+yxNT/cX2Q/2qClP+Ojqb/FxIh/wAAAP8AAAD/AAAA/wD///8A////AAAA/wAA
+			AP8AAAr/UFpy/4ycqv+lsMT/sbrS/7C30P+2wdD/t77Y/6ywy/+xs83/y9Dk/9PX6v/f3/j/1NPt/87Y
+			6/+91On/ydfv/97o/f/V3PD/trrS/5+xx/+UpLf/cIea/yMsSv8AAAD/AAAA/wAAAP8AAAD/AP///wD/
+			//8AAAD/AAAA/wAAAv8tOFT/e4qd/5+twv+ptcv/t73O/8DA1f+2tMz/trPI/8PA2f/IyOH/xM7h/9Ta
+			8P/d2/H/0dLo/8vO5P+/x93/rbXO/6WiwP+Ynbn/hJqr/3F+lP9NTG7/CQYc/wAAAP8AAAD/AAAA/wAA
+			AP8A////AP///wAAAP8AAAD/AAAA/wkiQP9SbH//f46j/56yxv+hrMT/qbDI/7Kwxv+trL7/ubnQ/729
+			2f/Dwtn/zMvh/9XV6v/c2fL/3dv2/87b8f+8zd//s7zU/6anwf+Um7L/eYab/1NQcP8AAAD/AAAA/wAA
+			AP8AAAD/AAAA/wD///8A////AAAA/wAAAP8AAAD/AAAk/y5HZP9aaYH/c3ya/4+dtv+Wpbv/mqO6/6Cf
+			tP+mprz/r6/J/7e3y/+3t8z/yMje/9TV7f/Z2PL/ydLo/72/2v+xtM3/uLbM/6quw/+ChKL/GRY3/wAA
+			AP8AAAD/AAAA/wAAAP8AAAD/AP///wD///8AAAD/AAAA/wAAAP8AAAL/AA05/zdKZv9aZX3/Xm2E/2Rz
+			kf9/jar/hIem/4uKof+kor3/sbHL/7Kyyv+2tsv/vLzT/76+0/+vrMb/o6K8/6imvP+oprz/m5u0/0pH
+			bf8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8A////AP///wAAAP8AAAD/AAAA/wAAAP8AAAn/AAo2/y5D
+			Yv9bZH3/U193/1Zqhf97iaT/b3aQ/4GAm/+Tk6z/mZmz/5ybs/+dm7b/mJix/5iWr/+gnLT/oJ+z/4+Q
+			pP9QUHb/AAAN/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wD///8A////AAAA/wAAAP8AAAD/AAAA/wAA
+			AP8AAAH/AAAs/xotV/9GVXX/S1Vx/1Nge/9hc43/ZGmF/2txjf94fZr/fH+f/3h+mv9/iqH/i5eu/4WO
+			pv9na4b/MzJc/wAAEP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AP///wD///8AAAD/AAAA/wAA
+			AP8AAAD/AAAA/wAAAP8AAAD/AAAJ/wADLv8kJE7/MzFV/0FIav9PV3b/UVNz/1haev9oa4j/ZG6M/2Rm
+			if9aXYD/MTVc/wQENP8AAAX/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8A////AP///wAA
+			AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AABT/CAcp/xMTO/8bGkH/GhpA/xYV
+			Pv8YEjz/Dg4t/wAAF/8AAAL/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wD/
+			//8A////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
+			AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
+			AP8AAAD/AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+			//8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+			//8A////AP///wD///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			</imageData>
+		</image>
+		<element type="DigPoint" idx="1">
+			<name>Left Platform Width</name>
+			<coords x="-103.768" y="-193.643" z="-17.056"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="2">
+			<name>Right Platform Width</name>
+			<coords x="107.779" y="-241.885" z="51.074"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="3">
+			<name>Percussion Point</name>
+			<coords x="-12.474" y="-204.345" z="-14.954"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="4">
+			<name>Platform Surface 01</name>
+			<coords x="-91.358" y="-194.88" z="-19.118"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="5">
+			<name>Platform Surface 02</name>
+			<coords x="-25.509" y="-215.662" z="0.194"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="6">
+			<name>Platform Surface 03</name>
+			<coords x="33.278" y="-257.147" z="65.843"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="7">
+			<name>Platform Surface 04</name>
+			<coords x="17.978" y="-228.736" z="18.181"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="8">
+			<name>Platform Surface 05</name>
+			<coords x="17.286" y="-255.272" z="61.034"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="9">
+			<name>Platform Surface 06</name>
+			<coords x="18.322" y="-246.772" z="46.4"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="10">
+			<name>Platform Surface 07</name>
+			<coords x="-64.162" y="-220.893" z="10.273"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="11">
+			<name>Platform Surface 08</name>
+			<coords x="0.535" y="-215.743" z="-1.956"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="12">
+			<name>Platform Surface 09</name>
+			<coords x="-27.516" y="-246.183" z="46.403"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="13">
+			<name>Platform Surface 10</name>
+			<coords x="62.033" y="-247.167" z="51.565"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="14">
+			<name>Platform Surface 11</name>
+			<coords x="4.307" y="-242.729" z="39.129"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="15">
+			<name>Platform Surface 12</name>
+			<coords x="47.258" y="-251.829" z="58.046"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="16">
+			<name>Platform Surface 13</name>
+			<coords x="-49.697" y="-233.235" z="27.038"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="17">
+			<name>Platform Surface 14</name>
+			<coords x="-13.39" y="-210.425" z="-8.411"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="18">
+			<name>Platform Surface 15</name>
+			<coords x="61.321" y="-255.078" z="65.142"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="19">
+			<name>Platform Surface 16</name>
+			<coords x="-21.223" y="-233.388" z="25.515"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="20">
+			<name>Platform Surface 17</name>
+			<coords x="-68.872" y="-211.813" z="-1.89"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="21">
+			<name>Platform Surface 18</name>
+			<coords x="-62.72" y="-236.469" z="32.788"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="22">
+			<name>Platform Surface 19</name>
+			<coords x="-10.042" y="-239.422" z="34.153"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="23">
+			<name>Platform Surface 20</name>
+			<coords x="-69.81" y="-195.578" z="-20.884"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="24">
+			<name>Platform Surface 21</name>
+			<coords x="-54.342" y="-196.747" z="-21.862"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="25">
+			<name>Platform Surface 22</name>
+			<coords x="-85.333" y="-226.838" z="21.24"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="26">
+			<name>Platform Surface 23</name>
+			<coords x="15.985" y="-219.696" z="3.998"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="27">
+			<name>Platform Surface 24</name>
+			<coords x="77.549" y="-249.222" z="56.762"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="28">
+			<name>Platform Surface 25</name>
+			<coords x="3.554" y="-224.609" z="11.635"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="29">
+			<name>Platform Surface 26</name>
+			<coords x="-84.183" y="-211.65" z="0.277"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="30">
+			<name>Platform Surface 27</name>
+			<coords x="3.568" y="-250.752" z="52.541"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="31">
+			<name>Platform Surface 28</name>
+			<coords x="60.94" y="-238.883" z="38.746"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="32">
+			<name>Platform Surface 29</name>
+			<coords x="-53.122" y="-215.542" z="1.934"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="33">
+			<name>Platform Surface 30</name>
+			<coords x="43.39" y="-226.608" z="17.248"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="34">
+			<name>Platform Surface 31</name>
+			<coords x="-44.694" y="-240.609" z="38.764"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="35">
+			<name>Platform Surface 32</name>
+			<coords x="31.913" y="-232.592" z="25.51"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="36">
+			<name>Platform Surface 33</name>
+			<coords x="46.98" y="-243.581" z="44.401"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="37">
+			<name>Platform Surface 34</name>
+			<coords x="-69.944" y="-229.138" z="22.069"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="38">
+			<name>Platform Surface 35</name>
+			<coords x="-94.772" y="-204.889" z="-6.364"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="39">
+			<name>Platform Surface 36</name>
+			<coords x="93.656" y="-241.483" z="46.582"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="40">
+			<name>Platform Surface 37</name>
+			<coords x="55.639" y="-231.493" z="26.079"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="41">
+			<name>Platform Surface 38</name>
+			<coords x="32.428" y="-240.991" z="38.702"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="42">
+			<name>Platform Surface 39</name>
+			<coords x="48.284" y="-260.061" z="71.756"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="43">
+			<name>Platform Surface 40</name>
+			<coords x="-78.093" y="-219.705" z="10.737"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="44">
+			<name>Platform Surface 41</name>
+			<coords x="-36.229" y="-230.421" z="20.768"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="45">
+			<name>Platform Surface 42</name>
+			<coords x="-38.448" y="-220.621" z="8.086"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="46">
+			<name>Platform Surface 43</name>
+			<coords x="-23.871" y="-224.357" z="13.22"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="47">
+			<name>Platform Surface 44</name>
+			<coords x="18.046" y="-237.719" z="32.275"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="48">
+			<name>Platform Surface 45</name>
+			<coords x="-31.174" y="-238.669" z="33.926"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="49">
+			<name>Platform Surface 46</name>
+			<coords x="77.28" y="-241.606" z="44.393"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="50">
+			<name>Platform Surface 47</name>
+			<coords x="74.007" y="-234.071" z="32.551"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="51">
+			<name>Platform Surface 48</name>
+			<coords x="-42.166" y="-202.587" z="-15.874"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="52">
+			<name>Platform Surface 49</name>
+			<coords x="-57.178" y="-205.816" z="-10.23"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="53">
+			<name>Platform Surface 50</name>
+			<coords x="32.769" y="-249.114" z="52.184"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="54">
+			<name>Platform Surface 51</name>
+			<coords x="30.394" y="-222.259" z="9.628"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="55">
+			<name>Platform Surface 52</name>
+			<coords x="3.948" y="-233.976" z="25.512"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="56">
+			<name>Platform Surface 53</name>
+			<coords x="-9.207" y="-228.832" z="18.842"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="57">
+			<name>Platform Surface 54</name>
+			<coords x="-79.122" y="-202.93" z="-11.479"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="58">
+			<name>Platform Surface 55</name>
+			<coords x="-50.95" y="-225.055" z="15.102"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="59">
+			<name>Platform Surface 56</name>
+			<coords x="-11.28" y="-219.641" z="5.69"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="60">
+			<name>Platform Surface 57</name>
+			<coords x="-27.765" y="-206.82" z="-12.492"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="61">
+			<name>Platform Surface 58</name>
+			<coords x="-94.293" y="-217.717" z="10.466"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="62">
+			<name>Platform Surface 59</name>
+			<coords x="-11.557" y="-247.435" z="48.327"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="63">
+			<name>Platform Surface 60</name>
+			<coords x="-40.328" y="-211.605" z="-4.379"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="64">
+			<name>Ventral Surface 001</name>
+			<coords x="25.954" y="216.68" z="5.103"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="65">
+			<name>Ventral Surface 002</name>
+			<coords x="95.993" y="-105.106" z="16.383"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="66">
+			<name>Ventral Surface 003</name>
+			<coords x="-107.93" y="159.93" z="10.627"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="67">
+			<name>Ventral Surface 004</name>
+			<coords x="92.738" y="-82.443" z="12.353"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="68">
+			<name>Ventral Surface 005</name>
+			<coords x="77.627" y="-12.594" z="1.852"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="69">
+			<name>Ventral Surface 006</name>
+			<coords x="128.691" y="-135.54" z="26.768"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="70">
+			<name>Ventral Surface 007</name>
+			<coords x="106.899" y="-198.276" z="39.448"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="71">
+			<name>Ventral Surface 008</name>
+			<coords x="-5.664" y="-177.861" z="-20.068"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="72">
+			<name>Ventral Surface 009</name>
+			<coords x="17.088" y="248.124" z="14.498"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="73">
+			<name>Ventral Surface 010</name>
+			<coords x="35.628" y="-14.569" z="3.758"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="74">
+			<name>Ventral Surface 011</name>
+			<coords x="-10.789" y="66.456" z="1.183"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="75">
+			<name>Ventral Surface 012</name>
+			<coords x="-63.479" y="183.932" z="7.706"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="76">
+			<name>Ventral Surface 013</name>
+			<coords x="81.042" y="-63.087" z="8.005"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="77">
+			<name>Ventral Surface 014</name>
+			<coords x="-116.974" y="108.292" z="9.394"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="78">
+			<name>Ventral Surface 015</name>
+			<coords x="15.394" y="-29.676" z="0.617"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="79">
+			<name>Ventral Surface 016</name>
+			<coords x="-49.285" y="246.226" z="12.573"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="80">
+			<name>Ventral Surface 017</name>
+			<coords x="94.334" y="91.333" z="-0.646"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="81">
+			<name>Ventral Surface 018</name>
+			<coords x="0.128" y="-97.481" z="-13.689"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="82">
+			<name>Ventral Surface 019</name>
+			<coords x="-64.405" y="157.421" z="4.798"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="83">
+			<name>Ventral Surface 020</name>
+			<coords x="69.594" y="-110.369" z="7.7"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="84">
+			<name>Ventral Surface 021</name>
+			<coords x="-76.096" y="78.155" z="3.741"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="85">
+			<name>Ventral Surface 022</name>
+			<coords x="-101.366" y="-165.798" z="-12.034"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="86">
+			<name>Ventral Surface 023</name>
+			<coords x="-90.147" y="-145.945" z="-17.161"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="87">
+			<name>Ventral Surface 024</name>
+			<coords x="24.011" y="-111.656" z="-10.28"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="88">
+			<name>Ventral Surface 025</name>
+			<coords x="75.439" y="43.035" z="-2.744"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="89">
+			<name>Ventral Surface 026</name>
+			<coords x="-51.55" y="91.565" z="2.104"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="90">
+			<name>Ventral Surface 027</name>
+			<coords x="25.509" y="99.502" z="-2.015"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="91">
+			<name>Ventral Surface 028</name>
+			<coords x="-31.013" y="-188.306" z="-20.463"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="92">
+			<name>Ventral Surface 029</name>
+			<coords x="-7.062" y="-16.911" z="0.647"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="93">
+			<name>Ventral Surface 030</name>
+			<coords x="-109.893" y="190.259" z="12.482"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="94">
+			<name>Ventral Surface 031</name>
+			<coords x="45.938" y="-206.398" z="7.026"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="95">
+			<name>Ventral Surface 032</name>
+			<coords x="118.249" y="-84.534" z="13.791"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="96">
+			<name>Ventral Surface 033</name>
+			<coords x="-7.169" y="252.761" z="15.268"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="97">
+			<name>Ventral Surface 034</name>
+			<coords x="-2.183" y="-71.2" z="-8.912"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="98">
+			<name>Ventral Surface 035</name>
+			<coords x="-24.335" y="238.136" z="10.341"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="99">
+			<name>Ventral Surface 036</name>
+			<coords x="5.672" y="171.69" z="1.737"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="100">
+			<name>Ventral Surface 037</name>
+			<coords x="-65.886" y="130.191" z="2.076"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="101">
+			<name>Ventral Surface 038</name>
+			<coords x="67.306" y="-138.12" z="7.654"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="102">
+			<name>Ventral Surface 039</name>
+			<coords x="27.628" y="-198.025" z="-3.616"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="103">
+			<name>Ventral Surface 040</name>
+			<coords x="71.182" y="70.504" z="-3.414"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="104">
+			<name>Ventral Surface 041</name>
+			<coords x="-53.903" y="64.892" z="2.735"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="105">
+			<name>Ventral Surface 042</name>
+			<coords x="46.756" y="-124.438" z="-2.641"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="106">
+			<name>Ventral Surface 043</name>
+			<coords x="37.706" y="-42.688" z="1.878"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="107">
+			<name>Ventral Surface 044</name>
+			<coords x="65.897" y="-83.447" z="6.096"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="108">
+			<name>Ventral Surface 045</name>
+			<coords x="-124.731" y="59.226" z="8.371"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="109">
+			<name>Ventral Surface 046</name>
+			<coords x="62.846" y="-163.03" z="7.425"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="110">
+			<name>Ventral Surface 047</name>
+			<coords x="21.795" y="-85.018" z="-6.924"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="111">
+			<name>Ventral Surface 048</name>
+			<coords x="-118.943" y="-118.917" z="-5.389"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="112">
+			<name>Ventral Surface 049</name>
+			<coords x="45.399" y="-98.147" z="-1.15"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="113">
+			<name>Ventral Surface 050</name>
+			<coords x="8.049" y="-194.631" z="-11.33"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="114">
+			<name>Ventral Surface 051</name>
+			<coords x="-43.069" y="115.903" z="0.656"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="115">
+			<name>Ventral Surface 052</name>
+			<coords x="-117.16" y="15.49" z="3.523"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="116">
+			<name>Ventral Surface 053</name>
+			<coords x="11.677" y="26.195" z="2.344"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="117">
+			<name>Ventral Surface 054</name>
+			<coords x="5.8" y="143.995" z="-0.929"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="118">
+			<name>Ventral Surface 055</name>
+			<coords x="105.041" y="-56.961" z="7.975"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="119">
+			<name>Ventral Surface 056</name>
+			<coords x="-60.628" y="-182.72" z="-26.395"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="120">
+			<name>Ventral Surface 057</name>
+			<coords x="-125.105" y="-75.173" z="-2.905"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="121">
+			<name>Ventral Surface 058</name>
+			<coords x="85.417" y="-190.558" z="25.338"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="122">
+			<name>Ventral Surface 059</name>
+			<coords x="-104.998" y="215.769" z="11.712"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="123">
+			<name>Ventral Surface 060</name>
+			<coords x="42.232" y="-177.465" z="-1.292"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="124">
+			<name>Ventral Surface 061</name>
+			<coords x="-113.757" y="135.438" z="9.914"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="125">
+			<name>Ventral Surface 062</name>
+			<coords x="1.403" y="-123.791" z="-17.411"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="126">
+			<name>Ventral Surface 063</name>
+			<coords x="-94.667" y="7.628" z="2.12"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="127">
+			<name>Ventral Surface 064</name>
+			<coords x="3.208" y="115.104" z="-1.021"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="128">
+			<name>Ventral Surface 065</name>
+			<coords x="-116.281" y="-9.192" z="0.674"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="129">
+			<name>Ventral Surface 066</name>
+			<coords x="23.72" y="-138.944" z="-12.55"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="130">
+			<name>Ventral Surface 067</name>
+			<coords x="-43.7" y="222.457" z="7.927"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="131">
+			<name>Ventral Surface 068</name>
+			<coords x="38.439" y="238.814" z="13.23"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="132">
+			<name>Ventral Surface 069</name>
+			<coords x="-26.001" y="-57.804" z="-8.339"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="133">
+			<name>Ventral Surface 070</name>
+			<coords x="-71.379" y="-32.403" z="-2.431"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="134">
+			<name>Ventral Surface 071</name>
+			<coords x="-87.686" y="145.33" z="5.585"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="135">
+			<name>Ventral Surface 072</name>
+			<coords x="50.767" y="57.115" z="-2.505"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="136">
+			<name>Ventral Surface 073</name>
+			<coords x="26.587" y="71.461" z="-1.522"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="137">
+			<name>Ventral Surface 074</name>
+			<coords x="90.628" y="112.527" z="0.8"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="138">
+			<name>Ventral Surface 075</name>
+			<coords x="-40.436" y="169.692" z="3.957"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="139">
+			<name>Ventral Surface 076</name>
+			<coords x="-120.282" y="-95.519" z="-4.498"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="140">
+			<name>Ventral Surface 077</name>
+			<coords x="-119.174" y="-55.193" z="-2.071"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="141">
+			<name>Ventral Surface 078</name>
+			<coords x="-45.901" y="-120.086" z="-20.805"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="142">
+			<name>Ventral Surface 079</name>
+			<coords x="33.825" y="13.825" z="2.196"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="143">
+			<name>Ventral Surface 080</name>
+			<coords x="-113.239" y="-141.306" z="-7.088"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="144">
+			<name>Ventral Surface 081</name>
+			<coords x="-95.593" y="-97.777" z="-9.551"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="145">
+			<name>Ventral Surface 082</name>
+			<coords x="68.548" y="127.71" z="-0.767"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="146">
+			<name>Ventral Surface 083</name>
+			<coords x="-69.127" y="-132.993" z="-20.741"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="147">
+			<name>Ventral Surface 084</name>
+			<coords x="-92.95" y="-19.246" z="-1.491"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="148">
+			<name>Ventral Surface 085</name>
+			<coords x="53.072" y="177.067" z="0.557"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="149">
+			<name>Ventral Surface 086</name>
+			<coords x="-121.571" y="37.595" z="5.203"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="150">
+			<name>Ventral Surface 087</name>
+			<coords x="63.625" y="-186.818" z="11.979"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="151">
+			<name>Ventral Surface 088</name>
+			<coords x="48.441" y="203.479" z="3.421"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="152">
+			<name>Ventral Surface 089</name>
+			<coords x="-52.18" y="9.836" z="2.097"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="153">
+			<name>Ventral Surface 090</name>
+			<coords x="-87.251" y="173.459" z="8.883"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="154">
+			<name>Ventral Surface 091</name>
+			<coords x="9.688" y="53.981" z="-0.181"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="155">
+			<name>Ventral Surface 092</name>
+			<coords x="-8.892" y="11.011" z="2.924"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="156">
+			<name>Ventral Surface 093</name>
+			<coords x="58.389" y="226.933" z="10.888"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="157">
+			<name>Ventral Surface 094</name>
+			<coords x="13.447" y="-1.783" z="3.088"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="158">
+			<name>Ventral Surface 095</name>
+			<coords x="-21.953" y="-134.798" z="-21.98"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="159">
+			<name>Ventral Surface 096</name>
+			<coords x="81.359" y="180.625" z="3.07"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="160">
+			<name>Ventral Surface 097</name>
+			<coords x="-29.66" y="-3.571" z="0.931"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="161">
+			<name>Ventral Surface 098</name>
+			<coords x="-17.423" y="156.726" z="1.253"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="162">
+			<name>Ventral Surface 099</name>
+			<coords x="-72.747" y="-83.625" z="-11.662"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="163">
+			<name>Ventral Surface 100</name>
+			<coords x="67.521" y="155.652" z="-0.433"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="164">
+			<name>Ventral Surface 101</name>
+			<coords x="-27.593" y="-31.321" z="-2.401"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="165">
+			<name>Ventral Surface 102</name>
+			<coords x="18.554" y="-58.008" z="-3.109"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="166">
+			<name>Ventral Surface 103</name>
+			<coords x="-76.561" y="51.291" z="4.033"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="167">
+			<name>Ventral Surface 104</name>
+			<coords x="73.736" y="205.028" z="6.208"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="168">
+			<name>Ventral Surface 105</name>
+			<coords x="20.508" y="-168.257" z="-12.772"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="169">
+			<name>Ventral Surface 106</name>
+			<coords x="83.821" y="-159.727" z="19.132"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="170">
+			<name>Ventral Surface 107</name>
+			<coords x="102.7" y="-173.825" z="31.652"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="171">
+			<name>Ventral Surface 108</name>
+			<coords x="1.084" y="-150.793" z="-19.257"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="172">
+			<name>Ventral Surface 109</name>
+			<coords x="-46.52" y="-144.808" z="-24.252"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="173">
+			<name>Ventral Surface 110</name>
+			<coords x="69.194" y="98.731" z="-2.211"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="174">
+			<name>Ventral Surface 111</name>
+			<coords x="-22.641" y="-109.122" z="-17.858"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="175">
+			<name>Ventral Surface 112</name>
+			<coords x="97.969" y="53.714" z="-1.43"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="176">
+			<name>Ventral Surface 113</name>
+			<coords x="-31.433" y="24.091" z="3.631"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="177">
+			<name>Ventral Surface 114</name>
+			<coords x="-41.65" y="143.023" z="1.41"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="178">
+			<name>Ventral Surface 115</name>
+			<coords x="97.725" y="0.066" z="0.515"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="179">
+			<name>Ventral Surface 116</name>
+			<coords x="-97.66" y="-72.594" z="-5.509"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="180">
+			<name>Ventral Surface 117</name>
+			<coords x="-53.872" y="37.552" z="3.791"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="181">
+			<name>Ventral Surface 118</name>
+			<coords x="4.848" y="199.891" z="4.222"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="182">
+			<name>Ventral Surface 119</name>
+			<coords x="-97.054" y="92.294" z="5.476"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="183">
+			<name>Ventral Surface 120</name>
+			<coords x="1.571" y="227.537" z="7.43"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="184">
+			<name>Ventral Surface 121</name>
+			<coords x="121.804" y="-162.213" z="31.718"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="185">
+			<name>Ventral Surface 122</name>
+			<coords x="-93.945" y="-121.986" z="-13.726"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="186">
+			<name>Ventral Surface 123</name>
+			<coords x="93.059" y="76.882" z="-2.089"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="187">
+			<name>Ventral Surface 124</name>
+			<coords x="55.555" y="0.673" z="1.741"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="188">
+			<name>Ventral Surface 125</name>
+			<coords x="90.801" y="-221.593" z="35.406"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="189">
+			<name>Ventral Surface 126</name>
+			<coords x="59.743" y="-54.531" z="4.914"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="190">
+			<name>Ventral Surface 127</name>
+			<coords x="-24.348" y="-83.607" z="-13.842"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="191">
+			<name>Ventral Surface 128</name>
+			<coords x="104.43" y="-145.142" z="26.266"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="192">
+			<name>Ventral Surface 129</name>
+			<coords x="58.155" y="-27.503" z="4.242"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="193">
+			<name>Ventral Surface 130</name>
+			<coords x="42.129" y="-70.873" z="-0.079"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="194">
+			<name>Ventral Surface 131</name>
+			<coords x="-97.548" y="36.121" z="3.451"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="195">
+			<name>Ventral Surface 132</name>
+			<coords x="98.32" y="25.621" z="-1.053"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="196">
+			<name>Ventral Surface 133</name>
+			<coords x="-19.211" y="211.447" z="5.576"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="197">
+			<name>Ventral Surface 134</name>
+			<coords x="48.085" y="84.839" z="-3.061"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="198">
+			<name>Ventral Surface 135</name>
+			<coords x="88.768" y="-128.66" z="18.149"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="199">
+			<name>Ventral Surface 136</name>
+			<coords x="43.483" y="-150.951" z="-3.552"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="200">
+			<name>Ventral Surface 137</name>
+			<coords x="-40.731" y="196.202" z="6.948"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="201">
+			<name>Ventral Surface 138</name>
+			<coords x="-70.827" y="-159.883" z="-22.952"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="202">
+			<name>Ventral Surface 139</name>
+			<coords x="53.987" y="29.133" z="-1.283"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="203">
+			<name>Ventral Surface 140</name>
+			<coords x="29.569" y="160.149" z="-0.264"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="204">
+			<name>Ventral Surface 141</name>
+			<coords x="-48.778" y="-70.725" z="-11.044"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="205">
+			<name>Ventral Surface 142</name>
+			<coords x="-44.893" y="-167.895" z="-23.498"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="206">
+			<name>Ventral Surface 143</name>
+			<coords x="-19.874" y="101.724" z="-0.78"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="207">
+			<name>Ventral Surface 144</name>
+			<coords x="-72.491" y="-59.211" z="-5.987"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="208">
+			<name>Ventral Surface 145</name>
+			<coords x="102.349" y="-24.818" z="2.431"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="209">
+			<name>Ventral Surface 146</name>
+			<coords x="-85.443" y="200.208" z="9.791"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="210">
+			<name>Ventral Surface 147</name>
+			<coords x="82.709" y="-38.935" z="5.056"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="211">
+			<name>Ventral Surface 148</name>
+			<coords x="-49.245" y="-45.311" z="-5.033"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="212">
+			<name>Ventral Surface 149</name>
+			<coords x="-71.945" y="104.948" z="3.053"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="213">
+			<name>Ventral Surface 150</name>
+			<coords x="-47.673" y="-95.472" z="-16.349"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="214">
+			<name>Ventral Surface 151</name>
+			<coords x="-30.816" y="79.082" z="1.509"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="215">
+			<name>Ventral Surface 152</name>
+			<coords x="-18.748" y="129.57" z="-0.184"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="216">
+			<name>Ventral Surface 153</name>
+			<coords x="31.549" y="42.163" z="-0.883"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="217">
+			<name>Ventral Surface 154</name>
+			<coords x="-72.35" y="-4.708" z="0.215"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="218">
+			<name>Ventral Surface 155</name>
+			<coords x="27.858" y="187.637" z="1.753"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="219">
+			<name>Ventral Surface 156</name>
+			<coords x="-22.687" y="-160.419" z="-23.739"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="220">
+			<name>Ventral Surface 157</name>
+			<coords x="-74.586" y="23.341" z="2.791"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="221">
+			<name>Ventral Surface 158</name>
+			<coords x="-93.761" y="-46.529" z="-2.793"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="222">
+			<name>Ventral Surface 159</name>
+			<coords x="91.846" y="156.225" z="2.653"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="223">
+			<name>Ventral Surface 160</name>
+			<coords x="75.743" y="15.317" z="-0.679"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="224">
+			<name>Ventral Surface 161</name>
+			<coords x="46.565" y="141.607" z="-0.932"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="225">
+			<name>Ventral Surface 162</name>
+			<coords x="25.505" y="128.078" z="-1.107"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="226">
+			<name>Ventral Surface 163</name>
+			<coords x="-50.225" y="-18.206" z="-0.796"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="227">
+			<name>Ventral Surface 164</name>
+			<coords x="-17.253" y="184.291" z="3.882"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="228">
+			<name>Ventral Surface 165</name>
+			<coords x="-70.94" y="-108.38" z="-16.42"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="229">
+			<name>Ventral Surface 166</name>
+			<coords x="3.146" y="86.831" z="-1.267"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="230">
+			<name>Ventral Surface 167</name>
+			<coords x="69.033" y="-210.316" z="20.795"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="231">
+			<name>Ventral Surface 168</name>
+			<coords x="-4.457" y="-44.407" z="-4.031"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="232">
+			<name>Ventral Surface 169</name>
+			<coords x="47.243" y="113.261" z="-1.463"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="233">
+			<name>Ventral Surface 170</name>
+			<coords x="-63.977" y="211.334" z="8.816"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="234">
+			<name>Ventral Surface 171</name>
+			<coords x="-122.296" y="82.341" z="8.42"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="235">
+			<name>Ventral Surface 172</name>
+			<coords x="93.23" y="132.691" z="2.915"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="236">
+			<name>Ventral Surface 173</name>
+			<coords x="-92.668" y="119.549" z="6.151"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="237">
+			<name>Ventral Surface 174</name>
+			<coords x="120.476" y="-110.932" z="20.241"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="238">
+			<name>Ventral Surface 175</name>
+			<coords x="-99.708" y="64.471" z="5.796"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="239">
+			<name>Ventral Surface 176</name>
+			<coords x="-10.471" y="38.577" z="2.967"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="240">
+			<name>Ventral Surface 177</name>
+			<coords x="-115.125" y="-32.81" z="-1.277"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="241">
+			<name>Ventral Surface 178</name>
+			<coords x="-88.69" y="-181.112" z="-20.933"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="242">
+			<name>Ventral Surface 179</name>
+			<coords x="-81.16" y="230.51" z="10.37"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="243">
+			<name>Ventral Surface 180</name>
+			<coords x="-32.348" y="51.492" z="2.795"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="244">
+			<name>Dorsal Surface 001</name>
+			<coords x="-108.021" y="6.991" z="30.036"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="245">
+			<name>Dorsal Surface 002</name>
+			<coords x="-3.082" y="75.443" z="49.258"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="246">
+			<name>Dorsal Surface 003</name>
+			<coords x="130.283" y="-111.108" z="35.851"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="247">
+			<name>Dorsal Surface 004</name>
+			<coords x="96.399" y="-203.157" z="67.67"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="248">
+			<name>Dorsal Surface 005</name>
+			<coords x="-48.222" y="-173.228" z="39.785"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="249">
+			<name>Dorsal Surface 006</name>
+			<coords x="97.829" y="0.722" z="33.679"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="250">
+			<name>Dorsal Surface 007</name>
+			<coords x="46.347" y="91.395" z="50.177"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="251">
+			<name>Dorsal Surface 008</name>
+			<coords x="-76.918" y="-187.459" z="28.809"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="252">
+			<name>Dorsal Surface 009</name>
+			<coords x="95.381" y="126.699" z="16.184"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="253">
+			<name>Dorsal Surface 010</name>
+			<coords x="-80.49" y="-220.883" z="34.012"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="254">
+			<name>Dorsal Surface 011</name>
+			<coords x="-120.08" y="-7.707" z="13.304"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="255">
+			<name>Dorsal Surface 012</name>
+			<coords x="-8.908" y="153.468" z="50.533"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="256">
+			<name>Dorsal Surface 013</name>
+			<coords x="8.292" y="-77.116" z="51.994"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="257">
+			<name>Dorsal Surface 014</name>
+			<coords x="-19.499" y="-29.872" z="45.901"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="258">
+			<name>Dorsal Surface 015</name>
+			<coords x="0.44" y="254.616" z="27.406"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="259">
+			<name>Dorsal Surface 016</name>
+			<coords x="28.35" y="39.329" z="49.325"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="260">
+			<name>Dorsal Surface 017</name>
+			<coords x="26.905" y="-246.967" z="70.864"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="261">
+			<name>Dorsal Surface 018</name>
+			<coords x="108.157" y="-121.36" z="53.792"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="262">
+			<name>Dorsal Surface 019</name>
+			<coords x="8.341" y="227.699" z="35.679"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="263">
+			<name>Dorsal Surface 020</name>
+			<coords x="-68.237" y="-57.078" z="38.535"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="264">
+			<name>Dorsal Surface 021</name>
+			<coords x="-43.754" y="110.34" z="50.955"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="265">
+			<name>Dorsal Surface 022</name>
+			<coords x="-12.911" y="-60.129" z="47.512"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="266">
+			<name>Dorsal Surface 023</name>
+			<coords x="35.921" y="-72.08" z="59.21"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="267">
+			<name>Dorsal Surface 024</name>
+			<coords x="71.552" y="193.366" z="36.742"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="268">
+			<name>Dorsal Surface 025</name>
+			<coords x="-105.632" y="69.796" z="29.858"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="269">
+			<name>Dorsal Surface 026</name>
+			<coords x="-17.432" y="231.593" z="31.826"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="270">
+			<name>Dorsal Surface 027</name>
+			<coords x="55.438" y="30.575" z="51.215"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="271">
+			<name>Dorsal Surface 028</name>
+			<coords x="-11.511" y="102.852" z="51.536"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="272">
+			<name>Dorsal Surface 029</name>
+			<coords x="-38.539" y="-61.194" z="42.991"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="273">
+			<name>Dorsal Surface 030</name>
+			<coords x="5.177" y="-11.692" z="48.89"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="274">
+			<name>Dorsal Surface 031</name>
+			<coords x="97.827" y="-174.764" z="62.654"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="275">
+			<name>Dorsal Surface 032</name>
+			<coords x="-104.678" y="-22.632" z="33.705"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="276">
+			<name>Dorsal Surface 033</name>
+			<coords x="26.928" y="250.559" z="29.418"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="277">
+			<name>Dorsal Surface 034</name>
+			<coords x="133.618" y="-132.891" z="38.293"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="278">
+			<name>Dorsal Surface 035</name>
+			<coords x="80.006" y="18.142" z="51.369"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="279">
+			<name>Dorsal Surface 036</name>
+			<coords x="73.64" y="-216.359" z="79.348"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="280">
+			<name>Dorsal Surface 037</name>
+			<coords x="-45.742" y="-142.017" z="39.929"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="281">
+			<name>Dorsal Surface 038</name>
+			<coords x="-100.834" y="-184.48" z="-2.503"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="282">
+			<name>Dorsal Surface 039</name>
+			<coords x="93.201" y="72.615" z="25.068"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="283">
+			<name>Dorsal Surface 040</name>
+			<coords x="103.419" y="-32.028" z="35.019"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="284">
+			<name>Dorsal Surface 041</name>
+			<coords x="-91.486" y="123.185" z="33.966"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="285">
+			<name>Dorsal Surface 042</name>
+			<coords x="-64.278" y="157.905" z="43.112"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="286">
+			<name>Dorsal Surface 043</name>
+			<coords x="25.133" y="69.215" z="48.773"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="287">
+			<name>Dorsal Surface 044</name>
+			<coords x="-67.436" y="22.984" z="40.234"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="288">
+			<name>Dorsal Surface 045</name>
+			<coords x="83.982" y="102.97" z="32.314"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="289">
+			<name>Dorsal Surface 046</name>
+			<coords x="-91.053" y="147.159" z="42.615"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="290">
+			<name>Dorsal Surface 047</name>
+			<coords x="80.547" y="134.99" z="35.149"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="291">
+			<name>Dorsal Surface 048</name>
+			<coords x="56.99" y="178.616" z="57.14"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="292">
+			<name>Dorsal Surface 049</name>
+			<coords x="35.85" y="-46.35" z="56.168"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="293">
+			<name>Dorsal Surface 050</name>
+			<coords x="-11.096" y="181.055" z="43.97"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="294">
+			<name>Dorsal Surface 051</name>
+			<coords x="8.988" y="-42.305" z="50.733"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="295">
+			<name>Dorsal Surface 052</name>
+			<coords x="-39.574" y="196.175" z="36.056"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="296">
+			<name>Dorsal Surface 053</name>
+			<coords x="-50.518" y="249.902" z="23.966"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="297">
+			<name>Dorsal Surface 054</name>
+			<coords x="86.732" y="-103.08" z="66.027"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="298">
+			<name>Dorsal Surface 055</name>
+			<coords x="88.69" y="194.82" z="15.507"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="299">
+			<name>Dorsal Surface 056</name>
+			<coords x="22.201" y="-187.995" z="64.911"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="300">
+			<name>Dorsal Surface 057</name>
+			<coords x="31.112" y="-98.629" z="59.888"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="301">
+			<name>Dorsal Surface 058</name>
+			<coords x="90.845" y="-237.481" z="62.095"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="302">
+			<name>Dorsal Surface 059</name>
+			<coords x="-123.436" y="-58.876" z="9.732"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="303">
+			<name>Dorsal Surface 060</name>
+			<coords x="-76.787" y="-30.732" z="38.53"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="304">
+			<name>Dorsal Surface 061</name>
+			<coords x="56.051" y="243.069" z="31.067"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="305">
+			<name>Dorsal Surface 062</name>
+			<coords x="-112.943" y="123.192" z="18.106"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="306">
+			<name>Dorsal Surface 063</name>
+			<coords x="48.99" y="-172.363" z="71.163"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="307">
+			<name>Dorsal Surface 064</name>
+			<coords x="74.3" y="163.894" z="38.303"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="308">
+			<name>Dorsal Surface 065</name>
+			<coords x="1.961" y="48.791" z="47.853"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="309">
+			<name>Dorsal Surface 066</name>
+			<coords x="-90.646" y="198.147" z="31.527"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="310">
+			<name>Dorsal Surface 067</name>
+			<coords x="73.958" y="-186.781" z="79.264"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="311">
+			<name>Dorsal Surface 068</name>
+			<coords x="-56.157" y="-202.093" z="40.153"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="312">
+			<name>Dorsal Surface 069</name>
+			<coords x="117.095" y="-189.355" z="48.276"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="313">
+			<name>Dorsal Surface 070</name>
+			<coords x="89.021" y="-43.542" z="57.632"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="314">
+			<name>Dorsal Surface 071</name>
+			<coords x="-53.321" y="-231.597" z="44.373"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="315">
+			<name>Dorsal Surface 072</name>
+			<coords x="2.011" y="-239.666" z="61.196"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="316">
+			<name>Dorsal Surface 073</name>
+			<coords x="58.451" y="216.188" z="46.609"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="317">
+			<name>Dorsal Surface 074</name>
+			<coords x="84.212" y="-13.743" z="54.223"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="318">
+			<name>Dorsal Surface 075</name>
+			<coords x="120.094" y="-54.407" z="21.008"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="319">
+			<name>Dorsal Surface 076</name>
+			<coords x="-71.732" y="239.799" z="23.594"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="320">
+			<name>Dorsal Surface 077</name>
+			<coords x="-114.761" y="180.652" z="22.982"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="321">
+			<name>Dorsal Surface 078</name>
+			<coords x="-26.742" y="253.43" z="25.38"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="322">
+			<name>Dorsal Surface 079</name>
+			<coords x="108.216" y="-63.69" z="42.569"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="323">
+			<name>Dorsal Surface 080</name>
+			<coords x="-85.526" y="-79.372" z="34.586"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="324">
+			<name>Dorsal Surface 081</name>
+			<coords x="82.44" y="-130.929" z="70.078"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="325">
+			<name>Dorsal Surface 082</name>
+			<coords x="-39.919" y="141.853" z="47.431"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="326">
+			<name>Dorsal Surface 083</name>
+			<coords x="-91.29" y="172.141" z="37.125"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="327">
+			<name>Dorsal Surface 084</name>
+			<coords x="-129.323" y="-93.483" z="9.732"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="328">
+			<name>Dorsal Surface 085</name>
+			<coords x="68.819" y="-245.435" z="72.77"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="329">
+			<name>Dorsal Surface 086</name>
+			<coords x="57.445" y="-0.746" z="52.797"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="330">
+			<name>Dorsal Surface 087</name>
+			<coords x="-93.842" y="23.726" z="38.583"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="331">
+			<name>Dorsal Surface 088</name>
+			<coords x="101.705" y="100.141" z="12.097"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="332">
+			<name>Dorsal Surface 089</name>
+			<coords x="73.564" y="80.545" z="47.798"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="333">
+			<name>Dorsal Surface 090</name>
+			<coords x="-116.024" y="206.94" z="23.394"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="334">
+			<name>Dorsal Surface 091</name>
+			<coords x="-21.865" y="-122.965" z="47.36"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="335">
+			<name>Dorsal Surface 092</name>
+			<coords x="-47.61" y="-32.85" z="41.837"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="336">
+			<name>Dorsal Surface 093</name>
+			<coords x="1.885" y="-139.556" z="54.995"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="337">
+			<name>Dorsal Surface 094</name>
+			<coords x="-19.851" y="127.959" z="53.969"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="338">
+			<name>Dorsal Surface 095</name>
+			<coords x="-51.425" y="-4.157" z="41.037"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="339">
+			<name>Dorsal Surface 096</name>
+			<coords x="-23.011" y="-90.44" z="45.931"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="340">
+			<name>Dorsal Surface 097</name>
+			<coords x="76.823" y="222.26" z="23.303"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="341">
+			<name>Dorsal Surface 098</name>
+			<coords x="-2.99" y="-207.172" z="58.426"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="342">
+			<name>Dorsal Surface 099</name>
+			<coords x="-54.615" y="-84.361" z="39.508"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="343">
+			<name>Dorsal Surface 100</name>
+			<coords x="112.101" y="-91.886" z="53.48"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="344">
+			<name>Dorsal Surface 101</name>
+			<coords x="-74.114" y="103.311" z="48.401"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="345">
+			<name>Dorsal Surface 102</name>
+			<coords x="109.655" y="17.185" z="10.466"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="346">
+			<name>Dorsal Surface 103</name>
+			<coords x="66.775" y="111.847" z="51.988"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="347">
+			<name>Dorsal Surface 104</name>
+			<coords x="5.456" y="17.348" z="47.501"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="348">
+			<name>Dorsal Surface 105</name>
+			<coords x="31.422" y="9.597" z="50.624"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="349">
+			<name>Dorsal Surface 106</name>
+			<coords x="-29.187" y="56.338" z="45.607"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="350">
+			<name>Dorsal Surface 107</name>
+			<coords x="-110.755" y="-78.841" z="24.48"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="351">
+			<name>Dorsal Surface 108</name>
+			<coords x="47.609" y="-230.905" z="79.609"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="352">
+			<name>Dorsal Surface 109</name>
+			<coords x="-87.206" y="48.719" z="40.174"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="353">
+			<name>Dorsal Surface 110</name>
+			<coords x="126.87" y="-88.217" z="27.684"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="354">
+			<name>Dorsal Surface 111</name>
+			<coords x="-95.073" y="225.794" z="24.306"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="355">
+			<name>Dorsal Surface 112</name>
+			<coords x="76.937" y="-158.292" z="73.866"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="356">
+			<name>Dorsal Surface 113</name>
+			<coords x="-36.326" y="168.77" z="43.343"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="357">
+			<name>Dorsal Surface 114</name>
+			<coords x="-41.742" y="25.588" z="42.497"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="358">
+			<name>Dorsal Surface 115</name>
+			<coords x="-54.104" y="80.762" z="45.742"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="359">
+			<name>Dorsal Surface 116</name>
+			<coords x="-64.032" y="184.116" z="36.972"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="360">
+			<name>Dorsal Surface 117</name>
+			<coords x="-92.407" y="-164.947" z="15.654"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="361">
+			<name>Dorsal Surface 118</name>
+			<coords x="25.387" y="-156.886" z="63.476"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="362">
+			<name>Dorsal Surface 119</name>
+			<coords x="-67.038" y="212.422" z="31.382"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="363">
+			<name>Dorsal Surface 120</name>
+			<coords x="-58.247" y="52.001" z="42.972"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="364">
+			<name>Dorsal Surface 121</name>
+			<coords x="63.607" y="-58.891" z="58.501"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="365">
+			<name>Dorsal Surface 122</name>
+			<coords x="22.91" y="-217.785" z="67.545"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="366">
+			<name>Dorsal Surface 123</name>
+			<coords x="27.604" y="-126.62" z="61.623"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="367">
+			<name>Dorsal Surface 124</name>
+			<coords x="32.326" y="-19.275" z="52.322"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="368">
+			<name>Dorsal Surface 125</name>
+			<coords x="47.508" y="-201.552" z="74.814"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="369">
+			<name>Dorsal Surface 126</name>
+			<coords x="105.951" y="49.125" z="11.44"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="370">
+			<name>Dorsal Surface 127</name>
+			<coords x="12.247" y="200.597" z="42.424"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="371">
+			<name>Dorsal Surface 128</name>
+			<coords x="-71.131" y="-157.858" z="31.743"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="372">
+			<name>Dorsal Surface 129</name>
+			<coords x="-76.668" y="-104.792" z="33.916"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="373">
+			<name>Dorsal Surface 130</name>
+			<coords x="-97.2" y="97.169" z="29.755"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="374">
+			<name>Dorsal Surface 131</name>
+			<coords x="-47.018" y="-111.505" z="40.058"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="375">
+			<name>Dorsal Surface 132</name>
+			<coords x="-66.145" y="129.824" z="47.17"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="376">
+			<name>Dorsal Surface 133</name>
+			<coords x="18.395" y="98.124" z="50.392"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="377">
+			<name>Dorsal Surface 134</name>
+			<coords x="-124.876" y="-123.777" z="9.727"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="378">
+			<name>Dorsal Surface 135</name>
+			<coords x="38.341" y="122.648" z="52.254"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="379">
+			<name>Dorsal Surface 136</name>
+			<coords x="56.679" y="-114.997" z="66.648"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="380">
+			<name>Dorsal Surface 137</name>
+			<coords x="-99.682" y="-51.654" z="31.293"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="381">
+			<name>Dorsal Surface 138</name>
+			<coords x="17.038" y="173.101" z="51.207"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="382">
+			<name>Dorsal Surface 139</name>
+			<coords x="-96.334" y="-204.645" z="14.608"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="383">
+			<name>Dorsal Surface 140</name>
+			<coords x="-115.339" y="-150.971" z="7.042"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="384">
+			<name>Dorsal Surface 141</name>
+			<coords x="-22.648" y="-155.043" z="47.574"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="385">
+			<name>Dorsal Surface 142</name>
+			<coords x="108.096" y="-224.186" z="56.089"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="386">
+			<name>Dorsal Surface 143</name>
+			<coords x="-23.554" y="-184.953" z="49.371"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="387">
+			<name>Dorsal Surface 144</name>
+			<coords x="113.632" y="-14.057" z="15.218"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="388">
+			<name>Dorsal Surface 145</name>
+			<coords x="60.852" y="-30.241" z="54.947"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="389">
+			<name>Dorsal Surface 146</name>
+			<coords x="-17.28" y="30.079" z="45.366"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="390">
+			<name>Dorsal Surface 147</name>
+			<coords x="126.444" y="-161.592" z="41.808"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="391">
+			<name>Dorsal Surface 148</name>
+			<coords x="-113.805" y="40.232" z="25.955"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="392">
+			<name>Dorsal Surface 149</name>
+			<coords x="2.857" y="-107.709" z="53.466"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="393">
+			<name>Dorsal Surface 150</name>
+			<coords x="-80.694" y="75.287" z="42.997"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="394">
+			<name>Dorsal Surface 151</name>
+			<coords x="-30.744" y="-210.971" z="49.201"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="395">
+			<name>Dorsal Surface 152</name>
+			<coords x="-105.36" y="-107.055" z="27.088"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="396">
+			<name>Dorsal Surface 153</name>
+			<coords x="-29.729" y="84.354" z="49.697"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="397">
+			<name>Dorsal Surface 154</name>
+			<coords x="34.04" y="223.519" z="40.347"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="398">
+			<name>Dorsal Surface 155</name>
+			<coords x="-121.26" y="-35.639" z="11.852"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="399">
+			<name>Dorsal Surface 156</name>
+			<coords x="93.132" y="165.274" z="16.398"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="400">
+			<name>Dorsal Surface 157</name>
+			<coords x="-15.139" y="207.008" z="37.221"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="401">
+			<name>Dorsal Surface 158</name>
+			<coords x="-22.224" y="0.243" z="44.24"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="402">
+			<name>Dorsal Surface 159</name>
+			<coords x="62.511" y="141.402" z="55.108"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="403">
+			<name>Dorsal Surface 160</name>
+			<coords x="79.919" y="50.641" z="45.87"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="404">
+			<name>Dorsal Surface 161</name>
+			<coords x="52.388" y="-142.92" z="68.579"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="405">
+			<name>Dorsal Surface 162</name>
+			<coords x="41.788" y="158.286" z="60.126"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="406">
+			<name>Dorsal Surface 163</name>
+			<coords x="52.023" y="60.233" z="49.746"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="407">
+			<name>Dorsal Surface 164</name>
+			<coords x="-71.023" y="-130.186" z="32.84"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="408">
+			<name>Dorsal Surface 165</name>
+			<coords x="-42.79" y="224.422" z="30.97"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="409">
+			<name>Dorsal Surface 166</name>
+			<coords x="103.814" y="-148.639" z="56.708"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="410">
+			<name>Dorsal Surface 167</name>
+			<coords x="60.995" y="-87.448" z="63.236"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="411">
+			<name>Dorsal Surface 168</name>
+			<coords x="7.756" y="124.218" z="54.723"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="412">
+			<name>Dorsal Surface 169</name>
+			<coords x="-98.483" y="-135.899" z="25.982"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="413">
+			<name>Dorsal Surface 170</name>
+			<coords x="-129.808" y="20.377" z="15.408"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="414">
+			<name>Dorsal Surface 171</name>
+			<coords x="94.3" y="31.803" z="30.363"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="415">
+			<name>Dorsal Surface 172</name>
+			<coords x="-25.622" y="-236.948" z="52.393"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="416">
+			<name>Dorsal Surface 173</name>
+			<coords x="88.919" y="-74.169" z="60.634"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="417">
+			<name>Dorsal Surface 174</name>
+			<coords x="38.275" y="194.786" z="49.84"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="418">
+			<name>Dorsal Surface 175</name>
+			<coords x="-122.446" y="94.132" z="17.48"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="419">
+			<name>Dorsal Surface 176</name>
+			<coords x="-128.887" y="63.989" z="18.312"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="420">
+			<name>Dorsal Surface 177</name>
+			<coords x="-80.952" y="-3.472" z="38.695"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="421">
+			<name>Dorsal Surface 178</name>
+			<coords x="19.007" y="146.075" z="58.804"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="422">
+			<name>Dorsal Surface 179</name>
+			<coords x="0.358" y="-171.521" z="57.063"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="423">
+			<name>Dorsal Surface 180</name>
+			<coords x="-110.97" y="153.386" z="21.536"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="424">
+			<name>Platform Internal Curve SMLK 01</name>
+			<coords x="-103.625" y="-193.256" z="-17.524"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="425">
+			<name>Platform Internal Curve SMLK 02</name>
+			<coords x="-87.925" y="-190.737" z="-23.338"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="426">
+			<name>Platform Internal Curve SMLK 03</name>
+			<coords x="-71.237" y="-190.795" z="-25.938"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="427">
+			<name>Platform Internal Curve SMLK 04</name>
+			<coords x="-54.592" y="-193.6" z="-24.891"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="428">
+			<name>Platform Internal Curve SMLK 05</name>
+			<coords x="-38.556" y="-197.92" z="-21.545"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="429">
+			<name>Platform Internal Curve SMLK 06</name>
+			<coords x="-22.821" y="-202.524" z="-17.251"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="430">
+			<name>Platform Internal Curve SMLK 07</name>
+			<coords x="-7.097" y="-206.764" z="-12.559"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="431">
+			<name>Platform Internal Curve SMLK 08</name>
+			<coords x="8.578" y="-210.569" z="-7.359"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="432">
+			<name>Platform Internal Curve SMLK 09</name>
+			<coords x="24.016" y="-214.16" z="-1.362"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="433">
+			<name>Platform Internal Curve SMLK 10</name>
+			<coords x="39.048" y="-217.773" z="5.578"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="434">
+			<name>Platform Internal Curve SMLK 11</name>
+			<coords x="53.576" y="-221.576" z="13.43"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="435">
+			<name>Platform Internal Curve SMLK 12</name>
+			<coords x="67.555" y="-225.701" z="22.077"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="436">
+			<name>Platform Internal Curve SMLK 13</name>
+			<coords x="81.02" y="-230.298" z="31.285"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="437">
+			<name>Platform Internal Curve SMLK 14</name>
+			<coords x="94.163" y="-235.47" z="40.652"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="438">
+			<name>Platform Internal Curve SMLK 15</name>
+			<coords x="107.231" y="-241.087" z="49.868"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="439">
+			<name>Platform Exterior Curve SMLK 01</name>
+			<coords x="-103.322" y="-193.492" z="-17.625"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="440">
+			<name>Platform Exterior Curve SMLK 02</name>
+			<coords x="-99.657" y="-205.038" z="-2.039"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="441">
+			<name>Platform Exterior Curve SMLK 03</name>
+			<coords x="-95.093" y="-217.214" z="12.792"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="442">
+			<name>Platform Exterior Curve SMLK 04</name>
+			<coords x="-85.827" y="-227.91" z="26.416"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="443">
+			<name>Platform Exterior Curve SMLK 05</name>
+			<coords x="-71.127" y="-235.588" z="36.938"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="444">
+			<name>Platform Exterior Curve SMLK 06</name>
+			<coords x="-53.345" y="-240.985" z="43.48"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="445">
+			<name>Platform Exterior Curve SMLK 07</name>
+			<coords x="-34.54" y="-245.07" z="47.867"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="446">
+			<name>Platform Exterior Curve SMLK 08</name>
+			<coords x="-15.964" y="-248.959" z="53.257"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="447">
+			<name>Platform Exterior Curve SMLK 09</name>
+			<coords x="2.257" y="-253.182" z="59.569"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="448">
+			<name>Platform Exterior Curve SMLK 10</name>
+			<coords x="20.12" y="-257.162" z="66.919"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="449">
+			<name>Platform Exterior Curve SMLK 11</name>
+			<coords x="37.563" y="-259.933" z="75.717"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="450">
+			<name>Platform Exterior Curve SMLK 12</name>
+			<coords x="56.495" y="-259.677" z="77.072"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="451">
+			<name>Platform Exterior Curve SMLK 13</name>
+			<coords x="72.223" y="-254.724" z="66.309"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="452">
+			<name>Platform Exterior Curve SMLK 14</name>
+			<coords x="88.906" y="-247.868" z="58.319"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="453">
+			<name>Platform Exterior Curve SMLK 15</name>
+			<coords x="105.555" y="-241.6" z="49.768"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="454">
+			<name>Edge SMLK 01</name>
+			<coords x="-104.245" y="-192.995" z="-17.163"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="455">
+			<name>Edge SMLK 02</name>
+			<coords x="-108.836" y="-174.246" z="-9.03"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="456">
+			<name>Edge SMLK 03</name>
+			<coords x="-119.807" y="-157.415" z="-3.065"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="457">
+			<name>Edge SMLK 04</name>
+			<coords x="-129.317" y="-138.91" z="-0.565"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="458">
+			<name>Edge SMLK 05</name>
+			<coords x="-135.684" y="-118.922" z="0.059"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="459">
+			<name>Edge SMLK 06</name>
+			<coords x="-138.247" y="-98.112" z="0.298"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="460">
+			<name>Edge SMLK 07</name>
+			<coords x="-135.95" y="-77.268" z="0.346"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="461">
+			<name>Edge SMLK 08</name>
+			<coords x="-130.978" y="-56.856" z="0.322"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="462">
+			<name>Edge SMLK 09</name>
+			<coords x="-127.395" y="-36.174" z="0.56"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="463">
+			<name>Edge SMLK 10</name>
+			<coords x="-127.229" y="-15.21" z="1.476"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="464">
+			<name>Edge SMLK 11</name>
+			<coords x="-130" y="5.496" z="3.578"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="465">
+			<name>Edge SMLK 12</name>
+			<coords x="-134.057" y="25.856" z="6.801"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="466">
+			<name>Edge SMLK 13</name>
+			<coords x="-137.259" y="46.341" z="10.148"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="467">
+			<name>Edge SMLK 14</name>
+			<coords x="-137.676" y="67.196" z="12.398"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="468">
+			<name>Edge SMLK 15</name>
+			<coords x="-134.273" y="87.884" z="13.032"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="469">
+			<name>Edge SMLK 16</name>
+			<coords x="-127.878" y="107.887" z="12.716"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="470">
+			<name>Edge SMLK 17</name>
+			<coords x="-122.075" y="128.058" z="12.924"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="471">
+			<name>Edge SMLK 18</name>
+			<coords x="-120.797" y="148.922" z="14.294"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="472">
+			<name>Edge SMLK 19</name>
+			<coords x="-123.387" y="169.72" z="15.623"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="473">
+			<name>Edge SMLK 20</name>
+			<coords x="-124.135" y="190.66" z="15.489"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="474">
+			<name>Edge SMLK 21</name>
+			<coords x="-118.285" y="210.68" z="14.373"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="475">
+			<name>Edge SMLK 22</name>
+			<coords x="-105.979" y="227.593" z="14.03"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="476">
+			<name>Edge SMLK 23</name>
+			<coords x="-89.634" y="240.658" z="15.248"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="477">
+			<name>Edge SMLK 24</name>
+			<coords x="-71.029" y="250.099" z="17.459"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="478">
+			<name>Edge SMLK 25</name>
+			<coords x="-51.195" y="256.517" z="19.961"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="479">
+			<name>Edge SMLK 26</name>
+			<coords x="-30.686" y="260.508" z="22.037"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="480">
+			<name>Edge SMLK 27</name>
+			<coords x="-9.746" y="261.705" z="22.482"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="481">
+			<name>Edge SMLK 28</name>
+			<coords x="11.054" y="259.471" z="20.889"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="482">
+			<name>Edge SMLK 29</name>
+			<coords x="31.371" y="254.533" z="18.919"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="483">
+			<name>Edge SMLK 30</name>
+			<coords x="51.21" y="247.689" z="18.293"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="484">
+			<name>Edge SMLK 31</name>
+			<coords x="69.462" y="237.416" z="17.953"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="485">
+			<name>Edge SMLK 32</name>
+			<coords x="83.448" y="222.106" z="15.544"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="486">
+			<name>Edge SMLK 33</name>
+			<coords x="91.561" y="203.281" z="11.258"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="487">
+			<name>Edge SMLK 34</name>
+			<coords x="96.067" y="183.103" z="7.605"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="488">
+			<name>Edge SMLK 35</name>
+			<coords x="99.613" y="162.46" z="6.062"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="489">
+			<name>Edge SMLK 36</name>
+			<coords x="102.274" y="141.624" z="5.836"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="490">
+			<name>Edge SMLK 37</name>
+			<coords x="103.925" y="120.682" z="5.545"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="491">
+			<name>Edge SMLK 38</name>
+			<coords x="105.67" y="99.767" z="4.61"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="492">
+			<name>Edge SMLK 39</name>
+			<coords x="107.977" y="78.933" z="3.176"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="493">
+			<name>Edge SMLK 40</name>
+			<coords x="110.192" y="58.073" z="2.032"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="494">
+			<name>Edge SMLK 41</name>
+			<coords x="112.241" y="37.168" z="2.155"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="495">
+			<name>Edge SMLK 42</name>
+			<coords x="114.639" y="16.333" z="3.402"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="496">
+			<name>Edge SMLK 43</name>
+			<coords x="117.079" y="-4.498" z="4.618"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="497">
+			<name>Edge SMLK 44</name>
+			<coords x="118.968" y="-25.403" z="5.542"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="498">
+			<name>Edge SMLK 45</name>
+			<coords x="121.113" y="-46.221" z="7.311"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="499">
+			<name>Edge SMLK 46</name>
+			<coords x="125.079" y="-66.53" z="10.848"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="500">
+			<name>Edge SMLK 47</name>
+			<coords x="130.704" y="-86.131" z="15.891"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="501">
+			<name>Edge SMLK 48</name>
+			<coords x="135.958" y="-105.651" z="21.604"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="502">
+			<name>Edge SMLK 49</name>
+			<coords x="139.099" y="-125.56" z="27.48"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="503">
+			<name>Edge SMLK 50</name>
+			<coords x="138.538" y="-145.743" z="33.108"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="504">
+			<name>Edge SMLK 51</name>
+			<coords x="133.058" y="-165.669" z="36.589"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="505">
+			<name>Edge SMLK 52</name>
+			<coords x="125.772" y="-185.34" z="37.681"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="506">
+			<name>Edge SMLK 53</name>
+			<coords x="119.355" y="-204.576" z="42.729"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="507">
+			<name>Edge SMLK 54</name>
+			<coords x="111.987" y="-221.973" z="51.77"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigPoint" idx="508">
+			<name>Edge SMLK 55</name>
+			<coords x="106.773" y="-242.147" z="50.958"/>
+			<type>Normal</type>
+			<typeParams d3="1" aux1="0" aux2="0" aux3="0"/>
+			<edgeLock range="0" angle="0" transition="1" bias="0" dir1="0" dir2="0" orientCursor="1"/>
+		</element>
+		<element type="DigSnake" idx="509">
+			<name>Interior Platform Curve</name>
+			<relocateType>None</relocateType>
+			<params hotZone="50" transition="0" bias="0" closed="0" d3="1"/>
+			<coords>-103.625473022461 -193.256271362305 -17.5235900878906 -87.9245642556474 -190.736703972795 -23.3383011156529 -71.237101367458 -190.794505494095 -25.9376916982457 -54.5917298939366 -193.600026679522 -24.8907086759245 -38.5563202226274 -197.920463793536 -21.5452500313759 -22.8205765668231 -202.523549610404 -17.2511536567357 -7.096689797452 -206.763759186761 -12.5588339177239 8.57814568444008 -210.569331103865 -7.35899874620833 24.016324056904 -214.159514779034 -1.3619428338526 39.0481449102166 -217.773230867965 5.57785060514713 53.5759196089127 -221.57585175237 13.4303345366288 67.5546400745797 -225.700584881595 22.0773786371453 81.0196271186751 -230.29826242849 31.2845148051452 94.1631002399505 -235.469538664542 40.6517914564509 107.230766296387 -241.087051391602 49.8681182861328</coords>
+		</element>
+		<element type="DigSnake" idx="510">
+			<name>Exterior Platform Curve</name>
+			<relocateType>None</relocateType>
+			<params hotZone="50" transition="0" bias="0" closed="0" d3="1"/>
+			<coords>-103.321586608887 -193.492248535156 -17.624532699585 -99.6565861732294 -205.037840610933 -2.03855700986717 -95.092648823252 -217.213698537711 12.7921535233335 -85.826901701269 -227.910249218141 26.4160201689217 -71.1266634587753 -235.587573747254 36.9378513125466 -53.3450906757769 -240.984967871243 43.479736467083 -34.539790647736 -245.069746761491 47.8666931844414 -15.9640456377957 -248.959335222132 53.2571430669436 2.25747822082503 -253.18172913092 59.5689309767963 20.1197942138079 -257.162481644604 66.9194858909521 37.5629342261163 -259.933003367611 75.7170632549709 56.4949633862054 -259.67737582418 77.0719329989301 72.2225045095083 -254.724090303302 66.3089612561403 88.9061703998434 -247.867529572278 58.3187591126286 105.554595947266 -241.60041809082 49.7677001953125</coords>
+		</element>
+		<element type="DigSnake" idx="511">
+			<name>Flake Edge Curve</name>
+			<relocateType>None</relocateType>
+			<params hotZone="50" transition="0" bias="0" closed="0" d3="1"/>
+			<coords>-104.245208740234 -192.9951171875 -17.1632709503174 -108.836032839284 -174.246408110254 -9.0302322998771 -119.806786922563 -157.415233497328 -3.06452134631574 -129.316571869818 -138.909877626077 -0.564758112299604 -135.684497195306 -118.922028456336 0.0586280837926483 -138.246857525178 -98.1124922573256 0.297587999885099 -135.949869474387 -77.2680943966768 0.346299022594409 -130.977716471605 -56.8564903139231 0.321857616639524 -127.39467619482 -36.1737038403975 0.560167495041881 -127.228514231614 -15.2104338848201 1.47592544206777 -129.999955898638 5.49597232447264 3.57774085919 -134.056711358794 25.8557277443829 6.80093344131113 -137.259069380818 46.3405002202255 10.1476188587412 -137.676355042216 67.1959593100066 12.3976857397999 -134.272668231565 87.8841353693341 13.0318477725967 -127.877701263732 107.887403716447 12.7159460016977 -122.074637479404 128.057904678517 12.9238976425781 -120.797235856529 148.921871780255 14.2938725046708 -123.387423840539 169.720223889037 15.6229073760187 -124.134878762135 190.659902930344 15.4889966156884 -118.285091969298 210.680331861191 14.372832256914 
+			-105.978826960011 227.593498688504 14.0302045019236 -89.6338492343145 240.657922192259 15.2484103933903 -71.028502336803 250.099454705931 17.4589691215726 -51.1954808017763 256.517236125617 19.9609612694571 -30.6859689526711 260.508498689903 22.0368720772112 -9.74630216773435 261.704839320137 22.4821234602393 11.0542313487831 259.47144803875 20.8891361735259 31.3706047647348 254.533156944789 18.9187913745941 51.2099613916583 247.688944173209 18.2934176028434 69.4616146728548 237.415923047078 17.952922991214 83.448118236298 222.105605881171 15.5436008605773 91.5613837838851 203.281236145213 11.2579222371116 96.0670654935666 183.102676918811 7.60520672863688 99.6125792351404 162.460326428181 6.06187783591559 102.274012435872 141.624418658137 5.83577623327485 103.925467379027 120.682208343448 5.54508594952236 105.669992157204 99.7671985006342 4.60973579454955 107.976648173658 78.9333635214384 3.17622948140383 110.191900581402 58.073391685309 2.03199414283637 112.240683563838 37.168173539015 2.15458726723646 
+			114.639359639246 16.3334145837278 3.40207562166832 117.078758749212 -4.49848973740627 4.61772447109308 118.96797109497 -25.402768157882 5.54226288834279 121.112724812423 -46.2206771367162 7.31105524423341 125.078770480146 -66.5299777499265 10.8484545495262 130.70428887207 -86.1308891173222 15.8906365567646 135.957861761829 -105.650546083548 21.6039914988208 139.098761134515 -125.559899347047 27.4801274605929 138.538056566258 -145.742569294947 33.1077226759617 133.058120678161 -165.668508833575 36.5890757561118 125.771945188046 -185.340281952689 37.681039954427 119.354623346772 -204.575633950096 42.7287026770302 111.987367837085 -221.972823934791 51.7704511667693 106.773216247559 -242.146896362305 50.9580039978027</coords>
+		</element>
+		<element type="Area" idx="512">
+			<name>Dorsal Surface</name>
+			<points>244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 
+			265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 
+			285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 
+			305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 
+			325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 
+			345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 
+			365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383 384 
+			385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 
+			405 406 407 408 409 410 411 412 413 414 415 416 417 418 419 420 421 422 423</points>
+		</element>
+		<element type="Area" idx="513">
+			<name>Ventral Surface</name>
+			<points>64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 
+			85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 
+			105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 
+			125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 
+			145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 
+			165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 
+			185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 
+			205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 
+			225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243</points>
+		</element>
+		<element type="Drawing" idx="514">
+			<name>Fixed Landmarks</name>
+			<type>Markers</type>
+			<typeParams marker="2" aux1="7" morph="0"/>
+			<display show="0" draw="2"/>
+			<colour link="0" rgb="255"/>
+			<pen style="0" width="0"/>
+			<fill style="1" transparent="0"/>
+			<points>1 3 2</points>
+		</element>
+		<element type="Drawing" idx="515">
+			<name>Curves</name>
+			<type>Snake Curve</type>
+			<typeParams marker="0" aux1="100" morph="0"/>
+			<display show="0" draw="2"/>
+			<colour link="0" rgb="255"/>
+			<pen style="0" width="0"/>
+			<fill style="1" transparent="0"/>
+			<points>510 509 511</points>
+		</element>
+		<element type="Drawing" idx="516">
+			<name>Platform Surface</name>
+			<type>Markers</type>
+			<typeParams marker="2" aux1="5" morph="0"/>
+			<display show="0" draw="2"/>
+			<colour link="0" rgb="65280"/>
+			<pen style="0" width="0"/>
+			<fill style="1" transparent="0"/>
+			<points>4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 
+			25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 
+			45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63</points>
+		</element>
+		<element type="Drawing" idx="517">
+			<name>Ventral Surface</name>
+			<type>Markers</type>
+			<typeParams marker="2" aux1="5" morph="0"/>
+			<display show="0" draw="2"/>
+			<colour link="0" rgb="65535"/>
+			<pen style="0" width="0"/>
+			<fill style="1" transparent="0"/>
+			<points>64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 
+			85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 
+			105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 
+			125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 
+			145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 
+			165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 
+			185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 
+			205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 
+			225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243</points>
+		</element>
+		<element type="Drawing" idx="518">
+			<name>Dorsal Surface</name>
+			<type>Markers</type>
+			<typeParams marker="2" aux1="5" morph="0"/>
+			<display show="0" draw="2"/>
+			<colour link="0" rgb="10108266"/>
+			<pen style="0" width="0"/>
+			<fill style="1" transparent="0"/>
+			<points>244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 
+			265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 
+			285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 
+			305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 
+			325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 
+			345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 
+			365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383 384 
+			385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 
+			405 406 407 408 409 410 411 412 413 414 415 416 417 418 419 420 421 422 423</points>
+		</element>
+		<element type="Drawing" idx="519">
+			<name>Platform Internal Curve</name>
+			<type>Markers</type>
+			<typeParams marker="2" aux1="5" morph="0"/>
+			<display show="0" draw="2"/>
+			<colour link="0" rgb="33023"/>
+			<pen style="0" width="0"/>
+			<fill style="1" transparent="0"/>
+			<points>424 425 426 427 428 429 430 431 432 433 434 435 436 437 438</points>
+		</element>
+		<element type="Drawing" idx="520">
+			<name>Platform Exterior Curve</name>
+			<type>Markers</type>
+			<typeParams marker="2" aux1="5" morph="0"/>
+			<display show="0" draw="2"/>
+			<colour link="0" rgb="0"/>
+			<pen style="0" width="0"/>
+			<fill style="1" transparent="0"/>
+			<points>439 440 441 442 443 444 445 446 447 448 449 450 451 452 453</points>
+		</element>
+		<element type="Drawing" idx="521">
+			<name>Edge Smlk</name>
+			<type>Markers</type>
+			<typeParams marker="2" aux1="5" morph="0"/>
+			<display show="0" draw="2"/>
+			<colour link="0" rgb="16711680"/>
+			<pen style="0" width="0"/>
+			<fill style="1" transparent="0"/>
+			<points>454 455 456 457 458 459 460 461 462 463 464 465 466 467 468 469 470 471 472 473 474 
+			475 476 477 478 479 480 481 482 483 484 485 486 487 488 489 490 491 492 493 494 
+			495 496 497 498 499 500 501 502 503 504 505 506 507 508</points>
+		</element>
+		<element type="Protocol" idx="522">
+			<name>Landmarks &amp; Curves</name>
+			<params autoAdvance="1" beep="1" errorMargin="2"/>
+			<points>1 2 3 509 510 511</points>
+		</element>
+		<element type="Protocol" idx="523">
+			<name>Semilandmarks</name>
+			<params autoAdvance="1" beep="1" errorMargin="2"/>
+			<points>438 437 436 435 434 433 432 431 430 429 428 427 426 425 424 453 452 451 450 449 448 
+			447 446 445 444 443 442 441 440 439 508 507 506 505 504 503 502 501 500 499 498 
+			497 496 495 494 493 492 491 490 489 488 487 486 485 484 483 482 481 480 479 478 
+			477 476 475 474 473 472 471 470 469 468 467 466 465 464 463 462 461 460 459 458 
+			457 456 455 454 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 
+			47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 
+			27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 
+			7 6 5 4 243 242 241 240 239 238 237 236 235 234 233 232 231 230 229 228 
+			227 226 225 224 223 222 221 220 219 218 217 216 215 214 213 212 211 210 209 208 
+			207 206 205 204 203 202 201 200 199 198 197 196 195 194 193 192 191 190 189 188 
+			187 186 185 184 183 182 181 180 179 178 177 176 175 174 173 172 171 170 169 168 
+			167 166 165 164 163 162 161 160 159 158 157 156 155 154 153 152 151 150 149 148 
+			147 146 145 144 143 142 141 140 139 138 137 136 135 134 133 132 131 130 129 128 
+			127 126 125 124 123 122 121 120 119 118 117 116 115 114 113 112 111 110 109 108 
+			107 106 105 104 103 102 101 100 99 98 97 96 95 94 93 92 91 90 89 88 
+			87 86 85 84 83 82 81 80 79 78 77 76 75 74 73 72 71 70 69 68 
+			67 66 65 64 423 422 421 420 419 418 417 416 415 414 413 412 411 410 409 408 
+			407 406 405 404 403 402 401 400 399 398 397 396 395 394 393 392 391 390 389 388 
+			387 386 385 384 383 382 381 380 379 378 377 376 375 374 373 372 371 370 369 368 
+			367 366 365 364 363 362 361 360 359 358 357 356 355 354 353 352 351 350 349 348 
+			347 346 345 344 343 342 341 340 339 338 337 336 335 334 333 332 331 330 329 328 
+			327 326 325 324 323 322 321 320 319 318 317 316 315 314 313 312 311 310 309 308 
+			307 306 305 304 303 302 301 300 299 298 297 296 295 294 293 292 291 290 289 288 
+			287 286 285 284 283 282 281 280 279 278 277 276 275 274 273 272 271 270 269 268 
+			267 266 265 264 263 262 261 260 259 258 257 256 255 254 253 252 251 250 249 248 
+			247 246 245 244</points>
+		</element>
+		<element type="SlidingGroup" idx="524">
+			<name>All Landmarks</name>
+			<points>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 
+			22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 
+			42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 
+			62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 
+			82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 
+			102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 
+			122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 
+			142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 
+			162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 
+			182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 
+			202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 
+			222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 
+			242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 
+			262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 
+			282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 
+			302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 
+			322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 
+			342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 
+			362 363 364 365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 
+			382 383 384 385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 
+			402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 419 420 421 
+			422 423 424 425 426 427 428 429 430 431 432 433 434 435 436 437 438 439 440 441 
+			442 443 444 445 446 447 448 449 450 451 452 453 454 455 456 457 458 459 460 461 
+			462 463 464 465 466 467 468 469 470 471 472 473 474 475 476 477 478 479 480 481 
+			482 483 484 485 486 487 488 489 490 491 492 493 494 495 496 497 498 499 500 501 
+			502 503 504 505 506 507 508</points>
+			<modes>0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+			2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+			1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+			1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+			1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+			1 1 1 1 1 1 1</modes>
+			<curves>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 509 509 509 509 509 509 509 509 509 509 509 509 509 509 509 510 510 510 
+			510 510 510 510 510 510 510 510 510 510 510 510 511 511 511 511 511 511 511 511 
+			511 511 511 511 511 511 511 511 511 511 511 511 511 511 511 511 511 511 511 511 
+			511 511 511 511 511 511 511 511 511 511 511 511 511 511 511 511 511 511 511 511 
+			511 511 511 511 511 511 511</curves>
+		</element>
+	</template>
+</patientTemplate>
