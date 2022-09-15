@@ -240,8 +240,8 @@ approach is highly effective, the differentiation between backed
 products of discoidal and recurrent centripetal Levallois sequences is
 not sufficiently addressed. Given the special technological role of
 backed products in core management and production, their specific
-techno-functional properties (@ [Delpiano et al.,
-2021](#ref-delpiano_techno-functional_2021)) ), the frequency in which
+techno-functional properties ([Delpiano et al.,
+2021](#ref-delpiano_techno-functional_2021)), the frequency in which
 they appear in the archaeological record, and their common transport as
 part of hominin toolkits, a more systematic approach to their accurate
 differentiation represents an important advancement in describing Middle
