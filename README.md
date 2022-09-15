@@ -76,7 +76,7 @@ Morphometrics; Machine Learning; Deep Learning
 
 ## Structure of the repository
 
--   “Data” folder:
+-   [Data](Data) folder:
 
     -   **GM csvs**: folder containing csvs. Each csv represents 3D
         coordinates of each of the artifacts.  
