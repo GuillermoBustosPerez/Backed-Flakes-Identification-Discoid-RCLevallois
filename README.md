@@ -76,7 +76,7 @@ Morphometrics; Machine Learning; Deep Learning
 
 ## Structure of the repository
 
--   [Data](Data) folder:
+-   [“Data”](Data) folder:
 
     -   **GM csvs**: folder containing csvs. Each csv represents 3D
         coordinates of each of the artifacts.  
@@ -90,10 +90,10 @@ Morphometrics; Machine Learning; Deep Learning
     -   **Worksapce all models.RData**: contains all Machine and Deep
         Learning models
 
--   [“Meshes”](Meshes) folder\*\*: contains all .ply meshes employed in
-    the study  
+-   [“Meshes”](Meshes) folder: contains all .ply meshes employed in the
+    study  
 
--   **“Templates” folder**:
+-   [“Templates”](Templates) folder:
 
     -   **Code for inspecting Meshes and Landmarks.R**  
     -   **Flake Generic.vbrx**: a ViewBox template for positioning
