@@ -90,8 +90,8 @@ Morphometrics; Machine Learning; Deep Learning
     -   **Worksapce all models.RData**: contains all Machine and Deep
         Learning models
 
--   **“Meshes” folder**: contains all .ply meshes employed in the
-    study  
+-   [“Meshes”](Meshes) folder\*\*: contains all .ply meshes employed in
+    the study  
 
 -   **“Templates” folder**:
 
