@@ -104,4 +104,4 @@ The final draft of the article can be accessed in the following formats:
 
 -   **References.bib**  
 
--   **journal-of-archaeological-science.csl**
+-   **journal-of-archaeological-science.csl** format file for references
