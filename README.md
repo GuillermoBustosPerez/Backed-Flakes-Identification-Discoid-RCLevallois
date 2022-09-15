@@ -98,18 +98,22 @@ Morphometrics; Machine Learning; Deep Learning
     -   **Code for inspecting Meshes and Landmarks.R**  
     -   **Flake Generic.vbrx**: a ViewBox template for positioning
         landmarks in flakes.  
-    -   **Flake template.ply**: generic flake employed to generate the
-        ViewBox template.
+    -   **Flake template.ply**: 3D mesh of a generic flake employed to
+        generate the ViewBox template.
 
 The final draft of the article can be accessed in the following formats:
 
--   **Backed flakes identification in Discoid and RC Levallois.Rmd**  
+-   [**Backed flakes identification in Discoid and RC
+    Levallois.Rmd**](Backed%20flakes%20identification%20in%20Discoid%20and%20RC%20Levallois.Rmd)  
 
--   **Backed flakes identification in Discoid and RC Levallois.html**  
+-   [**Backed flakes identification in Discoid and RC
+    Levallois.html**](Backed-flakes-identification-in-Discoid-and-RC-Levallois.html)  
 
--   **Backed flakes identification in Discoid and RC Levallois.md**
+-   [**Backed flakes identification in Discoid and RC
+    Levallois.md**](Backed-flakes-identification-in-Discoid-and-RC-Levallois.md)  
 
--   **Backed flakes identification in Discoid and RC Levallois.pdf**
+-   [**Backed flakes identification in Discoid and RC
+    Levallois.pdf**](Backed-flakes-identification-in-Discoid-and-RC-Levallois.pdf)
 
 -   **License**  
 
