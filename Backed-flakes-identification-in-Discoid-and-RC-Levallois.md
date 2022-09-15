@@ -383,7 +383,7 @@ alignment failed) and exported in STL formats. Cloudcompare 2.11.3
 (<https://www.danielgm.net/cc/>) free software was employed to perform
 additional cleaning, mesh sampling, surface reconstruction, and
 transformation into PLY files. Finally, all files were decimated to a
-quality of 50,000 faces using the Rvcg R package ([Schlager,
+quality of 50,000 faces using the Rvcg v.0.21 R package ([Schlager,
 2017](#ref-schlager_morpho_2017)).
 
 The protocol for the digitalization of landmarks on flakes was based on
@@ -415,7 +415,7 @@ were exported into .xlsx files.
 Procrustes superimposition ([Kendall, 1984](#ref-kendall_shape_1984);
 [Mitteroecker and Gunz, 2009](#ref-mitteroecker_advances_2009);
 [O’Higgins, 2000](#ref-ohiggins_study_2000)) was performed using the
-package “Morpho” ([Schlager, 2017](#ref-schlager_morpho_2017)) on
+package “Morpho” v.2.9 ([Schlager, 2017](#ref-schlager_morpho_2017)) on
 RStudio IDE ([R. C. Team, 2019](#ref-r_core_team_r_2019); [Rs. Team,
 2019](#ref-rstudio_team_rstudio_2019)). After performing Procrustes
 superimposition and obtaining a new set of coordinates, PCA was
@@ -439,7 +439,7 @@ models. The threshold of 95% of the variance was arbitrarily selected
 since it balances retaining most of the dataset variance on a reduced
 number of variables. The identification of best PCs for classification
 was automatically done by the machine learning models using the caret
-package ([Kuhn, 2008](#ref-kuhn_building_2008)).
+v.6.0.92 package ([Kuhn, 2008](#ref-kuhn_building_2008)).
 
 ![Template/atlas on an arbitrary selected flake with the defined
 landmarks (in red), curves, and surfaces. Bottom: Landmark positioning
@@ -583,21 +583,23 @@ Statistical analysis was carried out using R version R version 4.1.1 in
 IDE RStudio version 2021.09.0 ([R. C. Team,
 2019](#ref-r_core_team_r_2019); [Rs. Team,
 2019](#ref-rstudio_team_rstudio_2019)). The management of the data and
-graphs was done using the tidyverse package ([Wickham et al.,
+graphs was done using the tidyverse v.1.3.1 package ([Wickham et al.,
 2019](#ref-wickham_welcome_2019)). The training of LDA and KNN was done
-with MASS ([Wright and Ziegler, 2017](#ref-wright_ranger_2017)). The
-training of SVM was done using the e1071 package ([Karatzoglou et al.,
+with MASS v.7.3.57 ([Wright and Ziegler,
+2017](#ref-wright_ranger_2017)). The training of SVM was done using the
+e1071 v.1.7.9 package ([Karatzoglou et al.,
 2006](#ref-karatzoglou_support_2006),
-[2004](#ref-karatzoglou_kernlab_2004)). The RSNNS ([Bergmeir and
-Benítez, 2012](#ref-bergmeir_neural_2012)) package was employed to train
-multi-layer ANN with backpropagation. The klaR package was employed to
-train the naïve Bayes classifier ([Weihs et al.,
+[2004](#ref-karatzoglou_kernlab_2004)). The RSNNS v.0.4.14 ([Bergmeir
+and Benítez, 2012](#ref-bergmeir_neural_2012)) package was employed to
+train multi-layer ANN with backpropagation. The klaR v.1.7.0 package was
+employed to train the naïve Bayes classifier ([Weihs et al.,
 2005](#ref-weihs_klar_2005)). The k-fold cross validation of all models,
 precision metrics, and confusion matrix were obtained using the caret
-package ([Kuhn, 2008](#ref-kuhn_building_2008)). Machine learning models
-also provide insights into variable importance for classification. The
-caret package was employed to extract variable importance after each
-k-fold cross validation.
+v.6.0.92 package ([Kuhn, 2008](#ref-kuhn_building_2008)). Machine
+learning models also provide insights into variable importance for
+classification. The caret package was employed to extract variable
+importance after each k-fold cross validation. Package pROC v.1.18.0 is
+employed to obtain ROC curve and AUC data.
 
 ### 2.4 Performance of procrustes, PCA and model training
 
