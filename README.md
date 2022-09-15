@@ -15,7 +15,7 @@ Other examples of published data:
 -   Link to Zenodo repository:
     <https://zenodo.org/record/4603149#.YmZzKdpBwdU>
 
-## Repository data
+## Article information
 
 **Journal**:
 
@@ -73,3 +73,46 @@ according to the knapping method.
 
 **Key words**: lithic analysis; Levallois; Discoid; Geometric
 Morphometrics; Machine Learning; Deep Learning
+
+## Structure of the repository
+
+-   “Data” folder:
+
+    -   GM csvs: folder containing csvs. Each csv represents 3D
+        coordinates of each of the artifacts.  
+    -   Attributes.csv: attributes manually recorded of each of the
+        artifacts  
+    -   Flakes LM rotated.RData: coordinates of landmarks after
+        rotation  
+    -   Flakes_LM: coordinates of landmarks prior to rotation. This file
+        is generated after loading all csvs from the folder “GM csvs”.  
+    -   Worksapce all models.RData: contains all Machine and Deep
+        Learning models
+
+-   “Meshes” folder: contains all .ply meshes employed in the study  
+
+-   “Templates” folder:
+
+    -   Code for inspecting Meshes and Landmarks.R  
+    -   Flake Generic.vbrx: a ViewBox template for positioning landmarks
+        in flakes.  
+    -   Flake template.ply: generic flake employed to generate the
+        ViewBox template.
+
+Article final draft can be accesed in the following formats:
+
+-   Backed flakes identification in Discoid and RC Levallois.Rmd  
+
+-   Backed flakes identification in Discoid and RC Levallois.html  
+
+-   Backed flakes identification in Discoid and RC Levallois.md
+
+-   Backed flakes identification in Discoid and RC Levallois.pdf
+
+-   License  
+
+-   README.md  
+
+-   References.bib  
+
+-   journal-of-archaeological-science.csl
