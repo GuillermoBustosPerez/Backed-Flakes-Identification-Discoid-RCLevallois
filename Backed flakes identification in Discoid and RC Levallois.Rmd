@@ -1,6 +1,10 @@
 ---
 title: "Identification of backed flakes in Discoid and RCLevallois"
 output: 
+  pdf_document: default   
+  html_document: 
+    toc: true
+    toc_float: true  
   md_document:
     variant: markdown_github
 bibliography: References.bib
@@ -58,6 +62,8 @@ In addition, according to Boëda [-@boeda_debitage_1993; -@boeda_concept_1994] s
 
 Depending on the organization of the debitage surface Levallois cores are usually classified into preferential method (were a single predetermined Levallois flake is obtained from the debitage surface) or recurrent methods (were several predetermined flakes are produced from the debitage surface) with removals being either unidirectional, bidirectional or centripetal [@dibble_levallois:_1995; @hovers_diversity_2006; @dibble_variability_1995].   
 
+![Examples of backed flakes categories with key features discussed in the present research)](Article Figures/Key features.png)
+
 Both knapping methods involve the removal of backed products that usually comprise two categories: core edge flakes (*eclat débordant*) and pseudo-Levallois points.  
 Core edge flakes / *eclat débordant* [@beyries_etude_1983; @boeda_debitage_1993; @boeda_identification_1990] are technical backed knives that have a cutting edge opposite and parallel (or sub-parallel) to an abrupt margin (a back that usually has an angle close to 90º). This back commonly results from the removal of one of the lateral edges of the core and can be plain, retain the scars from previous removals, be cortical, or a combination of these attributes. Core edge flakes are also divided into two categories: “classic core edge flakes” and “core edge flakes with a limited back.” “Classic core edge flakes” [@beyries_etude_1983; @boeda_debitage_1993; @boeda_identification_1990], which are sometimes referred to as “core edge flakes with a non-limited back”/*“éclat débordant à dos non limité”* [@duran_lindustrie_2005; @duran_variabilite_2006], have a morphological axis more or less similar to the axis of percussion. “Core edge flakes with a limited back”/*“éclat débordant à dos limité”* a offset axis of symmetry in relation to the axis of percussion [@meignen_les_1993; @meignen_persistance_1996; @pasty_etude_2004]. This orientation often leads to the back not being parallel to nor spanning the entire length of the sharp edge or the percussion axis (Slimak, 2003).  
 
@@ -102,8 +108,8 @@ Att <- read.csv("Data/Attributes data.csv")
 
 The Levallois recurrent centripetal experimental assemblage is clearly dominated by non-cortical backed flakes (n = 42; 60.87%). This is expected since one of the roles of core edge flakes and pseudo-Levallois points in Levallois recurrent centripetal methods is the management of convexities on subsequent exploitation sequences [@boeda_debitage_1993; @boeda_concept_1994; @boeda_identification_1990]. Thus, although backed flakes can be present in the initial decortication phases (n = 9; 13.04%), the subsequent exploitation of the core will result in non-cortical flakes. Non-cortical backed flakes are also the majority class of the experimental Discoid assemblage although this predominance is attenuated (n = 29; 41.43%). However, along with flakes with nearly 25% of the dorsal surface covered with cortex, they make up the majority of the discoidal backed flakes of the assemblage (n = 51; 72.86%). This reduction in the predominance of non-cortical flakes is also expected in discoidal methods given the organization of both debitage surfaces, the nature of the surface convexities, and the fracture plane. In discoidal cores, the interchangeable surfaces usually have a higher apical convexity than Levallois cores. Additionally, the angle and removal of flakes cover a smaller portion of the respective surface than in a Levallois core. Thus, it is expected that as reduction continues, some products will retain a certain amount of cortex.      
 
-```{r Cortex per Method, fig.width=10, fig.height=4}
-# Cortex per method in backed flakes
+```{r Cortex Method, fig.width=10, fig.height=4}
+# Cortex & method
 Att %>% group_by(Strategy) %>% 
   count(CORTEX) %>% 
   mutate(Percentage = round(n/sum(n)*100, 2)) %>%
@@ -133,7 +139,7 @@ Procrustes superimposition [@kendall_shape_1984; @mitteroecker_advances_2009; @o
 
 ![Template/atlas on an arbitrary selected flake with the defined landmarks (in red), curves, and surfaces. Bottom: Landmark positioning after sliding to minimize bending energy on a pseudo-Levallois point from a discoidal reduction sequence.](Article Figures/03 Template and BE.png)   
     
-In addition to geometric morphometrics, the following attributes were recorded for each of the flakes using the E5 software [@mcpherron_e5_2019].    
+A drawback exists in the interpretability of PCA as a result of its nature of reducing dimensionality through the identification of linear combinations of variables. Because of this, interpreting what morphological features are being capture by a PC can be difficult. An option for interpreting PC is to use manual measurements as predictive variables on multiple linear regressions to predict PC values. In addition to geometric morphometrics, the following attributes were recorded for each of the flakes using the E5 software [@mcpherron_e5_2019].    
 
   * **Technological length:** measured in mm along the axis perpendicular to the striking platform.   
   * **Technological width:** measured in mm along the axis perpendicular to the technological length.   
@@ -149,7 +155,7 @@ These measures served to generate the following indices:
   * **Carenation index**: result of dividing either width or length (the one with the lowest value) between maximum thickness.   
   * **Width to thickness ratio**: flake width divided by maximum thickness.    
 
-These measures are not intended as inputs for the Machine Learning models, but to explore the meaning of the Principal Components through multiple linear regressions.    
+These measures are not intended as inputs for the Machine Learning models, but to explore the meaning of the Principal Components through multiple linear regressions.     
 
 ### 2.3 Machine learning models and evaluation   
 
@@ -178,6 +184,8 @@ Statistical analysis was carried out using R version R version 4.1.1 in IDE RStu
 The following line of code performs procrustes alignment and superimposition using the **Morpho** package [@schlager_morpho_2017]. Aligned coordinates are extracted and stored as a data frame named **LM.DF**.     
 
 ```{r Procrustes rotation, eval=FALSE}
+# Load landmaks
+load("Data/Flakes_LM.RData")
 # Procrustes alignment
 proc <- Morpho::ProcGPA(Flakes_LM, 
                 CSinit = TRUE, 
@@ -699,7 +707,7 @@ tibble(
     axis.title.y = element_text(color = "black", size = 9))
 ```
 
-```{r First pairs of PC biplots, message=FALSE, warning=FALSE, fig.width=10}
+```{r 1st pairs of PC biplots, message=FALSE, warning=FALSE, fig.width=10}
 #PC biplots
 ggpubr::ggarrange(
 (PCA_Coord %>% ggplot(aes(PC3, PC1, fill = Strategy)) +
@@ -745,7 +753,7 @@ align = "h")
 The effect of PC3 on identifying backed products from the two knapping methods is especially notable in the a biplot distribution. The above figure presents a biplot distribution of the data between PC3 and the following two most important variables. In both cases, backed flakes detached from Levallois recurrent centripetal cores tend to be clustered in the positive values of PC3, whereas they show a wider distribution, usually centered on the 0 value, for PCs 1 and 8. Backed flakes from discoidal reduction sequences show a wider distribution although the center is in the negative and 0 values of PC3. Although the combination of PC3 with PC1 and PC8 shows an overlapping of the confidence ellipsis, differentiation between both groups can be observed.   
 The following figure presents a biplot distribution of the data when the second (PC1), third (PC8), and fourth (PC6) most important variables are employed. The biplot from the combination of these variables shows much more consistent overlapping for the different combinations of PC1, PC8, and PC6.    
 
-```{r Second pairs of PC biplots, message=FALSE, warning=FALSE, fig.width=10}
+```{r 2nd pairs of PC biplots, message=FALSE, warning=FALSE, fig.width=10}
 ggpubr::ggarrange(
 (PCA_Coord %>% ggplot(aes(PC1, PC8, fill = Strategy)) +
   geom_vline(xintercept = 0, alpha = 0.7, linetype = "dashed") +
@@ -865,6 +873,8 @@ data.frame(
 
 Our results have shown an accuracy of 0.76 for the differentiation of backed pieces from discoidal and Levallois recurrent centripetal methods. Additionally, the use of decision thresholds provided an AUC close to 0.8. This degree of accuracy indicates that the quantification of morphological features through geometric morphometrics, along with dimensionality reduction using PCA and machine learning models, can accurately differentiate between the two methods tested. Of the 11 models tested, SVM with polynomial kernel provided the best performance for the discrimination of discoidal and Levallois recurrent centripetal methods in backed artifacts. Moreover, results support the notion that discoidal and recurrent centripetal Levallois are two separate core reduction methods/conceptions.    
 
+The selection of machine learning algorithms depends on the task, type of classification, and nature of the data, requiring for the systematical evaluation of different algorithms. Of the tested models, SVM with polynomial kernel performed the best. SVM’s have a series of features which make them ideal for the analysis of lithic artifacts. As previously mentioned, SVM models fit hyperplanes to separate classes, use margins to find the best separation, and apply a cost value with each misclassification [@lantz_machine_2019]. Selection of the kernel is key for the performance of SVM, since it will have a direct impact on the fitted hyperplane, margins and cost value. As a result of these features, SVM are able to allow misclassifications and overlapping classifications in order to obtain a better general performance. These features of SVM make them especially adequate for the analysis of lithic materials and might be one of the underlying reasons why it has the best performance metrics.     
+
 The first 25 PCs captured 95% of the sample variance. Of these PCs, the highest importance value for the discrimination of knapping methods was obtained by PC3. Multiple linear regression shows that PC3 is moderately correlated with an interaction between IPA and the ratio of flake width to thickness. Thin and wide artifacts with IPA values close to 90º will have higher PC3 values. The examination of biplots and PC3 values shows that backed flakes detached from Levallois recurrent centripetal cores  tend to be thin in relation to the thickness, non-elongated, and have an IPA close to 90º. PC1, which captures elongation tendencies with higher resolution (along with product thickness) also supports this interpretation although higher overlapping exists. The discriminatory power of PC3 appears inherently related to differences in how the volume of cores in the two methods are conceived: non-hierarchized surfaces exploited with secant removals in discoidal reduction while recurrent centripetal Levallois is characterized by sub-parallel removals from a single debitage surface. Additional features for the discrimination of discoidal and Levallois backed products can be found in edge angles and the angles of negatives of the dorsal face towards the detachment surface. In general, it is expected that products detached from Levallois reduction sequences will have more acute edge angles, along with flatter dorsal surface negatives. Again, these differences in the angles are also inherently related to differences in how the volume of cores in the two methods are conceived.        
 
 These results indicate that there are underlying morphological differences between backed artifacts detached from both methods. These underlying morphological differences can be captured and quantified by geometric morphometrics along with PCA and used by machine learning models for an accurate discrimination of methods.     
@@ -881,6 +891,8 @@ While backed flakes detached from discoidal and Levallois recurrent centripetal 
 Backed flakes are technological products that play special roles in the discoidal and Levallois recurrent centripetal methods [@boeda_debitage_1993; @boeda_identification_1990; @peresani_les_2003]. In Levallois reductions, these removals serve to manage lateral and distal core convexities [@boeda_identification_1990], while their systematic production in discoidal reductions demonstrates their properties to be intentionally sought-after [@peresani_industrie_2003; @peresani_les_2003]. Additionally, data from several sites show that they were commonly imported and exported [@rigaud_les_1988; @roebroeks_veil_1992; @turq_fragmented_2013]. This frequent transport is possibly connected to their specific morpho-functional features [@delpiano_techno-functional_2021], a “prehensile” core edge opposite a convergent cutting edge. Associated with two technologically distinct core reduction methods, it should be expected that their morphological features differ and therefore allow for the identification of the knapping method. With the use of geometric morphometrics, these morphological features can be quantified, and PCA for dimensionality reduction allows them to be employed in machine learning models.    
 
 PCA and machine learning models indeed capture the different morphological features derived from both knapping methods, resulting in an accuracy of 0.76 and an AUC of 0.8 in the case of the best model for differentiating between knapping strategies. Most of the importance for differentiating between the knapping methods was captured by only one variable (PC3), which multiple linear regressions showed to be correlated with the elongation index and mostly an interaction between IPA and the carenation index.   
+
+The workflow of the present work has been developed to allow for its implementation on archaeological materials. Archaeological backed flakes can be scanned, then use the flake template from the present work to locate landmarks on the 3D meshes, perform procrustes alignment of all backed flakes (archaeological and experimental reference flakes of the present research whose original unaligned coordinates are available), reduce dimensionality of experimental and archaeological backed flakes through PCA (it is important to notice that PCA values will change with the inclusion of new archaeological data), train the SVM with polynomial kernel on the experimental assemblage, and make predictions on the archaeological material. Of this workflow, 3D scanning and landmarks positioning are considered to be the most time-consuming stages, while procrustes alignment, PCA and model training can be considered to be fairly fast.   
 
 Geometric morphometrics in combination with dimensionality reduction methods (PCA) and machine learning models can offer high-resolution methods for the identification of knapping methods in lithic analysis although their application should not be independent from the study of the operative chain and assemblage technological context. 
 
