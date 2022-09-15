@@ -115,7 +115,7 @@ The final draft of the article can be accessed in the following formats:
 -   [**Backed flakes identification in Discoid and RC
     Levallois.pdf**](Backed-flakes-identification-in-Discoid-and-RC-Levallois.pdf)
 
--   **License**  
+-   [**License**](License.md) file specifying conditions of use  
 
 -   **README.md**  
 
