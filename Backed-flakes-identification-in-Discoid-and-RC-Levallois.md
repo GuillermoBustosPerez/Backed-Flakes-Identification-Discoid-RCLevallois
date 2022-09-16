@@ -1008,66 +1008,66 @@ sensitivity (0.333) lower than the no-information ratio (0.504).
 
 ``` r
 # LDA
-temp <- pROC::roc(fit.LDA$pred$obs, fit.LDA$pred$Levallois)
+temp <- pROC::roc(fit.LDA$pred$obs, fit.LDA$pred$Levallois, quiet = TRUE)
 Roc_Curve <- tibble(temp$specificities, temp$sensitivities)
 Roc_Curve$Model <- "LDA"
 
 # KNN
-temp <- pROC::roc(KNN.model$pred$obs, KNN.model$pred$Levallois)
+temp <- pROC::roc(KNN.model$pred$obs, KNN.model$pred$Levallois, quiet = TRUE)
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "KNN")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # Log
-temp <- pROC::roc(logmod$pred$obs, logmod$pred$Levallois)
+temp <- pROC::roc(logmod$pred$obs, logmod$pred$Levallois, quiet = TRUE)
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "Log. Reg.")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # SVML
-temp <- pROC::roc(SVM_Linear$pred$obs, SVM_Linear$pred$Levallois)
+temp <- pROC::roc(SVM_Linear$pred$obs, SVM_Linear$pred$Levallois, quiet = TRUE)
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "SVML")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # SVMP
-temp <- pROC::roc(SVM_Poly$pred$obs, SVM_Poly$pred$Levallois)
+temp <- pROC::roc(SVM_Poly$pred$obs, SVM_Poly$pred$Levallois, quiet = TRUE)
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "SVMP")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # SVMR
-temp <- pROC::roc(SVM_Radial$pred$obs, SVM_Radial$pred$Levallois)
+temp <- pROC::roc(SVM_Radial$pred$obs, SVM_Radial$pred$Levallois, quiet = TRUE)
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "SVMR")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # C5.0
-temp <- pROC::roc(C50_Mod$pred$obs, C50_Mod$pred$Levallois)
+temp <- pROC::roc(C50_Mod$pred$obs, C50_Mod$pred$Levallois, quiet = TRUE)
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "C5.0")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
-# rf
-temp <- pROC::roc(RF_Model$pred$obs, RF_Model$pred$Levallois)
+# Random Fores
+temp <- pROC::roc(RF_Model$pred$obs, RF_Model$pred$Levallois, quiet = TRUE)
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "Rand. Forest")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
-# Boosted tree
-temp <- pROC::roc(Boost_Tree$pred$obs, Boost_Tree$pred$Levallois)
+# GBM
+temp <- pROC::roc(Boost_Tree$pred$obs, Boost_Tree$pred$Levallois, quiet = TRUE)
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "GBM")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # Boosted tree
-temp <- pROC::roc(NaiB_Model$pred$obs, NaiB_Model$pred$Levallois)
+temp <- pROC::roc(NaiB_Model$pred$obs, NaiB_Model$pred$Levallois, quiet = TRUE)
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "Naïve Bayes")
 Roc_Curve <- rbind(Roc_Curve, temp)
 
 # Boosted tree
-temp <- pROC::roc(mlp_Mod$pred$obs, mlp_Mod$pred$Levallois)
+temp <- pROC::roc(mlp_Mod$pred$obs, mlp_Mod$pred$Levallois, quiet = TRUE)
 temp <- cbind(tibble(temp$specificities, temp$sensitivities),
               Model = "ANN")
 Roc_Curve <- rbind(Roc_Curve, temp)
