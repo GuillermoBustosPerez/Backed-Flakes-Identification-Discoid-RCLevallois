@@ -302,19 +302,19 @@ lapply(list.of.packages, library, character.only = TRUE)
 ```
 
     ## [[1]]
-    ##  [1] "ranger"    "caret"     "lattice"   "forcats"   "stringr"   "dplyr"     "purrr"    
-    ##  [8] "readr"     "tidyr"     "tibble"    "ggplot2"   "tidyverse" "stats"     "graphics" 
-    ## [15] "grDevices" "utils"     "datasets"  "methods"   "base"     
+    ##  [1] "knitr"     "ranger"    "caret"     "lattice"   "forcats"   "stringr"   "dplyr"    
+    ##  [8] "purrr"     "readr"     "tidyr"     "tibble"    "ggplot2"   "tidyverse" "stats"    
+    ## [15] "graphics"  "grDevices" "utils"     "datasets"  "methods"   "base"     
     ## 
     ## [[2]]
-    ##  [1] "ranger"    "caret"     "lattice"   "forcats"   "stringr"   "dplyr"     "purrr"    
-    ##  [8] "readr"     "tidyr"     "tibble"    "ggplot2"   "tidyverse" "stats"     "graphics" 
-    ## [15] "grDevices" "utils"     "datasets"  "methods"   "base"     
+    ##  [1] "knitr"     "ranger"    "caret"     "lattice"   "forcats"   "stringr"   "dplyr"    
+    ##  [8] "purrr"     "readr"     "tidyr"     "tibble"    "ggplot2"   "tidyverse" "stats"    
+    ## [15] "graphics"  "grDevices" "utils"     "datasets"  "methods"   "base"     
     ## 
     ## [[3]]
-    ##  [1] "ranger"    "caret"     "lattice"   "forcats"   "stringr"   "dplyr"     "purrr"    
-    ##  [8] "readr"     "tidyr"     "tibble"    "ggplot2"   "tidyverse" "stats"     "graphics" 
-    ## [15] "grDevices" "utils"     "datasets"  "methods"   "base"
+    ##  [1] "knitr"     "ranger"    "caret"     "lattice"   "forcats"   "stringr"   "dplyr"    
+    ##  [8] "purrr"     "readr"     "tidyr"     "tibble"    "ggplot2"   "tidyverse" "stats"    
+    ## [15] "graphics"  "grDevices" "utils"     "datasets"  "methods"   "base"
 
 ``` r
 rm(list.of.packages)
